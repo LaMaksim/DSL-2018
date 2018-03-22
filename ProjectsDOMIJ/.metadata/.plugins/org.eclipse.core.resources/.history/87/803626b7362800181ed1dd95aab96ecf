@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="FileTransferPackage" nsURI="https://lamaksim.com" nsPrefix="">
+  <eClassifiers xsi:type="ecore:EClass" name="Path">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference0" eType="#//Step"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="File"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Folder" eSuperTypes="#//File">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference0" eType="#//File"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Document" eSuperTypes="#//File"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Selection">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference0" eType="#//Filter"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference1" eType="#//Path"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Transformation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference0" eType="#//Selection"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Creating" eSuperTypes="#//Transformation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference1" eType="#//Path"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Copy" eSuperTypes="#//Creating"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Move" eSuperTypes="#//Creating"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Delete" eSuperTypes="#//Transformation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Step"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PathVariable">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference0" eType="#//Path"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Filter"/>
+</ecore:EPackage>

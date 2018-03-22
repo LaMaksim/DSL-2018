@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<maksim:Model
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:maksim="https://lamaksim.com"
+    xsi:schemaLocation="https://lamaksim.com file_transfer_metamodel.ecore">
+  <path_variables
+      name="usb">
+    <value>
+      <steps
+          xsi:type="maksim:ConcreteStep"
+          value="&quot;F:/&quot;"/>
+    </value>
+  </path_variables>
+  <selection_variables
+      name="cookBooks">
+    <value>
+      <from
+          absolute="true">
+        <steps
+            xsi:type="maksim:VariableStep"
+            value="//@path_variables.0"/>
+        <steps
+            xsi:type="maksim:ConcreteStep"
+            value="&quot;./Books&quot;"/>
+      </from>
+    </value>
+  </selection_variables>
+</maksim:Model>
