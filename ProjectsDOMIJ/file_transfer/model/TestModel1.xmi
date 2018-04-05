@@ -10,7 +10,7 @@
     <value>
       <steps
           xsi:type="maksim:ConcreteStep"
-          value="&quot;F:/&quot;"/>
+          value="F:/"/>
     </value>
   </path_variables>
   <path_variables

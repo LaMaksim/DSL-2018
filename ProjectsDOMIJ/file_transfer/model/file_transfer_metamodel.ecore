@@ -38,10 +38,11 @@
       <details key="constraints" value="dontContainsParametrizedVariable"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
-      <details key="dontContainsParametrizedVariable" value="&#xA;&#x9;&#x9;&#x9;not value.matches('.*{$.*}.*')"/>
+      <details key="dontContainsParametrizedVariable" value="&#xA;&#x9;&#x9;&#x9;not value.matches('.*\\{\\$.\\}*.*')"/>
       <details key="dontContainsParametrizedVariable$message" value="'Concrete step can\'t hold parametrized variable'"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="&quot;a&quot;"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PathVariable" eSuperTypes="#//GenericStep">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -88,9 +89,10 @@
       <details key="tresholdPositive" value="&#xA;&#x9;&#x9;&#x9;treshold>0"/>
       <details key="tresholdPositive$message" value="'Treshold must be positive'"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="treshold"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="operator" lowerBound="1"
         eType="#//Operator"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="treshold" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OnTime" eSuperTypes="#//OnMeasure">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" lowerBound="1" eType="#//TimeUnit"/>
@@ -121,8 +123,9 @@
       <details key="TagsContent$message" value="'Tags must be regular identifiers'"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tags" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="treshold"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="only" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="treshold" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Operator">
     <eLiterals name="equal"/>
