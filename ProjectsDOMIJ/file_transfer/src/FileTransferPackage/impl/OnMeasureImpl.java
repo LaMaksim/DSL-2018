@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class OnMeasureImpl extends FilterLeafImpl implements OnMeasure {
+public abstract class OnMeasureImpl extends FilterLeafImpl implements OnMeasure {
 	/**
 	 * The default value of the '{@link #getOperator() <em>Operator</em>}' attribute.
 	 * <!-- begin-user-doc -->

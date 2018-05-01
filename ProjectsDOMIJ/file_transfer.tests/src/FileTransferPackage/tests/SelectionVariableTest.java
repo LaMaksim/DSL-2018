@@ -5,8 +5,6 @@ package FileTransferPackage.tests;
 import FileTransferPackage.FileTransferPackageFactory;
 import FileTransferPackage.SelectionVariable;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 /**
@@ -15,15 +13,7 @@ import junit.textui.TestRunner;
  * <!-- end-user-doc -->
  * @generated
  */
-public class SelectionVariableTest extends TestCase {
-
-	/**
-	 * The fixture for this Selection Variable test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected SelectionVariable fixture = null;
+public class SelectionVariableTest extends ExecutionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -45,23 +35,14 @@ public class SelectionVariableTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Selection Variable test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(SelectionVariable fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Selection Variable test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected SelectionVariable getFixture() {
-		return fixture;
+		return (SelectionVariable)fixture;
 	}
 
 	/**

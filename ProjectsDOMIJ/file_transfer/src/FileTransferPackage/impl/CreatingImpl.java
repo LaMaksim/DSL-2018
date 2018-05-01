@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class CreatingImpl extends TransformationImpl implements Creating {
+public abstract class CreatingImpl extends TransformationImpl implements Creating {
 	/**
 	 * The cached value of the '{@link #getDestination() <em>Destination</em>}' containment reference.
 	 * <!-- begin-user-doc -->

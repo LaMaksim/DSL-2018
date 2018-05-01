@@ -17,7 +17,8 @@ package FileTransferPackage;
  * </p>
  *
  * @see FileTransferPackage.FileTransferPackagePackage#getOnMeasure()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='tresholdPositive'"
+ * @model abstract="true"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='tresholdPositive'"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot tresholdPositive='\n\t\t\ttreshold>0' tresholdPositive$message='\'Treshold must be positive\''"
  * @generated
  */

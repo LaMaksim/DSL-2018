@@ -77,9 +77,7 @@ public class ModelItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FileTransferPackagePackage.Literals.MODEL__PATH_VARIABLES);
-			childrenFeatures.add(FileTransferPackagePackage.Literals.MODEL__SELECTION_VARIABLES);
-			childrenFeatures.add(FileTransferPackagePackage.Literals.MODEL__TRANSFORMATIONS);
+			childrenFeatures.add(FileTransferPackagePackage.Literals.MODEL__EXECUTIONS);
 		}
 		return childrenFeatures;
 	}
@@ -131,9 +129,7 @@ public class ModelItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Model.class)) {
-			case FileTransferPackagePackage.MODEL__PATH_VARIABLES:
-			case FileTransferPackagePackage.MODEL__SELECTION_VARIABLES:
-			case FileTransferPackagePackage.MODEL__TRANSFORMATIONS:
+			case FileTransferPackagePackage.MODEL__EXECUTIONS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -153,38 +149,28 @@ public class ModelItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FileTransferPackagePackage.Literals.MODEL__PATH_VARIABLES,
-				 FileTransferPackageFactory.eINSTANCE.createPathVariable()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FileTransferPackagePackage.Literals.MODEL__SELECTION_VARIABLES,
-				 FileTransferPackageFactory.eINSTANCE.createSelectionVariable()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FileTransferPackagePackage.Literals.MODEL__TRANSFORMATIONS,
-				 FileTransferPackageFactory.eINSTANCE.createTransformation()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FileTransferPackagePackage.Literals.MODEL__TRANSFORMATIONS,
-				 FileTransferPackageFactory.eINSTANCE.createCreating()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FileTransferPackagePackage.Literals.MODEL__TRANSFORMATIONS,
+				(FileTransferPackagePackage.Literals.MODEL__EXECUTIONS,
 				 FileTransferPackageFactory.eINSTANCE.createCopy()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FileTransferPackagePackage.Literals.MODEL__TRANSFORMATIONS,
+				(FileTransferPackagePackage.Literals.MODEL__EXECUTIONS,
 				 FileTransferPackageFactory.eINSTANCE.createMove()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FileTransferPackagePackage.Literals.MODEL__TRANSFORMATIONS,
+				(FileTransferPackagePackage.Literals.MODEL__EXECUTIONS,
 				 FileTransferPackageFactory.eINSTANCE.createDelete()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FileTransferPackagePackage.Literals.MODEL__EXECUTIONS,
+				 FileTransferPackageFactory.eINSTANCE.createPathVariable()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FileTransferPackagePackage.Literals.MODEL__EXECUTIONS,
+				 FileTransferPackageFactory.eINSTANCE.createSelectionVariable()));
 	}
 
 	/**
@@ -195,7 +181,7 @@ public class ModelItemProvider
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
-		return Genmodel3EditPlugin.INSTANCE;
+		return File_transfer_metamodelEditPlugin.INSTANCE;
 	}
 
 }

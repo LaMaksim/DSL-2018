@@ -81,6 +81,7 @@ public class FileTransferPackageSwitch<T> extends Switch<T> {
 			case FileTransferPackagePackage.TRANSFORMATION: {
 				Transformation transformation = (Transformation)theEObject;
 				T result = caseTransformation(transformation);
+				if (result == null) result = caseExecution(transformation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -88,6 +89,7 @@ public class FileTransferPackageSwitch<T> extends Switch<T> {
 				Creating creating = (Creating)theEObject;
 				T result = caseCreating(creating);
 				if (result == null) result = caseTransformation(creating);
+				if (result == null) result = caseExecution(creating);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -96,6 +98,7 @@ public class FileTransferPackageSwitch<T> extends Switch<T> {
 				T result = caseCopy(copy);
 				if (result == null) result = caseCreating(copy);
 				if (result == null) result = caseTransformation(copy);
+				if (result == null) result = caseExecution(copy);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -104,6 +107,7 @@ public class FileTransferPackageSwitch<T> extends Switch<T> {
 				T result = caseMove(move);
 				if (result == null) result = caseCreating(move);
 				if (result == null) result = caseTransformation(move);
+				if (result == null) result = caseExecution(move);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -111,6 +115,7 @@ public class FileTransferPackageSwitch<T> extends Switch<T> {
 				Delete delete = (Delete)theEObject;
 				T result = caseDelete(delete);
 				if (result == null) result = caseTransformation(delete);
+				if (result == null) result = caseExecution(delete);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -124,6 +129,7 @@ public class FileTransferPackageSwitch<T> extends Switch<T> {
 			case FileTransferPackagePackage.PATH_VARIABLE: {
 				PathVariable pathVariable = (PathVariable)theEObject;
 				T result = casePathVariable(pathVariable);
+				if (result == null) result = caseExecution(pathVariable);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -228,6 +234,7 @@ public class FileTransferPackageSwitch<T> extends Switch<T> {
 			case FileTransferPackagePackage.SELECTION_VARIABLE: {
 				SelectionVariable selectionVariable = (SelectionVariable)theEObject;
 				T result = caseSelectionVariable(selectionVariable);
+				if (result == null) result = caseExecution(selectionVariable);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -272,6 +279,12 @@ public class FileTransferPackageSwitch<T> extends Switch<T> {
 				ParametrizedStep parametrizedStep = (ParametrizedStep)theEObject;
 				T result = caseParametrizedStep(parametrizedStep);
 				if (result == null) result = caseGenericStep(parametrizedStep);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FileTransferPackagePackage.EXECUTION: {
+				Execution execution = (Execution)theEObject;
+				T result = caseExecution(execution);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -696,6 +709,21 @@ public class FileTransferPackageSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseParametrizedStep(ParametrizedStep object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Execution</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Execution</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExecution(Execution object) {
 		return null;
 	}
 

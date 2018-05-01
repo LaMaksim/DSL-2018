@@ -59,17 +59,6 @@ public class FilterComponentItemProvider
 	}
 
 	/**
-	 * This returns FilterComponent.gif.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/FilterComponent"));
-	}
-
-	/**
 	 * This returns the label text for the adapted class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -113,7 +102,7 @@ public class FilterComponentItemProvider
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
-		return Genmodel3EditPlugin.INSTANCE;
+		return File_transfer_metamodelEditPlugin.INSTANCE;
 	}
 
 }

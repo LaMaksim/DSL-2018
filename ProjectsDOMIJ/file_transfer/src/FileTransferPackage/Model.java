@@ -14,9 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link FileTransferPackage.Model#getPath_variables <em>Path variables</em>}</li>
- *   <li>{@link FileTransferPackage.Model#getSelection_variables <em>Selection variables</em>}</li>
- *   <li>{@link FileTransferPackage.Model#getTransformations <em>Transformations</em>}</li>
+ *   <li>{@link FileTransferPackage.Model#getExecutions <em>Executions</em>}</li>
  * </ul>
  * </p>
  *
@@ -26,51 +24,19 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Model extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Path variables</b></em>' containment reference list.
-	 * The list contents are of type {@link FileTransferPackage.PathVariable}.
+	 * Returns the value of the '<em><b>Executions</b></em>' containment reference list.
+	 * The list contents are of type {@link FileTransferPackage.Execution}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Path variables</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Executions</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Path variables</em>' containment reference list.
-	 * @see FileTransferPackage.FileTransferPackagePackage#getModel_Path_variables()
+	 * @return the value of the '<em>Executions</em>' containment reference list.
+	 * @see FileTransferPackage.FileTransferPackagePackage#getModel_Executions()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<PathVariable> getPath_variables();
-
-	/**
-	 * Returns the value of the '<em><b>Selection variables</b></em>' containment reference list.
-	 * The list contents are of type {@link FileTransferPackage.SelectionVariable}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Selection variables</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Selection variables</em>' containment reference list.
-	 * @see FileTransferPackage.FileTransferPackagePackage#getModel_Selection_variables()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<SelectionVariable> getSelection_variables();
-
-	/**
-	 * Returns the value of the '<em><b>Transformations</b></em>' containment reference list.
-	 * The list contents are of type {@link FileTransferPackage.Transformation}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Transformations</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Transformations</em>' containment reference list.
-	 * @see FileTransferPackage.FileTransferPackagePackage#getModel_Transformations()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<Transformation> getTransformations();
+	EList<Execution> getExecutions();
 
 } // Model

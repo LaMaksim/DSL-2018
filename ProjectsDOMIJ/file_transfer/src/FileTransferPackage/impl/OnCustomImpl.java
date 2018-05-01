@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class OnCustomImpl extends FilterLeafImpl implements OnCustom {
+public abstract class OnCustomImpl extends FilterLeafImpl implements OnCustom {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

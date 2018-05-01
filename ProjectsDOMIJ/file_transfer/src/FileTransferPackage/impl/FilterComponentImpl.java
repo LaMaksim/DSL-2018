@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class FilterComponentImpl extends MinimalEObjectImpl.Container implements FilterComponent {
+public abstract class FilterComponentImpl extends MinimalEObjectImpl.Container implements FilterComponent {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

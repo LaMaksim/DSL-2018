@@ -152,21 +152,6 @@ public class SelectionItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(FileTransferPackagePackage.Literals.SELECTION__WHERE,
-				 FileTransferPackageFactory.eINSTANCE.createFilterComponent()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FileTransferPackagePackage.Literals.SELECTION__WHERE,
-				 FileTransferPackageFactory.eINSTANCE.createFilterLeaf()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FileTransferPackagePackage.Literals.SELECTION__WHERE,
-				 FileTransferPackageFactory.eINSTANCE.createOnBasic()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FileTransferPackagePackage.Literals.SELECTION__WHERE,
 				 FileTransferPackageFactory.eINSTANCE.createOnName()));
 
 		newChildDescriptors.add
@@ -177,17 +162,7 @@ public class SelectionItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(FileTransferPackagePackage.Literals.SELECTION__WHERE,
-				 FileTransferPackageFactory.eINSTANCE.createOnMeasure()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FileTransferPackagePackage.Literals.SELECTION__WHERE,
 				 FileTransferPackageFactory.eINSTANCE.createOnTime()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FileTransferPackagePackage.Literals.SELECTION__WHERE,
-				 FileTransferPackageFactory.eINSTANCE.createOnCustom()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -233,7 +208,7 @@ public class SelectionItemProvider
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
-		return Genmodel3EditPlugin.INSTANCE;
+		return File_transfer_metamodelEditPlugin.INSTANCE;
 	}
 
 }

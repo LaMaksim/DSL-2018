@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class OnBasicImpl extends FilterLeafImpl implements OnBasic {
+public abstract class OnBasicImpl extends FilterLeafImpl implements OnBasic {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

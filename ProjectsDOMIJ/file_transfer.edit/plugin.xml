@@ -7,7 +7,7 @@
 <plugin>
 
    <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
-      <!-- @generated genmodel3 -->
+      <!-- @generated file_transfer_metamodel -->
       <factory
             uri="https://lamaksim.com"
             class="FileTransferPackage.provider.FileTransferPackageItemProviderAdapterFactory"

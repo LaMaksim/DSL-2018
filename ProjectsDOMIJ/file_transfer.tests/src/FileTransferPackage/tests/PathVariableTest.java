@@ -5,8 +5,6 @@ package FileTransferPackage.tests;
 import FileTransferPackage.FileTransferPackageFactory;
 import FileTransferPackage.PathVariable;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 /**
@@ -15,15 +13,7 @@ import junit.textui.TestRunner;
  * <!-- end-user-doc -->
  * @generated
  */
-public class PathVariableTest extends TestCase {
-
-	/**
-	 * The fixture for this Path Variable test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected PathVariable fixture = null;
+public class PathVariableTest extends ExecutionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -45,23 +35,14 @@ public class PathVariableTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Path Variable test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(PathVariable fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Path Variable test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected PathVariable getFixture() {
-		return fixture;
+		return (PathVariable)fixture;
 	}
 
 	/**

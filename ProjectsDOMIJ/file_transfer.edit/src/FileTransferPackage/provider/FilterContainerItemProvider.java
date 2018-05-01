@@ -180,21 +180,6 @@ public class FilterContainerItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(FileTransferPackagePackage.Literals.FILTER_CONTAINER__SEGMENTS,
-				 FileTransferPackageFactory.eINSTANCE.createFilterComponent()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FileTransferPackagePackage.Literals.FILTER_CONTAINER__SEGMENTS,
-				 FileTransferPackageFactory.eINSTANCE.createFilterLeaf()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FileTransferPackagePackage.Literals.FILTER_CONTAINER__SEGMENTS,
-				 FileTransferPackageFactory.eINSTANCE.createOnBasic()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FileTransferPackagePackage.Literals.FILTER_CONTAINER__SEGMENTS,
 				 FileTransferPackageFactory.eINSTANCE.createOnName()));
 
 		newChildDescriptors.add
@@ -205,17 +190,7 @@ public class FilterContainerItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(FileTransferPackagePackage.Literals.FILTER_CONTAINER__SEGMENTS,
-				 FileTransferPackageFactory.eINSTANCE.createOnMeasure()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FileTransferPackagePackage.Literals.FILTER_CONTAINER__SEGMENTS,
 				 FileTransferPackageFactory.eINSTANCE.createOnTime()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FileTransferPackagePackage.Literals.FILTER_CONTAINER__SEGMENTS,
-				 FileTransferPackageFactory.eINSTANCE.createOnCustom()));
 
 		newChildDescriptors.add
 			(createChildParameter

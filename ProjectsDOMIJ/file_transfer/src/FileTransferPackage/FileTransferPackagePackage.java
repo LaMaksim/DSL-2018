@@ -150,6 +150,34 @@ public interface FileTransferPackagePackage extends EPackage {
 	int SELECTION_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link FileTransferPackage.impl.ExecutionImpl <em>Execution</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see FileTransferPackage.impl.ExecutionImpl
+	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getExecution()
+	 * @generated
+	 */
+	int EXECUTION = 28;
+
+	/**
+	 * The number of structural features of the '<em>Execution</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXECUTION_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Execution</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXECUTION_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link FileTransferPackage.impl.TransformationImpl <em>Transformation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -166,7 +194,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMATION__SOURCE = 0;
+	int TRANSFORMATION__SOURCE = EXECUTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Transformation</em>' class.
@@ -175,7 +203,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMATION_FEATURE_COUNT = 1;
+	int TRANSFORMATION_FEATURE_COUNT = EXECUTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Transformation</em>' class.
@@ -184,7 +212,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMATION_OPERATION_COUNT = 0;
+	int TRANSFORMATION_OPERATION_COUNT = EXECUTION_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.impl.CreatingImpl <em>Creating</em>}' class.
@@ -470,7 +498,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PATH_VARIABLE__VALUE = 0;
+	int PATH_VARIABLE__VALUE = EXECUTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -479,7 +507,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PATH_VARIABLE__NAME = 1;
+	int PATH_VARIABLE__NAME = EXECUTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Path Variable</em>' class.
@@ -488,7 +516,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PATH_VARIABLE_FEATURE_COUNT = 2;
+	int PATH_VARIABLE_FEATURE_COUNT = EXECUTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Path Variable</em>' class.
@@ -497,7 +525,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PATH_VARIABLE_OPERATION_COUNT = 0;
+	int PATH_VARIABLE_OPERATION_COUNT = EXECUTION_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.impl.FilterComponentImpl <em>Filter Component</em>}' class.
@@ -1104,7 +1132,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECTION_VARIABLE__NAME = 0;
+	int SELECTION_VARIABLE__NAME = EXECUTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference.
@@ -1113,7 +1141,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECTION_VARIABLE__VALUE = 1;
+	int SELECTION_VARIABLE__VALUE = EXECUTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Selection Variable</em>' class.
@@ -1122,7 +1150,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECTION_VARIABLE_FEATURE_COUNT = 2;
+	int SELECTION_VARIABLE_FEATURE_COUNT = EXECUTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Selection Variable</em>' class.
@@ -1131,7 +1159,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECTION_VARIABLE_OPERATION_COUNT = 0;
+	int SELECTION_VARIABLE_OPERATION_COUNT = EXECUTION_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.impl.ModelImpl <em>Model</em>}' class.
@@ -1144,31 +1172,13 @@ public interface FileTransferPackagePackage extends EPackage {
 	int MODEL = 22;
 
 	/**
-	 * The feature id for the '<em><b>Path variables</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Executions</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL__PATH_VARIABLES = 0;
-
-	/**
-	 * The feature id for the '<em><b>Selection variables</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MODEL__SELECTION_VARIABLES = 1;
-
-	/**
-	 * The feature id for the '<em><b>Transformations</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MODEL__TRANSFORMATIONS = 2;
+	int MODEL__EXECUTIONS = 0;
 
 	/**
 	 * The number of structural features of the '<em>Model</em>' class.
@@ -1177,7 +1187,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_FEATURE_COUNT = 3;
+	int MODEL_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Model</em>' class.
@@ -1353,7 +1363,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getOperator()
 	 * @generated
 	 */
-	int OPERATOR = 28;
+	int OPERATOR = 29;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.FileType <em>File Type</em>}' enum.
@@ -1363,7 +1373,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getFileType()
 	 * @generated
 	 */
-	int FILE_TYPE = 29;
+	int FILE_TYPE = 30;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.TimeType <em>Time Type</em>}' enum.
@@ -1373,7 +1383,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getTimeType()
 	 * @generated
 	 */
-	int TIME_TYPE = 30;
+	int TIME_TYPE = 31;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.MemoryUnit <em>Memory Unit</em>}' enum.
@@ -1383,7 +1393,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getMemoryUnit()
 	 * @generated
 	 */
-	int MEMORY_UNIT = 31;
+	int MEMORY_UNIT = 32;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.TimeUnit <em>Time Unit</em>}' enum.
@@ -1393,7 +1403,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getTimeUnit()
 	 * @generated
 	 */
-	int TIME_UNIT = 32;
+	int TIME_UNIT = 33;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.Strategies <em>Strategies</em>}' enum.
@@ -1403,7 +1413,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getStrategies()
 	 * @generated
 	 */
-	int STRATEGIES = 33;
+	int STRATEGIES = 34;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.CompositionType <em>Composition Type</em>}' enum.
@@ -1413,7 +1423,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getCompositionType()
 	 * @generated
 	 */
-	int COMPOSITION_TYPE = 34;
+	int COMPOSITION_TYPE = 35;
 
 
 	/**
@@ -1944,37 +1954,15 @@ public interface FileTransferPackagePackage extends EPackage {
 	EClass getModel();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link FileTransferPackage.Model#getPath_variables <em>Path variables</em>}'.
+	 * Returns the meta object for the containment reference list '{@link FileTransferPackage.Model#getExecutions <em>Executions</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Path variables</em>'.
-	 * @see FileTransferPackage.Model#getPath_variables()
+	 * @return the meta object for the containment reference list '<em>Executions</em>'.
+	 * @see FileTransferPackage.Model#getExecutions()
 	 * @see #getModel()
 	 * @generated
 	 */
-	EReference getModel_Path_variables();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link FileTransferPackage.Model#getSelection_variables <em>Selection variables</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Selection variables</em>'.
-	 * @see FileTransferPackage.Model#getSelection_variables()
-	 * @see #getModel()
-	 * @generated
-	 */
-	EReference getModel_Selection_variables();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link FileTransferPackage.Model#getTransformations <em>Transformations</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Transformations</em>'.
-	 * @see FileTransferPackage.Model#getTransformations()
-	 * @see #getModel()
-	 * @generated
-	 */
-	EReference getModel_Transformations();
+	EReference getModel_Executions();
 
 	/**
 	 * Returns the meta object for class '{@link FileTransferPackage.GenericStep <em>Generic Step</em>}'.
@@ -2058,6 +2046,16 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getParametrizedStep_Name();
+
+	/**
+	 * Returns the meta object for class '{@link FileTransferPackage.Execution <em>Execution</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Execution</em>'.
+	 * @see FileTransferPackage.Execution
+	 * @generated
+	 */
+	EClass getExecution();
 
 	/**
 	 * Returns the meta object for enum '{@link FileTransferPackage.Operator <em>Operator</em>}'.
@@ -2599,28 +2597,12 @@ public interface FileTransferPackagePackage extends EPackage {
 		EClass MODEL = eINSTANCE.getModel();
 
 		/**
-		 * The meta object literal for the '<em><b>Path variables</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Executions</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference MODEL__PATH_VARIABLES = eINSTANCE.getModel_Path_variables();
-
-		/**
-		 * The meta object literal for the '<em><b>Selection variables</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference MODEL__SELECTION_VARIABLES = eINSTANCE.getModel_Selection_variables();
-
-		/**
-		 * The meta object literal for the '<em><b>Transformations</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference MODEL__TRANSFORMATIONS = eINSTANCE.getModel_Transformations();
+		EReference MODEL__EXECUTIONS = eINSTANCE.getModel_Executions();
 
 		/**
 		 * The meta object literal for the '{@link FileTransferPackage.impl.GenericStepImpl <em>Generic Step</em>}' class.
@@ -2695,6 +2677,16 @@ public interface FileTransferPackagePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PARAMETRIZED_STEP__NAME = eINSTANCE.getParametrizedStep_Name();
+
+		/**
+		 * The meta object literal for the '{@link FileTransferPackage.impl.ExecutionImpl <em>Execution</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see FileTransferPackage.impl.ExecutionImpl
+		 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getExecution()
+		 * @generated
+		 */
+		EClass EXECUTION = eINSTANCE.getExecution();
 
 		/**
 		 * The meta object literal for the '{@link FileTransferPackage.Operator <em>Operator</em>}' enum.

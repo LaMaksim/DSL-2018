@@ -530,7 +530,7 @@ public class FileTransferPackageEditor
 					}
 				}
 				catch (CoreException exception) {
-					Genmodel3EditorPlugin.INSTANCE.log(exception);
+					File_transfer_metamodelEditorPlugin.INSTANCE.log(exception);
 				}
 			}
 		};
@@ -646,7 +646,7 @@ public class FileTransferPackageEditor
 					showTabs();
 				}
 				catch (PartInitException exception) {
-					Genmodel3EditorPlugin.INSTANCE.log(exception);
+					File_transfer_metamodelEditorPlugin.INSTANCE.log(exception);
 				}
 			}
 
@@ -657,7 +657,7 @@ public class FileTransferPackageEditor
 						markerHelper.createMarkers(diagnostic);
 					}
 					catch (CoreException exception) {
-						Genmodel3EditorPlugin.INSTANCE.log(exception);
+						File_transfer_metamodelEditorPlugin.INSTANCE.log(exception);
 					}
 				}
 			}
@@ -1522,7 +1522,7 @@ public class FileTransferPackageEditor
 		catch (Exception exception) {
 			// Something went wrong that shouldn't.
 			//
-			Genmodel3EditorPlugin.INSTANCE.log(exception);
+			File_transfer_metamodelEditorPlugin.INSTANCE.log(exception);
 		}
 		updateProblemIndication = true;
 		updateProblemIndication();
@@ -1726,7 +1726,7 @@ public class FileTransferPackageEditor
 	 * @generated
 	 */
 	private static String getString(String key) {
-		return Genmodel3EditorPlugin.INSTANCE.getString(key);
+		return File_transfer_metamodelEditorPlugin.INSTANCE.getString(key);
 	}
 
 	/**
@@ -1736,7 +1736,7 @@ public class FileTransferPackageEditor
 	 * @generated
 	 */
 	private static String getString(String key, Object s1) {
-		return Genmodel3EditorPlugin.INSTANCE.getString(key, new Object [] { s1 });
+		return File_transfer_metamodelEditorPlugin.INSTANCE.getString(key, new Object [] { s1 });
 	}
 
 	/**

@@ -118,52 +118,6 @@ public class FileTransferPackageItemProviderAdapterFactory extends FileTransferP
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link FileTransferPackage.Transformation} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected TransformationItemProvider transformationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link FileTransferPackage.Transformation}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createTransformationAdapter() {
-		if (transformationItemProvider == null) {
-			transformationItemProvider = new TransformationItemProvider(this);
-		}
-
-		return transformationItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link FileTransferPackage.Creating} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected CreatingItemProvider creatingItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link FileTransferPackage.Creating}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createCreatingAdapter() {
-		if (creatingItemProvider == null) {
-			creatingItemProvider = new CreatingItemProvider(this);
-		}
-
-		return creatingItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link FileTransferPackage.Copy} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -279,29 +233,6 @@ public class FileTransferPackageItemProviderAdapterFactory extends FileTransferP
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link FileTransferPackage.FilterLeaf} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected FilterLeafItemProvider filterLeafItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link FileTransferPackage.FilterLeaf}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createFilterLeafAdapter() {
-		if (filterLeafItemProvider == null) {
-			filterLeafItemProvider = new FilterLeafItemProvider(this);
-		}
-
-		return filterLeafItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link FileTransferPackage.OnName} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -345,29 +276,6 @@ public class FileTransferPackageItemProviderAdapterFactory extends FileTransferP
 		}
 
 		return onExtensionItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link FileTransferPackage.OnMeasure} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected OnMeasureItemProvider onMeasureItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link FileTransferPackage.OnMeasure}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createOnMeasureAdapter() {
-		if (onMeasureItemProvider == null) {
-			onMeasureItemProvider = new OnMeasureItemProvider(this);
-		}
-
-		return onMeasureItemProvider;
 	}
 
 	/**
@@ -463,52 +371,6 @@ public class FileTransferPackageItemProviderAdapterFactory extends FileTransferP
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link FileTransferPackage.OnBasic} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected OnBasicItemProvider onBasicItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link FileTransferPackage.OnBasic}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createOnBasicAdapter() {
-		if (onBasicItemProvider == null) {
-			onBasicItemProvider = new OnBasicItemProvider(this);
-		}
-
-		return onBasicItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link FileTransferPackage.OnCustom} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected OnCustomItemProvider onCustomItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link FileTransferPackage.OnCustom}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createOnCustomAdapter() {
-		if (onCustomItemProvider == null) {
-			onCustomItemProvider = new OnCustomItemProvider(this);
-		}
-
-		return onCustomItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link FileTransferPackage.FilterContainer} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -529,29 +391,6 @@ public class FileTransferPackageItemProviderAdapterFactory extends FileTransferP
 		}
 
 		return filterContainerItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link FileTransferPackage.FilterComponent} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected FilterComponentItemProvider filterComponentItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link FileTransferPackage.FilterComponent}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createFilterComponentAdapter() {
-		if (filterComponentItemProvider == null) {
-			filterComponentItemProvider = new FilterComponentItemProvider(this);
-		}
-
-		return filterComponentItemProvider;
 	}
 
 	/**
@@ -793,25 +632,18 @@ public class FileTransferPackageItemProviderAdapterFactory extends FileTransferP
 	public void dispose() {
 		if (pathItemProvider != null) pathItemProvider.dispose();
 		if (selectionItemProvider != null) selectionItemProvider.dispose();
-		if (transformationItemProvider != null) transformationItemProvider.dispose();
-		if (creatingItemProvider != null) creatingItemProvider.dispose();
 		if (copyItemProvider != null) copyItemProvider.dispose();
 		if (moveItemProvider != null) moveItemProvider.dispose();
 		if (deleteItemProvider != null) deleteItemProvider.dispose();
 		if (concreteStepItemProvider != null) concreteStepItemProvider.dispose();
 		if (pathVariableItemProvider != null) pathVariableItemProvider.dispose();
-		if (filterLeafItemProvider != null) filterLeafItemProvider.dispose();
 		if (onNameItemProvider != null) onNameItemProvider.dispose();
 		if (onExtensionItemProvider != null) onExtensionItemProvider.dispose();
-		if (onMeasureItemProvider != null) onMeasureItemProvider.dispose();
 		if (onTimeItemProvider != null) onTimeItemProvider.dispose();
 		if (onAttributesItemProvider != null) onAttributesItemProvider.dispose();
 		if (onTagsItemProvider != null) onTagsItemProvider.dispose();
 		if (onSizeItemProvider != null) onSizeItemProvider.dispose();
-		if (onBasicItemProvider != null) onBasicItemProvider.dispose();
-		if (onCustomItemProvider != null) onCustomItemProvider.dispose();
 		if (filterContainerItemProvider != null) filterContainerItemProvider.dispose();
-		if (filterComponentItemProvider != null) filterComponentItemProvider.dispose();
 		if (selectionVariableItemProvider != null) selectionVariableItemProvider.dispose();
 		if (modelItemProvider != null) modelItemProvider.dispose();
 		if (variableStepItemProvider != null) variableStepItemProvider.dispose();

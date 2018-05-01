@@ -2,7 +2,6 @@
  */
 package FileTransferPackage;
 
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -17,10 +16,10 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see FileTransferPackage.FileTransferPackagePackage#getTransformation()
- * @model
+ * @model abstract="true"
  * @generated
  */
-public interface Transformation extends EObject {
+public interface Transformation extends Execution {
 	/**
 	 * Returns the value of the '<em><b>Source</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -59,25 +59,18 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 		switch (eClass.getClassifierID()) {
 			case FileTransferPackagePackage.PATH: return createPath();
 			case FileTransferPackagePackage.SELECTION: return createSelection();
-			case FileTransferPackagePackage.TRANSFORMATION: return createTransformation();
-			case FileTransferPackagePackage.CREATING: return createCreating();
 			case FileTransferPackagePackage.COPY: return createCopy();
 			case FileTransferPackagePackage.MOVE: return createMove();
 			case FileTransferPackagePackage.DELETE: return createDelete();
 			case FileTransferPackagePackage.CONCRETE_STEP: return createConcreteStep();
 			case FileTransferPackagePackage.PATH_VARIABLE: return createPathVariable();
-			case FileTransferPackagePackage.FILTER_LEAF: return createFilterLeaf();
 			case FileTransferPackagePackage.ON_NAME: return createOnName();
 			case FileTransferPackagePackage.ON_EXTENSION: return createOnExtension();
-			case FileTransferPackagePackage.ON_MEASURE: return createOnMeasure();
 			case FileTransferPackagePackage.ON_TIME: return createOnTime();
 			case FileTransferPackagePackage.ON_ATTRIBUTES: return createOnAttributes();
 			case FileTransferPackagePackage.ON_TAGS: return createOnTags();
 			case FileTransferPackagePackage.ON_SIZE: return createOnSize();
-			case FileTransferPackagePackage.ON_BASIC: return createOnBasic();
-			case FileTransferPackagePackage.ON_CUSTOM: return createOnCustom();
 			case FileTransferPackagePackage.FILTER_CONTAINER: return createFilterContainer();
-			case FileTransferPackagePackage.FILTER_COMPONENT: return createFilterComponent();
 			case FileTransferPackagePackage.SELECTION_VARIABLE: return createSelectionVariable();
 			case FileTransferPackagePackage.MODEL: return createModel();
 			case FileTransferPackagePackage.VARIABLE_STEP: return createVariableStep();
@@ -168,26 +161,6 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Transformation createTransformation() {
-		TransformationImpl transformation = new TransformationImpl();
-		return transformation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Creating createCreating() {
-		CreatingImpl creating = new CreatingImpl();
-		return creating;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Copy createCopy() {
 		CopyImpl copy = new CopyImpl();
 		return copy;
@@ -238,16 +211,6 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FilterLeaf createFilterLeaf() {
-		FilterLeafImpl filterLeaf = new FilterLeafImpl();
-		return filterLeaf;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public OnName createOnName() {
 		OnNameImpl onName = new OnNameImpl();
 		return onName;
@@ -261,16 +224,6 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 	public OnExtension createOnExtension() {
 		OnExtensionImpl onExtension = new OnExtensionImpl();
 		return onExtension;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public OnMeasure createOnMeasure() {
-		OnMeasureImpl onMeasure = new OnMeasureImpl();
-		return onMeasure;
 	}
 
 	/**
@@ -318,39 +271,9 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OnBasic createOnBasic() {
-		OnBasicImpl onBasic = new OnBasicImpl();
-		return onBasic;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public OnCustom createOnCustom() {
-		OnCustomImpl onCustom = new OnCustomImpl();
-		return onCustom;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public FilterContainer createFilterContainer() {
 		FilterContainerImpl filterContainer = new FilterContainerImpl();
 		return filterContainer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FilterComponent createFilterComponent() {
-		FilterComponentImpl filterComponent = new FilterComponentImpl();
-		return filterComponent;
 	}
 
 	/**

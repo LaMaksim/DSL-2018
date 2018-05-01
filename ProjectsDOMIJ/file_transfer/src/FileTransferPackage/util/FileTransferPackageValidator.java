@@ -142,6 +142,8 @@ public class FileTransferPackageValidator extends EObjectValidator {
 				return validateOnType((OnType)value, diagnostics, context);
 			case FileTransferPackagePackage.PARAMETRIZED_STEP:
 				return validateParametrizedStep((ParametrizedStep)value, diagnostics, context);
+			case FileTransferPackagePackage.EXECUTION:
+				return validateExecution((Execution)value, diagnostics, context);
 			case FileTransferPackagePackage.OPERATOR:
 				return validateOperator((Operator)value, diagnostics, context);
 			case FileTransferPackagePackage.FILE_TYPE:
@@ -831,6 +833,15 @@ public class FileTransferPackageValidator extends EObjectValidator {
 			return false;
 		}
 		return true;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateExecution(Execution execution, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(execution, diagnostics, context);
 	}
 
 	/**

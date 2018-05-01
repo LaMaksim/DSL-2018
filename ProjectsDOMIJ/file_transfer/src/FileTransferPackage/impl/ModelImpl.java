@@ -2,11 +2,9 @@
  */
 package FileTransferPackage.impl;
 
+import FileTransferPackage.Execution;
 import FileTransferPackage.FileTransferPackagePackage;
 import FileTransferPackage.Model;
-import FileTransferPackage.PathVariable;
-import FileTransferPackage.SelectionVariable;
-import FileTransferPackage.Transformation;
 
 import java.util.Collection;
 
@@ -29,9 +27,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link FileTransferPackage.impl.ModelImpl#getPath_variables <em>Path variables</em>}</li>
- *   <li>{@link FileTransferPackage.impl.ModelImpl#getSelection_variables <em>Selection variables</em>}</li>
- *   <li>{@link FileTransferPackage.impl.ModelImpl#getTransformations <em>Transformations</em>}</li>
+ *   <li>{@link FileTransferPackage.impl.ModelImpl#getExecutions <em>Executions</em>}</li>
  * </ul>
  * </p>
  *
@@ -39,34 +35,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	/**
-	 * The cached value of the '{@link #getPath_variables() <em>Path variables</em>}' containment reference list.
+	 * The cached value of the '{@link #getExecutions() <em>Executions</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPath_variables()
+	 * @see #getExecutions()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<PathVariable> path_variables;
-
-	/**
-	 * The cached value of the '{@link #getSelection_variables() <em>Selection variables</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSelection_variables()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<SelectionVariable> selection_variables;
-
-	/**
-	 * The cached value of the '{@link #getTransformations() <em>Transformations</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTransformations()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Transformation> transformations;
+	protected EList<Execution> executions;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,35 +68,11 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PathVariable> getPath_variables() {
-		if (path_variables == null) {
-			path_variables = new EObjectContainmentEList<PathVariable>(PathVariable.class, this, FileTransferPackagePackage.MODEL__PATH_VARIABLES);
+	public EList<Execution> getExecutions() {
+		if (executions == null) {
+			executions = new EObjectContainmentEList<Execution>(Execution.class, this, FileTransferPackagePackage.MODEL__EXECUTIONS);
 		}
-		return path_variables;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<SelectionVariable> getSelection_variables() {
-		if (selection_variables == null) {
-			selection_variables = new EObjectContainmentEList<SelectionVariable>(SelectionVariable.class, this, FileTransferPackagePackage.MODEL__SELECTION_VARIABLES);
-		}
-		return selection_variables;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Transformation> getTransformations() {
-		if (transformations == null) {
-			transformations = new EObjectContainmentEList<Transformation>(Transformation.class, this, FileTransferPackagePackage.MODEL__TRANSFORMATIONS);
-		}
-		return transformations;
+		return executions;
 	}
 
 	/**
@@ -131,12 +83,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FileTransferPackagePackage.MODEL__PATH_VARIABLES:
-				return ((InternalEList<?>)getPath_variables()).basicRemove(otherEnd, msgs);
-			case FileTransferPackagePackage.MODEL__SELECTION_VARIABLES:
-				return ((InternalEList<?>)getSelection_variables()).basicRemove(otherEnd, msgs);
-			case FileTransferPackagePackage.MODEL__TRANSFORMATIONS:
-				return ((InternalEList<?>)getTransformations()).basicRemove(otherEnd, msgs);
+			case FileTransferPackagePackage.MODEL__EXECUTIONS:
+				return ((InternalEList<?>)getExecutions()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -149,12 +97,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FileTransferPackagePackage.MODEL__PATH_VARIABLES:
-				return getPath_variables();
-			case FileTransferPackagePackage.MODEL__SELECTION_VARIABLES:
-				return getSelection_variables();
-			case FileTransferPackagePackage.MODEL__TRANSFORMATIONS:
-				return getTransformations();
+			case FileTransferPackagePackage.MODEL__EXECUTIONS:
+				return getExecutions();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -168,17 +112,9 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FileTransferPackagePackage.MODEL__PATH_VARIABLES:
-				getPath_variables().clear();
-				getPath_variables().addAll((Collection<? extends PathVariable>)newValue);
-				return;
-			case FileTransferPackagePackage.MODEL__SELECTION_VARIABLES:
-				getSelection_variables().clear();
-				getSelection_variables().addAll((Collection<? extends SelectionVariable>)newValue);
-				return;
-			case FileTransferPackagePackage.MODEL__TRANSFORMATIONS:
-				getTransformations().clear();
-				getTransformations().addAll((Collection<? extends Transformation>)newValue);
+			case FileTransferPackagePackage.MODEL__EXECUTIONS:
+				getExecutions().clear();
+				getExecutions().addAll((Collection<? extends Execution>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -192,14 +128,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FileTransferPackagePackage.MODEL__PATH_VARIABLES:
-				getPath_variables().clear();
-				return;
-			case FileTransferPackagePackage.MODEL__SELECTION_VARIABLES:
-				getSelection_variables().clear();
-				return;
-			case FileTransferPackagePackage.MODEL__TRANSFORMATIONS:
-				getTransformations().clear();
+			case FileTransferPackagePackage.MODEL__EXECUTIONS:
+				getExecutions().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -213,12 +143,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FileTransferPackagePackage.MODEL__PATH_VARIABLES:
-				return path_variables != null && !path_variables.isEmpty();
-			case FileTransferPackagePackage.MODEL__SELECTION_VARIABLES:
-				return selection_variables != null && !selection_variables.isEmpty();
-			case FileTransferPackagePackage.MODEL__TRANSFORMATIONS:
-				return transformations != null && !transformations.isEmpty();
+			case FileTransferPackagePackage.MODEL__EXECUTIONS:
+				return executions != null && !executions.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

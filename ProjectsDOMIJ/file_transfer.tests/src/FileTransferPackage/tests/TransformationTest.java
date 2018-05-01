@@ -2,12 +2,7 @@
  */
 package FileTransferPackage.tests;
 
-import FileTransferPackage.FileTransferPackageFactory;
 import FileTransferPackage.Transformation;
-
-import junit.framework.TestCase;
-
-import junit.textui.TestRunner;
 
 /**
  * <!-- begin-user-doc -->
@@ -15,24 +10,7 @@ import junit.textui.TestRunner;
  * <!-- end-user-doc -->
  * @generated
  */
-public class TransformationTest extends TestCase {
-
-	/**
-	 * The fixture for this Transformation test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Transformation fixture = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static void main(String[] args) {
-		TestRunner.run(TransformationTest.class);
-	}
+public abstract class TransformationTest extends ExecutionTest {
 
 	/**
 	 * Constructs a new Transformation test case with the given name.
@@ -45,45 +23,14 @@ public class TransformationTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Transformation test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Transformation fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Transformation test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Transformation getFixture() {
-		return fixture;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see junit.framework.TestCase#setUp()
-	 * @generated
-	 */
-	@Override
-	protected void setUp() throws Exception {
-		setFixture(FileTransferPackageFactory.eINSTANCE.createTransformation());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see junit.framework.TestCase#tearDown()
-	 * @generated
-	 */
-	@Override
-	protected void tearDown() throws Exception {
-		setFixture(null);
+		return (Transformation)fixture;
 	}
 
 } //TransformationTest

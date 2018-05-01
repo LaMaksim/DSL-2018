@@ -4,7 +4,7 @@ Bundle-Name: %pluginName
 Bundle-SymbolicName: file_transfer.editor;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
-Bundle-Activator: FileTransferPackage.presentation.Genmodel3EditorPlugin$Implementation
+Bundle-Activator: FileTransferPackage.presentation.File_transfer_metamodelEditorPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: J2SE-1.5

@@ -11,7 +11,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  *
  * @see FileTransferPackage.FileTransferPackagePackage#getFilterComponent()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface FilterComponent extends EObject {

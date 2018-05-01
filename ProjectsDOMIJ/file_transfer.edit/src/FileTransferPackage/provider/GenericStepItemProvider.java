@@ -102,7 +102,7 @@ public class GenericStepItemProvider
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
-		return Genmodel3EditPlugin.INSTANCE;
+		return File_transfer_metamodelEditPlugin.INSTANCE;
 	}
 
 }

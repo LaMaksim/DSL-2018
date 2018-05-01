@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class FilterLeafImpl extends FilterComponentImpl implements FilterLeaf {
+public abstract class FilterLeafImpl extends FilterComponentImpl implements FilterLeaf {
 	/**
 	 * The default value of the '{@link #isTrueFalseSearch() <em>True False Search</em>}' attribute.
 	 * <!-- begin-user-doc -->

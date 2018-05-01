@@ -7,6 +7,7 @@ import FileTransferPackage.ConcreteStep;
 import FileTransferPackage.Copy;
 import FileTransferPackage.Creating;
 import FileTransferPackage.Delete;
+import FileTransferPackage.Execution;
 import FileTransferPackage.FileTransferPackageFactory;
 import FileTransferPackage.FileTransferPackagePackage;
 import FileTransferPackage.FileType;
@@ -253,6 +254,13 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 	 * @generated
 	 */
 	private EClass parametrizedStepEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass executionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -828,26 +836,8 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getModel_Path_variables() {
+	public EReference getModel_Executions() {
 		return (EReference)modelEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getModel_Selection_variables() {
-		return (EReference)modelEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getModel_Transformations() {
-		return (EReference)modelEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -920,6 +910,15 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 	 */
 	public EAttribute getParametrizedStep_Name() {
 		return (EAttribute)parametrizedStepEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getExecution() {
+		return executionEClass;
 	}
 
 	/**
@@ -1085,9 +1084,7 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		createEReference(selectionVariableEClass, SELECTION_VARIABLE__VALUE);
 
 		modelEClass = createEClass(MODEL);
-		createEReference(modelEClass, MODEL__PATH_VARIABLES);
-		createEReference(modelEClass, MODEL__SELECTION_VARIABLES);
-		createEReference(modelEClass, MODEL__TRANSFORMATIONS);
+		createEReference(modelEClass, MODEL__EXECUTIONS);
 
 		genericStepEClass = createEClass(GENERIC_STEP);
 
@@ -1101,6 +1098,8 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 
 		parametrizedStepEClass = createEClass(PARAMETRIZED_STEP);
 		createEAttribute(parametrizedStepEClass, PARAMETRIZED_STEP__NAME);
+
+		executionEClass = createEClass(EXECUTION);
 
 		// Create enums
 		operatorEEnum = createEEnum(OPERATOR);
@@ -1140,11 +1139,13 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		transformationEClass.getESuperTypes().add(this.getExecution());
 		creatingEClass.getESuperTypes().add(this.getTransformation());
 		copyEClass.getESuperTypes().add(this.getCreating());
 		moveEClass.getESuperTypes().add(this.getCreating());
 		deleteEClass.getESuperTypes().add(this.getTransformation());
 		concreteStepEClass.getESuperTypes().add(this.getGenericStep());
+		pathVariableEClass.getESuperTypes().add(this.getExecution());
 		filterLeafEClass.getESuperTypes().add(this.getFilterComponent());
 		onNameEClass.getESuperTypes().add(this.getOnBasic());
 		onExtensionEClass.getESuperTypes().add(this.getOnBasic());
@@ -1156,6 +1157,7 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		onBasicEClass.getESuperTypes().add(this.getFilterLeaf());
 		onCustomEClass.getESuperTypes().add(this.getFilterLeaf());
 		filterContainerEClass.getESuperTypes().add(this.getFilterComponent());
+		selectionVariableEClass.getESuperTypes().add(this.getExecution());
 		variableStepEClass.getESuperTypes().add(this.getGenericStep());
 		isEmptyEClass.getESuperTypes().add(this.getOnBasic());
 		onTypeEClass.getESuperTypes().add(this.getOnBasic());
@@ -1170,10 +1172,10 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		initEReference(getSelection_Where(), this.getFilterComponent(), null, "where", null, 0, -1, Selection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSelection_From(), this.getPath(), null, "from", null, 1, 1, Selection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(transformationEClass, Transformation.class, "Transformation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(transformationEClass, Transformation.class, "Transformation", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTransformation_Source(), this.getSelectionVariable(), null, "source", null, 1, 1, Transformation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(creatingEClass, Creating.class, "Creating", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(creatingEClass, Creating.class, "Creating", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCreating_Destination(), this.getPath(), null, "destination", null, 1, 1, Creating.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCreating_Strategy(), this.getStrategies(), "strategy", null, 0, 1, Creating.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1190,7 +1192,7 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		initEReference(getPathVariable_Value(), this.getPath(), null, "value", null, 1, 1, PathVariable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPathVariable_Name(), ecorePackage.getEString(), "name", null, 1, 1, PathVariable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(filterLeafEClass, FilterLeaf.class, "FilterLeaf", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(filterLeafEClass, FilterLeaf.class, "FilterLeaf", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getFilterLeaf_TrueFalseSearch(), ecorePackage.getEBoolean(), "trueFalseSearch", "true", 0, 1, FilterLeaf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(onNameEClass, OnName.class, "OnName", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1199,7 +1201,7 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		initEClass(onExtensionEClass, OnExtension.class, "OnExtension", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getOnExtension_Extensions(), ecorePackage.getEString(), "extensions", null, 0, -1, OnExtension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(onMeasureEClass, OnMeasure.class, "OnMeasure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(onMeasureEClass, OnMeasure.class, "OnMeasure", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getOnMeasure_Operator(), this.getOperator(), "operator", null, 1, 1, OnMeasure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOnMeasure_Treshold(), ecorePackage.getEInt(), "treshold", null, 1, 1, OnMeasure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1219,24 +1221,22 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		initEClass(onSizeEClass, OnSize.class, "OnSize", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getOnSize_Unit(), this.getMemoryUnit(), "unit", null, 1, 1, OnSize.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(onBasicEClass, OnBasic.class, "OnBasic", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(onBasicEClass, OnBasic.class, "OnBasic", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(onCustomEClass, OnCustom.class, "OnCustom", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(onCustomEClass, OnCustom.class, "OnCustom", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(filterContainerEClass, FilterContainer.class, "FilterContainer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFilterContainer_Segments(), this.getFilterComponent(), null, "segments", null, 2, -1, FilterContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFilterContainer_CompositionType(), this.getCompositionType(), "compositionType", null, 0, 1, FilterContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(filterComponentEClass, FilterComponent.class, "FilterComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(filterComponentEClass, FilterComponent.class, "FilterComponent", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(selectionVariableEClass, SelectionVariable.class, "SelectionVariable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSelectionVariable_Name(), ecorePackage.getEString(), "name", null, 1, 1, SelectionVariable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSelectionVariable_Value(), this.getSelection(), null, "value", null, 1, 1, SelectionVariable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getModel_Path_variables(), this.getPathVariable(), null, "path_variables", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getModel_Selection_variables(), this.getSelectionVariable(), null, "selection_variables", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getModel_Transformations(), this.getTransformation(), null, "transformations", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getModel_Executions(), this.getExecution(), null, "executions", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(genericStepEClass, GenericStep.class, "GenericStep", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1250,6 +1250,8 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 
 		initEClass(parametrizedStepEClass, ParametrizedStep.class, "ParametrizedStep", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getParametrizedStep_Name(), ecorePackage.getEString(), "name", null, 1, 1, ParametrizedStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(executionEClass, Execution.class, "Execution", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Initialize enums and add enum literals
 		initEEnum(operatorEEnum, Operator.class, "Operator");

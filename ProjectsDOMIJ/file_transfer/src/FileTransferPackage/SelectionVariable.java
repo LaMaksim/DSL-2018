@@ -2,7 +2,6 @@
  */
 package FileTransferPackage;
 
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,7 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot selectionVariableRegularName='\n\t\t\tname.matches(\'[a-zA-Z][a-zA-Z0-9]*\')' selectionVariableRegularName$message='\'Must use regular name, starting with letter followed by letters and numbers only\''"
  * @generated
  */
-public interface SelectionVariable extends EObject {
+public interface SelectionVariable extends Execution {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

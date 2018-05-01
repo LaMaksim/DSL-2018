@@ -17,7 +17,7 @@ package FileTransferPackage;
  * </p>
  *
  * @see FileTransferPackage.FileTransferPackagePackage#getCreating()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface Creating extends Transformation {

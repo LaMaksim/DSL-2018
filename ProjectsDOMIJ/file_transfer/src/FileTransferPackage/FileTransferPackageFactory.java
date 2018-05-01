@@ -40,24 +40,6 @@ public interface FileTransferPackageFactory extends EFactory {
 	Selection createSelection();
 
 	/**
-	 * Returns a new object of class '<em>Transformation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Transformation</em>'.
-	 * @generated
-	 */
-	Transformation createTransformation();
-
-	/**
-	 * Returns a new object of class '<em>Creating</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Creating</em>'.
-	 * @generated
-	 */
-	Creating createCreating();
-
-	/**
 	 * Returns a new object of class '<em>Copy</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -103,15 +85,6 @@ public interface FileTransferPackageFactory extends EFactory {
 	PathVariable createPathVariable();
 
 	/**
-	 * Returns a new object of class '<em>Filter Leaf</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Filter Leaf</em>'.
-	 * @generated
-	 */
-	FilterLeaf createFilterLeaf();
-
-	/**
 	 * Returns a new object of class '<em>On Name</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -128,15 +101,6 @@ public interface FileTransferPackageFactory extends EFactory {
 	 * @generated
 	 */
 	OnExtension createOnExtension();
-
-	/**
-	 * Returns a new object of class '<em>On Measure</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>On Measure</em>'.
-	 * @generated
-	 */
-	OnMeasure createOnMeasure();
 
 	/**
 	 * Returns a new object of class '<em>On Time</em>'.
@@ -175,24 +139,6 @@ public interface FileTransferPackageFactory extends EFactory {
 	OnSize createOnSize();
 
 	/**
-	 * Returns a new object of class '<em>On Basic</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>On Basic</em>'.
-	 * @generated
-	 */
-	OnBasic createOnBasic();
-
-	/**
-	 * Returns a new object of class '<em>On Custom</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>On Custom</em>'.
-	 * @generated
-	 */
-	OnCustom createOnCustom();
-
-	/**
 	 * Returns a new object of class '<em>Filter Container</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -200,15 +146,6 @@ public interface FileTransferPackageFactory extends EFactory {
 	 * @generated
 	 */
 	FilterContainer createFilterContainer();
-
-	/**
-	 * Returns a new object of class '<em>Filter Component</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Filter Component</em>'.
-	 * @generated
-	 */
-	FilterComponent createFilterComponent();
 
 	/**
 	 * Returns a new object of class '<em>Selection Variable</em>'.

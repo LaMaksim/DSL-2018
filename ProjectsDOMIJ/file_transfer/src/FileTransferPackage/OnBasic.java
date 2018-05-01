@@ -10,7 +10,7 @@ package FileTransferPackage;
  *
  *
  * @see FileTransferPackage.FileTransferPackagePackage#getOnBasic()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface OnBasic extends FilterLeaf {

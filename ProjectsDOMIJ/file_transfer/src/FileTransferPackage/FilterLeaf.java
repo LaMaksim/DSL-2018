@@ -16,7 +16,7 @@ package FileTransferPackage;
  * </p>
  *
  * @see FileTransferPackage.FileTransferPackagePackage#getFilterLeaf()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface FilterLeaf extends FilterComponent {

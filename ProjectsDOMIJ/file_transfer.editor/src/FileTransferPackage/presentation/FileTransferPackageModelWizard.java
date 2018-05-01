@@ -71,7 +71,7 @@ import org.eclipse.ui.part.ISetSelectionTarget;
 
 import FileTransferPackage.FileTransferPackageFactory;
 import FileTransferPackage.FileTransferPackagePackage;
-import FileTransferPackage.provider.Genmodel3EditPlugin;
+import FileTransferPackage.provider.File_transfer_metamodelEditPlugin;
 
 
 import org.eclipse.core.runtime.Path;
@@ -99,7 +99,7 @@ public class FileTransferPackageModelWizard extends Wizard implements INewWizard
 	 * @generated
 	 */
 	public static final List<String> FILE_EXTENSIONS =
-		Collections.unmodifiableList(Arrays.asList(Genmodel3EditorPlugin.INSTANCE.getString("_UI_FileTransferPackageEditorFilenameExtensions").split("\\s*,\\s*")));
+		Collections.unmodifiableList(Arrays.asList(File_transfer_metamodelEditorPlugin.INSTANCE.getString("_UI_FileTransferPackageEditorFilenameExtensions").split("\\s*,\\s*")));
 
 	/**
 	 * A formatted list of supported file extensions, suitable for display.
@@ -108,7 +108,7 @@ public class FileTransferPackageModelWizard extends Wizard implements INewWizard
 	 * @generated
 	 */
 	public static final String FORMATTED_FILE_EXTENSIONS =
-		Genmodel3EditorPlugin.INSTANCE.getString("_UI_FileTransferPackageEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
+		File_transfer_metamodelEditorPlugin.INSTANCE.getString("_UI_FileTransferPackageEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
 
 	/**
 	 * This caches an instance of the model package.
@@ -175,8 +175,8 @@ public class FileTransferPackageModelWizard extends Wizard implements INewWizard
 	public void init(IWorkbench workbench, IStructuredSelection selection) {
 		this.workbench = workbench;
 		this.selection = selection;
-		setWindowTitle(Genmodel3EditorPlugin.INSTANCE.getString("_UI_Wizard_label"));
-		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(Genmodel3EditorPlugin.INSTANCE.getImage("full/wizban/NewFileTransferPackage")));
+		setWindowTitle(File_transfer_metamodelEditorPlugin.INSTANCE.getString("_UI_Wizard_label"));
+		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(File_transfer_metamodelEditorPlugin.INSTANCE.getImage("full/wizban/NewFileTransferPackage")));
 	}
 
 	/**
@@ -259,7 +259,7 @@ public class FileTransferPackageModelWizard extends Wizard implements INewWizard
 							resource.save(options);
 						}
 						catch (Exception exception) {
-							Genmodel3EditorPlugin.INSTANCE.log(exception);
+							File_transfer_metamodelEditorPlugin.INSTANCE.log(exception);
 						}
 						finally {
 							progressMonitor.done();
@@ -292,14 +292,14 @@ public class FileTransferPackageModelWizard extends Wizard implements INewWizard
 					 workbench.getEditorRegistry().getDefaultEditor(modelFile.getFullPath().toString()).getId());					 	 
 			}
 			catch (PartInitException exception) {
-				MessageDialog.openError(workbenchWindow.getShell(), Genmodel3EditorPlugin.INSTANCE.getString("_UI_OpenEditorError_label"), exception.getMessage());
+				MessageDialog.openError(workbenchWindow.getShell(), File_transfer_metamodelEditorPlugin.INSTANCE.getString("_UI_OpenEditorError_label"), exception.getMessage());
 				return false;
 			}
 
 			return true;
 		}
 		catch (Exception exception) {
-			Genmodel3EditorPlugin.INSTANCE.log(exception);
+			File_transfer_metamodelEditorPlugin.INSTANCE.log(exception);
 			return false;
 		}
 	}
@@ -333,7 +333,7 @@ public class FileTransferPackageModelWizard extends Wizard implements INewWizard
 				String extension = new Path(getFileName()).getFileExtension();
 				if (extension == null || !FILE_EXTENSIONS.contains(extension)) {
 					String key = FILE_EXTENSIONS.size() > 1 ? "_WARN_FilenameExtensions" : "_WARN_FilenameExtension";
-					setErrorMessage(Genmodel3EditorPlugin.INSTANCE.getString(key, new Object [] { FORMATTED_FILE_EXTENSIONS }));
+					setErrorMessage(File_transfer_metamodelEditorPlugin.INSTANCE.getString(key, new Object [] { FORMATTED_FILE_EXTENSIONS }));
 					return false;
 				}
 				return true;
@@ -411,7 +411,7 @@ public class FileTransferPackageModelWizard extends Wizard implements INewWizard
 
 			Label containerLabel = new Label(composite, SWT.LEFT);
 			{
-				containerLabel.setText(Genmodel3EditorPlugin.INSTANCE.getString("_UI_ModelObject"));
+				containerLabel.setText(File_transfer_metamodelEditorPlugin.INSTANCE.getString("_UI_ModelObject"));
 
 				GridData data = new GridData();
 				data.horizontalAlignment = GridData.FILL;
@@ -437,7 +437,7 @@ public class FileTransferPackageModelWizard extends Wizard implements INewWizard
 
 			Label encodingLabel = new Label(composite, SWT.LEFT);
 			{
-				encodingLabel.setText(Genmodel3EditorPlugin.INSTANCE.getString("_UI_XMLEncoding"));
+				encodingLabel.setText(File_transfer_metamodelEditorPlugin.INSTANCE.getString("_UI_XMLEncoding"));
 
 				GridData data = new GridData();
 				data.horizontalAlignment = GridData.FILL;
@@ -536,10 +536,10 @@ public class FileTransferPackageModelWizard extends Wizard implements INewWizard
 		 */
 		protected String getLabel(String typeName) {
 			try {
-				return Genmodel3EditPlugin.INSTANCE.getString("_UI_" + typeName + "_type");
+				return File_transfer_metamodelEditPlugin.INSTANCE.getString("_UI_" + typeName + "_type");
 			}
 			catch(MissingResourceException mre) {
-				Genmodel3EditorPlugin.INSTANCE.log(mre);
+				File_transfer_metamodelEditorPlugin.INSTANCE.log(mre);
 			}
 			return typeName;
 		}
@@ -552,7 +552,7 @@ public class FileTransferPackageModelWizard extends Wizard implements INewWizard
 		protected Collection<String> getEncodings() {
 			if (encodings == null) {
 				encodings = new ArrayList<String>();
-				for (StringTokenizer stringTokenizer = new StringTokenizer(Genmodel3EditorPlugin.INSTANCE.getString("_UI_XMLEncodingChoices")); stringTokenizer.hasMoreTokens(); ) {
+				for (StringTokenizer stringTokenizer = new StringTokenizer(File_transfer_metamodelEditorPlugin.INSTANCE.getString("_UI_XMLEncodingChoices")); stringTokenizer.hasMoreTokens(); ) {
 					encodings.add(stringTokenizer.nextToken());
 				}
 			}
@@ -571,9 +571,9 @@ public class FileTransferPackageModelWizard extends Wizard implements INewWizard
 		// Create a page, set the title, and the initial model file name.
 		//
 		newFileCreationPage = new FileTransferPackageModelWizardNewFileCreationPage("Whatever", selection);
-		newFileCreationPage.setTitle(Genmodel3EditorPlugin.INSTANCE.getString("_UI_FileTransferPackageModelWizard_label"));
-		newFileCreationPage.setDescription(Genmodel3EditorPlugin.INSTANCE.getString("_UI_FileTransferPackageModelWizard_description"));
-		newFileCreationPage.setFileName(Genmodel3EditorPlugin.INSTANCE.getString("_UI_FileTransferPackageEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
+		newFileCreationPage.setTitle(File_transfer_metamodelEditorPlugin.INSTANCE.getString("_UI_FileTransferPackageModelWizard_label"));
+		newFileCreationPage.setDescription(File_transfer_metamodelEditorPlugin.INSTANCE.getString("_UI_FileTransferPackageModelWizard_description"));
+		newFileCreationPage.setFileName(File_transfer_metamodelEditorPlugin.INSTANCE.getString("_UI_FileTransferPackageEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
 		addPage(newFileCreationPage);
 
 		// Try and get the resource selection to determine a current directory for the file dialog.
@@ -599,7 +599,7 @@ public class FileTransferPackageModelWizard extends Wizard implements INewWizard
 
 					// Make up a unique new name here.
 					//
-					String defaultModelBaseFilename = Genmodel3EditorPlugin.INSTANCE.getString("_UI_FileTransferPackageEditorFilenameDefaultBase");
+					String defaultModelBaseFilename = File_transfer_metamodelEditorPlugin.INSTANCE.getString("_UI_FileTransferPackageEditorFilenameDefaultBase");
 					String defaultModelFilenameExtension = FILE_EXTENSIONS.get(0);
 					String modelFilename = defaultModelBaseFilename + "." + defaultModelFilenameExtension;
 					for (int i = 1; ((IContainer)selectedResource).findMember(modelFilename) != null; ++i) {
@@ -610,8 +610,8 @@ public class FileTransferPackageModelWizard extends Wizard implements INewWizard
 			}
 		}
 		initialObjectCreationPage = new FileTransferPackageModelWizardInitialObjectCreationPage("Whatever2");
-		initialObjectCreationPage.setTitle(Genmodel3EditorPlugin.INSTANCE.getString("_UI_FileTransferPackageModelWizard_label"));
-		initialObjectCreationPage.setDescription(Genmodel3EditorPlugin.INSTANCE.getString("_UI_Wizard_initial_object_description"));
+		initialObjectCreationPage.setTitle(File_transfer_metamodelEditorPlugin.INSTANCE.getString("_UI_FileTransferPackageModelWizard_label"));
+		initialObjectCreationPage.setDescription(File_transfer_metamodelEditorPlugin.INSTANCE.getString("_UI_Wizard_initial_object_description"));
 		addPage(initialObjectCreationPage);
 	}
 
