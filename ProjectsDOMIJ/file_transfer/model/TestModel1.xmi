@@ -90,7 +90,6 @@
           value="Books/IT"/>
       <steps
           xsi:type="maksim:ConcreteStep"
-          parametrized="true"
           value="lang"/>
       <steps
           xsi:type="maksim:ConcreteStep"
@@ -110,7 +109,6 @@
           value="Books/IT"/>
       <steps
           xsi:type="maksim:ConcreteStep"
-          parametrized="true"
           value="lang"/>
       <steps
           xsi:type="maksim:ConcreteStep"
