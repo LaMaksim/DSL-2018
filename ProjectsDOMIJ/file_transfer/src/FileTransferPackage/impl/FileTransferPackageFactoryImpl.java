@@ -76,6 +76,7 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 			case FileTransferPackagePackage.IS_EMPTY: return createIsEmpty();
 			case FileTransferPackagePackage.ON_TYPE: return createOnType();
 			case FileTransferPackagePackage.PARAMETRIZED_STEP: return createParametrizedStep();
+			case FileTransferPackagePackage.LINK: return createLink();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -327,6 +328,16 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 	public ParametrizedStep createParametrizedStep() {
 		ParametrizedStepImpl parametrizedStep = new ParametrizedStepImpl();
 		return parametrizedStep;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Link createLink() {
+		LinkImpl link = new LinkImpl();
+		return link;
 	}
 
 	/**

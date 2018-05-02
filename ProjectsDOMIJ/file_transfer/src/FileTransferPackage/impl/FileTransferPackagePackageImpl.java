@@ -16,6 +16,7 @@ import FileTransferPackage.FilterContainer;
 import FileTransferPackage.FilterLeaf;
 import FileTransferPackage.GenericStep;
 import FileTransferPackage.IsEmpty;
+import FileTransferPackage.Link;
 import FileTransferPackage.MemoryUnit;
 import FileTransferPackage.Model;
 import FileTransferPackage.Move;
@@ -254,6 +255,13 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 	 * @generated
 	 */
 	private EClass executionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass linkEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -782,17 +790,8 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFilterContainer_Segments() {
+	public EReference getFilterContainer_Links() {
 		return (EReference)filterContainerEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getFilterContainer_CompositionType() {
-		return (EAttribute)filterContainerEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -901,6 +900,33 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 	 */
 	public EClass getExecution() {
 		return executionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getLink() {
+		return linkEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getLink_CompositonType() {
+		return (EAttribute)linkEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getLink_Element() {
+		return (EReference)linkEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1066,8 +1092,7 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		onCustomEClass = createEClass(ON_CUSTOM);
 
 		filterContainerEClass = createEClass(FILTER_CONTAINER);
-		createEReference(filterContainerEClass, FILTER_CONTAINER__SEGMENTS);
-		createEAttribute(filterContainerEClass, FILTER_CONTAINER__COMPOSITION_TYPE);
+		createEReference(filterContainerEClass, FILTER_CONTAINER__LINKS);
 
 		filterComponentEClass = createEClass(FILTER_COMPONENT);
 
@@ -1088,6 +1113,10 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		createEAttribute(parametrizedStepEClass, PARAMETRIZED_STEP__NAME);
 
 		executionEClass = createEClass(EXECUTION);
+
+		linkEClass = createEClass(LINK);
+		createEAttribute(linkEClass, LINK__COMPOSITON_TYPE);
+		createEReference(linkEClass, LINK__ELEMENT);
 
 		// Create enums
 		operatorEEnum = createEEnum(OPERATOR);
@@ -1216,8 +1245,7 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		initEClass(onCustomEClass, OnCustom.class, "OnCustom", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(filterContainerEClass, FilterContainer.class, "FilterContainer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getFilterContainer_Segments(), this.getFilterComponent(), null, "segments", null, 2, -1, FilterContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getFilterContainer_CompositionType(), this.getCompositionType(), "compositionType", null, 0, 1, FilterContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFilterContainer_Links(), this.getLink(), null, "links", null, 2, -1, FilterContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(filterComponentEClass, FilterComponent.class, "FilterComponent", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1238,6 +1266,10 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		initEAttribute(getParametrizedStep_Name(), ecorePackage.getEString(), "name", null, 1, 1, ParametrizedStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(executionEClass, Execution.class, "Execution", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(linkEClass, Link.class, "Link", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getLink_CompositonType(), this.getCompositionType(), "compositonType", "and", 0, 1, Link.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getLink_Element(), this.getFilterComponent(), null, "element", null, 1, 1, Link.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(operatorEEnum, Operator.class, "Operator");

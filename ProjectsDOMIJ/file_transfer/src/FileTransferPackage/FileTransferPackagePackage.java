@@ -1089,22 +1089,13 @@ public interface FileTransferPackagePackage extends EPackage {
 	int FILTER_CONTAINER = 19;
 
 	/**
-	 * The feature id for the '<em><b>Segments</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Links</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FILTER_CONTAINER__SEGMENTS = FILTER_COMPONENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Composition Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FILTER_CONTAINER__COMPOSITION_TYPE = FILTER_COMPONENT_FEATURE_COUNT + 1;
+	int FILTER_CONTAINER__LINKS = FILTER_COMPONENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Filter Container</em>' class.
@@ -1113,7 +1104,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FILTER_CONTAINER_FEATURE_COUNT = FILTER_COMPONENT_FEATURE_COUNT + 2;
+	int FILTER_CONTAINER_FEATURE_COUNT = FILTER_COMPONENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Filter Container</em>' class.
@@ -1319,6 +1310,52 @@ public interface FileTransferPackagePackage extends EPackage {
 	int PARAMETRIZED_STEP_OPERATION_COUNT = GENERIC_STEP_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link FileTransferPackage.impl.LinkImpl <em>Link</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see FileTransferPackage.impl.LinkImpl
+	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getLink()
+	 * @generated
+	 */
+	int LINK = 28;
+
+	/**
+	 * The feature id for the '<em><b>Compositon Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINK__COMPOSITON_TYPE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Element</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINK__ELEMENT = 1;
+
+	/**
+	 * The number of structural features of the '<em>Link</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINK_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Link</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINK_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link FileTransferPackage.Operator <em>Operator</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1326,7 +1363,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getOperator()
 	 * @generated
 	 */
-	int OPERATOR = 28;
+	int OPERATOR = 29;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.FileType <em>File Type</em>}' enum.
@@ -1336,7 +1373,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getFileType()
 	 * @generated
 	 */
-	int FILE_TYPE = 29;
+	int FILE_TYPE = 30;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.TimeType <em>Time Type</em>}' enum.
@@ -1346,7 +1383,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getTimeType()
 	 * @generated
 	 */
-	int TIME_TYPE = 30;
+	int TIME_TYPE = 31;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.MemoryUnit <em>Memory Unit</em>}' enum.
@@ -1356,7 +1393,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getMemoryUnit()
 	 * @generated
 	 */
-	int MEMORY_UNIT = 31;
+	int MEMORY_UNIT = 32;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.TimeUnit <em>Time Unit</em>}' enum.
@@ -1366,7 +1403,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getTimeUnit()
 	 * @generated
 	 */
-	int TIME_UNIT = 32;
+	int TIME_UNIT = 33;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.Strategies <em>Strategies</em>}' enum.
@@ -1376,7 +1413,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getStrategies()
 	 * @generated
 	 */
-	int STRATEGIES = 33;
+	int STRATEGIES = 34;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.CompositionType <em>Composition Type</em>}' enum.
@@ -1386,7 +1423,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getCompositionType()
 	 * @generated
 	 */
-	int COMPOSITION_TYPE = 34;
+	int COMPOSITION_TYPE = 35;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.Quantificators <em>Quantificators</em>}' enum.
@@ -1396,7 +1433,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getQuantificators()
 	 * @generated
 	 */
-	int QUANTIFICATORS = 35;
+	int QUANTIFICATORS = 36;
 
 
 	/**
@@ -1864,26 +1901,15 @@ public interface FileTransferPackagePackage extends EPackage {
 	EClass getFilterContainer();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link FileTransferPackage.FilterContainer#getSegments <em>Segments</em>}'.
+	 * Returns the meta object for the containment reference list '{@link FileTransferPackage.FilterContainer#getLinks <em>Links</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Segments</em>'.
-	 * @see FileTransferPackage.FilterContainer#getSegments()
+	 * @return the meta object for the containment reference list '<em>Links</em>'.
+	 * @see FileTransferPackage.FilterContainer#getLinks()
 	 * @see #getFilterContainer()
 	 * @generated
 	 */
-	EReference getFilterContainer_Segments();
-
-	/**
-	 * Returns the meta object for the attribute '{@link FileTransferPackage.FilterContainer#getCompositionType <em>Composition Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Composition Type</em>'.
-	 * @see FileTransferPackage.FilterContainer#getCompositionType()
-	 * @see #getFilterContainer()
-	 * @generated
-	 */
-	EAttribute getFilterContainer_CompositionType();
+	EReference getFilterContainer_Links();
 
 	/**
 	 * Returns the meta object for class '{@link FileTransferPackage.FilterComponent <em>Filter Component</em>}'.
@@ -2008,6 +2034,38 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getExecution();
+
+	/**
+	 * Returns the meta object for class '{@link FileTransferPackage.Link <em>Link</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Link</em>'.
+	 * @see FileTransferPackage.Link
+	 * @generated
+	 */
+	EClass getLink();
+
+	/**
+	 * Returns the meta object for the attribute '{@link FileTransferPackage.Link#getCompositonType <em>Compositon Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Compositon Type</em>'.
+	 * @see FileTransferPackage.Link#getCompositonType()
+	 * @see #getLink()
+	 * @generated
+	 */
+	EAttribute getLink_CompositonType();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link FileTransferPackage.Link#getElement <em>Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Element</em>'.
+	 * @see FileTransferPackage.Link#getElement()
+	 * @see #getLink()
+	 * @generated
+	 */
+	EReference getLink_Element();
 
 	/**
 	 * Returns the meta object for enum '{@link FileTransferPackage.Operator <em>Operator</em>}'.
@@ -2505,20 +2563,12 @@ public interface FileTransferPackagePackage extends EPackage {
 		EClass FILTER_CONTAINER = eINSTANCE.getFilterContainer();
 
 		/**
-		 * The meta object literal for the '<em><b>Segments</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Links</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FILTER_CONTAINER__SEGMENTS = eINSTANCE.getFilterContainer_Segments();
-
-		/**
-		 * The meta object literal for the '<em><b>Composition Type</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute FILTER_CONTAINER__COMPOSITION_TYPE = eINSTANCE.getFilterContainer_CompositionType();
+		EReference FILTER_CONTAINER__LINKS = eINSTANCE.getFilterContainer_Links();
 
 		/**
 		 * The meta object literal for the '{@link FileTransferPackage.impl.FilterComponentImpl <em>Filter Component</em>}' class.
@@ -2631,6 +2681,32 @@ public interface FileTransferPackagePackage extends EPackage {
 		 * @generated
 		 */
 		EClass EXECUTION = eINSTANCE.getExecution();
+
+		/**
+		 * The meta object literal for the '{@link FileTransferPackage.impl.LinkImpl <em>Link</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see FileTransferPackage.impl.LinkImpl
+		 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getLink()
+		 * @generated
+		 */
+		EClass LINK = eINSTANCE.getLink();
+
+		/**
+		 * The meta object literal for the '<em><b>Compositon Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LINK__COMPOSITON_TYPE = eINSTANCE.getLink_CompositonType();
+
+		/**
+		 * The meta object literal for the '<em><b>Element</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LINK__ELEMENT = eINSTANCE.getLink_Element();
 
 		/**
 		 * The meta object literal for the '{@link FileTransferPackage.Operator <em>Operator</em>}' enum.

@@ -12,8 +12,7 @@ import org.eclipse.emf.common.util.EList;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link FileTransferPackage.FilterContainer#getSegments <em>Segments</em>}</li>
- *   <li>{@link FileTransferPackage.FilterContainer#getCompositionType <em>Composition Type</em>}</li>
+ *   <li>{@link FileTransferPackage.FilterContainer#getLinks <em>Links</em>}</li>
  * </ul>
  * </p>
  *
@@ -23,48 +22,19 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface FilterContainer extends FilterComponent {
 	/**
-	 * Returns the value of the '<em><b>Segments</b></em>' containment reference list.
-	 * The list contents are of type {@link FileTransferPackage.FilterComponent}.
+	 * Returns the value of the '<em><b>Links</b></em>' containment reference list.
+	 * The list contents are of type {@link FileTransferPackage.Link}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Segments</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Links</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Segments</em>' containment reference list.
-	 * @see FileTransferPackage.FileTransferPackagePackage#getFilterContainer_Segments()
+	 * @return the value of the '<em>Links</em>' containment reference list.
+	 * @see FileTransferPackage.FileTransferPackagePackage#getFilterContainer_Links()
 	 * @model containment="true" lower="2"
 	 * @generated
 	 */
-	EList<FilterComponent> getSegments();
-
-	/**
-	 * Returns the value of the '<em><b>Composition Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link FileTransferPackage.CompositionType}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Composition Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Composition Type</em>' attribute.
-	 * @see FileTransferPackage.CompositionType
-	 * @see #setCompositionType(CompositionType)
-	 * @see FileTransferPackage.FileTransferPackagePackage#getFilterContainer_CompositionType()
-	 * @model unique="false"
-	 * @generated
-	 */
-	CompositionType getCompositionType();
-
-	/**
-	 * Sets the value of the '{@link FileTransferPackage.FilterContainer#getCompositionType <em>Composition Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Composition Type</em>' attribute.
-	 * @see FileTransferPackage.CompositionType
-	 * @see #getCompositionType()
-	 * @generated
-	 */
-	void setCompositionType(CompositionType value);
+	EList<Link> getLinks();
 
 } // FilterContainer

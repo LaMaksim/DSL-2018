@@ -106,8 +106,7 @@
     <genClasses image="false" ecoreClass="file_transfer_metamodel.ecore#//OnBasic"/>
     <genClasses image="false" ecoreClass="file_transfer_metamodel.ecore#//OnCustom"/>
     <genClasses ecoreClass="file_transfer_metamodel.ecore#//FilterContainer">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference file_transfer_metamodel.ecore#//FilterContainer/segments"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//FilterContainer/compositionType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference file_transfer_metamodel.ecore#//FilterContainer/links"/>
     </genClasses>
     <genClasses image="false" ecoreClass="file_transfer_metamodel.ecore#//FilterComponent"/>
     <genClasses ecoreClass="file_transfer_metamodel.ecore#//Model">
@@ -125,5 +124,9 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//ParametrizedStep/name"/>
     </genClasses>
     <genClasses image="false" ecoreClass="file_transfer_metamodel.ecore#//Execution"/>
+    <genClasses ecoreClass="file_transfer_metamodel.ecore#//Link">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//Link/compositonType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference file_transfer_metamodel.ecore#//Link/element"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>
