@@ -196,7 +196,7 @@ public abstract class AbstractFETLSemanticSequencer extends AbstractDelegatingSe
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_0(), semanticObject.getValue());
+		feeder.accept(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_0_0(), semanticObject.getValue());
 		feeder.finish();
 	}
 	

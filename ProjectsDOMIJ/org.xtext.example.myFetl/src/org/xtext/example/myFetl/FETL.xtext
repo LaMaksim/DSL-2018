@@ -26,8 +26,10 @@ Path returns Path:
 GenericStep returns GenericStep:
 	ConcreteStep | VariableStep | ParametrizedStep;
 
+
+
 ConcreteStep returns ConcreteStep:
-	value=EString
+	value=EString (':')?
 	;
 
 VariableStep returns VariableStep:

@@ -57,6 +57,7 @@ public class FETLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getPathVariableAccess().getGroup(), "rule__PathVariable__Group__0");
 					put(grammarAccess.getPathAccess().getGroup(), "rule__Path__Group__0");
 					put(grammarAccess.getPathAccess().getGroup_1(), "rule__Path__Group_1__0");
+					put(grammarAccess.getConcreteStepAccess().getGroup(), "rule__ConcreteStep__Group__0");
 					put(grammarAccess.getVariableStepAccess().getGroup(), "rule__VariableStep__Group__0");
 					put(grammarAccess.getParametrizedStepAccess().getGroup(), "rule__ParametrizedStep__Group__0");
 					put(grammarAccess.getSelectionAccess().getGroup(), "rule__Selection__Group__0");
@@ -91,7 +92,7 @@ public class FETLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getPathVariableAccess().getValueAssignment_2(), "rule__PathVariable__ValueAssignment_2");
 					put(grammarAccess.getPathAccess().getStepsAssignment_0(), "rule__Path__StepsAssignment_0");
 					put(grammarAccess.getPathAccess().getStepsAssignment_1_1(), "rule__Path__StepsAssignment_1_1");
-					put(grammarAccess.getConcreteStepAccess().getValueAssignment(), "rule__ConcreteStep__ValueAssignment");
+					put(grammarAccess.getConcreteStepAccess().getValueAssignment_0(), "rule__ConcreteStep__ValueAssignment_0");
 					put(grammarAccess.getVariableStepAccess().getValueAssignment_1(), "rule__VariableStep__ValueAssignment_1");
 					put(grammarAccess.getParametrizedStepAccess().getNameAssignment_2(), "rule__ParametrizedStep__NameAssignment_2");
 					put(grammarAccess.getSelectionAccess().getNameAssignment_1(), "rule__Selection__NameAssignment_1");

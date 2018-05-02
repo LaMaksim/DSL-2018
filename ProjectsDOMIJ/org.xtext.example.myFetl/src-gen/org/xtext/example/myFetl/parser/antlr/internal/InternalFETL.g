@@ -387,10 +387,10 @@ ruleConcreteStep returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-(
+((
 (
 		{ 
-	        newCompositeNode(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_0()); 
+	        newCompositeNode(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_0_0()); 
 	    }
 		lv_value_0_0=ruleEString		{
 	        if ($current==null) {
@@ -405,7 +405,11 @@ ruleConcreteStep returns [EObject current=null]
 	    }
 
 )
-)
+)(	otherlv_1=':' 
+    {
+    	newLeafNode(otherlv_1, grammarAccess.getConcreteStepAccess().getColonKeyword_1());
+    }
+)?)
 ;
 
 

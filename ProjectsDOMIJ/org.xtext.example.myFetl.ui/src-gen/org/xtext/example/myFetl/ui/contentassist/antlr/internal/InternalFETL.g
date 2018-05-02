@@ -212,9 +212,9 @@ ruleConcreteStep
     }
 	:
 (
-{ before(grammarAccess.getConcreteStepAccess().getValueAssignment()); }
-(rule__ConcreteStep__ValueAssignment)
-{ after(grammarAccess.getConcreteStepAccess().getValueAssignment()); }
+{ before(grammarAccess.getConcreteStepAccess().getGroup()); }
+(rule__ConcreteStep__Group__0)
+{ after(grammarAccess.getConcreteStepAccess().getGroup()); }
 )
 
 ;
@@ -1737,6 +1737,69 @@ rule__Path__Group_1__1__Impl
 { before(grammarAccess.getPathAccess().getStepsAssignment_1_1()); }
 (rule__Path__StepsAssignment_1_1)
 { after(grammarAccess.getPathAccess().getStepsAssignment_1_1()); }
+)
+
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+
+
+
+
+
+rule__ConcreteStep__Group__0
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+	rule__ConcreteStep__Group__0__Impl
+	rule__ConcreteStep__Group__1
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__ConcreteStep__Group__0__Impl
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+(
+{ before(grammarAccess.getConcreteStepAccess().getValueAssignment_0()); }
+(rule__ConcreteStep__ValueAssignment_0)
+{ after(grammarAccess.getConcreteStepAccess().getValueAssignment_0()); }
+)
+
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+
+rule__ConcreteStep__Group__1
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+	rule__ConcreteStep__Group__1__Impl
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__ConcreteStep__Group__1__Impl
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+(
+{ before(grammarAccess.getConcreteStepAccess().getColonKeyword_1()); }
+(
+	':' 
+)?
+{ after(grammarAccess.getConcreteStepAccess().getColonKeyword_1()); }
 )
 
 ;
@@ -4874,14 +4937,14 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__ConcreteStep__ValueAssignment
+rule__ConcreteStep__ValueAssignment_0
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_0()); }
-	ruleEString{ after(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_0()); }
+{ before(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_0_0()); }
+	ruleEString{ after(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_0_0()); }
 )
 
 ;

@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalFETLParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'forced'", "'append'", "'carefully'", "'=='", "'<'", "'>'", "'<='", "'>='", "'mins'", "'hours'", "'days'", "'weeks'", "'months'", "'years'", "'modified'", "'created'", "'any are'", "'all are'", "'KB'", "'MB'", "'GB'", "'TB'", "'and'", "'or'", "'Document'", "'Directory'", "';'", "'='", "'/'", "'?'", "'{$'", "'}'", "'select'", "'from'", "'where'", "','", "'copy'", "'to'", "'strategy:'", "'move'", "'delete'", "'('", "')'", "'attribute'", "'exist'", "'is'", "'in ['", "']'", "'in tags'", "'are'", "'before'", "'size of file'", "'name is'", "'extension is'", "'empty'", "'file'", "'-'", "'not'", "'and no more tags'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'forced'", "'append'", "'carefully'", "'=='", "'<'", "'>'", "'<='", "'>='", "'mins'", "'hours'", "'days'", "'weeks'", "'months'", "'years'", "'modified'", "'created'", "'any are'", "'all are'", "'KB'", "'MB'", "'GB'", "'TB'", "'and'", "'or'", "'Document'", "'Directory'", "';'", "'='", "'/'", "':'", "'?'", "'{$'", "'}'", "'select'", "'from'", "'where'", "','", "'copy'", "'to'", "'strategy:'", "'move'", "'delete'", "'('", "')'", "'attribute'", "'exist'", "'is'", "'in ['", "']'", "'in tags'", "'are'", "'before'", "'size of file'", "'name is'", "'extension is'", "'empty'", "'file'", "'-'", "'not'", "'and no more tags'"
     };
     public static final int T__50=50;
     public static final int T__19=19;
@@ -66,6 +66,7 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
     public static final int T__64=64;
     public static final int T__21=21;
     public static final int T__65=65;
+    public static final int T__70=70;
     public static final int RULE_STRING=4;
     public static final int RULE_SL_COMMENT=8;
     public static final int T__37=37;
@@ -545,31 +546,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleConcreteStep"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:209:1: ruleConcreteStep : ( ( rule__ConcreteStep__ValueAssignment ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:209:1: ruleConcreteStep : ( ( rule__ConcreteStep__Group__0 ) ) ;
     public final void ruleConcreteStep() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:213:2: ( ( ( rule__ConcreteStep__ValueAssignment ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:214:1: ( ( rule__ConcreteStep__ValueAssignment ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:213:2: ( ( ( rule__ConcreteStep__Group__0 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:214:1: ( ( rule__ConcreteStep__Group__0 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:214:1: ( ( rule__ConcreteStep__ValueAssignment ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:215:1: ( rule__ConcreteStep__ValueAssignment )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:214:1: ( ( rule__ConcreteStep__Group__0 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:215:1: ( rule__ConcreteStep__Group__0 )
             {
-             before(grammarAccess.getConcreteStepAccess().getValueAssignment()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:216:1: ( rule__ConcreteStep__ValueAssignment )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:216:2: rule__ConcreteStep__ValueAssignment
+             before(grammarAccess.getConcreteStepAccess().getGroup()); 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:216:1: ( rule__ConcreteStep__Group__0 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:216:2: rule__ConcreteStep__Group__0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ConcreteStep__ValueAssignment_in_ruleConcreteStep394);
-            rule__ConcreteStep__ValueAssignment();
+            pushFollow(FollowSets000.FOLLOW_rule__ConcreteStep__Group__0_in_ruleConcreteStep394);
+            rule__ConcreteStep__Group__0();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getConcreteStepAccess().getValueAssignment()); 
+             after(grammarAccess.getConcreteStepAccess().getGroup()); 
 
             }
 
@@ -2440,22 +2441,22 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
             // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:918:1: ( ( ruleSelection ) | ( ruleCopy ) | ( ruleMove ) | ( ruleDelete ) | ( rulePathVariable ) )
             int alt1=5;
             switch ( input.LA(1) ) {
-            case 43:
+            case 44:
                 {
                 alt1=1;
                 }
                 break;
-            case 47:
+            case 48:
                 {
                 alt1=2;
                 }
                 break;
-            case 50:
+            case 51:
                 {
                 alt1=3;
                 }
                 break;
-            case 51:
+            case 52:
                 {
                 alt1=4;
                 }
@@ -2602,12 +2603,12 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
                 alt2=1;
                 }
                 break;
-            case 40:
+            case 41:
                 {
                 alt2=2;
                 }
                 break;
-            case 41:
+            case 42:
                 {
                 alt2=3;
                 }
@@ -2704,12 +2705,12 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
             // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:986:1: ( ( ruleOnName ) | ( ruleOnExtension ) | ( ruleOnTime ) | ( ruleOnAttributes ) | ( ruleOnTags ) | ( ruleOnSize ) | ( ruleFilterContainer ) | ( ruleIsEmpty ) | ( ruleOnType ) )
             int alt3=9;
             switch ( input.LA(1) ) {
-            case 63:
+            case 64:
                 {
                 alt3=1;
                 }
                 break;
-            case 64:
+            case 65:
                 {
                 alt3=2;
                 }
@@ -2720,32 +2721,32 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
                 alt3=3;
                 }
                 break;
-            case 54:
+            case 55:
                 {
                 alt3=4;
                 }
                 break;
-            case 57:
+            case 58:
                 {
                 alt3=5;
                 }
                 break;
-            case 62:
+            case 63:
                 {
                 alt3=6;
                 }
                 break;
-            case 52:
+            case 53:
                 {
                 alt3=7;
                 }
                 break;
-            case 56:
+            case 57:
                 {
                 alt3=8;
                 }
                 break;
-            case 66:
+            case 67:
                 {
                 alt3=9;
                 }
@@ -2957,10 +2958,10 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
             int alt4=2;
             int LA4_0 = input.LA(1);
 
-            if ( (LA4_0==55||LA4_0==68) ) {
+            if ( (LA4_0==56||LA4_0==69) ) {
                 alt4=1;
             }
-            else if ( (LA4_0==56) ) {
+            else if ( (LA4_0==57) ) {
                 alt4=2;
             }
             else {
@@ -3051,7 +3052,7 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
             if ( ((LA5_0>=27 && LA5_0<=28)) ) {
                 alt5=1;
             }
-            else if ( (LA5_0==RULE_INT||LA5_0==67) ) {
+            else if ( (LA5_0==RULE_INT||LA5_0==68) ) {
                 alt5=2;
             }
             else {
@@ -5130,22 +5131,194 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Path__Group_1__1__Impl"
 
 
+    // $ANTLR start "rule__ConcreteStep__Group__0"
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1752:1: rule__ConcreteStep__Group__0 : rule__ConcreteStep__Group__0__Impl rule__ConcreteStep__Group__1 ;
+    public final void rule__ConcreteStep__Group__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1756:1: ( rule__ConcreteStep__Group__0__Impl rule__ConcreteStep__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1757:2: rule__ConcreteStep__Group__0__Impl rule__ConcreteStep__Group__1
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__ConcreteStep__Group__0__Impl_in_rule__ConcreteStep__Group__03748);
+            rule__ConcreteStep__Group__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FollowSets000.FOLLOW_rule__ConcreteStep__Group__1_in_rule__ConcreteStep__Group__03751);
+            rule__ConcreteStep__Group__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ConcreteStep__Group__0"
+
+
+    // $ANTLR start "rule__ConcreteStep__Group__0__Impl"
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1764:1: rule__ConcreteStep__Group__0__Impl : ( ( rule__ConcreteStep__ValueAssignment_0 ) ) ;
+    public final void rule__ConcreteStep__Group__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1768:1: ( ( ( rule__ConcreteStep__ValueAssignment_0 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1769:1: ( ( rule__ConcreteStep__ValueAssignment_0 ) )
+            {
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1769:1: ( ( rule__ConcreteStep__ValueAssignment_0 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1770:1: ( rule__ConcreteStep__ValueAssignment_0 )
+            {
+             before(grammarAccess.getConcreteStepAccess().getValueAssignment_0()); 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1771:1: ( rule__ConcreteStep__ValueAssignment_0 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1771:2: rule__ConcreteStep__ValueAssignment_0
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__ConcreteStep__ValueAssignment_0_in_rule__ConcreteStep__Group__0__Impl3778);
+            rule__ConcreteStep__ValueAssignment_0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getConcreteStepAccess().getValueAssignment_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ConcreteStep__Group__0__Impl"
+
+
+    // $ANTLR start "rule__ConcreteStep__Group__1"
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1781:1: rule__ConcreteStep__Group__1 : rule__ConcreteStep__Group__1__Impl ;
+    public final void rule__ConcreteStep__Group__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1785:1: ( rule__ConcreteStep__Group__1__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1786:2: rule__ConcreteStep__Group__1__Impl
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__ConcreteStep__Group__1__Impl_in_rule__ConcreteStep__Group__13808);
+            rule__ConcreteStep__Group__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ConcreteStep__Group__1"
+
+
+    // $ANTLR start "rule__ConcreteStep__Group__1__Impl"
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1792:1: rule__ConcreteStep__Group__1__Impl : ( ( ':' )? ) ;
+    public final void rule__ConcreteStep__Group__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1796:1: ( ( ( ':' )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1797:1: ( ( ':' )? )
+            {
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1797:1: ( ( ':' )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1798:1: ( ':' )?
+            {
+             before(grammarAccess.getConcreteStepAccess().getColonKeyword_1()); 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1799:1: ( ':' )?
+            int alt17=2;
+            int LA17_0 = input.LA(1);
+
+            if ( (LA17_0==40) ) {
+                alt17=1;
+            }
+            switch (alt17) {
+                case 1 :
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1800:2: ':'
+                    {
+                    match(input,40,FollowSets000.FOLLOW_40_in_rule__ConcreteStep__Group__1__Impl3837); 
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getConcreteStepAccess().getColonKeyword_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ConcreteStep__Group__1__Impl"
+
+
     // $ANTLR start "rule__VariableStep__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1752:1: rule__VariableStep__Group__0 : rule__VariableStep__Group__0__Impl rule__VariableStep__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1815:1: rule__VariableStep__Group__0 : rule__VariableStep__Group__0__Impl rule__VariableStep__Group__1 ;
     public final void rule__VariableStep__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1756:1: ( rule__VariableStep__Group__0__Impl rule__VariableStep__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1757:2: rule__VariableStep__Group__0__Impl rule__VariableStep__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1819:1: ( rule__VariableStep__Group__0__Impl rule__VariableStep__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1820:2: rule__VariableStep__Group__0__Impl rule__VariableStep__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__VariableStep__Group__0__Impl_in_rule__VariableStep__Group__03748);
+            pushFollow(FollowSets000.FOLLOW_rule__VariableStep__Group__0__Impl_in_rule__VariableStep__Group__03874);
             rule__VariableStep__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__VariableStep__Group__1_in_rule__VariableStep__Group__03751);
+            pushFollow(FollowSets000.FOLLOW_rule__VariableStep__Group__1_in_rule__VariableStep__Group__03877);
             rule__VariableStep__Group__1();
 
             state._fsp--;
@@ -5169,20 +5342,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableStep__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1764:1: rule__VariableStep__Group__0__Impl : ( '?' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1827:1: rule__VariableStep__Group__0__Impl : ( '?' ) ;
     public final void rule__VariableStep__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1768:1: ( ( '?' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1769:1: ( '?' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1831:1: ( ( '?' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1832:1: ( '?' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1769:1: ( '?' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1770:1: '?'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1832:1: ( '?' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1833:1: '?'
             {
              before(grammarAccess.getVariableStepAccess().getQuestionMarkKeyword_0()); 
-            match(input,40,FollowSets000.FOLLOW_40_in_rule__VariableStep__Group__0__Impl3779); 
+            match(input,41,FollowSets000.FOLLOW_41_in_rule__VariableStep__Group__0__Impl3905); 
              after(grammarAccess.getVariableStepAccess().getQuestionMarkKeyword_0()); 
 
             }
@@ -5206,16 +5379,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableStep__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1783:1: rule__VariableStep__Group__1 : rule__VariableStep__Group__1__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1846:1: rule__VariableStep__Group__1 : rule__VariableStep__Group__1__Impl ;
     public final void rule__VariableStep__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1787:1: ( rule__VariableStep__Group__1__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1788:2: rule__VariableStep__Group__1__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1850:1: ( rule__VariableStep__Group__1__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1851:2: rule__VariableStep__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__VariableStep__Group__1__Impl_in_rule__VariableStep__Group__13810);
+            pushFollow(FollowSets000.FOLLOW_rule__VariableStep__Group__1__Impl_in_rule__VariableStep__Group__13936);
             rule__VariableStep__Group__1__Impl();
 
             state._fsp--;
@@ -5239,23 +5412,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableStep__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1794:1: rule__VariableStep__Group__1__Impl : ( ( rule__VariableStep__ValueAssignment_1 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1857:1: rule__VariableStep__Group__1__Impl : ( ( rule__VariableStep__ValueAssignment_1 ) ) ;
     public final void rule__VariableStep__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1798:1: ( ( ( rule__VariableStep__ValueAssignment_1 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1799:1: ( ( rule__VariableStep__ValueAssignment_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1861:1: ( ( ( rule__VariableStep__ValueAssignment_1 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1862:1: ( ( rule__VariableStep__ValueAssignment_1 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1799:1: ( ( rule__VariableStep__ValueAssignment_1 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1800:1: ( rule__VariableStep__ValueAssignment_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1862:1: ( ( rule__VariableStep__ValueAssignment_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1863:1: ( rule__VariableStep__ValueAssignment_1 )
             {
              before(grammarAccess.getVariableStepAccess().getValueAssignment_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1801:1: ( rule__VariableStep__ValueAssignment_1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1801:2: rule__VariableStep__ValueAssignment_1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1864:1: ( rule__VariableStep__ValueAssignment_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1864:2: rule__VariableStep__ValueAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__VariableStep__ValueAssignment_1_in_rule__VariableStep__Group__1__Impl3837);
+            pushFollow(FollowSets000.FOLLOW_rule__VariableStep__ValueAssignment_1_in_rule__VariableStep__Group__1__Impl3963);
             rule__VariableStep__ValueAssignment_1();
 
             state._fsp--;
@@ -5286,21 +5459,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParametrizedStep__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1815:1: rule__ParametrizedStep__Group__0 : rule__ParametrizedStep__Group__0__Impl rule__ParametrizedStep__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1878:1: rule__ParametrizedStep__Group__0 : rule__ParametrizedStep__Group__0__Impl rule__ParametrizedStep__Group__1 ;
     public final void rule__ParametrizedStep__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1819:1: ( rule__ParametrizedStep__Group__0__Impl rule__ParametrizedStep__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1820:2: rule__ParametrizedStep__Group__0__Impl rule__ParametrizedStep__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1882:1: ( rule__ParametrizedStep__Group__0__Impl rule__ParametrizedStep__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1883:2: rule__ParametrizedStep__Group__0__Impl rule__ParametrizedStep__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__Group__0__Impl_in_rule__ParametrizedStep__Group__03871);
+            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__Group__0__Impl_in_rule__ParametrizedStep__Group__03997);
             rule__ParametrizedStep__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__Group__1_in_rule__ParametrizedStep__Group__03874);
+            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__Group__1_in_rule__ParametrizedStep__Group__04000);
             rule__ParametrizedStep__Group__1();
 
             state._fsp--;
@@ -5324,21 +5497,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParametrizedStep__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1827:1: rule__ParametrizedStep__Group__0__Impl : ( () ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1890:1: rule__ParametrizedStep__Group__0__Impl : ( () ) ;
     public final void rule__ParametrizedStep__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1831:1: ( ( () ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1832:1: ( () )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1894:1: ( ( () ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1895:1: ( () )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1832:1: ( () )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1833:1: ()
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1895:1: ( () )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1896:1: ()
             {
              before(grammarAccess.getParametrizedStepAccess().getParametrizedStepAction_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1834:1: ()
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1836:1: 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1897:1: ()
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1899:1: 
             {
             }
 
@@ -5361,21 +5534,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParametrizedStep__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1846:1: rule__ParametrizedStep__Group__1 : rule__ParametrizedStep__Group__1__Impl rule__ParametrizedStep__Group__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1909:1: rule__ParametrizedStep__Group__1 : rule__ParametrizedStep__Group__1__Impl rule__ParametrizedStep__Group__2 ;
     public final void rule__ParametrizedStep__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1850:1: ( rule__ParametrizedStep__Group__1__Impl rule__ParametrizedStep__Group__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1851:2: rule__ParametrizedStep__Group__1__Impl rule__ParametrizedStep__Group__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1913:1: ( rule__ParametrizedStep__Group__1__Impl rule__ParametrizedStep__Group__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1914:2: rule__ParametrizedStep__Group__1__Impl rule__ParametrizedStep__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__Group__1__Impl_in_rule__ParametrizedStep__Group__13932);
+            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__Group__1__Impl_in_rule__ParametrizedStep__Group__14058);
             rule__ParametrizedStep__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__Group__2_in_rule__ParametrizedStep__Group__13935);
+            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__Group__2_in_rule__ParametrizedStep__Group__14061);
             rule__ParametrizedStep__Group__2();
 
             state._fsp--;
@@ -5399,20 +5572,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParametrizedStep__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1858:1: rule__ParametrizedStep__Group__1__Impl : ( '{$' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1921:1: rule__ParametrizedStep__Group__1__Impl : ( '{$' ) ;
     public final void rule__ParametrizedStep__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1862:1: ( ( '{$' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1863:1: ( '{$' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1925:1: ( ( '{$' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1926:1: ( '{$' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1863:1: ( '{$' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1864:1: '{$'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1926:1: ( '{$' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1927:1: '{$'
             {
              before(grammarAccess.getParametrizedStepAccess().getLeftCurlyBracketDollarSignKeyword_1()); 
-            match(input,41,FollowSets000.FOLLOW_41_in_rule__ParametrizedStep__Group__1__Impl3963); 
+            match(input,42,FollowSets000.FOLLOW_42_in_rule__ParametrizedStep__Group__1__Impl4089); 
              after(grammarAccess.getParametrizedStepAccess().getLeftCurlyBracketDollarSignKeyword_1()); 
 
             }
@@ -5436,21 +5609,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParametrizedStep__Group__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1877:1: rule__ParametrizedStep__Group__2 : rule__ParametrizedStep__Group__2__Impl rule__ParametrizedStep__Group__3 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1940:1: rule__ParametrizedStep__Group__2 : rule__ParametrizedStep__Group__2__Impl rule__ParametrizedStep__Group__3 ;
     public final void rule__ParametrizedStep__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1881:1: ( rule__ParametrizedStep__Group__2__Impl rule__ParametrizedStep__Group__3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1882:2: rule__ParametrizedStep__Group__2__Impl rule__ParametrizedStep__Group__3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1944:1: ( rule__ParametrizedStep__Group__2__Impl rule__ParametrizedStep__Group__3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1945:2: rule__ParametrizedStep__Group__2__Impl rule__ParametrizedStep__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__Group__2__Impl_in_rule__ParametrizedStep__Group__23994);
+            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__Group__2__Impl_in_rule__ParametrizedStep__Group__24120);
             rule__ParametrizedStep__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__Group__3_in_rule__ParametrizedStep__Group__23997);
+            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__Group__3_in_rule__ParametrizedStep__Group__24123);
             rule__ParametrizedStep__Group__3();
 
             state._fsp--;
@@ -5474,23 +5647,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParametrizedStep__Group__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1889:1: rule__ParametrizedStep__Group__2__Impl : ( ( rule__ParametrizedStep__NameAssignment_2 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1952:1: rule__ParametrizedStep__Group__2__Impl : ( ( rule__ParametrizedStep__NameAssignment_2 ) ) ;
     public final void rule__ParametrizedStep__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1893:1: ( ( ( rule__ParametrizedStep__NameAssignment_2 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1894:1: ( ( rule__ParametrizedStep__NameAssignment_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1956:1: ( ( ( rule__ParametrizedStep__NameAssignment_2 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1957:1: ( ( rule__ParametrizedStep__NameAssignment_2 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1894:1: ( ( rule__ParametrizedStep__NameAssignment_2 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1895:1: ( rule__ParametrizedStep__NameAssignment_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1957:1: ( ( rule__ParametrizedStep__NameAssignment_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1958:1: ( rule__ParametrizedStep__NameAssignment_2 )
             {
              before(grammarAccess.getParametrizedStepAccess().getNameAssignment_2()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1896:1: ( rule__ParametrizedStep__NameAssignment_2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1896:2: rule__ParametrizedStep__NameAssignment_2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1959:1: ( rule__ParametrizedStep__NameAssignment_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1959:2: rule__ParametrizedStep__NameAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__NameAssignment_2_in_rule__ParametrizedStep__Group__2__Impl4024);
+            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__NameAssignment_2_in_rule__ParametrizedStep__Group__2__Impl4150);
             rule__ParametrizedStep__NameAssignment_2();
 
             state._fsp--;
@@ -5521,16 +5694,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParametrizedStep__Group__3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1906:1: rule__ParametrizedStep__Group__3 : rule__ParametrizedStep__Group__3__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1969:1: rule__ParametrizedStep__Group__3 : rule__ParametrizedStep__Group__3__Impl ;
     public final void rule__ParametrizedStep__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1910:1: ( rule__ParametrizedStep__Group__3__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1911:2: rule__ParametrizedStep__Group__3__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1973:1: ( rule__ParametrizedStep__Group__3__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1974:2: rule__ParametrizedStep__Group__3__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__Group__3__Impl_in_rule__ParametrizedStep__Group__34054);
+            pushFollow(FollowSets000.FOLLOW_rule__ParametrizedStep__Group__3__Impl_in_rule__ParametrizedStep__Group__34180);
             rule__ParametrizedStep__Group__3__Impl();
 
             state._fsp--;
@@ -5554,20 +5727,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParametrizedStep__Group__3__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1917:1: rule__ParametrizedStep__Group__3__Impl : ( '}' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1980:1: rule__ParametrizedStep__Group__3__Impl : ( '}' ) ;
     public final void rule__ParametrizedStep__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1921:1: ( ( '}' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1922:1: ( '}' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1984:1: ( ( '}' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1985:1: ( '}' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1922:1: ( '}' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1923:1: '}'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1985:1: ( '}' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1986:1: '}'
             {
              before(grammarAccess.getParametrizedStepAccess().getRightCurlyBracketKeyword_3()); 
-            match(input,42,FollowSets000.FOLLOW_42_in_rule__ParametrizedStep__Group__3__Impl4082); 
+            match(input,43,FollowSets000.FOLLOW_43_in_rule__ParametrizedStep__Group__3__Impl4208); 
              after(grammarAccess.getParametrizedStepAccess().getRightCurlyBracketKeyword_3()); 
 
             }
@@ -5591,21 +5764,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1944:1: rule__Selection__Group__0 : rule__Selection__Group__0__Impl rule__Selection__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2007:1: rule__Selection__Group__0 : rule__Selection__Group__0__Impl rule__Selection__Group__1 ;
     public final void rule__Selection__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1948:1: ( rule__Selection__Group__0__Impl rule__Selection__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1949:2: rule__Selection__Group__0__Impl rule__Selection__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2011:1: ( rule__Selection__Group__0__Impl rule__Selection__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2012:2: rule__Selection__Group__0__Impl rule__Selection__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__0__Impl_in_rule__Selection__Group__04121);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__0__Impl_in_rule__Selection__Group__04247);
             rule__Selection__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__1_in_rule__Selection__Group__04124);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__1_in_rule__Selection__Group__04250);
             rule__Selection__Group__1();
 
             state._fsp--;
@@ -5629,20 +5802,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1956:1: rule__Selection__Group__0__Impl : ( 'select' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2019:1: rule__Selection__Group__0__Impl : ( 'select' ) ;
     public final void rule__Selection__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1960:1: ( ( 'select' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1961:1: ( 'select' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2023:1: ( ( 'select' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2024:1: ( 'select' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1961:1: ( 'select' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1962:1: 'select'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2024:1: ( 'select' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2025:1: 'select'
             {
              before(grammarAccess.getSelectionAccess().getSelectKeyword_0()); 
-            match(input,43,FollowSets000.FOLLOW_43_in_rule__Selection__Group__0__Impl4152); 
+            match(input,44,FollowSets000.FOLLOW_44_in_rule__Selection__Group__0__Impl4278); 
              after(grammarAccess.getSelectionAccess().getSelectKeyword_0()); 
 
             }
@@ -5666,21 +5839,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1975:1: rule__Selection__Group__1 : rule__Selection__Group__1__Impl rule__Selection__Group__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2038:1: rule__Selection__Group__1 : rule__Selection__Group__1__Impl rule__Selection__Group__2 ;
     public final void rule__Selection__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1979:1: ( rule__Selection__Group__1__Impl rule__Selection__Group__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1980:2: rule__Selection__Group__1__Impl rule__Selection__Group__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2042:1: ( rule__Selection__Group__1__Impl rule__Selection__Group__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2043:2: rule__Selection__Group__1__Impl rule__Selection__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__1__Impl_in_rule__Selection__Group__14183);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__1__Impl_in_rule__Selection__Group__14309);
             rule__Selection__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__2_in_rule__Selection__Group__14186);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__2_in_rule__Selection__Group__14312);
             rule__Selection__Group__2();
 
             state._fsp--;
@@ -5704,23 +5877,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1987:1: rule__Selection__Group__1__Impl : ( ( rule__Selection__NameAssignment_1 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2050:1: rule__Selection__Group__1__Impl : ( ( rule__Selection__NameAssignment_1 ) ) ;
     public final void rule__Selection__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1991:1: ( ( ( rule__Selection__NameAssignment_1 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1992:1: ( ( rule__Selection__NameAssignment_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2054:1: ( ( ( rule__Selection__NameAssignment_1 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2055:1: ( ( rule__Selection__NameAssignment_1 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1992:1: ( ( rule__Selection__NameAssignment_1 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1993:1: ( rule__Selection__NameAssignment_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2055:1: ( ( rule__Selection__NameAssignment_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2056:1: ( rule__Selection__NameAssignment_1 )
             {
              before(grammarAccess.getSelectionAccess().getNameAssignment_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1994:1: ( rule__Selection__NameAssignment_1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:1994:2: rule__Selection__NameAssignment_1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2057:1: ( rule__Selection__NameAssignment_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2057:2: rule__Selection__NameAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__NameAssignment_1_in_rule__Selection__Group__1__Impl4213);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__NameAssignment_1_in_rule__Selection__Group__1__Impl4339);
             rule__Selection__NameAssignment_1();
 
             state._fsp--;
@@ -5751,21 +5924,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2004:1: rule__Selection__Group__2 : rule__Selection__Group__2__Impl rule__Selection__Group__3 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2067:1: rule__Selection__Group__2 : rule__Selection__Group__2__Impl rule__Selection__Group__3 ;
     public final void rule__Selection__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2008:1: ( rule__Selection__Group__2__Impl rule__Selection__Group__3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2009:2: rule__Selection__Group__2__Impl rule__Selection__Group__3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2071:1: ( rule__Selection__Group__2__Impl rule__Selection__Group__3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2072:2: rule__Selection__Group__2__Impl rule__Selection__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__2__Impl_in_rule__Selection__Group__24243);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__2__Impl_in_rule__Selection__Group__24369);
             rule__Selection__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__3_in_rule__Selection__Group__24246);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__3_in_rule__Selection__Group__24372);
             rule__Selection__Group__3();
 
             state._fsp--;
@@ -5789,20 +5962,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2016:1: rule__Selection__Group__2__Impl : ( 'from' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2079:1: rule__Selection__Group__2__Impl : ( 'from' ) ;
     public final void rule__Selection__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2020:1: ( ( 'from' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2021:1: ( 'from' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2083:1: ( ( 'from' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2084:1: ( 'from' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2021:1: ( 'from' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2022:1: 'from'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2084:1: ( 'from' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2085:1: 'from'
             {
              before(grammarAccess.getSelectionAccess().getFromKeyword_2()); 
-            match(input,44,FollowSets000.FOLLOW_44_in_rule__Selection__Group__2__Impl4274); 
+            match(input,45,FollowSets000.FOLLOW_45_in_rule__Selection__Group__2__Impl4400); 
              after(grammarAccess.getSelectionAccess().getFromKeyword_2()); 
 
             }
@@ -5826,21 +5999,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group__3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2035:1: rule__Selection__Group__3 : rule__Selection__Group__3__Impl rule__Selection__Group__4 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2098:1: rule__Selection__Group__3 : rule__Selection__Group__3__Impl rule__Selection__Group__4 ;
     public final void rule__Selection__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2039:1: ( rule__Selection__Group__3__Impl rule__Selection__Group__4 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2040:2: rule__Selection__Group__3__Impl rule__Selection__Group__4
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2102:1: ( rule__Selection__Group__3__Impl rule__Selection__Group__4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2103:2: rule__Selection__Group__3__Impl rule__Selection__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__3__Impl_in_rule__Selection__Group__34305);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__3__Impl_in_rule__Selection__Group__34431);
             rule__Selection__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__4_in_rule__Selection__Group__34308);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__4_in_rule__Selection__Group__34434);
             rule__Selection__Group__4();
 
             state._fsp--;
@@ -5864,23 +6037,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group__3__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2047:1: rule__Selection__Group__3__Impl : ( ( rule__Selection__FromAssignment_3 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2110:1: rule__Selection__Group__3__Impl : ( ( rule__Selection__FromAssignment_3 ) ) ;
     public final void rule__Selection__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2051:1: ( ( ( rule__Selection__FromAssignment_3 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2052:1: ( ( rule__Selection__FromAssignment_3 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2114:1: ( ( ( rule__Selection__FromAssignment_3 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2115:1: ( ( rule__Selection__FromAssignment_3 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2052:1: ( ( rule__Selection__FromAssignment_3 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2053:1: ( rule__Selection__FromAssignment_3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2115:1: ( ( rule__Selection__FromAssignment_3 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2116:1: ( rule__Selection__FromAssignment_3 )
             {
              before(grammarAccess.getSelectionAccess().getFromAssignment_3()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2054:1: ( rule__Selection__FromAssignment_3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2054:2: rule__Selection__FromAssignment_3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2117:1: ( rule__Selection__FromAssignment_3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2117:2: rule__Selection__FromAssignment_3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__FromAssignment_3_in_rule__Selection__Group__3__Impl4335);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__FromAssignment_3_in_rule__Selection__Group__3__Impl4461);
             rule__Selection__FromAssignment_3();
 
             state._fsp--;
@@ -5911,16 +6084,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group__4"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2064:1: rule__Selection__Group__4 : rule__Selection__Group__4__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2127:1: rule__Selection__Group__4 : rule__Selection__Group__4__Impl ;
     public final void rule__Selection__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2068:1: ( rule__Selection__Group__4__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2069:2: rule__Selection__Group__4__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2131:1: ( rule__Selection__Group__4__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2132:2: rule__Selection__Group__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__4__Impl_in_rule__Selection__Group__44365);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group__4__Impl_in_rule__Selection__Group__44491);
             rule__Selection__Group__4__Impl();
 
             state._fsp--;
@@ -5944,31 +6117,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group__4__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2075:1: rule__Selection__Group__4__Impl : ( ( rule__Selection__Group_4__0 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2138:1: rule__Selection__Group__4__Impl : ( ( rule__Selection__Group_4__0 )? ) ;
     public final void rule__Selection__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2079:1: ( ( ( rule__Selection__Group_4__0 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2080:1: ( ( rule__Selection__Group_4__0 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2142:1: ( ( ( rule__Selection__Group_4__0 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2143:1: ( ( rule__Selection__Group_4__0 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2080:1: ( ( rule__Selection__Group_4__0 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2081:1: ( rule__Selection__Group_4__0 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2143:1: ( ( rule__Selection__Group_4__0 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2144:1: ( rule__Selection__Group_4__0 )?
             {
              before(grammarAccess.getSelectionAccess().getGroup_4()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2082:1: ( rule__Selection__Group_4__0 )?
-            int alt17=2;
-            int LA17_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2145:1: ( rule__Selection__Group_4__0 )?
+            int alt18=2;
+            int LA18_0 = input.LA(1);
 
-            if ( (LA17_0==45) ) {
-                alt17=1;
+            if ( (LA18_0==46) ) {
+                alt18=1;
             }
-            switch (alt17) {
+            switch (alt18) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2082:2: rule__Selection__Group_4__0
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2145:2: rule__Selection__Group_4__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4__0_in_rule__Selection__Group__4__Impl4392);
+                    pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4__0_in_rule__Selection__Group__4__Impl4518);
                     rule__Selection__Group_4__0();
 
                     state._fsp--;
@@ -6002,21 +6175,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group_4__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2102:1: rule__Selection__Group_4__0 : rule__Selection__Group_4__0__Impl rule__Selection__Group_4__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2165:1: rule__Selection__Group_4__0 : rule__Selection__Group_4__0__Impl rule__Selection__Group_4__1 ;
     public final void rule__Selection__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2106:1: ( rule__Selection__Group_4__0__Impl rule__Selection__Group_4__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2107:2: rule__Selection__Group_4__0__Impl rule__Selection__Group_4__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2169:1: ( rule__Selection__Group_4__0__Impl rule__Selection__Group_4__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2170:2: rule__Selection__Group_4__0__Impl rule__Selection__Group_4__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4__0__Impl_in_rule__Selection__Group_4__04433);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4__0__Impl_in_rule__Selection__Group_4__04559);
             rule__Selection__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4__1_in_rule__Selection__Group_4__04436);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4__1_in_rule__Selection__Group_4__04562);
             rule__Selection__Group_4__1();
 
             state._fsp--;
@@ -6040,20 +6213,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group_4__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2114:1: rule__Selection__Group_4__0__Impl : ( 'where' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2177:1: rule__Selection__Group_4__0__Impl : ( 'where' ) ;
     public final void rule__Selection__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2118:1: ( ( 'where' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2119:1: ( 'where' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2181:1: ( ( 'where' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2182:1: ( 'where' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2119:1: ( 'where' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2120:1: 'where'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2182:1: ( 'where' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2183:1: 'where'
             {
              before(grammarAccess.getSelectionAccess().getWhereKeyword_4_0()); 
-            match(input,45,FollowSets000.FOLLOW_45_in_rule__Selection__Group_4__0__Impl4464); 
+            match(input,46,FollowSets000.FOLLOW_46_in_rule__Selection__Group_4__0__Impl4590); 
              after(grammarAccess.getSelectionAccess().getWhereKeyword_4_0()); 
 
             }
@@ -6077,21 +6250,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group_4__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2133:1: rule__Selection__Group_4__1 : rule__Selection__Group_4__1__Impl rule__Selection__Group_4__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2196:1: rule__Selection__Group_4__1 : rule__Selection__Group_4__1__Impl rule__Selection__Group_4__2 ;
     public final void rule__Selection__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2137:1: ( rule__Selection__Group_4__1__Impl rule__Selection__Group_4__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2138:2: rule__Selection__Group_4__1__Impl rule__Selection__Group_4__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2200:1: ( rule__Selection__Group_4__1__Impl rule__Selection__Group_4__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2201:2: rule__Selection__Group_4__1__Impl rule__Selection__Group_4__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4__1__Impl_in_rule__Selection__Group_4__14495);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4__1__Impl_in_rule__Selection__Group_4__14621);
             rule__Selection__Group_4__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4__2_in_rule__Selection__Group_4__14498);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4__2_in_rule__Selection__Group_4__14624);
             rule__Selection__Group_4__2();
 
             state._fsp--;
@@ -6115,23 +6288,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group_4__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2145:1: rule__Selection__Group_4__1__Impl : ( ( rule__Selection__WhereAssignment_4_1 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2208:1: rule__Selection__Group_4__1__Impl : ( ( rule__Selection__WhereAssignment_4_1 ) ) ;
     public final void rule__Selection__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2149:1: ( ( ( rule__Selection__WhereAssignment_4_1 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2150:1: ( ( rule__Selection__WhereAssignment_4_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2212:1: ( ( ( rule__Selection__WhereAssignment_4_1 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2213:1: ( ( rule__Selection__WhereAssignment_4_1 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2150:1: ( ( rule__Selection__WhereAssignment_4_1 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2151:1: ( rule__Selection__WhereAssignment_4_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2213:1: ( ( rule__Selection__WhereAssignment_4_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2214:1: ( rule__Selection__WhereAssignment_4_1 )
             {
              before(grammarAccess.getSelectionAccess().getWhereAssignment_4_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2152:1: ( rule__Selection__WhereAssignment_4_1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2152:2: rule__Selection__WhereAssignment_4_1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2215:1: ( rule__Selection__WhereAssignment_4_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2215:2: rule__Selection__WhereAssignment_4_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__WhereAssignment_4_1_in_rule__Selection__Group_4__1__Impl4525);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__WhereAssignment_4_1_in_rule__Selection__Group_4__1__Impl4651);
             rule__Selection__WhereAssignment_4_1();
 
             state._fsp--;
@@ -6162,16 +6335,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group_4__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2162:1: rule__Selection__Group_4__2 : rule__Selection__Group_4__2__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2225:1: rule__Selection__Group_4__2 : rule__Selection__Group_4__2__Impl ;
     public final void rule__Selection__Group_4__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2166:1: ( rule__Selection__Group_4__2__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2167:2: rule__Selection__Group_4__2__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2229:1: ( rule__Selection__Group_4__2__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2230:2: rule__Selection__Group_4__2__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4__2__Impl_in_rule__Selection__Group_4__24555);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4__2__Impl_in_rule__Selection__Group_4__24681);
             rule__Selection__Group_4__2__Impl();
 
             state._fsp--;
@@ -6195,35 +6368,35 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group_4__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2173:1: rule__Selection__Group_4__2__Impl : ( ( rule__Selection__Group_4_2__0 )* ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2236:1: rule__Selection__Group_4__2__Impl : ( ( rule__Selection__Group_4_2__0 )* ) ;
     public final void rule__Selection__Group_4__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2177:1: ( ( ( rule__Selection__Group_4_2__0 )* ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2178:1: ( ( rule__Selection__Group_4_2__0 )* )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2240:1: ( ( ( rule__Selection__Group_4_2__0 )* ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2241:1: ( ( rule__Selection__Group_4_2__0 )* )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2178:1: ( ( rule__Selection__Group_4_2__0 )* )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2179:1: ( rule__Selection__Group_4_2__0 )*
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2241:1: ( ( rule__Selection__Group_4_2__0 )* )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2242:1: ( rule__Selection__Group_4_2__0 )*
             {
              before(grammarAccess.getSelectionAccess().getGroup_4_2()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2180:1: ( rule__Selection__Group_4_2__0 )*
-            loop18:
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2243:1: ( rule__Selection__Group_4_2__0 )*
+            loop19:
             do {
-                int alt18=2;
-                int LA18_0 = input.LA(1);
+                int alt19=2;
+                int LA19_0 = input.LA(1);
 
-                if ( (LA18_0==46) ) {
-                    alt18=1;
+                if ( (LA19_0==47) ) {
+                    alt19=1;
                 }
 
 
-                switch (alt18) {
+                switch (alt19) {
             	case 1 :
-            	    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2180:2: rule__Selection__Group_4_2__0
+            	    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2243:2: rule__Selection__Group_4_2__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4_2__0_in_rule__Selection__Group_4__2__Impl4582);
+            	    pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4_2__0_in_rule__Selection__Group_4__2__Impl4708);
             	    rule__Selection__Group_4_2__0();
 
             	    state._fsp--;
@@ -6233,7 +6406,7 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop18;
+            	    break loop19;
                 }
             } while (true);
 
@@ -6260,21 +6433,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group_4_2__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2196:1: rule__Selection__Group_4_2__0 : rule__Selection__Group_4_2__0__Impl rule__Selection__Group_4_2__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2259:1: rule__Selection__Group_4_2__0 : rule__Selection__Group_4_2__0__Impl rule__Selection__Group_4_2__1 ;
     public final void rule__Selection__Group_4_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2200:1: ( rule__Selection__Group_4_2__0__Impl rule__Selection__Group_4_2__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2201:2: rule__Selection__Group_4_2__0__Impl rule__Selection__Group_4_2__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2263:1: ( rule__Selection__Group_4_2__0__Impl rule__Selection__Group_4_2__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2264:2: rule__Selection__Group_4_2__0__Impl rule__Selection__Group_4_2__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4_2__0__Impl_in_rule__Selection__Group_4_2__04619);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4_2__0__Impl_in_rule__Selection__Group_4_2__04745);
             rule__Selection__Group_4_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4_2__1_in_rule__Selection__Group_4_2__04622);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4_2__1_in_rule__Selection__Group_4_2__04748);
             rule__Selection__Group_4_2__1();
 
             state._fsp--;
@@ -6298,20 +6471,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group_4_2__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2208:1: rule__Selection__Group_4_2__0__Impl : ( ',' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2271:1: rule__Selection__Group_4_2__0__Impl : ( ',' ) ;
     public final void rule__Selection__Group_4_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2212:1: ( ( ',' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2213:1: ( ',' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2275:1: ( ( ',' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2276:1: ( ',' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2213:1: ( ',' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2214:1: ','
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2276:1: ( ',' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2277:1: ','
             {
              before(grammarAccess.getSelectionAccess().getCommaKeyword_4_2_0()); 
-            match(input,46,FollowSets000.FOLLOW_46_in_rule__Selection__Group_4_2__0__Impl4650); 
+            match(input,47,FollowSets000.FOLLOW_47_in_rule__Selection__Group_4_2__0__Impl4776); 
              after(grammarAccess.getSelectionAccess().getCommaKeyword_4_2_0()); 
 
             }
@@ -6335,16 +6508,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group_4_2__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2227:1: rule__Selection__Group_4_2__1 : rule__Selection__Group_4_2__1__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2290:1: rule__Selection__Group_4_2__1 : rule__Selection__Group_4_2__1__Impl ;
     public final void rule__Selection__Group_4_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2231:1: ( rule__Selection__Group_4_2__1__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2232:2: rule__Selection__Group_4_2__1__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2294:1: ( rule__Selection__Group_4_2__1__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2295:2: rule__Selection__Group_4_2__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4_2__1__Impl_in_rule__Selection__Group_4_2__14681);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__Group_4_2__1__Impl_in_rule__Selection__Group_4_2__14807);
             rule__Selection__Group_4_2__1__Impl();
 
             state._fsp--;
@@ -6368,23 +6541,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__Group_4_2__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2238:1: rule__Selection__Group_4_2__1__Impl : ( ( rule__Selection__WhereAssignment_4_2_1 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2301:1: rule__Selection__Group_4_2__1__Impl : ( ( rule__Selection__WhereAssignment_4_2_1 ) ) ;
     public final void rule__Selection__Group_4_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2242:1: ( ( ( rule__Selection__WhereAssignment_4_2_1 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2243:1: ( ( rule__Selection__WhereAssignment_4_2_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2305:1: ( ( ( rule__Selection__WhereAssignment_4_2_1 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2306:1: ( ( rule__Selection__WhereAssignment_4_2_1 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2243:1: ( ( rule__Selection__WhereAssignment_4_2_1 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2244:1: ( rule__Selection__WhereAssignment_4_2_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2306:1: ( ( rule__Selection__WhereAssignment_4_2_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2307:1: ( rule__Selection__WhereAssignment_4_2_1 )
             {
              before(grammarAccess.getSelectionAccess().getWhereAssignment_4_2_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2245:1: ( rule__Selection__WhereAssignment_4_2_1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2245:2: rule__Selection__WhereAssignment_4_2_1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2308:1: ( rule__Selection__WhereAssignment_4_2_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2308:2: rule__Selection__WhereAssignment_4_2_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Selection__WhereAssignment_4_2_1_in_rule__Selection__Group_4_2__1__Impl4708);
+            pushFollow(FollowSets000.FOLLOW_rule__Selection__WhereAssignment_4_2_1_in_rule__Selection__Group_4_2__1__Impl4834);
             rule__Selection__WhereAssignment_4_2_1();
 
             state._fsp--;
@@ -6415,21 +6588,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2259:1: rule__Copy__Group__0 : rule__Copy__Group__0__Impl rule__Copy__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2322:1: rule__Copy__Group__0 : rule__Copy__Group__0__Impl rule__Copy__Group__1 ;
     public final void rule__Copy__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2263:1: ( rule__Copy__Group__0__Impl rule__Copy__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2264:2: rule__Copy__Group__0__Impl rule__Copy__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2326:1: ( rule__Copy__Group__0__Impl rule__Copy__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2327:2: rule__Copy__Group__0__Impl rule__Copy__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__0__Impl_in_rule__Copy__Group__04742);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__0__Impl_in_rule__Copy__Group__04868);
             rule__Copy__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__1_in_rule__Copy__Group__04745);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__1_in_rule__Copy__Group__04871);
             rule__Copy__Group__1();
 
             state._fsp--;
@@ -6453,20 +6626,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2271:1: rule__Copy__Group__0__Impl : ( 'copy' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2334:1: rule__Copy__Group__0__Impl : ( 'copy' ) ;
     public final void rule__Copy__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2275:1: ( ( 'copy' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2276:1: ( 'copy' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2338:1: ( ( 'copy' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2339:1: ( 'copy' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2276:1: ( 'copy' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2277:1: 'copy'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2339:1: ( 'copy' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2340:1: 'copy'
             {
              before(grammarAccess.getCopyAccess().getCopyKeyword_0()); 
-            match(input,47,FollowSets000.FOLLOW_47_in_rule__Copy__Group__0__Impl4773); 
+            match(input,48,FollowSets000.FOLLOW_48_in_rule__Copy__Group__0__Impl4899); 
              after(grammarAccess.getCopyAccess().getCopyKeyword_0()); 
 
             }
@@ -6490,21 +6663,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2290:1: rule__Copy__Group__1 : rule__Copy__Group__1__Impl rule__Copy__Group__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2353:1: rule__Copy__Group__1 : rule__Copy__Group__1__Impl rule__Copy__Group__2 ;
     public final void rule__Copy__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2294:1: ( rule__Copy__Group__1__Impl rule__Copy__Group__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2295:2: rule__Copy__Group__1__Impl rule__Copy__Group__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2357:1: ( rule__Copy__Group__1__Impl rule__Copy__Group__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2358:2: rule__Copy__Group__1__Impl rule__Copy__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__1__Impl_in_rule__Copy__Group__14804);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__1__Impl_in_rule__Copy__Group__14930);
             rule__Copy__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__2_in_rule__Copy__Group__14807);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__2_in_rule__Copy__Group__14933);
             rule__Copy__Group__2();
 
             state._fsp--;
@@ -6528,20 +6701,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2302:1: rule__Copy__Group__1__Impl : ( 'from' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2365:1: rule__Copy__Group__1__Impl : ( 'from' ) ;
     public final void rule__Copy__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2306:1: ( ( 'from' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2307:1: ( 'from' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2369:1: ( ( 'from' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2370:1: ( 'from' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2307:1: ( 'from' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2308:1: 'from'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2370:1: ( 'from' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2371:1: 'from'
             {
              before(grammarAccess.getCopyAccess().getFromKeyword_1()); 
-            match(input,44,FollowSets000.FOLLOW_44_in_rule__Copy__Group__1__Impl4835); 
+            match(input,45,FollowSets000.FOLLOW_45_in_rule__Copy__Group__1__Impl4961); 
              after(grammarAccess.getCopyAccess().getFromKeyword_1()); 
 
             }
@@ -6565,21 +6738,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2321:1: rule__Copy__Group__2 : rule__Copy__Group__2__Impl rule__Copy__Group__3 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2384:1: rule__Copy__Group__2 : rule__Copy__Group__2__Impl rule__Copy__Group__3 ;
     public final void rule__Copy__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2325:1: ( rule__Copy__Group__2__Impl rule__Copy__Group__3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2326:2: rule__Copy__Group__2__Impl rule__Copy__Group__3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2388:1: ( rule__Copy__Group__2__Impl rule__Copy__Group__3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2389:2: rule__Copy__Group__2__Impl rule__Copy__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__2__Impl_in_rule__Copy__Group__24866);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__2__Impl_in_rule__Copy__Group__24992);
             rule__Copy__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__3_in_rule__Copy__Group__24869);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__3_in_rule__Copy__Group__24995);
             rule__Copy__Group__3();
 
             state._fsp--;
@@ -6603,23 +6776,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2333:1: rule__Copy__Group__2__Impl : ( ( rule__Copy__SourceAssignment_2 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2396:1: rule__Copy__Group__2__Impl : ( ( rule__Copy__SourceAssignment_2 ) ) ;
     public final void rule__Copy__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2337:1: ( ( ( rule__Copy__SourceAssignment_2 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2338:1: ( ( rule__Copy__SourceAssignment_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2400:1: ( ( ( rule__Copy__SourceAssignment_2 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2401:1: ( ( rule__Copy__SourceAssignment_2 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2338:1: ( ( rule__Copy__SourceAssignment_2 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2339:1: ( rule__Copy__SourceAssignment_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2401:1: ( ( rule__Copy__SourceAssignment_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2402:1: ( rule__Copy__SourceAssignment_2 )
             {
              before(grammarAccess.getCopyAccess().getSourceAssignment_2()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2340:1: ( rule__Copy__SourceAssignment_2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2340:2: rule__Copy__SourceAssignment_2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2403:1: ( rule__Copy__SourceAssignment_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2403:2: rule__Copy__SourceAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__SourceAssignment_2_in_rule__Copy__Group__2__Impl4896);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__SourceAssignment_2_in_rule__Copy__Group__2__Impl5022);
             rule__Copy__SourceAssignment_2();
 
             state._fsp--;
@@ -6650,21 +6823,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group__3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2350:1: rule__Copy__Group__3 : rule__Copy__Group__3__Impl rule__Copy__Group__4 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2413:1: rule__Copy__Group__3 : rule__Copy__Group__3__Impl rule__Copy__Group__4 ;
     public final void rule__Copy__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2354:1: ( rule__Copy__Group__3__Impl rule__Copy__Group__4 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2355:2: rule__Copy__Group__3__Impl rule__Copy__Group__4
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2417:1: ( rule__Copy__Group__3__Impl rule__Copy__Group__4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2418:2: rule__Copy__Group__3__Impl rule__Copy__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__3__Impl_in_rule__Copy__Group__34926);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__3__Impl_in_rule__Copy__Group__35052);
             rule__Copy__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__4_in_rule__Copy__Group__34929);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__4_in_rule__Copy__Group__35055);
             rule__Copy__Group__4();
 
             state._fsp--;
@@ -6688,20 +6861,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group__3__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2362:1: rule__Copy__Group__3__Impl : ( 'to' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2425:1: rule__Copy__Group__3__Impl : ( 'to' ) ;
     public final void rule__Copy__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2366:1: ( ( 'to' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2367:1: ( 'to' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2429:1: ( ( 'to' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2430:1: ( 'to' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2367:1: ( 'to' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2368:1: 'to'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2430:1: ( 'to' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2431:1: 'to'
             {
              before(grammarAccess.getCopyAccess().getToKeyword_3()); 
-            match(input,48,FollowSets000.FOLLOW_48_in_rule__Copy__Group__3__Impl4957); 
+            match(input,49,FollowSets000.FOLLOW_49_in_rule__Copy__Group__3__Impl5083); 
              after(grammarAccess.getCopyAccess().getToKeyword_3()); 
 
             }
@@ -6725,21 +6898,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group__4"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2381:1: rule__Copy__Group__4 : rule__Copy__Group__4__Impl rule__Copy__Group__5 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2444:1: rule__Copy__Group__4 : rule__Copy__Group__4__Impl rule__Copy__Group__5 ;
     public final void rule__Copy__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2385:1: ( rule__Copy__Group__4__Impl rule__Copy__Group__5 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2386:2: rule__Copy__Group__4__Impl rule__Copy__Group__5
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2448:1: ( rule__Copy__Group__4__Impl rule__Copy__Group__5 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2449:2: rule__Copy__Group__4__Impl rule__Copy__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__4__Impl_in_rule__Copy__Group__44988);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__4__Impl_in_rule__Copy__Group__45114);
             rule__Copy__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__5_in_rule__Copy__Group__44991);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__5_in_rule__Copy__Group__45117);
             rule__Copy__Group__5();
 
             state._fsp--;
@@ -6763,23 +6936,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group__4__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2393:1: rule__Copy__Group__4__Impl : ( ( rule__Copy__DestinationAssignment_4 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2456:1: rule__Copy__Group__4__Impl : ( ( rule__Copy__DestinationAssignment_4 ) ) ;
     public final void rule__Copy__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2397:1: ( ( ( rule__Copy__DestinationAssignment_4 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2398:1: ( ( rule__Copy__DestinationAssignment_4 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2460:1: ( ( ( rule__Copy__DestinationAssignment_4 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2461:1: ( ( rule__Copy__DestinationAssignment_4 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2398:1: ( ( rule__Copy__DestinationAssignment_4 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2399:1: ( rule__Copy__DestinationAssignment_4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2461:1: ( ( rule__Copy__DestinationAssignment_4 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2462:1: ( rule__Copy__DestinationAssignment_4 )
             {
              before(grammarAccess.getCopyAccess().getDestinationAssignment_4()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2400:1: ( rule__Copy__DestinationAssignment_4 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2400:2: rule__Copy__DestinationAssignment_4
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2463:1: ( rule__Copy__DestinationAssignment_4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2463:2: rule__Copy__DestinationAssignment_4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__DestinationAssignment_4_in_rule__Copy__Group__4__Impl5018);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__DestinationAssignment_4_in_rule__Copy__Group__4__Impl5144);
             rule__Copy__DestinationAssignment_4();
 
             state._fsp--;
@@ -6810,16 +6983,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group__5"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2410:1: rule__Copy__Group__5 : rule__Copy__Group__5__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2473:1: rule__Copy__Group__5 : rule__Copy__Group__5__Impl ;
     public final void rule__Copy__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2414:1: ( rule__Copy__Group__5__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2415:2: rule__Copy__Group__5__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2477:1: ( rule__Copy__Group__5__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2478:2: rule__Copy__Group__5__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__5__Impl_in_rule__Copy__Group__55048);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group__5__Impl_in_rule__Copy__Group__55174);
             rule__Copy__Group__5__Impl();
 
             state._fsp--;
@@ -6843,31 +7016,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group__5__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2421:1: rule__Copy__Group__5__Impl : ( ( rule__Copy__Group_5__0 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2484:1: rule__Copy__Group__5__Impl : ( ( rule__Copy__Group_5__0 )? ) ;
     public final void rule__Copy__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2425:1: ( ( ( rule__Copy__Group_5__0 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2426:1: ( ( rule__Copy__Group_5__0 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2488:1: ( ( ( rule__Copy__Group_5__0 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2489:1: ( ( rule__Copy__Group_5__0 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2426:1: ( ( rule__Copy__Group_5__0 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2427:1: ( rule__Copy__Group_5__0 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2489:1: ( ( rule__Copy__Group_5__0 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2490:1: ( rule__Copy__Group_5__0 )?
             {
              before(grammarAccess.getCopyAccess().getGroup_5()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2428:1: ( rule__Copy__Group_5__0 )?
-            int alt19=2;
-            int LA19_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2491:1: ( rule__Copy__Group_5__0 )?
+            int alt20=2;
+            int LA20_0 = input.LA(1);
 
-            if ( (LA19_0==49) ) {
-                alt19=1;
+            if ( (LA20_0==50) ) {
+                alt20=1;
             }
-            switch (alt19) {
+            switch (alt20) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2428:2: rule__Copy__Group_5__0
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2491:2: rule__Copy__Group_5__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Copy__Group_5__0_in_rule__Copy__Group__5__Impl5075);
+                    pushFollow(FollowSets000.FOLLOW_rule__Copy__Group_5__0_in_rule__Copy__Group__5__Impl5201);
                     rule__Copy__Group_5__0();
 
                     state._fsp--;
@@ -6901,21 +7074,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group_5__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2450:1: rule__Copy__Group_5__0 : rule__Copy__Group_5__0__Impl rule__Copy__Group_5__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2513:1: rule__Copy__Group_5__0 : rule__Copy__Group_5__0__Impl rule__Copy__Group_5__1 ;
     public final void rule__Copy__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2454:1: ( rule__Copy__Group_5__0__Impl rule__Copy__Group_5__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2455:2: rule__Copy__Group_5__0__Impl rule__Copy__Group_5__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2517:1: ( rule__Copy__Group_5__0__Impl rule__Copy__Group_5__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2518:2: rule__Copy__Group_5__0__Impl rule__Copy__Group_5__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group_5__0__Impl_in_rule__Copy__Group_5__05118);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group_5__0__Impl_in_rule__Copy__Group_5__05244);
             rule__Copy__Group_5__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group_5__1_in_rule__Copy__Group_5__05121);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group_5__1_in_rule__Copy__Group_5__05247);
             rule__Copy__Group_5__1();
 
             state._fsp--;
@@ -6939,20 +7112,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group_5__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2462:1: rule__Copy__Group_5__0__Impl : ( 'strategy:' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2525:1: rule__Copy__Group_5__0__Impl : ( 'strategy:' ) ;
     public final void rule__Copy__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2466:1: ( ( 'strategy:' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2467:1: ( 'strategy:' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2529:1: ( ( 'strategy:' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2530:1: ( 'strategy:' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2467:1: ( 'strategy:' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2468:1: 'strategy:'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2530:1: ( 'strategy:' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2531:1: 'strategy:'
             {
              before(grammarAccess.getCopyAccess().getStrategyKeyword_5_0()); 
-            match(input,49,FollowSets000.FOLLOW_49_in_rule__Copy__Group_5__0__Impl5149); 
+            match(input,50,FollowSets000.FOLLOW_50_in_rule__Copy__Group_5__0__Impl5275); 
              after(grammarAccess.getCopyAccess().getStrategyKeyword_5_0()); 
 
             }
@@ -6976,16 +7149,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group_5__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2481:1: rule__Copy__Group_5__1 : rule__Copy__Group_5__1__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2544:1: rule__Copy__Group_5__1 : rule__Copy__Group_5__1__Impl ;
     public final void rule__Copy__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2485:1: ( rule__Copy__Group_5__1__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2486:2: rule__Copy__Group_5__1__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2548:1: ( rule__Copy__Group_5__1__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2549:2: rule__Copy__Group_5__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group_5__1__Impl_in_rule__Copy__Group_5__15180);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__Group_5__1__Impl_in_rule__Copy__Group_5__15306);
             rule__Copy__Group_5__1__Impl();
 
             state._fsp--;
@@ -7009,23 +7182,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__Group_5__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2492:1: rule__Copy__Group_5__1__Impl : ( ( rule__Copy__StrategyAssignment_5_1 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2555:1: rule__Copy__Group_5__1__Impl : ( ( rule__Copy__StrategyAssignment_5_1 ) ) ;
     public final void rule__Copy__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2496:1: ( ( ( rule__Copy__StrategyAssignment_5_1 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2497:1: ( ( rule__Copy__StrategyAssignment_5_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2559:1: ( ( ( rule__Copy__StrategyAssignment_5_1 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2560:1: ( ( rule__Copy__StrategyAssignment_5_1 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2497:1: ( ( rule__Copy__StrategyAssignment_5_1 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2498:1: ( rule__Copy__StrategyAssignment_5_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2560:1: ( ( rule__Copy__StrategyAssignment_5_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2561:1: ( rule__Copy__StrategyAssignment_5_1 )
             {
              before(grammarAccess.getCopyAccess().getStrategyAssignment_5_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2499:1: ( rule__Copy__StrategyAssignment_5_1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2499:2: rule__Copy__StrategyAssignment_5_1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2562:1: ( rule__Copy__StrategyAssignment_5_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2562:2: rule__Copy__StrategyAssignment_5_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Copy__StrategyAssignment_5_1_in_rule__Copy__Group_5__1__Impl5207);
+            pushFollow(FollowSets000.FOLLOW_rule__Copy__StrategyAssignment_5_1_in_rule__Copy__Group_5__1__Impl5333);
             rule__Copy__StrategyAssignment_5_1();
 
             state._fsp--;
@@ -7056,21 +7229,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2513:1: rule__Move__Group__0 : rule__Move__Group__0__Impl rule__Move__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2576:1: rule__Move__Group__0 : rule__Move__Group__0__Impl rule__Move__Group__1 ;
     public final void rule__Move__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2517:1: ( rule__Move__Group__0__Impl rule__Move__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2518:2: rule__Move__Group__0__Impl rule__Move__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2580:1: ( rule__Move__Group__0__Impl rule__Move__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2581:2: rule__Move__Group__0__Impl rule__Move__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__0__Impl_in_rule__Move__Group__05241);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__0__Impl_in_rule__Move__Group__05367);
             rule__Move__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__1_in_rule__Move__Group__05244);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__1_in_rule__Move__Group__05370);
             rule__Move__Group__1();
 
             state._fsp--;
@@ -7094,20 +7267,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2525:1: rule__Move__Group__0__Impl : ( 'move' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2588:1: rule__Move__Group__0__Impl : ( 'move' ) ;
     public final void rule__Move__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2529:1: ( ( 'move' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2530:1: ( 'move' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2592:1: ( ( 'move' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2593:1: ( 'move' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2530:1: ( 'move' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2531:1: 'move'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2593:1: ( 'move' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2594:1: 'move'
             {
              before(grammarAccess.getMoveAccess().getMoveKeyword_0()); 
-            match(input,50,FollowSets000.FOLLOW_50_in_rule__Move__Group__0__Impl5272); 
+            match(input,51,FollowSets000.FOLLOW_51_in_rule__Move__Group__0__Impl5398); 
              after(grammarAccess.getMoveAccess().getMoveKeyword_0()); 
 
             }
@@ -7131,21 +7304,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2544:1: rule__Move__Group__1 : rule__Move__Group__1__Impl rule__Move__Group__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2607:1: rule__Move__Group__1 : rule__Move__Group__1__Impl rule__Move__Group__2 ;
     public final void rule__Move__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2548:1: ( rule__Move__Group__1__Impl rule__Move__Group__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2549:2: rule__Move__Group__1__Impl rule__Move__Group__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2611:1: ( rule__Move__Group__1__Impl rule__Move__Group__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2612:2: rule__Move__Group__1__Impl rule__Move__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__1__Impl_in_rule__Move__Group__15303);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__1__Impl_in_rule__Move__Group__15429);
             rule__Move__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__2_in_rule__Move__Group__15306);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__2_in_rule__Move__Group__15432);
             rule__Move__Group__2();
 
             state._fsp--;
@@ -7169,20 +7342,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2556:1: rule__Move__Group__1__Impl : ( 'from' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2619:1: rule__Move__Group__1__Impl : ( 'from' ) ;
     public final void rule__Move__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2560:1: ( ( 'from' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2561:1: ( 'from' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2623:1: ( ( 'from' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2624:1: ( 'from' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2561:1: ( 'from' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2562:1: 'from'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2624:1: ( 'from' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2625:1: 'from'
             {
              before(grammarAccess.getMoveAccess().getFromKeyword_1()); 
-            match(input,44,FollowSets000.FOLLOW_44_in_rule__Move__Group__1__Impl5334); 
+            match(input,45,FollowSets000.FOLLOW_45_in_rule__Move__Group__1__Impl5460); 
              after(grammarAccess.getMoveAccess().getFromKeyword_1()); 
 
             }
@@ -7206,21 +7379,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2575:1: rule__Move__Group__2 : rule__Move__Group__2__Impl rule__Move__Group__3 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2638:1: rule__Move__Group__2 : rule__Move__Group__2__Impl rule__Move__Group__3 ;
     public final void rule__Move__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2579:1: ( rule__Move__Group__2__Impl rule__Move__Group__3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2580:2: rule__Move__Group__2__Impl rule__Move__Group__3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2642:1: ( rule__Move__Group__2__Impl rule__Move__Group__3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2643:2: rule__Move__Group__2__Impl rule__Move__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__2__Impl_in_rule__Move__Group__25365);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__2__Impl_in_rule__Move__Group__25491);
             rule__Move__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__3_in_rule__Move__Group__25368);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__3_in_rule__Move__Group__25494);
             rule__Move__Group__3();
 
             state._fsp--;
@@ -7244,23 +7417,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2587:1: rule__Move__Group__2__Impl : ( ( rule__Move__SourceAssignment_2 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2650:1: rule__Move__Group__2__Impl : ( ( rule__Move__SourceAssignment_2 ) ) ;
     public final void rule__Move__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2591:1: ( ( ( rule__Move__SourceAssignment_2 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2592:1: ( ( rule__Move__SourceAssignment_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2654:1: ( ( ( rule__Move__SourceAssignment_2 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2655:1: ( ( rule__Move__SourceAssignment_2 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2592:1: ( ( rule__Move__SourceAssignment_2 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2593:1: ( rule__Move__SourceAssignment_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2655:1: ( ( rule__Move__SourceAssignment_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2656:1: ( rule__Move__SourceAssignment_2 )
             {
              before(grammarAccess.getMoveAccess().getSourceAssignment_2()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2594:1: ( rule__Move__SourceAssignment_2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2594:2: rule__Move__SourceAssignment_2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2657:1: ( rule__Move__SourceAssignment_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2657:2: rule__Move__SourceAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Move__SourceAssignment_2_in_rule__Move__Group__2__Impl5395);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__SourceAssignment_2_in_rule__Move__Group__2__Impl5521);
             rule__Move__SourceAssignment_2();
 
             state._fsp--;
@@ -7291,21 +7464,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group__3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2604:1: rule__Move__Group__3 : rule__Move__Group__3__Impl rule__Move__Group__4 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2667:1: rule__Move__Group__3 : rule__Move__Group__3__Impl rule__Move__Group__4 ;
     public final void rule__Move__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2608:1: ( rule__Move__Group__3__Impl rule__Move__Group__4 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2609:2: rule__Move__Group__3__Impl rule__Move__Group__4
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2671:1: ( rule__Move__Group__3__Impl rule__Move__Group__4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2672:2: rule__Move__Group__3__Impl rule__Move__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__3__Impl_in_rule__Move__Group__35425);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__3__Impl_in_rule__Move__Group__35551);
             rule__Move__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__4_in_rule__Move__Group__35428);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__4_in_rule__Move__Group__35554);
             rule__Move__Group__4();
 
             state._fsp--;
@@ -7329,20 +7502,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group__3__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2616:1: rule__Move__Group__3__Impl : ( 'to' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2679:1: rule__Move__Group__3__Impl : ( 'to' ) ;
     public final void rule__Move__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2620:1: ( ( 'to' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2621:1: ( 'to' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2683:1: ( ( 'to' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2684:1: ( 'to' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2621:1: ( 'to' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2622:1: 'to'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2684:1: ( 'to' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2685:1: 'to'
             {
              before(grammarAccess.getMoveAccess().getToKeyword_3()); 
-            match(input,48,FollowSets000.FOLLOW_48_in_rule__Move__Group__3__Impl5456); 
+            match(input,49,FollowSets000.FOLLOW_49_in_rule__Move__Group__3__Impl5582); 
              after(grammarAccess.getMoveAccess().getToKeyword_3()); 
 
             }
@@ -7366,21 +7539,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group__4"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2635:1: rule__Move__Group__4 : rule__Move__Group__4__Impl rule__Move__Group__5 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2698:1: rule__Move__Group__4 : rule__Move__Group__4__Impl rule__Move__Group__5 ;
     public final void rule__Move__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2639:1: ( rule__Move__Group__4__Impl rule__Move__Group__5 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2640:2: rule__Move__Group__4__Impl rule__Move__Group__5
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2702:1: ( rule__Move__Group__4__Impl rule__Move__Group__5 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2703:2: rule__Move__Group__4__Impl rule__Move__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__4__Impl_in_rule__Move__Group__45487);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__4__Impl_in_rule__Move__Group__45613);
             rule__Move__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__5_in_rule__Move__Group__45490);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__5_in_rule__Move__Group__45616);
             rule__Move__Group__5();
 
             state._fsp--;
@@ -7404,23 +7577,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group__4__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2647:1: rule__Move__Group__4__Impl : ( ( rule__Move__DestinationAssignment_4 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2710:1: rule__Move__Group__4__Impl : ( ( rule__Move__DestinationAssignment_4 ) ) ;
     public final void rule__Move__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2651:1: ( ( ( rule__Move__DestinationAssignment_4 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2652:1: ( ( rule__Move__DestinationAssignment_4 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2714:1: ( ( ( rule__Move__DestinationAssignment_4 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2715:1: ( ( rule__Move__DestinationAssignment_4 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2652:1: ( ( rule__Move__DestinationAssignment_4 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2653:1: ( rule__Move__DestinationAssignment_4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2715:1: ( ( rule__Move__DestinationAssignment_4 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2716:1: ( rule__Move__DestinationAssignment_4 )
             {
              before(grammarAccess.getMoveAccess().getDestinationAssignment_4()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2654:1: ( rule__Move__DestinationAssignment_4 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2654:2: rule__Move__DestinationAssignment_4
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2717:1: ( rule__Move__DestinationAssignment_4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2717:2: rule__Move__DestinationAssignment_4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Move__DestinationAssignment_4_in_rule__Move__Group__4__Impl5517);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__DestinationAssignment_4_in_rule__Move__Group__4__Impl5643);
             rule__Move__DestinationAssignment_4();
 
             state._fsp--;
@@ -7451,16 +7624,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group__5"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2664:1: rule__Move__Group__5 : rule__Move__Group__5__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2727:1: rule__Move__Group__5 : rule__Move__Group__5__Impl ;
     public final void rule__Move__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2668:1: ( rule__Move__Group__5__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2669:2: rule__Move__Group__5__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2731:1: ( rule__Move__Group__5__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2732:2: rule__Move__Group__5__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__5__Impl_in_rule__Move__Group__55547);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__Group__5__Impl_in_rule__Move__Group__55673);
             rule__Move__Group__5__Impl();
 
             state._fsp--;
@@ -7484,31 +7657,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group__5__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2675:1: rule__Move__Group__5__Impl : ( ( rule__Move__Group_5__0 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2738:1: rule__Move__Group__5__Impl : ( ( rule__Move__Group_5__0 )? ) ;
     public final void rule__Move__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2679:1: ( ( ( rule__Move__Group_5__0 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2680:1: ( ( rule__Move__Group_5__0 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2742:1: ( ( ( rule__Move__Group_5__0 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2743:1: ( ( rule__Move__Group_5__0 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2680:1: ( ( rule__Move__Group_5__0 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2681:1: ( rule__Move__Group_5__0 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2743:1: ( ( rule__Move__Group_5__0 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2744:1: ( rule__Move__Group_5__0 )?
             {
              before(grammarAccess.getMoveAccess().getGroup_5()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2682:1: ( rule__Move__Group_5__0 )?
-            int alt20=2;
-            int LA20_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2745:1: ( rule__Move__Group_5__0 )?
+            int alt21=2;
+            int LA21_0 = input.LA(1);
 
-            if ( (LA20_0==49) ) {
-                alt20=1;
+            if ( (LA21_0==50) ) {
+                alt21=1;
             }
-            switch (alt20) {
+            switch (alt21) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2682:2: rule__Move__Group_5__0
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2745:2: rule__Move__Group_5__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Move__Group_5__0_in_rule__Move__Group__5__Impl5574);
+                    pushFollow(FollowSets000.FOLLOW_rule__Move__Group_5__0_in_rule__Move__Group__5__Impl5700);
                     rule__Move__Group_5__0();
 
                     state._fsp--;
@@ -7542,21 +7715,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group_5__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2704:1: rule__Move__Group_5__0 : rule__Move__Group_5__0__Impl rule__Move__Group_5__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2767:1: rule__Move__Group_5__0 : rule__Move__Group_5__0__Impl rule__Move__Group_5__1 ;
     public final void rule__Move__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2708:1: ( rule__Move__Group_5__0__Impl rule__Move__Group_5__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2709:2: rule__Move__Group_5__0__Impl rule__Move__Group_5__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2771:1: ( rule__Move__Group_5__0__Impl rule__Move__Group_5__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2772:2: rule__Move__Group_5__0__Impl rule__Move__Group_5__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Move__Group_5__0__Impl_in_rule__Move__Group_5__05617);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__Group_5__0__Impl_in_rule__Move__Group_5__05743);
             rule__Move__Group_5__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Move__Group_5__1_in_rule__Move__Group_5__05620);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__Group_5__1_in_rule__Move__Group_5__05746);
             rule__Move__Group_5__1();
 
             state._fsp--;
@@ -7580,20 +7753,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group_5__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2716:1: rule__Move__Group_5__0__Impl : ( 'strategy:' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2779:1: rule__Move__Group_5__0__Impl : ( 'strategy:' ) ;
     public final void rule__Move__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2720:1: ( ( 'strategy:' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2721:1: ( 'strategy:' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2783:1: ( ( 'strategy:' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2784:1: ( 'strategy:' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2721:1: ( 'strategy:' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2722:1: 'strategy:'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2784:1: ( 'strategy:' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2785:1: 'strategy:'
             {
              before(grammarAccess.getMoveAccess().getStrategyKeyword_5_0()); 
-            match(input,49,FollowSets000.FOLLOW_49_in_rule__Move__Group_5__0__Impl5648); 
+            match(input,50,FollowSets000.FOLLOW_50_in_rule__Move__Group_5__0__Impl5774); 
              after(grammarAccess.getMoveAccess().getStrategyKeyword_5_0()); 
 
             }
@@ -7617,16 +7790,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group_5__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2735:1: rule__Move__Group_5__1 : rule__Move__Group_5__1__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2798:1: rule__Move__Group_5__1 : rule__Move__Group_5__1__Impl ;
     public final void rule__Move__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2739:1: ( rule__Move__Group_5__1__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2740:2: rule__Move__Group_5__1__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2802:1: ( rule__Move__Group_5__1__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2803:2: rule__Move__Group_5__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Move__Group_5__1__Impl_in_rule__Move__Group_5__15679);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__Group_5__1__Impl_in_rule__Move__Group_5__15805);
             rule__Move__Group_5__1__Impl();
 
             state._fsp--;
@@ -7650,23 +7823,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__Group_5__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2746:1: rule__Move__Group_5__1__Impl : ( ( rule__Move__StrategyAssignment_5_1 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2809:1: rule__Move__Group_5__1__Impl : ( ( rule__Move__StrategyAssignment_5_1 ) ) ;
     public final void rule__Move__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2750:1: ( ( ( rule__Move__StrategyAssignment_5_1 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2751:1: ( ( rule__Move__StrategyAssignment_5_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2813:1: ( ( ( rule__Move__StrategyAssignment_5_1 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2814:1: ( ( rule__Move__StrategyAssignment_5_1 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2751:1: ( ( rule__Move__StrategyAssignment_5_1 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2752:1: ( rule__Move__StrategyAssignment_5_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2814:1: ( ( rule__Move__StrategyAssignment_5_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2815:1: ( rule__Move__StrategyAssignment_5_1 )
             {
              before(grammarAccess.getMoveAccess().getStrategyAssignment_5_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2753:1: ( rule__Move__StrategyAssignment_5_1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2753:2: rule__Move__StrategyAssignment_5_1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2816:1: ( rule__Move__StrategyAssignment_5_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2816:2: rule__Move__StrategyAssignment_5_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Move__StrategyAssignment_5_1_in_rule__Move__Group_5__1__Impl5706);
+            pushFollow(FollowSets000.FOLLOW_rule__Move__StrategyAssignment_5_1_in_rule__Move__Group_5__1__Impl5832);
             rule__Move__StrategyAssignment_5_1();
 
             state._fsp--;
@@ -7697,21 +7870,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Delete__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2767:1: rule__Delete__Group__0 : rule__Delete__Group__0__Impl rule__Delete__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2830:1: rule__Delete__Group__0 : rule__Delete__Group__0__Impl rule__Delete__Group__1 ;
     public final void rule__Delete__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2771:1: ( rule__Delete__Group__0__Impl rule__Delete__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2772:2: rule__Delete__Group__0__Impl rule__Delete__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2834:1: ( rule__Delete__Group__0__Impl rule__Delete__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2835:2: rule__Delete__Group__0__Impl rule__Delete__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Delete__Group__0__Impl_in_rule__Delete__Group__05740);
+            pushFollow(FollowSets000.FOLLOW_rule__Delete__Group__0__Impl_in_rule__Delete__Group__05866);
             rule__Delete__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Delete__Group__1_in_rule__Delete__Group__05743);
+            pushFollow(FollowSets000.FOLLOW_rule__Delete__Group__1_in_rule__Delete__Group__05869);
             rule__Delete__Group__1();
 
             state._fsp--;
@@ -7735,20 +7908,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Delete__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2779:1: rule__Delete__Group__0__Impl : ( 'delete' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2842:1: rule__Delete__Group__0__Impl : ( 'delete' ) ;
     public final void rule__Delete__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2783:1: ( ( 'delete' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2784:1: ( 'delete' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2846:1: ( ( 'delete' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2847:1: ( 'delete' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2784:1: ( 'delete' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2785:1: 'delete'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2847:1: ( 'delete' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2848:1: 'delete'
             {
              before(grammarAccess.getDeleteAccess().getDeleteKeyword_0()); 
-            match(input,51,FollowSets000.FOLLOW_51_in_rule__Delete__Group__0__Impl5771); 
+            match(input,52,FollowSets000.FOLLOW_52_in_rule__Delete__Group__0__Impl5897); 
              after(grammarAccess.getDeleteAccess().getDeleteKeyword_0()); 
 
             }
@@ -7772,21 +7945,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Delete__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2798:1: rule__Delete__Group__1 : rule__Delete__Group__1__Impl rule__Delete__Group__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2861:1: rule__Delete__Group__1 : rule__Delete__Group__1__Impl rule__Delete__Group__2 ;
     public final void rule__Delete__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2802:1: ( rule__Delete__Group__1__Impl rule__Delete__Group__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2803:2: rule__Delete__Group__1__Impl rule__Delete__Group__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2865:1: ( rule__Delete__Group__1__Impl rule__Delete__Group__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2866:2: rule__Delete__Group__1__Impl rule__Delete__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Delete__Group__1__Impl_in_rule__Delete__Group__15802);
+            pushFollow(FollowSets000.FOLLOW_rule__Delete__Group__1__Impl_in_rule__Delete__Group__15928);
             rule__Delete__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Delete__Group__2_in_rule__Delete__Group__15805);
+            pushFollow(FollowSets000.FOLLOW_rule__Delete__Group__2_in_rule__Delete__Group__15931);
             rule__Delete__Group__2();
 
             state._fsp--;
@@ -7810,20 +7983,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Delete__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2810:1: rule__Delete__Group__1__Impl : ( 'from' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2873:1: rule__Delete__Group__1__Impl : ( 'from' ) ;
     public final void rule__Delete__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2814:1: ( ( 'from' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2815:1: ( 'from' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2877:1: ( ( 'from' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2878:1: ( 'from' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2815:1: ( 'from' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2816:1: 'from'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2878:1: ( 'from' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2879:1: 'from'
             {
              before(grammarAccess.getDeleteAccess().getFromKeyword_1()); 
-            match(input,44,FollowSets000.FOLLOW_44_in_rule__Delete__Group__1__Impl5833); 
+            match(input,45,FollowSets000.FOLLOW_45_in_rule__Delete__Group__1__Impl5959); 
              after(grammarAccess.getDeleteAccess().getFromKeyword_1()); 
 
             }
@@ -7847,16 +8020,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Delete__Group__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2829:1: rule__Delete__Group__2 : rule__Delete__Group__2__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2892:1: rule__Delete__Group__2 : rule__Delete__Group__2__Impl ;
     public final void rule__Delete__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2833:1: ( rule__Delete__Group__2__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2834:2: rule__Delete__Group__2__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2896:1: ( rule__Delete__Group__2__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2897:2: rule__Delete__Group__2__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Delete__Group__2__Impl_in_rule__Delete__Group__25864);
+            pushFollow(FollowSets000.FOLLOW_rule__Delete__Group__2__Impl_in_rule__Delete__Group__25990);
             rule__Delete__Group__2__Impl();
 
             state._fsp--;
@@ -7880,23 +8053,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Delete__Group__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2840:1: rule__Delete__Group__2__Impl : ( ( rule__Delete__SourceAssignment_2 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2903:1: rule__Delete__Group__2__Impl : ( ( rule__Delete__SourceAssignment_2 ) ) ;
     public final void rule__Delete__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2844:1: ( ( ( rule__Delete__SourceAssignment_2 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2845:1: ( ( rule__Delete__SourceAssignment_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2907:1: ( ( ( rule__Delete__SourceAssignment_2 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2908:1: ( ( rule__Delete__SourceAssignment_2 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2845:1: ( ( rule__Delete__SourceAssignment_2 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2846:1: ( rule__Delete__SourceAssignment_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2908:1: ( ( rule__Delete__SourceAssignment_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2909:1: ( rule__Delete__SourceAssignment_2 )
             {
              before(grammarAccess.getDeleteAccess().getSourceAssignment_2()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2847:1: ( rule__Delete__SourceAssignment_2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2847:2: rule__Delete__SourceAssignment_2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2910:1: ( rule__Delete__SourceAssignment_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2910:2: rule__Delete__SourceAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Delete__SourceAssignment_2_in_rule__Delete__Group__2__Impl5891);
+            pushFollow(FollowSets000.FOLLOW_rule__Delete__SourceAssignment_2_in_rule__Delete__Group__2__Impl6017);
             rule__Delete__SourceAssignment_2();
 
             state._fsp--;
@@ -7927,21 +8100,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FilterContainer__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2863:1: rule__FilterContainer__Group__0 : rule__FilterContainer__Group__0__Impl rule__FilterContainer__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2926:1: rule__FilterContainer__Group__0 : rule__FilterContainer__Group__0__Impl rule__FilterContainer__Group__1 ;
     public final void rule__FilterContainer__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2867:1: ( rule__FilterContainer__Group__0__Impl rule__FilterContainer__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2868:2: rule__FilterContainer__Group__0__Impl rule__FilterContainer__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2930:1: ( rule__FilterContainer__Group__0__Impl rule__FilterContainer__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2931:2: rule__FilterContainer__Group__0__Impl rule__FilterContainer__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__Group__0__Impl_in_rule__FilterContainer__Group__05927);
+            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__Group__0__Impl_in_rule__FilterContainer__Group__06053);
             rule__FilterContainer__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__Group__1_in_rule__FilterContainer__Group__05930);
+            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__Group__1_in_rule__FilterContainer__Group__06056);
             rule__FilterContainer__Group__1();
 
             state._fsp--;
@@ -7965,20 +8138,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FilterContainer__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2875:1: rule__FilterContainer__Group__0__Impl : ( '(' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2938:1: rule__FilterContainer__Group__0__Impl : ( '(' ) ;
     public final void rule__FilterContainer__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2879:1: ( ( '(' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2880:1: ( '(' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2942:1: ( ( '(' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2943:1: ( '(' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2880:1: ( '(' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2881:1: '('
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2943:1: ( '(' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2944:1: '('
             {
              before(grammarAccess.getFilterContainerAccess().getLeftParenthesisKeyword_0()); 
-            match(input,52,FollowSets000.FOLLOW_52_in_rule__FilterContainer__Group__0__Impl5958); 
+            match(input,53,FollowSets000.FOLLOW_53_in_rule__FilterContainer__Group__0__Impl6084); 
              after(grammarAccess.getFilterContainerAccess().getLeftParenthesisKeyword_0()); 
 
             }
@@ -8002,21 +8175,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FilterContainer__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2894:1: rule__FilterContainer__Group__1 : rule__FilterContainer__Group__1__Impl rule__FilterContainer__Group__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2957:1: rule__FilterContainer__Group__1 : rule__FilterContainer__Group__1__Impl rule__FilterContainer__Group__2 ;
     public final void rule__FilterContainer__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2898:1: ( rule__FilterContainer__Group__1__Impl rule__FilterContainer__Group__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2899:2: rule__FilterContainer__Group__1__Impl rule__FilterContainer__Group__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2961:1: ( rule__FilterContainer__Group__1__Impl rule__FilterContainer__Group__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2962:2: rule__FilterContainer__Group__1__Impl rule__FilterContainer__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__Group__1__Impl_in_rule__FilterContainer__Group__15989);
+            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__Group__1__Impl_in_rule__FilterContainer__Group__16115);
             rule__FilterContainer__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__Group__2_in_rule__FilterContainer__Group__15992);
+            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__Group__2_in_rule__FilterContainer__Group__16118);
             rule__FilterContainer__Group__2();
 
             state._fsp--;
@@ -8040,23 +8213,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FilterContainer__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2906:1: rule__FilterContainer__Group__1__Impl : ( ( rule__FilterContainer__LinksAssignment_1 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2969:1: rule__FilterContainer__Group__1__Impl : ( ( rule__FilterContainer__LinksAssignment_1 ) ) ;
     public final void rule__FilterContainer__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2910:1: ( ( ( rule__FilterContainer__LinksAssignment_1 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2911:1: ( ( rule__FilterContainer__LinksAssignment_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2973:1: ( ( ( rule__FilterContainer__LinksAssignment_1 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2974:1: ( ( rule__FilterContainer__LinksAssignment_1 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2911:1: ( ( rule__FilterContainer__LinksAssignment_1 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2912:1: ( rule__FilterContainer__LinksAssignment_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2974:1: ( ( rule__FilterContainer__LinksAssignment_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2975:1: ( rule__FilterContainer__LinksAssignment_1 )
             {
              before(grammarAccess.getFilterContainerAccess().getLinksAssignment_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2913:1: ( rule__FilterContainer__LinksAssignment_1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2913:2: rule__FilterContainer__LinksAssignment_1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2976:1: ( rule__FilterContainer__LinksAssignment_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2976:2: rule__FilterContainer__LinksAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__LinksAssignment_1_in_rule__FilterContainer__Group__1__Impl6019);
+            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__LinksAssignment_1_in_rule__FilterContainer__Group__1__Impl6145);
             rule__FilterContainer__LinksAssignment_1();
 
             state._fsp--;
@@ -8087,21 +8260,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FilterContainer__Group__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2923:1: rule__FilterContainer__Group__2 : rule__FilterContainer__Group__2__Impl rule__FilterContainer__Group__3 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2986:1: rule__FilterContainer__Group__2 : rule__FilterContainer__Group__2__Impl rule__FilterContainer__Group__3 ;
     public final void rule__FilterContainer__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2927:1: ( rule__FilterContainer__Group__2__Impl rule__FilterContainer__Group__3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2928:2: rule__FilterContainer__Group__2__Impl rule__FilterContainer__Group__3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2990:1: ( rule__FilterContainer__Group__2__Impl rule__FilterContainer__Group__3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2991:2: rule__FilterContainer__Group__2__Impl rule__FilterContainer__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__Group__2__Impl_in_rule__FilterContainer__Group__26049);
+            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__Group__2__Impl_in_rule__FilterContainer__Group__26175);
             rule__FilterContainer__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__Group__3_in_rule__FilterContainer__Group__26052);
+            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__Group__3_in_rule__FilterContainer__Group__26178);
             rule__FilterContainer__Group__3();
 
             state._fsp--;
@@ -8125,35 +8298,35 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FilterContainer__Group__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2935:1: rule__FilterContainer__Group__2__Impl : ( ( rule__FilterContainer__LinksAssignment_2 )* ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2998:1: rule__FilterContainer__Group__2__Impl : ( ( rule__FilterContainer__LinksAssignment_2 )* ) ;
     public final void rule__FilterContainer__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2939:1: ( ( ( rule__FilterContainer__LinksAssignment_2 )* ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2940:1: ( ( rule__FilterContainer__LinksAssignment_2 )* )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3002:1: ( ( ( rule__FilterContainer__LinksAssignment_2 )* ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3003:1: ( ( rule__FilterContainer__LinksAssignment_2 )* )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2940:1: ( ( rule__FilterContainer__LinksAssignment_2 )* )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2941:1: ( rule__FilterContainer__LinksAssignment_2 )*
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3003:1: ( ( rule__FilterContainer__LinksAssignment_2 )* )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3004:1: ( rule__FilterContainer__LinksAssignment_2 )*
             {
              before(grammarAccess.getFilterContainerAccess().getLinksAssignment_2()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2942:1: ( rule__FilterContainer__LinksAssignment_2 )*
-            loop21:
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3005:1: ( rule__FilterContainer__LinksAssignment_2 )*
+            loop22:
             do {
-                int alt21=2;
-                int LA21_0 = input.LA(1);
+                int alt22=2;
+                int LA22_0 = input.LA(1);
 
-                if ( ((LA21_0>=25 && LA21_0<=26)||(LA21_0>=33 && LA21_0<=34)||LA21_0==52||LA21_0==54||(LA21_0>=56 && LA21_0<=57)||(LA21_0>=62 && LA21_0<=64)||LA21_0==66) ) {
-                    alt21=1;
+                if ( ((LA22_0>=25 && LA22_0<=26)||(LA22_0>=33 && LA22_0<=34)||LA22_0==53||LA22_0==55||(LA22_0>=57 && LA22_0<=58)||(LA22_0>=63 && LA22_0<=65)||LA22_0==67) ) {
+                    alt22=1;
                 }
 
 
-                switch (alt21) {
+                switch (alt22) {
             	case 1 :
-            	    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2942:2: rule__FilterContainer__LinksAssignment_2
+            	    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3005:2: rule__FilterContainer__LinksAssignment_2
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__LinksAssignment_2_in_rule__FilterContainer__Group__2__Impl6079);
+            	    pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__LinksAssignment_2_in_rule__FilterContainer__Group__2__Impl6205);
             	    rule__FilterContainer__LinksAssignment_2();
 
             	    state._fsp--;
@@ -8163,7 +8336,7 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop21;
+            	    break loop22;
                 }
             } while (true);
 
@@ -8190,16 +8363,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FilterContainer__Group__3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2952:1: rule__FilterContainer__Group__3 : rule__FilterContainer__Group__3__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3015:1: rule__FilterContainer__Group__3 : rule__FilterContainer__Group__3__Impl ;
     public final void rule__FilterContainer__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2956:1: ( rule__FilterContainer__Group__3__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2957:2: rule__FilterContainer__Group__3__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3019:1: ( rule__FilterContainer__Group__3__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3020:2: rule__FilterContainer__Group__3__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__Group__3__Impl_in_rule__FilterContainer__Group__36110);
+            pushFollow(FollowSets000.FOLLOW_rule__FilterContainer__Group__3__Impl_in_rule__FilterContainer__Group__36236);
             rule__FilterContainer__Group__3__Impl();
 
             state._fsp--;
@@ -8223,20 +8396,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FilterContainer__Group__3__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2963:1: rule__FilterContainer__Group__3__Impl : ( ')' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3026:1: rule__FilterContainer__Group__3__Impl : ( ')' ) ;
     public final void rule__FilterContainer__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2967:1: ( ( ')' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2968:1: ( ')' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3030:1: ( ( ')' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3031:1: ( ')' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2968:1: ( ')' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2969:1: ')'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3031:1: ( ')' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3032:1: ')'
             {
              before(grammarAccess.getFilterContainerAccess().getRightParenthesisKeyword_3()); 
-            match(input,53,FollowSets000.FOLLOW_53_in_rule__FilterContainer__Group__3__Impl6138); 
+            match(input,54,FollowSets000.FOLLOW_54_in_rule__FilterContainer__Group__3__Impl6264); 
              after(grammarAccess.getFilterContainerAccess().getRightParenthesisKeyword_3()); 
 
             }
@@ -8260,21 +8433,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Link__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2990:1: rule__Link__Group__0 : rule__Link__Group__0__Impl rule__Link__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3053:1: rule__Link__Group__0 : rule__Link__Group__0__Impl rule__Link__Group__1 ;
     public final void rule__Link__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2994:1: ( rule__Link__Group__0__Impl rule__Link__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:2995:2: rule__Link__Group__0__Impl rule__Link__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3057:1: ( rule__Link__Group__0__Impl rule__Link__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3058:2: rule__Link__Group__0__Impl rule__Link__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Link__Group__0__Impl_in_rule__Link__Group__06177);
+            pushFollow(FollowSets000.FOLLOW_rule__Link__Group__0__Impl_in_rule__Link__Group__06303);
             rule__Link__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Link__Group__1_in_rule__Link__Group__06180);
+            pushFollow(FollowSets000.FOLLOW_rule__Link__Group__1_in_rule__Link__Group__06306);
             rule__Link__Group__1();
 
             state._fsp--;
@@ -8298,31 +8471,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Link__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3002:1: rule__Link__Group__0__Impl : ( ( rule__Link__CompositonTypeAssignment_0 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3065:1: rule__Link__Group__0__Impl : ( ( rule__Link__CompositonTypeAssignment_0 )? ) ;
     public final void rule__Link__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3006:1: ( ( ( rule__Link__CompositonTypeAssignment_0 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3007:1: ( ( rule__Link__CompositonTypeAssignment_0 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3069:1: ( ( ( rule__Link__CompositonTypeAssignment_0 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3070:1: ( ( rule__Link__CompositonTypeAssignment_0 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3007:1: ( ( rule__Link__CompositonTypeAssignment_0 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3008:1: ( rule__Link__CompositonTypeAssignment_0 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3070:1: ( ( rule__Link__CompositonTypeAssignment_0 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3071:1: ( rule__Link__CompositonTypeAssignment_0 )?
             {
              before(grammarAccess.getLinkAccess().getCompositonTypeAssignment_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3009:1: ( rule__Link__CompositonTypeAssignment_0 )?
-            int alt22=2;
-            int LA22_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3072:1: ( rule__Link__CompositonTypeAssignment_0 )?
+            int alt23=2;
+            int LA23_0 = input.LA(1);
 
-            if ( ((LA22_0>=33 && LA22_0<=34)) ) {
-                alt22=1;
+            if ( ((LA23_0>=33 && LA23_0<=34)) ) {
+                alt23=1;
             }
-            switch (alt22) {
+            switch (alt23) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3009:2: rule__Link__CompositonTypeAssignment_0
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3072:2: rule__Link__CompositonTypeAssignment_0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Link__CompositonTypeAssignment_0_in_rule__Link__Group__0__Impl6207);
+                    pushFollow(FollowSets000.FOLLOW_rule__Link__CompositonTypeAssignment_0_in_rule__Link__Group__0__Impl6333);
                     rule__Link__CompositonTypeAssignment_0();
 
                     state._fsp--;
@@ -8356,16 +8529,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Link__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3019:1: rule__Link__Group__1 : rule__Link__Group__1__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3082:1: rule__Link__Group__1 : rule__Link__Group__1__Impl ;
     public final void rule__Link__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3023:1: ( rule__Link__Group__1__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3024:2: rule__Link__Group__1__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3086:1: ( rule__Link__Group__1__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3087:2: rule__Link__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Link__Group__1__Impl_in_rule__Link__Group__16238);
+            pushFollow(FollowSets000.FOLLOW_rule__Link__Group__1__Impl_in_rule__Link__Group__16364);
             rule__Link__Group__1__Impl();
 
             state._fsp--;
@@ -8389,23 +8562,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Link__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3030:1: rule__Link__Group__1__Impl : ( ( rule__Link__ElementAssignment_1 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3093:1: rule__Link__Group__1__Impl : ( ( rule__Link__ElementAssignment_1 ) ) ;
     public final void rule__Link__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3034:1: ( ( ( rule__Link__ElementAssignment_1 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3035:1: ( ( rule__Link__ElementAssignment_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3097:1: ( ( ( rule__Link__ElementAssignment_1 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3098:1: ( ( rule__Link__ElementAssignment_1 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3035:1: ( ( rule__Link__ElementAssignment_1 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3036:1: ( rule__Link__ElementAssignment_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3098:1: ( ( rule__Link__ElementAssignment_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3099:1: ( rule__Link__ElementAssignment_1 )
             {
              before(grammarAccess.getLinkAccess().getElementAssignment_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3037:1: ( rule__Link__ElementAssignment_1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3037:2: rule__Link__ElementAssignment_1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3100:1: ( rule__Link__ElementAssignment_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3100:2: rule__Link__ElementAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Link__ElementAssignment_1_in_rule__Link__Group__1__Impl6265);
+            pushFollow(FollowSets000.FOLLOW_rule__Link__ElementAssignment_1_in_rule__Link__Group__1__Impl6391);
             rule__Link__ElementAssignment_1();
 
             state._fsp--;
@@ -8436,21 +8609,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3051:1: rule__OnAttributes__Group__0 : rule__OnAttributes__Group__0__Impl rule__OnAttributes__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3114:1: rule__OnAttributes__Group__0 : rule__OnAttributes__Group__0__Impl rule__OnAttributes__Group__1 ;
     public final void rule__OnAttributes__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3055:1: ( rule__OnAttributes__Group__0__Impl rule__OnAttributes__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3056:2: rule__OnAttributes__Group__0__Impl rule__OnAttributes__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3118:1: ( rule__OnAttributes__Group__0__Impl rule__OnAttributes__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3119:2: rule__OnAttributes__Group__0__Impl rule__OnAttributes__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group__0__Impl_in_rule__OnAttributes__Group__06299);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group__0__Impl_in_rule__OnAttributes__Group__06425);
             rule__OnAttributes__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group__1_in_rule__OnAttributes__Group__06302);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group__1_in_rule__OnAttributes__Group__06428);
             rule__OnAttributes__Group__1();
 
             state._fsp--;
@@ -8474,20 +8647,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3063:1: rule__OnAttributes__Group__0__Impl : ( 'attribute' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3126:1: rule__OnAttributes__Group__0__Impl : ( 'attribute' ) ;
     public final void rule__OnAttributes__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3067:1: ( ( 'attribute' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3068:1: ( 'attribute' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3130:1: ( ( 'attribute' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3131:1: ( 'attribute' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3068:1: ( 'attribute' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3069:1: 'attribute'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3131:1: ( 'attribute' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3132:1: 'attribute'
             {
              before(grammarAccess.getOnAttributesAccess().getAttributeKeyword_0()); 
-            match(input,54,FollowSets000.FOLLOW_54_in_rule__OnAttributes__Group__0__Impl6330); 
+            match(input,55,FollowSets000.FOLLOW_55_in_rule__OnAttributes__Group__0__Impl6456); 
              after(grammarAccess.getOnAttributesAccess().getAttributeKeyword_0()); 
 
             }
@@ -8511,21 +8684,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3082:1: rule__OnAttributes__Group__1 : rule__OnAttributes__Group__1__Impl rule__OnAttributes__Group__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3145:1: rule__OnAttributes__Group__1 : rule__OnAttributes__Group__1__Impl rule__OnAttributes__Group__2 ;
     public final void rule__OnAttributes__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3086:1: ( rule__OnAttributes__Group__1__Impl rule__OnAttributes__Group__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3087:2: rule__OnAttributes__Group__1__Impl rule__OnAttributes__Group__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3149:1: ( rule__OnAttributes__Group__1__Impl rule__OnAttributes__Group__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3150:2: rule__OnAttributes__Group__1__Impl rule__OnAttributes__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group__1__Impl_in_rule__OnAttributes__Group__16361);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group__1__Impl_in_rule__OnAttributes__Group__16487);
             rule__OnAttributes__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group__2_in_rule__OnAttributes__Group__16364);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group__2_in_rule__OnAttributes__Group__16490);
             rule__OnAttributes__Group__2();
 
             state._fsp--;
@@ -8549,23 +8722,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3094:1: rule__OnAttributes__Group__1__Impl : ( ( rule__OnAttributes__NameAssignment_1 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3157:1: rule__OnAttributes__Group__1__Impl : ( ( rule__OnAttributes__NameAssignment_1 ) ) ;
     public final void rule__OnAttributes__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3098:1: ( ( ( rule__OnAttributes__NameAssignment_1 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3099:1: ( ( rule__OnAttributes__NameAssignment_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3161:1: ( ( ( rule__OnAttributes__NameAssignment_1 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3162:1: ( ( rule__OnAttributes__NameAssignment_1 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3099:1: ( ( rule__OnAttributes__NameAssignment_1 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3100:1: ( rule__OnAttributes__NameAssignment_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3162:1: ( ( rule__OnAttributes__NameAssignment_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3163:1: ( rule__OnAttributes__NameAssignment_1 )
             {
              before(grammarAccess.getOnAttributesAccess().getNameAssignment_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3101:1: ( rule__OnAttributes__NameAssignment_1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3101:2: rule__OnAttributes__NameAssignment_1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3164:1: ( rule__OnAttributes__NameAssignment_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3164:2: rule__OnAttributes__NameAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__NameAssignment_1_in_rule__OnAttributes__Group__1__Impl6391);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__NameAssignment_1_in_rule__OnAttributes__Group__1__Impl6517);
             rule__OnAttributes__NameAssignment_1();
 
             state._fsp--;
@@ -8596,16 +8769,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3111:1: rule__OnAttributes__Group__2 : rule__OnAttributes__Group__2__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3174:1: rule__OnAttributes__Group__2 : rule__OnAttributes__Group__2__Impl ;
     public final void rule__OnAttributes__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3115:1: ( rule__OnAttributes__Group__2__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3116:2: rule__OnAttributes__Group__2__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3178:1: ( rule__OnAttributes__Group__2__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3179:2: rule__OnAttributes__Group__2__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group__2__Impl_in_rule__OnAttributes__Group__26421);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group__2__Impl_in_rule__OnAttributes__Group__26547);
             rule__OnAttributes__Group__2__Impl();
 
             state._fsp--;
@@ -8629,23 +8802,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3122:1: rule__OnAttributes__Group__2__Impl : ( ( rule__OnAttributes__Alternatives_2 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3185:1: rule__OnAttributes__Group__2__Impl : ( ( rule__OnAttributes__Alternatives_2 ) ) ;
     public final void rule__OnAttributes__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3126:1: ( ( ( rule__OnAttributes__Alternatives_2 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3127:1: ( ( rule__OnAttributes__Alternatives_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3189:1: ( ( ( rule__OnAttributes__Alternatives_2 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3190:1: ( ( rule__OnAttributes__Alternatives_2 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3127:1: ( ( rule__OnAttributes__Alternatives_2 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3128:1: ( rule__OnAttributes__Alternatives_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3190:1: ( ( rule__OnAttributes__Alternatives_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3191:1: ( rule__OnAttributes__Alternatives_2 )
             {
              before(grammarAccess.getOnAttributesAccess().getAlternatives_2()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3129:1: ( rule__OnAttributes__Alternatives_2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3129:2: rule__OnAttributes__Alternatives_2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3192:1: ( rule__OnAttributes__Alternatives_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3192:2: rule__OnAttributes__Alternatives_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Alternatives_2_in_rule__OnAttributes__Group__2__Impl6448);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Alternatives_2_in_rule__OnAttributes__Group__2__Impl6574);
             rule__OnAttributes__Alternatives_2();
 
             state._fsp--;
@@ -8676,21 +8849,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group_2_0__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3145:1: rule__OnAttributes__Group_2_0__0 : rule__OnAttributes__Group_2_0__0__Impl rule__OnAttributes__Group_2_0__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3208:1: rule__OnAttributes__Group_2_0__0 : rule__OnAttributes__Group_2_0__0__Impl rule__OnAttributes__Group_2_0__1 ;
     public final void rule__OnAttributes__Group_2_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3149:1: ( rule__OnAttributes__Group_2_0__0__Impl rule__OnAttributes__Group_2_0__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3150:2: rule__OnAttributes__Group_2_0__0__Impl rule__OnAttributes__Group_2_0__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3212:1: ( rule__OnAttributes__Group_2_0__0__Impl rule__OnAttributes__Group_2_0__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3213:2: rule__OnAttributes__Group_2_0__0__Impl rule__OnAttributes__Group_2_0__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_0__0__Impl_in_rule__OnAttributes__Group_2_0__06484);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_0__0__Impl_in_rule__OnAttributes__Group_2_0__06610);
             rule__OnAttributes__Group_2_0__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_0__1_in_rule__OnAttributes__Group_2_0__06487);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_0__1_in_rule__OnAttributes__Group_2_0__06613);
             rule__OnAttributes__Group_2_0__1();
 
             state._fsp--;
@@ -8714,31 +8887,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group_2_0__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3157:1: rule__OnAttributes__Group_2_0__0__Impl : ( ( rule__OnAttributes__InverseAssignment_2_0_0 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3220:1: rule__OnAttributes__Group_2_0__0__Impl : ( ( rule__OnAttributes__InverseAssignment_2_0_0 )? ) ;
     public final void rule__OnAttributes__Group_2_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3161:1: ( ( ( rule__OnAttributes__InverseAssignment_2_0_0 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3162:1: ( ( rule__OnAttributes__InverseAssignment_2_0_0 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3224:1: ( ( ( rule__OnAttributes__InverseAssignment_2_0_0 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3225:1: ( ( rule__OnAttributes__InverseAssignment_2_0_0 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3162:1: ( ( rule__OnAttributes__InverseAssignment_2_0_0 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3163:1: ( rule__OnAttributes__InverseAssignment_2_0_0 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3225:1: ( ( rule__OnAttributes__InverseAssignment_2_0_0 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3226:1: ( rule__OnAttributes__InverseAssignment_2_0_0 )?
             {
              before(grammarAccess.getOnAttributesAccess().getInverseAssignment_2_0_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3164:1: ( rule__OnAttributes__InverseAssignment_2_0_0 )?
-            int alt23=2;
-            int LA23_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3227:1: ( rule__OnAttributes__InverseAssignment_2_0_0 )?
+            int alt24=2;
+            int LA24_0 = input.LA(1);
 
-            if ( (LA23_0==68) ) {
-                alt23=1;
+            if ( (LA24_0==69) ) {
+                alt24=1;
             }
-            switch (alt23) {
+            switch (alt24) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3164:2: rule__OnAttributes__InverseAssignment_2_0_0
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3227:2: rule__OnAttributes__InverseAssignment_2_0_0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__InverseAssignment_2_0_0_in_rule__OnAttributes__Group_2_0__0__Impl6514);
+                    pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__InverseAssignment_2_0_0_in_rule__OnAttributes__Group_2_0__0__Impl6640);
                     rule__OnAttributes__InverseAssignment_2_0_0();
 
                     state._fsp--;
@@ -8772,16 +8945,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group_2_0__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3174:1: rule__OnAttributes__Group_2_0__1 : rule__OnAttributes__Group_2_0__1__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3237:1: rule__OnAttributes__Group_2_0__1 : rule__OnAttributes__Group_2_0__1__Impl ;
     public final void rule__OnAttributes__Group_2_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3178:1: ( rule__OnAttributes__Group_2_0__1__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3179:2: rule__OnAttributes__Group_2_0__1__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3241:1: ( rule__OnAttributes__Group_2_0__1__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3242:2: rule__OnAttributes__Group_2_0__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_0__1__Impl_in_rule__OnAttributes__Group_2_0__16545);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_0__1__Impl_in_rule__OnAttributes__Group_2_0__16671);
             rule__OnAttributes__Group_2_0__1__Impl();
 
             state._fsp--;
@@ -8805,20 +8978,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group_2_0__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3185:1: rule__OnAttributes__Group_2_0__1__Impl : ( 'exist' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3248:1: rule__OnAttributes__Group_2_0__1__Impl : ( 'exist' ) ;
     public final void rule__OnAttributes__Group_2_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3189:1: ( ( 'exist' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3190:1: ( 'exist' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3252:1: ( ( 'exist' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3253:1: ( 'exist' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3190:1: ( 'exist' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3191:1: 'exist'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3253:1: ( 'exist' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3254:1: 'exist'
             {
              before(grammarAccess.getOnAttributesAccess().getExistKeyword_2_0_1()); 
-            match(input,55,FollowSets000.FOLLOW_55_in_rule__OnAttributes__Group_2_0__1__Impl6573); 
+            match(input,56,FollowSets000.FOLLOW_56_in_rule__OnAttributes__Group_2_0__1__Impl6699); 
              after(grammarAccess.getOnAttributesAccess().getExistKeyword_2_0_1()); 
 
             }
@@ -8842,21 +9015,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group_2_1__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3208:1: rule__OnAttributes__Group_2_1__0 : rule__OnAttributes__Group_2_1__0__Impl rule__OnAttributes__Group_2_1__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3271:1: rule__OnAttributes__Group_2_1__0 : rule__OnAttributes__Group_2_1__0__Impl rule__OnAttributes__Group_2_1__1 ;
     public final void rule__OnAttributes__Group_2_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3212:1: ( rule__OnAttributes__Group_2_1__0__Impl rule__OnAttributes__Group_2_1__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3213:2: rule__OnAttributes__Group_2_1__0__Impl rule__OnAttributes__Group_2_1__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3275:1: ( rule__OnAttributes__Group_2_1__0__Impl rule__OnAttributes__Group_2_1__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3276:2: rule__OnAttributes__Group_2_1__0__Impl rule__OnAttributes__Group_2_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_1__0__Impl_in_rule__OnAttributes__Group_2_1__06608);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_1__0__Impl_in_rule__OnAttributes__Group_2_1__06734);
             rule__OnAttributes__Group_2_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_1__1_in_rule__OnAttributes__Group_2_1__06611);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_1__1_in_rule__OnAttributes__Group_2_1__06737);
             rule__OnAttributes__Group_2_1__1();
 
             state._fsp--;
@@ -8880,20 +9053,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group_2_1__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3220:1: rule__OnAttributes__Group_2_1__0__Impl : ( 'is' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3283:1: rule__OnAttributes__Group_2_1__0__Impl : ( 'is' ) ;
     public final void rule__OnAttributes__Group_2_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3224:1: ( ( 'is' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3225:1: ( 'is' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3287:1: ( ( 'is' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3288:1: ( 'is' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3225:1: ( 'is' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3226:1: 'is'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3288:1: ( 'is' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3289:1: 'is'
             {
              before(grammarAccess.getOnAttributesAccess().getIsKeyword_2_1_0()); 
-            match(input,56,FollowSets000.FOLLOW_56_in_rule__OnAttributes__Group_2_1__0__Impl6639); 
+            match(input,57,FollowSets000.FOLLOW_57_in_rule__OnAttributes__Group_2_1__0__Impl6765); 
              after(grammarAccess.getOnAttributesAccess().getIsKeyword_2_1_0()); 
 
             }
@@ -8917,21 +9090,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group_2_1__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3239:1: rule__OnAttributes__Group_2_1__1 : rule__OnAttributes__Group_2_1__1__Impl rule__OnAttributes__Group_2_1__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3302:1: rule__OnAttributes__Group_2_1__1 : rule__OnAttributes__Group_2_1__1__Impl rule__OnAttributes__Group_2_1__2 ;
     public final void rule__OnAttributes__Group_2_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3243:1: ( rule__OnAttributes__Group_2_1__1__Impl rule__OnAttributes__Group_2_1__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3244:2: rule__OnAttributes__Group_2_1__1__Impl rule__OnAttributes__Group_2_1__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3306:1: ( rule__OnAttributes__Group_2_1__1__Impl rule__OnAttributes__Group_2_1__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3307:2: rule__OnAttributes__Group_2_1__1__Impl rule__OnAttributes__Group_2_1__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_1__1__Impl_in_rule__OnAttributes__Group_2_1__16670);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_1__1__Impl_in_rule__OnAttributes__Group_2_1__16796);
             rule__OnAttributes__Group_2_1__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_1__2_in_rule__OnAttributes__Group_2_1__16673);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_1__2_in_rule__OnAttributes__Group_2_1__16799);
             rule__OnAttributes__Group_2_1__2();
 
             state._fsp--;
@@ -8955,31 +9128,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group_2_1__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3251:1: rule__OnAttributes__Group_2_1__1__Impl : ( ( rule__OnAttributes__InverseAssignment_2_1_1 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3314:1: rule__OnAttributes__Group_2_1__1__Impl : ( ( rule__OnAttributes__InverseAssignment_2_1_1 )? ) ;
     public final void rule__OnAttributes__Group_2_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3255:1: ( ( ( rule__OnAttributes__InverseAssignment_2_1_1 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3256:1: ( ( rule__OnAttributes__InverseAssignment_2_1_1 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3318:1: ( ( ( rule__OnAttributes__InverseAssignment_2_1_1 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3319:1: ( ( rule__OnAttributes__InverseAssignment_2_1_1 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3256:1: ( ( rule__OnAttributes__InverseAssignment_2_1_1 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3257:1: ( rule__OnAttributes__InverseAssignment_2_1_1 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3319:1: ( ( rule__OnAttributes__InverseAssignment_2_1_1 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3320:1: ( rule__OnAttributes__InverseAssignment_2_1_1 )?
             {
              before(grammarAccess.getOnAttributesAccess().getInverseAssignment_2_1_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3258:1: ( rule__OnAttributes__InverseAssignment_2_1_1 )?
-            int alt24=2;
-            int LA24_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3321:1: ( rule__OnAttributes__InverseAssignment_2_1_1 )?
+            int alt25=2;
+            int LA25_0 = input.LA(1);
 
-            if ( (LA24_0==68) ) {
-                alt24=1;
+            if ( (LA25_0==69) ) {
+                alt25=1;
             }
-            switch (alt24) {
+            switch (alt25) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3258:2: rule__OnAttributes__InverseAssignment_2_1_1
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3321:2: rule__OnAttributes__InverseAssignment_2_1_1
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__InverseAssignment_2_1_1_in_rule__OnAttributes__Group_2_1__1__Impl6700);
+                    pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__InverseAssignment_2_1_1_in_rule__OnAttributes__Group_2_1__1__Impl6826);
                     rule__OnAttributes__InverseAssignment_2_1_1();
 
                     state._fsp--;
@@ -9013,16 +9186,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group_2_1__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3268:1: rule__OnAttributes__Group_2_1__2 : rule__OnAttributes__Group_2_1__2__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3331:1: rule__OnAttributes__Group_2_1__2 : rule__OnAttributes__Group_2_1__2__Impl ;
     public final void rule__OnAttributes__Group_2_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3272:1: ( rule__OnAttributes__Group_2_1__2__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3273:2: rule__OnAttributes__Group_2_1__2__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3335:1: ( rule__OnAttributes__Group_2_1__2__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3336:2: rule__OnAttributes__Group_2_1__2__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_1__2__Impl_in_rule__OnAttributes__Group_2_1__26731);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__Group_2_1__2__Impl_in_rule__OnAttributes__Group_2_1__26857);
             rule__OnAttributes__Group_2_1__2__Impl();
 
             state._fsp--;
@@ -9046,23 +9219,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__Group_2_1__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3279:1: rule__OnAttributes__Group_2_1__2__Impl : ( ( rule__OnAttributes__ValueAssignment_2_1_2 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3342:1: rule__OnAttributes__Group_2_1__2__Impl : ( ( rule__OnAttributes__ValueAssignment_2_1_2 ) ) ;
     public final void rule__OnAttributes__Group_2_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3283:1: ( ( ( rule__OnAttributes__ValueAssignment_2_1_2 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3284:1: ( ( rule__OnAttributes__ValueAssignment_2_1_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3346:1: ( ( ( rule__OnAttributes__ValueAssignment_2_1_2 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3347:1: ( ( rule__OnAttributes__ValueAssignment_2_1_2 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3284:1: ( ( rule__OnAttributes__ValueAssignment_2_1_2 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3285:1: ( rule__OnAttributes__ValueAssignment_2_1_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3347:1: ( ( rule__OnAttributes__ValueAssignment_2_1_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3348:1: ( rule__OnAttributes__ValueAssignment_2_1_2 )
             {
              before(grammarAccess.getOnAttributesAccess().getValueAssignment_2_1_2()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3286:1: ( rule__OnAttributes__ValueAssignment_2_1_2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3286:2: rule__OnAttributes__ValueAssignment_2_1_2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3349:1: ( rule__OnAttributes__ValueAssignment_2_1_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3349:2: rule__OnAttributes__ValueAssignment_2_1_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__ValueAssignment_2_1_2_in_rule__OnAttributes__Group_2_1__2__Impl6758);
+            pushFollow(FollowSets000.FOLLOW_rule__OnAttributes__ValueAssignment_2_1_2_in_rule__OnAttributes__Group_2_1__2__Impl6884);
             rule__OnAttributes__ValueAssignment_2_1_2();
 
             state._fsp--;
@@ -9093,21 +9266,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3302:1: rule__OnTags__Group__0 : rule__OnTags__Group__0__Impl rule__OnTags__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3365:1: rule__OnTags__Group__0 : rule__OnTags__Group__0__Impl rule__OnTags__Group__1 ;
     public final void rule__OnTags__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3306:1: ( rule__OnTags__Group__0__Impl rule__OnTags__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3307:2: rule__OnTags__Group__0__Impl rule__OnTags__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3369:1: ( rule__OnTags__Group__0__Impl rule__OnTags__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3370:2: rule__OnTags__Group__0__Impl rule__OnTags__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__0__Impl_in_rule__OnTags__Group__06794);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__0__Impl_in_rule__OnTags__Group__06920);
             rule__OnTags__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__1_in_rule__OnTags__Group__06797);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__1_in_rule__OnTags__Group__06923);
             rule__OnTags__Group__1();
 
             state._fsp--;
@@ -9131,20 +9304,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3314:1: rule__OnTags__Group__0__Impl : ( 'in [' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3377:1: rule__OnTags__Group__0__Impl : ( 'in [' ) ;
     public final void rule__OnTags__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3318:1: ( ( 'in [' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3319:1: ( 'in [' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3381:1: ( ( 'in [' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3382:1: ( 'in [' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3319:1: ( 'in [' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3320:1: 'in ['
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3382:1: ( 'in [' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3383:1: 'in ['
             {
              before(grammarAccess.getOnTagsAccess().getInKeyword_0()); 
-            match(input,57,FollowSets000.FOLLOW_57_in_rule__OnTags__Group__0__Impl6825); 
+            match(input,58,FollowSets000.FOLLOW_58_in_rule__OnTags__Group__0__Impl6951); 
              after(grammarAccess.getOnTagsAccess().getInKeyword_0()); 
 
             }
@@ -9168,21 +9341,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3333:1: rule__OnTags__Group__1 : rule__OnTags__Group__1__Impl rule__OnTags__Group__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3396:1: rule__OnTags__Group__1 : rule__OnTags__Group__1__Impl rule__OnTags__Group__2 ;
     public final void rule__OnTags__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3337:1: ( rule__OnTags__Group__1__Impl rule__OnTags__Group__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3338:2: rule__OnTags__Group__1__Impl rule__OnTags__Group__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3400:1: ( rule__OnTags__Group__1__Impl rule__OnTags__Group__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3401:2: rule__OnTags__Group__1__Impl rule__OnTags__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__1__Impl_in_rule__OnTags__Group__16856);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__1__Impl_in_rule__OnTags__Group__16982);
             rule__OnTags__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__2_in_rule__OnTags__Group__16859);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__2_in_rule__OnTags__Group__16985);
             rule__OnTags__Group__2();
 
             state._fsp--;
@@ -9206,31 +9379,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3345:1: rule__OnTags__Group__1__Impl : ( ( rule__OnTags__Group_1__0 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3408:1: rule__OnTags__Group__1__Impl : ( ( rule__OnTags__Group_1__0 )? ) ;
     public final void rule__OnTags__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3349:1: ( ( ( rule__OnTags__Group_1__0 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3350:1: ( ( rule__OnTags__Group_1__0 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3412:1: ( ( ( rule__OnTags__Group_1__0 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3413:1: ( ( rule__OnTags__Group_1__0 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3350:1: ( ( rule__OnTags__Group_1__0 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3351:1: ( rule__OnTags__Group_1__0 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3413:1: ( ( rule__OnTags__Group_1__0 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3414:1: ( rule__OnTags__Group_1__0 )?
             {
              before(grammarAccess.getOnTagsAccess().getGroup_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3352:1: ( rule__OnTags__Group_1__0 )?
-            int alt25=2;
-            int LA25_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3415:1: ( rule__OnTags__Group_1__0 )?
+            int alt26=2;
+            int LA26_0 = input.LA(1);
 
-            if ( ((LA25_0>=RULE_STRING && LA25_0<=RULE_ID)) ) {
-                alt25=1;
+            if ( ((LA26_0>=RULE_STRING && LA26_0<=RULE_ID)) ) {
+                alt26=1;
             }
-            switch (alt25) {
+            switch (alt26) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3352:2: rule__OnTags__Group_1__0
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3415:2: rule__OnTags__Group_1__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1__0_in_rule__OnTags__Group__1__Impl6886);
+                    pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1__0_in_rule__OnTags__Group__1__Impl7012);
                     rule__OnTags__Group_1__0();
 
                     state._fsp--;
@@ -9264,21 +9437,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3362:1: rule__OnTags__Group__2 : rule__OnTags__Group__2__Impl rule__OnTags__Group__3 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3425:1: rule__OnTags__Group__2 : rule__OnTags__Group__2__Impl rule__OnTags__Group__3 ;
     public final void rule__OnTags__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3366:1: ( rule__OnTags__Group__2__Impl rule__OnTags__Group__3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3367:2: rule__OnTags__Group__2__Impl rule__OnTags__Group__3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3429:1: ( rule__OnTags__Group__2__Impl rule__OnTags__Group__3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3430:2: rule__OnTags__Group__2__Impl rule__OnTags__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__2__Impl_in_rule__OnTags__Group__26917);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__2__Impl_in_rule__OnTags__Group__27043);
             rule__OnTags__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__3_in_rule__OnTags__Group__26920);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__3_in_rule__OnTags__Group__27046);
             rule__OnTags__Group__3();
 
             state._fsp--;
@@ -9302,20 +9475,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3374:1: rule__OnTags__Group__2__Impl : ( ']' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3437:1: rule__OnTags__Group__2__Impl : ( ']' ) ;
     public final void rule__OnTags__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3378:1: ( ( ']' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3379:1: ( ']' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3441:1: ( ( ']' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3442:1: ( ']' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3379:1: ( ']' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3380:1: ']'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3442:1: ( ']' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3443:1: ']'
             {
              before(grammarAccess.getOnTagsAccess().getRightSquareBracketKeyword_2()); 
-            match(input,58,FollowSets000.FOLLOW_58_in_rule__OnTags__Group__2__Impl6948); 
+            match(input,59,FollowSets000.FOLLOW_59_in_rule__OnTags__Group__2__Impl7074); 
              after(grammarAccess.getOnTagsAccess().getRightSquareBracketKeyword_2()); 
 
             }
@@ -9339,21 +9512,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group__3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3393:1: rule__OnTags__Group__3 : rule__OnTags__Group__3__Impl rule__OnTags__Group__4 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3456:1: rule__OnTags__Group__3 : rule__OnTags__Group__3__Impl rule__OnTags__Group__4 ;
     public final void rule__OnTags__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3397:1: ( rule__OnTags__Group__3__Impl rule__OnTags__Group__4 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3398:2: rule__OnTags__Group__3__Impl rule__OnTags__Group__4
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3460:1: ( rule__OnTags__Group__3__Impl rule__OnTags__Group__4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3461:2: rule__OnTags__Group__3__Impl rule__OnTags__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__3__Impl_in_rule__OnTags__Group__36979);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__3__Impl_in_rule__OnTags__Group__37105);
             rule__OnTags__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__4_in_rule__OnTags__Group__36982);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__4_in_rule__OnTags__Group__37108);
             rule__OnTags__Group__4();
 
             state._fsp--;
@@ -9377,23 +9550,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group__3__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3405:1: rule__OnTags__Group__3__Impl : ( ( rule__OnTags__Alternatives_3 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3468:1: rule__OnTags__Group__3__Impl : ( ( rule__OnTags__Alternatives_3 ) ) ;
     public final void rule__OnTags__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3409:1: ( ( ( rule__OnTags__Alternatives_3 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3410:1: ( ( rule__OnTags__Alternatives_3 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3472:1: ( ( ( rule__OnTags__Alternatives_3 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3473:1: ( ( rule__OnTags__Alternatives_3 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3410:1: ( ( rule__OnTags__Alternatives_3 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3411:1: ( rule__OnTags__Alternatives_3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3473:1: ( ( rule__OnTags__Alternatives_3 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3474:1: ( rule__OnTags__Alternatives_3 )
             {
              before(grammarAccess.getOnTagsAccess().getAlternatives_3()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3412:1: ( rule__OnTags__Alternatives_3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3412:2: rule__OnTags__Alternatives_3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3475:1: ( rule__OnTags__Alternatives_3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3475:2: rule__OnTags__Alternatives_3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Alternatives_3_in_rule__OnTags__Group__3__Impl7009);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Alternatives_3_in_rule__OnTags__Group__3__Impl7135);
             rule__OnTags__Alternatives_3();
 
             state._fsp--;
@@ -9424,21 +9597,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group__4"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3422:1: rule__OnTags__Group__4 : rule__OnTags__Group__4__Impl rule__OnTags__Group__5 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3485:1: rule__OnTags__Group__4 : rule__OnTags__Group__4__Impl rule__OnTags__Group__5 ;
     public final void rule__OnTags__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3426:1: ( rule__OnTags__Group__4__Impl rule__OnTags__Group__5 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3427:2: rule__OnTags__Group__4__Impl rule__OnTags__Group__5
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3489:1: ( rule__OnTags__Group__4__Impl rule__OnTags__Group__5 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3490:2: rule__OnTags__Group__4__Impl rule__OnTags__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__4__Impl_in_rule__OnTags__Group__47039);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__4__Impl_in_rule__OnTags__Group__47165);
             rule__OnTags__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__5_in_rule__OnTags__Group__47042);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__5_in_rule__OnTags__Group__47168);
             rule__OnTags__Group__5();
 
             state._fsp--;
@@ -9462,31 +9635,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group__4__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3434:1: rule__OnTags__Group__4__Impl : ( ( rule__OnTags__InverseAssignment_4 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3497:1: rule__OnTags__Group__4__Impl : ( ( rule__OnTags__InverseAssignment_4 )? ) ;
     public final void rule__OnTags__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3438:1: ( ( ( rule__OnTags__InverseAssignment_4 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3439:1: ( ( rule__OnTags__InverseAssignment_4 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3501:1: ( ( ( rule__OnTags__InverseAssignment_4 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3502:1: ( ( rule__OnTags__InverseAssignment_4 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3439:1: ( ( rule__OnTags__InverseAssignment_4 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3440:1: ( rule__OnTags__InverseAssignment_4 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3502:1: ( ( rule__OnTags__InverseAssignment_4 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3503:1: ( rule__OnTags__InverseAssignment_4 )?
             {
              before(grammarAccess.getOnTagsAccess().getInverseAssignment_4()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3441:1: ( rule__OnTags__InverseAssignment_4 )?
-            int alt26=2;
-            int LA26_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3504:1: ( rule__OnTags__InverseAssignment_4 )?
+            int alt27=2;
+            int LA27_0 = input.LA(1);
 
-            if ( (LA26_0==68) ) {
-                alt26=1;
+            if ( (LA27_0==69) ) {
+                alt27=1;
             }
-            switch (alt26) {
+            switch (alt27) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3441:2: rule__OnTags__InverseAssignment_4
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3504:2: rule__OnTags__InverseAssignment_4
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__OnTags__InverseAssignment_4_in_rule__OnTags__Group__4__Impl7069);
+                    pushFollow(FollowSets000.FOLLOW_rule__OnTags__InverseAssignment_4_in_rule__OnTags__Group__4__Impl7195);
                     rule__OnTags__InverseAssignment_4();
 
                     state._fsp--;
@@ -9520,21 +9693,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group__5"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3451:1: rule__OnTags__Group__5 : rule__OnTags__Group__5__Impl rule__OnTags__Group__6 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3514:1: rule__OnTags__Group__5 : rule__OnTags__Group__5__Impl rule__OnTags__Group__6 ;
     public final void rule__OnTags__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3455:1: ( rule__OnTags__Group__5__Impl rule__OnTags__Group__6 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3456:2: rule__OnTags__Group__5__Impl rule__OnTags__Group__6
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3518:1: ( rule__OnTags__Group__5__Impl rule__OnTags__Group__6 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3519:2: rule__OnTags__Group__5__Impl rule__OnTags__Group__6
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__5__Impl_in_rule__OnTags__Group__57100);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__5__Impl_in_rule__OnTags__Group__57226);
             rule__OnTags__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__6_in_rule__OnTags__Group__57103);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__6_in_rule__OnTags__Group__57229);
             rule__OnTags__Group__6();
 
             state._fsp--;
@@ -9558,20 +9731,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group__5__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3463:1: rule__OnTags__Group__5__Impl : ( 'in tags' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3526:1: rule__OnTags__Group__5__Impl : ( 'in tags' ) ;
     public final void rule__OnTags__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3467:1: ( ( 'in tags' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3468:1: ( 'in tags' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3530:1: ( ( 'in tags' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3531:1: ( 'in tags' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3468:1: ( 'in tags' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3469:1: 'in tags'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3531:1: ( 'in tags' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3532:1: 'in tags'
             {
              before(grammarAccess.getOnTagsAccess().getInTagsKeyword_5()); 
-            match(input,59,FollowSets000.FOLLOW_59_in_rule__OnTags__Group__5__Impl7131); 
+            match(input,60,FollowSets000.FOLLOW_60_in_rule__OnTags__Group__5__Impl7257); 
              after(grammarAccess.getOnTagsAccess().getInTagsKeyword_5()); 
 
             }
@@ -9595,16 +9768,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group__6"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3482:1: rule__OnTags__Group__6 : rule__OnTags__Group__6__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3545:1: rule__OnTags__Group__6 : rule__OnTags__Group__6__Impl ;
     public final void rule__OnTags__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3486:1: ( rule__OnTags__Group__6__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3487:2: rule__OnTags__Group__6__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3549:1: ( rule__OnTags__Group__6__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3550:2: rule__OnTags__Group__6__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__6__Impl_in_rule__OnTags__Group__67162);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group__6__Impl_in_rule__OnTags__Group__67288);
             rule__OnTags__Group__6__Impl();
 
             state._fsp--;
@@ -9628,31 +9801,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group__6__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3493:1: rule__OnTags__Group__6__Impl : ( ( rule__OnTags__OnlyAssignment_6 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3556:1: rule__OnTags__Group__6__Impl : ( ( rule__OnTags__OnlyAssignment_6 )? ) ;
     public final void rule__OnTags__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3497:1: ( ( ( rule__OnTags__OnlyAssignment_6 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3498:1: ( ( rule__OnTags__OnlyAssignment_6 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3560:1: ( ( ( rule__OnTags__OnlyAssignment_6 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3561:1: ( ( rule__OnTags__OnlyAssignment_6 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3498:1: ( ( rule__OnTags__OnlyAssignment_6 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3499:1: ( rule__OnTags__OnlyAssignment_6 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3561:1: ( ( rule__OnTags__OnlyAssignment_6 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3562:1: ( rule__OnTags__OnlyAssignment_6 )?
             {
              before(grammarAccess.getOnTagsAccess().getOnlyAssignment_6()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3500:1: ( rule__OnTags__OnlyAssignment_6 )?
-            int alt27=2;
-            int LA27_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3563:1: ( rule__OnTags__OnlyAssignment_6 )?
+            int alt28=2;
+            int LA28_0 = input.LA(1);
 
-            if ( (LA27_0==69) ) {
-                alt27=1;
+            if ( (LA28_0==70) ) {
+                alt28=1;
             }
-            switch (alt27) {
+            switch (alt28) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3500:2: rule__OnTags__OnlyAssignment_6
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3563:2: rule__OnTags__OnlyAssignment_6
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__OnTags__OnlyAssignment_6_in_rule__OnTags__Group__6__Impl7189);
+                    pushFollow(FollowSets000.FOLLOW_rule__OnTags__OnlyAssignment_6_in_rule__OnTags__Group__6__Impl7315);
                     rule__OnTags__OnlyAssignment_6();
 
                     state._fsp--;
@@ -9686,21 +9859,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group_1__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3524:1: rule__OnTags__Group_1__0 : rule__OnTags__Group_1__0__Impl rule__OnTags__Group_1__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3587:1: rule__OnTags__Group_1__0 : rule__OnTags__Group_1__0__Impl rule__OnTags__Group_1__1 ;
     public final void rule__OnTags__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3528:1: ( rule__OnTags__Group_1__0__Impl rule__OnTags__Group_1__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3529:2: rule__OnTags__Group_1__0__Impl rule__OnTags__Group_1__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3591:1: ( rule__OnTags__Group_1__0__Impl rule__OnTags__Group_1__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3592:2: rule__OnTags__Group_1__0__Impl rule__OnTags__Group_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1__0__Impl_in_rule__OnTags__Group_1__07234);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1__0__Impl_in_rule__OnTags__Group_1__07360);
             rule__OnTags__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1__1_in_rule__OnTags__Group_1__07237);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1__1_in_rule__OnTags__Group_1__07363);
             rule__OnTags__Group_1__1();
 
             state._fsp--;
@@ -9724,23 +9897,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group_1__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3536:1: rule__OnTags__Group_1__0__Impl : ( ( rule__OnTags__TagsAssignment_1_0 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3599:1: rule__OnTags__Group_1__0__Impl : ( ( rule__OnTags__TagsAssignment_1_0 ) ) ;
     public final void rule__OnTags__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3540:1: ( ( ( rule__OnTags__TagsAssignment_1_0 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3541:1: ( ( rule__OnTags__TagsAssignment_1_0 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3603:1: ( ( ( rule__OnTags__TagsAssignment_1_0 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3604:1: ( ( rule__OnTags__TagsAssignment_1_0 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3541:1: ( ( rule__OnTags__TagsAssignment_1_0 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3542:1: ( rule__OnTags__TagsAssignment_1_0 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3604:1: ( ( rule__OnTags__TagsAssignment_1_0 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3605:1: ( rule__OnTags__TagsAssignment_1_0 )
             {
              before(grammarAccess.getOnTagsAccess().getTagsAssignment_1_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3543:1: ( rule__OnTags__TagsAssignment_1_0 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3543:2: rule__OnTags__TagsAssignment_1_0
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3606:1: ( rule__OnTags__TagsAssignment_1_0 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3606:2: rule__OnTags__TagsAssignment_1_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__TagsAssignment_1_0_in_rule__OnTags__Group_1__0__Impl7264);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__TagsAssignment_1_0_in_rule__OnTags__Group_1__0__Impl7390);
             rule__OnTags__TagsAssignment_1_0();
 
             state._fsp--;
@@ -9771,16 +9944,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group_1__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3553:1: rule__OnTags__Group_1__1 : rule__OnTags__Group_1__1__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3616:1: rule__OnTags__Group_1__1 : rule__OnTags__Group_1__1__Impl ;
     public final void rule__OnTags__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3557:1: ( rule__OnTags__Group_1__1__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3558:2: rule__OnTags__Group_1__1__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3620:1: ( rule__OnTags__Group_1__1__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3621:2: rule__OnTags__Group_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1__1__Impl_in_rule__OnTags__Group_1__17294);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1__1__Impl_in_rule__OnTags__Group_1__17420);
             rule__OnTags__Group_1__1__Impl();
 
             state._fsp--;
@@ -9804,35 +9977,35 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group_1__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3564:1: rule__OnTags__Group_1__1__Impl : ( ( rule__OnTags__Group_1_1__0 )* ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3627:1: rule__OnTags__Group_1__1__Impl : ( ( rule__OnTags__Group_1_1__0 )* ) ;
     public final void rule__OnTags__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3568:1: ( ( ( rule__OnTags__Group_1_1__0 )* ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3569:1: ( ( rule__OnTags__Group_1_1__0 )* )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3631:1: ( ( ( rule__OnTags__Group_1_1__0 )* ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3632:1: ( ( rule__OnTags__Group_1_1__0 )* )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3569:1: ( ( rule__OnTags__Group_1_1__0 )* )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3570:1: ( rule__OnTags__Group_1_1__0 )*
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3632:1: ( ( rule__OnTags__Group_1_1__0 )* )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3633:1: ( rule__OnTags__Group_1_1__0 )*
             {
              before(grammarAccess.getOnTagsAccess().getGroup_1_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3571:1: ( rule__OnTags__Group_1_1__0 )*
-            loop28:
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3634:1: ( rule__OnTags__Group_1_1__0 )*
+            loop29:
             do {
-                int alt28=2;
-                int LA28_0 = input.LA(1);
+                int alt29=2;
+                int LA29_0 = input.LA(1);
 
-                if ( (LA28_0==46) ) {
-                    alt28=1;
+                if ( (LA29_0==47) ) {
+                    alt29=1;
                 }
 
 
-                switch (alt28) {
+                switch (alt29) {
             	case 1 :
-            	    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3571:2: rule__OnTags__Group_1_1__0
+            	    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3634:2: rule__OnTags__Group_1_1__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1_1__0_in_rule__OnTags__Group_1__1__Impl7321);
+            	    pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1_1__0_in_rule__OnTags__Group_1__1__Impl7447);
             	    rule__OnTags__Group_1_1__0();
 
             	    state._fsp--;
@@ -9842,7 +10015,7 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop28;
+            	    break loop29;
                 }
             } while (true);
 
@@ -9869,21 +10042,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group_1_1__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3585:1: rule__OnTags__Group_1_1__0 : rule__OnTags__Group_1_1__0__Impl rule__OnTags__Group_1_1__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3648:1: rule__OnTags__Group_1_1__0 : rule__OnTags__Group_1_1__0__Impl rule__OnTags__Group_1_1__1 ;
     public final void rule__OnTags__Group_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3589:1: ( rule__OnTags__Group_1_1__0__Impl rule__OnTags__Group_1_1__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3590:2: rule__OnTags__Group_1_1__0__Impl rule__OnTags__Group_1_1__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3652:1: ( rule__OnTags__Group_1_1__0__Impl rule__OnTags__Group_1_1__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3653:2: rule__OnTags__Group_1_1__0__Impl rule__OnTags__Group_1_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1_1__0__Impl_in_rule__OnTags__Group_1_1__07356);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1_1__0__Impl_in_rule__OnTags__Group_1_1__07482);
             rule__OnTags__Group_1_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1_1__1_in_rule__OnTags__Group_1_1__07359);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1_1__1_in_rule__OnTags__Group_1_1__07485);
             rule__OnTags__Group_1_1__1();
 
             state._fsp--;
@@ -9907,20 +10080,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group_1_1__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3597:1: rule__OnTags__Group_1_1__0__Impl : ( ',' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3660:1: rule__OnTags__Group_1_1__0__Impl : ( ',' ) ;
     public final void rule__OnTags__Group_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3601:1: ( ( ',' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3602:1: ( ',' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3664:1: ( ( ',' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3665:1: ( ',' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3602:1: ( ',' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3603:1: ','
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3665:1: ( ',' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3666:1: ','
             {
              before(grammarAccess.getOnTagsAccess().getCommaKeyword_1_1_0()); 
-            match(input,46,FollowSets000.FOLLOW_46_in_rule__OnTags__Group_1_1__0__Impl7387); 
+            match(input,47,FollowSets000.FOLLOW_47_in_rule__OnTags__Group_1_1__0__Impl7513); 
              after(grammarAccess.getOnTagsAccess().getCommaKeyword_1_1_0()); 
 
             }
@@ -9944,16 +10117,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group_1_1__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3616:1: rule__OnTags__Group_1_1__1 : rule__OnTags__Group_1_1__1__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3679:1: rule__OnTags__Group_1_1__1 : rule__OnTags__Group_1_1__1__Impl ;
     public final void rule__OnTags__Group_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3620:1: ( rule__OnTags__Group_1_1__1__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3621:2: rule__OnTags__Group_1_1__1__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3683:1: ( rule__OnTags__Group_1_1__1__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3684:2: rule__OnTags__Group_1_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1_1__1__Impl_in_rule__OnTags__Group_1_1__17418);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_1_1__1__Impl_in_rule__OnTags__Group_1_1__17544);
             rule__OnTags__Group_1_1__1__Impl();
 
             state._fsp--;
@@ -9977,23 +10150,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group_1_1__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3627:1: rule__OnTags__Group_1_1__1__Impl : ( ( rule__OnTags__TagsAssignment_1_1_1 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3690:1: rule__OnTags__Group_1_1__1__Impl : ( ( rule__OnTags__TagsAssignment_1_1_1 ) ) ;
     public final void rule__OnTags__Group_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3631:1: ( ( ( rule__OnTags__TagsAssignment_1_1_1 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3632:1: ( ( rule__OnTags__TagsAssignment_1_1_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3694:1: ( ( ( rule__OnTags__TagsAssignment_1_1_1 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3695:1: ( ( rule__OnTags__TagsAssignment_1_1_1 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3632:1: ( ( rule__OnTags__TagsAssignment_1_1_1 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3633:1: ( rule__OnTags__TagsAssignment_1_1_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3695:1: ( ( rule__OnTags__TagsAssignment_1_1_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3696:1: ( rule__OnTags__TagsAssignment_1_1_1 )
             {
              before(grammarAccess.getOnTagsAccess().getTagsAssignment_1_1_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3634:1: ( rule__OnTags__TagsAssignment_1_1_1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3634:2: rule__OnTags__TagsAssignment_1_1_1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3697:1: ( rule__OnTags__TagsAssignment_1_1_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3697:2: rule__OnTags__TagsAssignment_1_1_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__TagsAssignment_1_1_1_in_rule__OnTags__Group_1_1__1__Impl7445);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__TagsAssignment_1_1_1_in_rule__OnTags__Group_1_1__1__Impl7571);
             rule__OnTags__TagsAssignment_1_1_1();
 
             state._fsp--;
@@ -10024,21 +10197,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group_3_1__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3648:1: rule__OnTags__Group_3_1__0 : rule__OnTags__Group_3_1__0__Impl rule__OnTags__Group_3_1__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3711:1: rule__OnTags__Group_3_1__0 : rule__OnTags__Group_3_1__0__Impl rule__OnTags__Group_3_1__1 ;
     public final void rule__OnTags__Group_3_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3652:1: ( rule__OnTags__Group_3_1__0__Impl rule__OnTags__Group_3_1__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3653:2: rule__OnTags__Group_3_1__0__Impl rule__OnTags__Group_3_1__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3715:1: ( rule__OnTags__Group_3_1__0__Impl rule__OnTags__Group_3_1__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3716:2: rule__OnTags__Group_3_1__0__Impl rule__OnTags__Group_3_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_3_1__0__Impl_in_rule__OnTags__Group_3_1__07479);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_3_1__0__Impl_in_rule__OnTags__Group_3_1__07605);
             rule__OnTags__Group_3_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_3_1__1_in_rule__OnTags__Group_3_1__07482);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_3_1__1_in_rule__OnTags__Group_3_1__07608);
             rule__OnTags__Group_3_1__1();
 
             state._fsp--;
@@ -10062,23 +10235,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group_3_1__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3660:1: rule__OnTags__Group_3_1__0__Impl : ( ( rule__OnTags__TresholdAssignment_3_1_0 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3723:1: rule__OnTags__Group_3_1__0__Impl : ( ( rule__OnTags__TresholdAssignment_3_1_0 ) ) ;
     public final void rule__OnTags__Group_3_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3664:1: ( ( ( rule__OnTags__TresholdAssignment_3_1_0 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3665:1: ( ( rule__OnTags__TresholdAssignment_3_1_0 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3727:1: ( ( ( rule__OnTags__TresholdAssignment_3_1_0 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3728:1: ( ( rule__OnTags__TresholdAssignment_3_1_0 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3665:1: ( ( rule__OnTags__TresholdAssignment_3_1_0 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3666:1: ( rule__OnTags__TresholdAssignment_3_1_0 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3728:1: ( ( rule__OnTags__TresholdAssignment_3_1_0 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3729:1: ( rule__OnTags__TresholdAssignment_3_1_0 )
             {
              before(grammarAccess.getOnTagsAccess().getTresholdAssignment_3_1_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3667:1: ( rule__OnTags__TresholdAssignment_3_1_0 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3667:2: rule__OnTags__TresholdAssignment_3_1_0
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3730:1: ( rule__OnTags__TresholdAssignment_3_1_0 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3730:2: rule__OnTags__TresholdAssignment_3_1_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__TresholdAssignment_3_1_0_in_rule__OnTags__Group_3_1__0__Impl7509);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__TresholdAssignment_3_1_0_in_rule__OnTags__Group_3_1__0__Impl7635);
             rule__OnTags__TresholdAssignment_3_1_0();
 
             state._fsp--;
@@ -10109,16 +10282,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group_3_1__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3677:1: rule__OnTags__Group_3_1__1 : rule__OnTags__Group_3_1__1__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3740:1: rule__OnTags__Group_3_1__1 : rule__OnTags__Group_3_1__1__Impl ;
     public final void rule__OnTags__Group_3_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3681:1: ( rule__OnTags__Group_3_1__1__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3682:2: rule__OnTags__Group_3_1__1__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3744:1: ( rule__OnTags__Group_3_1__1__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3745:2: rule__OnTags__Group_3_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_3_1__1__Impl_in_rule__OnTags__Group_3_1__17539);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTags__Group_3_1__1__Impl_in_rule__OnTags__Group_3_1__17665);
             rule__OnTags__Group_3_1__1__Impl();
 
             state._fsp--;
@@ -10142,20 +10315,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__Group_3_1__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3688:1: rule__OnTags__Group_3_1__1__Impl : ( 'are' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3751:1: rule__OnTags__Group_3_1__1__Impl : ( 'are' ) ;
     public final void rule__OnTags__Group_3_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3692:1: ( ( 'are' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3693:1: ( 'are' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3755:1: ( ( 'are' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3756:1: ( 'are' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3693:1: ( 'are' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3694:1: 'are'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3756:1: ( 'are' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3757:1: 'are'
             {
              before(grammarAccess.getOnTagsAccess().getAreKeyword_3_1_1()); 
-            match(input,60,FollowSets000.FOLLOW_60_in_rule__OnTags__Group_3_1__1__Impl7567); 
+            match(input,61,FollowSets000.FOLLOW_61_in_rule__OnTags__Group_3_1__1__Impl7693); 
              after(grammarAccess.getOnTagsAccess().getAreKeyword_3_1_1()); 
 
             }
@@ -10179,21 +10352,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTime__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3711:1: rule__OnTime__Group__0 : rule__OnTime__Group__0__Impl rule__OnTime__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3774:1: rule__OnTime__Group__0 : rule__OnTime__Group__0__Impl rule__OnTime__Group__1 ;
     public final void rule__OnTime__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3715:1: ( rule__OnTime__Group__0__Impl rule__OnTime__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3716:2: rule__OnTime__Group__0__Impl rule__OnTime__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3778:1: ( rule__OnTime__Group__0__Impl rule__OnTime__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3779:2: rule__OnTime__Group__0__Impl rule__OnTime__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__0__Impl_in_rule__OnTime__Group__07602);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__0__Impl_in_rule__OnTime__Group__07728);
             rule__OnTime__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__1_in_rule__OnTime__Group__07605);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__1_in_rule__OnTime__Group__07731);
             rule__OnTime__Group__1();
 
             state._fsp--;
@@ -10217,23 +10390,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTime__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3723:1: rule__OnTime__Group__0__Impl : ( ( rule__OnTime__TimeOfAssignment_0 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3786:1: rule__OnTime__Group__0__Impl : ( ( rule__OnTime__TimeOfAssignment_0 ) ) ;
     public final void rule__OnTime__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3727:1: ( ( ( rule__OnTime__TimeOfAssignment_0 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3728:1: ( ( rule__OnTime__TimeOfAssignment_0 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3790:1: ( ( ( rule__OnTime__TimeOfAssignment_0 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3791:1: ( ( rule__OnTime__TimeOfAssignment_0 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3728:1: ( ( rule__OnTime__TimeOfAssignment_0 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3729:1: ( rule__OnTime__TimeOfAssignment_0 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3791:1: ( ( rule__OnTime__TimeOfAssignment_0 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3792:1: ( rule__OnTime__TimeOfAssignment_0 )
             {
              before(grammarAccess.getOnTimeAccess().getTimeOfAssignment_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3730:1: ( rule__OnTime__TimeOfAssignment_0 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3730:2: rule__OnTime__TimeOfAssignment_0
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3793:1: ( rule__OnTime__TimeOfAssignment_0 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3793:2: rule__OnTime__TimeOfAssignment_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTime__TimeOfAssignment_0_in_rule__OnTime__Group__0__Impl7632);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTime__TimeOfAssignment_0_in_rule__OnTime__Group__0__Impl7758);
             rule__OnTime__TimeOfAssignment_0();
 
             state._fsp--;
@@ -10264,21 +10437,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTime__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3740:1: rule__OnTime__Group__1 : rule__OnTime__Group__1__Impl rule__OnTime__Group__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3803:1: rule__OnTime__Group__1 : rule__OnTime__Group__1__Impl rule__OnTime__Group__2 ;
     public final void rule__OnTime__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3744:1: ( rule__OnTime__Group__1__Impl rule__OnTime__Group__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3745:2: rule__OnTime__Group__1__Impl rule__OnTime__Group__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3807:1: ( rule__OnTime__Group__1__Impl rule__OnTime__Group__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3808:2: rule__OnTime__Group__1__Impl rule__OnTime__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__1__Impl_in_rule__OnTime__Group__17662);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__1__Impl_in_rule__OnTime__Group__17788);
             rule__OnTime__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__2_in_rule__OnTime__Group__17665);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__2_in_rule__OnTime__Group__17791);
             rule__OnTime__Group__2();
 
             state._fsp--;
@@ -10302,20 +10475,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTime__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3752:1: rule__OnTime__Group__1__Impl : ( 'before' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3815:1: rule__OnTime__Group__1__Impl : ( 'before' ) ;
     public final void rule__OnTime__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3756:1: ( ( 'before' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3757:1: ( 'before' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3819:1: ( ( 'before' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3820:1: ( 'before' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3757:1: ( 'before' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3758:1: 'before'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3820:1: ( 'before' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3821:1: 'before'
             {
              before(grammarAccess.getOnTimeAccess().getBeforeKeyword_1()); 
-            match(input,61,FollowSets000.FOLLOW_61_in_rule__OnTime__Group__1__Impl7693); 
+            match(input,62,FollowSets000.FOLLOW_62_in_rule__OnTime__Group__1__Impl7819); 
              after(grammarAccess.getOnTimeAccess().getBeforeKeyword_1()); 
 
             }
@@ -10339,21 +10512,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTime__Group__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3771:1: rule__OnTime__Group__2 : rule__OnTime__Group__2__Impl rule__OnTime__Group__3 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3834:1: rule__OnTime__Group__2 : rule__OnTime__Group__2__Impl rule__OnTime__Group__3 ;
     public final void rule__OnTime__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3775:1: ( rule__OnTime__Group__2__Impl rule__OnTime__Group__3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3776:2: rule__OnTime__Group__2__Impl rule__OnTime__Group__3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3838:1: ( rule__OnTime__Group__2__Impl rule__OnTime__Group__3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3839:2: rule__OnTime__Group__2__Impl rule__OnTime__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__2__Impl_in_rule__OnTime__Group__27724);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__2__Impl_in_rule__OnTime__Group__27850);
             rule__OnTime__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__3_in_rule__OnTime__Group__27727);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__3_in_rule__OnTime__Group__27853);
             rule__OnTime__Group__3();
 
             state._fsp--;
@@ -10377,23 +10550,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTime__Group__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3783:1: rule__OnTime__Group__2__Impl : ( ( rule__OnTime__OperatorAssignment_2 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3846:1: rule__OnTime__Group__2__Impl : ( ( rule__OnTime__OperatorAssignment_2 ) ) ;
     public final void rule__OnTime__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3787:1: ( ( ( rule__OnTime__OperatorAssignment_2 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3788:1: ( ( rule__OnTime__OperatorAssignment_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3850:1: ( ( ( rule__OnTime__OperatorAssignment_2 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3851:1: ( ( rule__OnTime__OperatorAssignment_2 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3788:1: ( ( rule__OnTime__OperatorAssignment_2 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3789:1: ( rule__OnTime__OperatorAssignment_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3851:1: ( ( rule__OnTime__OperatorAssignment_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3852:1: ( rule__OnTime__OperatorAssignment_2 )
             {
              before(grammarAccess.getOnTimeAccess().getOperatorAssignment_2()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3790:1: ( rule__OnTime__OperatorAssignment_2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3790:2: rule__OnTime__OperatorAssignment_2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3853:1: ( rule__OnTime__OperatorAssignment_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3853:2: rule__OnTime__OperatorAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTime__OperatorAssignment_2_in_rule__OnTime__Group__2__Impl7754);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTime__OperatorAssignment_2_in_rule__OnTime__Group__2__Impl7880);
             rule__OnTime__OperatorAssignment_2();
 
             state._fsp--;
@@ -10424,21 +10597,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTime__Group__3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3800:1: rule__OnTime__Group__3 : rule__OnTime__Group__3__Impl rule__OnTime__Group__4 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3863:1: rule__OnTime__Group__3 : rule__OnTime__Group__3__Impl rule__OnTime__Group__4 ;
     public final void rule__OnTime__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3804:1: ( rule__OnTime__Group__3__Impl rule__OnTime__Group__4 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3805:2: rule__OnTime__Group__3__Impl rule__OnTime__Group__4
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3867:1: ( rule__OnTime__Group__3__Impl rule__OnTime__Group__4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3868:2: rule__OnTime__Group__3__Impl rule__OnTime__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__3__Impl_in_rule__OnTime__Group__37784);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__3__Impl_in_rule__OnTime__Group__37910);
             rule__OnTime__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__4_in_rule__OnTime__Group__37787);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__4_in_rule__OnTime__Group__37913);
             rule__OnTime__Group__4();
 
             state._fsp--;
@@ -10462,23 +10635,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTime__Group__3__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3812:1: rule__OnTime__Group__3__Impl : ( ( rule__OnTime__TresholdAssignment_3 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3875:1: rule__OnTime__Group__3__Impl : ( ( rule__OnTime__TresholdAssignment_3 ) ) ;
     public final void rule__OnTime__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3816:1: ( ( ( rule__OnTime__TresholdAssignment_3 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3817:1: ( ( rule__OnTime__TresholdAssignment_3 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3879:1: ( ( ( rule__OnTime__TresholdAssignment_3 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3880:1: ( ( rule__OnTime__TresholdAssignment_3 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3817:1: ( ( rule__OnTime__TresholdAssignment_3 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3818:1: ( rule__OnTime__TresholdAssignment_3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3880:1: ( ( rule__OnTime__TresholdAssignment_3 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3881:1: ( rule__OnTime__TresholdAssignment_3 )
             {
              before(grammarAccess.getOnTimeAccess().getTresholdAssignment_3()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3819:1: ( rule__OnTime__TresholdAssignment_3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3819:2: rule__OnTime__TresholdAssignment_3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3882:1: ( rule__OnTime__TresholdAssignment_3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3882:2: rule__OnTime__TresholdAssignment_3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTime__TresholdAssignment_3_in_rule__OnTime__Group__3__Impl7814);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTime__TresholdAssignment_3_in_rule__OnTime__Group__3__Impl7940);
             rule__OnTime__TresholdAssignment_3();
 
             state._fsp--;
@@ -10509,16 +10682,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTime__Group__4"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3829:1: rule__OnTime__Group__4 : rule__OnTime__Group__4__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3892:1: rule__OnTime__Group__4 : rule__OnTime__Group__4__Impl ;
     public final void rule__OnTime__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3833:1: ( rule__OnTime__Group__4__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3834:2: rule__OnTime__Group__4__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3896:1: ( rule__OnTime__Group__4__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3897:2: rule__OnTime__Group__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__4__Impl_in_rule__OnTime__Group__47844);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTime__Group__4__Impl_in_rule__OnTime__Group__47970);
             rule__OnTime__Group__4__Impl();
 
             state._fsp--;
@@ -10542,23 +10715,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTime__Group__4__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3840:1: rule__OnTime__Group__4__Impl : ( ( rule__OnTime__UnitAssignment_4 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3903:1: rule__OnTime__Group__4__Impl : ( ( rule__OnTime__UnitAssignment_4 ) ) ;
     public final void rule__OnTime__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3844:1: ( ( ( rule__OnTime__UnitAssignment_4 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3845:1: ( ( rule__OnTime__UnitAssignment_4 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3907:1: ( ( ( rule__OnTime__UnitAssignment_4 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3908:1: ( ( rule__OnTime__UnitAssignment_4 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3845:1: ( ( rule__OnTime__UnitAssignment_4 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3846:1: ( rule__OnTime__UnitAssignment_4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3908:1: ( ( rule__OnTime__UnitAssignment_4 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3909:1: ( rule__OnTime__UnitAssignment_4 )
             {
              before(grammarAccess.getOnTimeAccess().getUnitAssignment_4()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3847:1: ( rule__OnTime__UnitAssignment_4 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3847:2: rule__OnTime__UnitAssignment_4
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3910:1: ( rule__OnTime__UnitAssignment_4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3910:2: rule__OnTime__UnitAssignment_4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnTime__UnitAssignment_4_in_rule__OnTime__Group__4__Impl7871);
+            pushFollow(FollowSets000.FOLLOW_rule__OnTime__UnitAssignment_4_in_rule__OnTime__Group__4__Impl7997);
             rule__OnTime__UnitAssignment_4();
 
             state._fsp--;
@@ -10589,21 +10762,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnSize__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3867:1: rule__OnSize__Group__0 : rule__OnSize__Group__0__Impl rule__OnSize__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3930:1: rule__OnSize__Group__0 : rule__OnSize__Group__0__Impl rule__OnSize__Group__1 ;
     public final void rule__OnSize__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3871:1: ( rule__OnSize__Group__0__Impl rule__OnSize__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3872:2: rule__OnSize__Group__0__Impl rule__OnSize__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3934:1: ( rule__OnSize__Group__0__Impl rule__OnSize__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3935:2: rule__OnSize__Group__0__Impl rule__OnSize__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__0__Impl_in_rule__OnSize__Group__07911);
+            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__0__Impl_in_rule__OnSize__Group__08037);
             rule__OnSize__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__1_in_rule__OnSize__Group__07914);
+            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__1_in_rule__OnSize__Group__08040);
             rule__OnSize__Group__1();
 
             state._fsp--;
@@ -10627,20 +10800,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnSize__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3879:1: rule__OnSize__Group__0__Impl : ( 'size of file' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3942:1: rule__OnSize__Group__0__Impl : ( 'size of file' ) ;
     public final void rule__OnSize__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3883:1: ( ( 'size of file' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3884:1: ( 'size of file' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3946:1: ( ( 'size of file' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3947:1: ( 'size of file' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3884:1: ( 'size of file' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3885:1: 'size of file'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3947:1: ( 'size of file' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3948:1: 'size of file'
             {
              before(grammarAccess.getOnSizeAccess().getSizeOfFileKeyword_0()); 
-            match(input,62,FollowSets000.FOLLOW_62_in_rule__OnSize__Group__0__Impl7942); 
+            match(input,63,FollowSets000.FOLLOW_63_in_rule__OnSize__Group__0__Impl8068); 
              after(grammarAccess.getOnSizeAccess().getSizeOfFileKeyword_0()); 
 
             }
@@ -10664,21 +10837,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnSize__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3898:1: rule__OnSize__Group__1 : rule__OnSize__Group__1__Impl rule__OnSize__Group__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3961:1: rule__OnSize__Group__1 : rule__OnSize__Group__1__Impl rule__OnSize__Group__2 ;
     public final void rule__OnSize__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3902:1: ( rule__OnSize__Group__1__Impl rule__OnSize__Group__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3903:2: rule__OnSize__Group__1__Impl rule__OnSize__Group__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3965:1: ( rule__OnSize__Group__1__Impl rule__OnSize__Group__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3966:2: rule__OnSize__Group__1__Impl rule__OnSize__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__1__Impl_in_rule__OnSize__Group__17973);
+            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__1__Impl_in_rule__OnSize__Group__18099);
             rule__OnSize__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__2_in_rule__OnSize__Group__17976);
+            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__2_in_rule__OnSize__Group__18102);
             rule__OnSize__Group__2();
 
             state._fsp--;
@@ -10702,31 +10875,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnSize__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3910:1: rule__OnSize__Group__1__Impl : ( ( rule__OnSize__InverseAssignment_1 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3973:1: rule__OnSize__Group__1__Impl : ( ( rule__OnSize__InverseAssignment_1 )? ) ;
     public final void rule__OnSize__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3914:1: ( ( ( rule__OnSize__InverseAssignment_1 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3915:1: ( ( rule__OnSize__InverseAssignment_1 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3977:1: ( ( ( rule__OnSize__InverseAssignment_1 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3978:1: ( ( rule__OnSize__InverseAssignment_1 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3915:1: ( ( rule__OnSize__InverseAssignment_1 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3916:1: ( rule__OnSize__InverseAssignment_1 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3978:1: ( ( rule__OnSize__InverseAssignment_1 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3979:1: ( rule__OnSize__InverseAssignment_1 )?
             {
              before(grammarAccess.getOnSizeAccess().getInverseAssignment_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3917:1: ( rule__OnSize__InverseAssignment_1 )?
-            int alt29=2;
-            int LA29_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3980:1: ( rule__OnSize__InverseAssignment_1 )?
+            int alt30=2;
+            int LA30_0 = input.LA(1);
 
-            if ( (LA29_0==68) ) {
-                alt29=1;
+            if ( (LA30_0==69) ) {
+                alt30=1;
             }
-            switch (alt29) {
+            switch (alt30) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3917:2: rule__OnSize__InverseAssignment_1
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3980:2: rule__OnSize__InverseAssignment_1
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__OnSize__InverseAssignment_1_in_rule__OnSize__Group__1__Impl8003);
+                    pushFollow(FollowSets000.FOLLOW_rule__OnSize__InverseAssignment_1_in_rule__OnSize__Group__1__Impl8129);
                     rule__OnSize__InverseAssignment_1();
 
                     state._fsp--;
@@ -10760,21 +10933,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnSize__Group__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3927:1: rule__OnSize__Group__2 : rule__OnSize__Group__2__Impl rule__OnSize__Group__3 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3990:1: rule__OnSize__Group__2 : rule__OnSize__Group__2__Impl rule__OnSize__Group__3 ;
     public final void rule__OnSize__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3931:1: ( rule__OnSize__Group__2__Impl rule__OnSize__Group__3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3932:2: rule__OnSize__Group__2__Impl rule__OnSize__Group__3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3994:1: ( rule__OnSize__Group__2__Impl rule__OnSize__Group__3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3995:2: rule__OnSize__Group__2__Impl rule__OnSize__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__2__Impl_in_rule__OnSize__Group__28034);
+            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__2__Impl_in_rule__OnSize__Group__28160);
             rule__OnSize__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__3_in_rule__OnSize__Group__28037);
+            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__3_in_rule__OnSize__Group__28163);
             rule__OnSize__Group__3();
 
             state._fsp--;
@@ -10798,23 +10971,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnSize__Group__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3939:1: rule__OnSize__Group__2__Impl : ( ( rule__OnSize__OperatorAssignment_2 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4002:1: rule__OnSize__Group__2__Impl : ( ( rule__OnSize__OperatorAssignment_2 ) ) ;
     public final void rule__OnSize__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3943:1: ( ( ( rule__OnSize__OperatorAssignment_2 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3944:1: ( ( rule__OnSize__OperatorAssignment_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4006:1: ( ( ( rule__OnSize__OperatorAssignment_2 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4007:1: ( ( rule__OnSize__OperatorAssignment_2 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3944:1: ( ( rule__OnSize__OperatorAssignment_2 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3945:1: ( rule__OnSize__OperatorAssignment_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4007:1: ( ( rule__OnSize__OperatorAssignment_2 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4008:1: ( rule__OnSize__OperatorAssignment_2 )
             {
              before(grammarAccess.getOnSizeAccess().getOperatorAssignment_2()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3946:1: ( rule__OnSize__OperatorAssignment_2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3946:2: rule__OnSize__OperatorAssignment_2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4009:1: ( rule__OnSize__OperatorAssignment_2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4009:2: rule__OnSize__OperatorAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnSize__OperatorAssignment_2_in_rule__OnSize__Group__2__Impl8064);
+            pushFollow(FollowSets000.FOLLOW_rule__OnSize__OperatorAssignment_2_in_rule__OnSize__Group__2__Impl8190);
             rule__OnSize__OperatorAssignment_2();
 
             state._fsp--;
@@ -10845,21 +11018,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnSize__Group__3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3956:1: rule__OnSize__Group__3 : rule__OnSize__Group__3__Impl rule__OnSize__Group__4 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4019:1: rule__OnSize__Group__3 : rule__OnSize__Group__3__Impl rule__OnSize__Group__4 ;
     public final void rule__OnSize__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3960:1: ( rule__OnSize__Group__3__Impl rule__OnSize__Group__4 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3961:2: rule__OnSize__Group__3__Impl rule__OnSize__Group__4
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4023:1: ( rule__OnSize__Group__3__Impl rule__OnSize__Group__4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4024:2: rule__OnSize__Group__3__Impl rule__OnSize__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__3__Impl_in_rule__OnSize__Group__38094);
+            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__3__Impl_in_rule__OnSize__Group__38220);
             rule__OnSize__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__4_in_rule__OnSize__Group__38097);
+            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__4_in_rule__OnSize__Group__38223);
             rule__OnSize__Group__4();
 
             state._fsp--;
@@ -10883,23 +11056,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnSize__Group__3__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3968:1: rule__OnSize__Group__3__Impl : ( ( rule__OnSize__TresholdAssignment_3 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4031:1: rule__OnSize__Group__3__Impl : ( ( rule__OnSize__TresholdAssignment_3 ) ) ;
     public final void rule__OnSize__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3972:1: ( ( ( rule__OnSize__TresholdAssignment_3 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3973:1: ( ( rule__OnSize__TresholdAssignment_3 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4035:1: ( ( ( rule__OnSize__TresholdAssignment_3 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4036:1: ( ( rule__OnSize__TresholdAssignment_3 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3973:1: ( ( rule__OnSize__TresholdAssignment_3 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3974:1: ( rule__OnSize__TresholdAssignment_3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4036:1: ( ( rule__OnSize__TresholdAssignment_3 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4037:1: ( rule__OnSize__TresholdAssignment_3 )
             {
              before(grammarAccess.getOnSizeAccess().getTresholdAssignment_3()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3975:1: ( rule__OnSize__TresholdAssignment_3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3975:2: rule__OnSize__TresholdAssignment_3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4038:1: ( rule__OnSize__TresholdAssignment_3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4038:2: rule__OnSize__TresholdAssignment_3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnSize__TresholdAssignment_3_in_rule__OnSize__Group__3__Impl8124);
+            pushFollow(FollowSets000.FOLLOW_rule__OnSize__TresholdAssignment_3_in_rule__OnSize__Group__3__Impl8250);
             rule__OnSize__TresholdAssignment_3();
 
             state._fsp--;
@@ -10930,16 +11103,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnSize__Group__4"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3985:1: rule__OnSize__Group__4 : rule__OnSize__Group__4__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4048:1: rule__OnSize__Group__4 : rule__OnSize__Group__4__Impl ;
     public final void rule__OnSize__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3989:1: ( rule__OnSize__Group__4__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3990:2: rule__OnSize__Group__4__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4052:1: ( rule__OnSize__Group__4__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4053:2: rule__OnSize__Group__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__4__Impl_in_rule__OnSize__Group__48154);
+            pushFollow(FollowSets000.FOLLOW_rule__OnSize__Group__4__Impl_in_rule__OnSize__Group__48280);
             rule__OnSize__Group__4__Impl();
 
             state._fsp--;
@@ -10963,23 +11136,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnSize__Group__4__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:3996:1: rule__OnSize__Group__4__Impl : ( ( rule__OnSize__UnitAssignment_4 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4059:1: rule__OnSize__Group__4__Impl : ( ( rule__OnSize__UnitAssignment_4 ) ) ;
     public final void rule__OnSize__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4000:1: ( ( ( rule__OnSize__UnitAssignment_4 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4001:1: ( ( rule__OnSize__UnitAssignment_4 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4063:1: ( ( ( rule__OnSize__UnitAssignment_4 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4064:1: ( ( rule__OnSize__UnitAssignment_4 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4001:1: ( ( rule__OnSize__UnitAssignment_4 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4002:1: ( rule__OnSize__UnitAssignment_4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4064:1: ( ( rule__OnSize__UnitAssignment_4 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4065:1: ( rule__OnSize__UnitAssignment_4 )
             {
              before(grammarAccess.getOnSizeAccess().getUnitAssignment_4()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4003:1: ( rule__OnSize__UnitAssignment_4 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4003:2: rule__OnSize__UnitAssignment_4
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4066:1: ( rule__OnSize__UnitAssignment_4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4066:2: rule__OnSize__UnitAssignment_4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnSize__UnitAssignment_4_in_rule__OnSize__Group__4__Impl8181);
+            pushFollow(FollowSets000.FOLLOW_rule__OnSize__UnitAssignment_4_in_rule__OnSize__Group__4__Impl8307);
             rule__OnSize__UnitAssignment_4();
 
             state._fsp--;
@@ -11010,21 +11183,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnName__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4023:1: rule__OnName__Group__0 : rule__OnName__Group__0__Impl rule__OnName__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4086:1: rule__OnName__Group__0 : rule__OnName__Group__0__Impl rule__OnName__Group__1 ;
     public final void rule__OnName__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4027:1: ( rule__OnName__Group__0__Impl rule__OnName__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4028:2: rule__OnName__Group__0__Impl rule__OnName__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4090:1: ( rule__OnName__Group__0__Impl rule__OnName__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4091:2: rule__OnName__Group__0__Impl rule__OnName__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnName__Group__0__Impl_in_rule__OnName__Group__08221);
+            pushFollow(FollowSets000.FOLLOW_rule__OnName__Group__0__Impl_in_rule__OnName__Group__08347);
             rule__OnName__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnName__Group__1_in_rule__OnName__Group__08224);
+            pushFollow(FollowSets000.FOLLOW_rule__OnName__Group__1_in_rule__OnName__Group__08350);
             rule__OnName__Group__1();
 
             state._fsp--;
@@ -11048,21 +11221,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnName__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4035:1: rule__OnName__Group__0__Impl : ( () ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4098:1: rule__OnName__Group__0__Impl : ( () ) ;
     public final void rule__OnName__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4039:1: ( ( () ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4040:1: ( () )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4102:1: ( ( () ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4103:1: ( () )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4040:1: ( () )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4041:1: ()
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4103:1: ( () )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4104:1: ()
             {
              before(grammarAccess.getOnNameAccess().getOnNameAction_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4042:1: ()
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4044:1: 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4105:1: ()
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4107:1: 
             {
             }
 
@@ -11085,21 +11258,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnName__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4054:1: rule__OnName__Group__1 : rule__OnName__Group__1__Impl rule__OnName__Group__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4117:1: rule__OnName__Group__1 : rule__OnName__Group__1__Impl rule__OnName__Group__2 ;
     public final void rule__OnName__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4058:1: ( rule__OnName__Group__1__Impl rule__OnName__Group__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4059:2: rule__OnName__Group__1__Impl rule__OnName__Group__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4121:1: ( rule__OnName__Group__1__Impl rule__OnName__Group__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4122:2: rule__OnName__Group__1__Impl rule__OnName__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnName__Group__1__Impl_in_rule__OnName__Group__18282);
+            pushFollow(FollowSets000.FOLLOW_rule__OnName__Group__1__Impl_in_rule__OnName__Group__18408);
             rule__OnName__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnName__Group__2_in_rule__OnName__Group__18285);
+            pushFollow(FollowSets000.FOLLOW_rule__OnName__Group__2_in_rule__OnName__Group__18411);
             rule__OnName__Group__2();
 
             state._fsp--;
@@ -11123,20 +11296,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnName__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4066:1: rule__OnName__Group__1__Impl : ( 'name is' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4129:1: rule__OnName__Group__1__Impl : ( 'name is' ) ;
     public final void rule__OnName__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4070:1: ( ( 'name is' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4071:1: ( 'name is' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4133:1: ( ( 'name is' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4134:1: ( 'name is' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4071:1: ( 'name is' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4072:1: 'name is'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4134:1: ( 'name is' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4135:1: 'name is'
             {
              before(grammarAccess.getOnNameAccess().getNameIsKeyword_1()); 
-            match(input,63,FollowSets000.FOLLOW_63_in_rule__OnName__Group__1__Impl8313); 
+            match(input,64,FollowSets000.FOLLOW_64_in_rule__OnName__Group__1__Impl8439); 
              after(grammarAccess.getOnNameAccess().getNameIsKeyword_1()); 
 
             }
@@ -11160,21 +11333,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnName__Group__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4085:1: rule__OnName__Group__2 : rule__OnName__Group__2__Impl rule__OnName__Group__3 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4148:1: rule__OnName__Group__2 : rule__OnName__Group__2__Impl rule__OnName__Group__3 ;
     public final void rule__OnName__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4089:1: ( rule__OnName__Group__2__Impl rule__OnName__Group__3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4090:2: rule__OnName__Group__2__Impl rule__OnName__Group__3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4152:1: ( rule__OnName__Group__2__Impl rule__OnName__Group__3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4153:2: rule__OnName__Group__2__Impl rule__OnName__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnName__Group__2__Impl_in_rule__OnName__Group__28344);
+            pushFollow(FollowSets000.FOLLOW_rule__OnName__Group__2__Impl_in_rule__OnName__Group__28470);
             rule__OnName__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnName__Group__3_in_rule__OnName__Group__28347);
+            pushFollow(FollowSets000.FOLLOW_rule__OnName__Group__3_in_rule__OnName__Group__28473);
             rule__OnName__Group__3();
 
             state._fsp--;
@@ -11198,31 +11371,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnName__Group__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4097:1: rule__OnName__Group__2__Impl : ( ( rule__OnName__InverseAssignment_2 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4160:1: rule__OnName__Group__2__Impl : ( ( rule__OnName__InverseAssignment_2 )? ) ;
     public final void rule__OnName__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4101:1: ( ( ( rule__OnName__InverseAssignment_2 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4102:1: ( ( rule__OnName__InverseAssignment_2 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4164:1: ( ( ( rule__OnName__InverseAssignment_2 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4165:1: ( ( rule__OnName__InverseAssignment_2 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4102:1: ( ( rule__OnName__InverseAssignment_2 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4103:1: ( rule__OnName__InverseAssignment_2 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4165:1: ( ( rule__OnName__InverseAssignment_2 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4166:1: ( rule__OnName__InverseAssignment_2 )?
             {
              before(grammarAccess.getOnNameAccess().getInverseAssignment_2()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4104:1: ( rule__OnName__InverseAssignment_2 )?
-            int alt30=2;
-            int LA30_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4167:1: ( rule__OnName__InverseAssignment_2 )?
+            int alt31=2;
+            int LA31_0 = input.LA(1);
 
-            if ( (LA30_0==68) ) {
-                alt30=1;
+            if ( (LA31_0==69) ) {
+                alt31=1;
             }
-            switch (alt30) {
+            switch (alt31) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4104:2: rule__OnName__InverseAssignment_2
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4167:2: rule__OnName__InverseAssignment_2
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__OnName__InverseAssignment_2_in_rule__OnName__Group__2__Impl8374);
+                    pushFollow(FollowSets000.FOLLOW_rule__OnName__InverseAssignment_2_in_rule__OnName__Group__2__Impl8500);
                     rule__OnName__InverseAssignment_2();
 
                     state._fsp--;
@@ -11256,16 +11429,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnName__Group__3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4114:1: rule__OnName__Group__3 : rule__OnName__Group__3__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4177:1: rule__OnName__Group__3 : rule__OnName__Group__3__Impl ;
     public final void rule__OnName__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4118:1: ( rule__OnName__Group__3__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4119:2: rule__OnName__Group__3__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4181:1: ( rule__OnName__Group__3__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4182:2: rule__OnName__Group__3__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnName__Group__3__Impl_in_rule__OnName__Group__38405);
+            pushFollow(FollowSets000.FOLLOW_rule__OnName__Group__3__Impl_in_rule__OnName__Group__38531);
             rule__OnName__Group__3__Impl();
 
             state._fsp--;
@@ -11289,23 +11462,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnName__Group__3__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4125:1: rule__OnName__Group__3__Impl : ( ( rule__OnName__NameAssignment_3 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4188:1: rule__OnName__Group__3__Impl : ( ( rule__OnName__NameAssignment_3 ) ) ;
     public final void rule__OnName__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4129:1: ( ( ( rule__OnName__NameAssignment_3 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4130:1: ( ( rule__OnName__NameAssignment_3 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4192:1: ( ( ( rule__OnName__NameAssignment_3 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4193:1: ( ( rule__OnName__NameAssignment_3 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4130:1: ( ( rule__OnName__NameAssignment_3 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4131:1: ( rule__OnName__NameAssignment_3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4193:1: ( ( rule__OnName__NameAssignment_3 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4194:1: ( rule__OnName__NameAssignment_3 )
             {
              before(grammarAccess.getOnNameAccess().getNameAssignment_3()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4132:1: ( rule__OnName__NameAssignment_3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4132:2: rule__OnName__NameAssignment_3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4195:1: ( rule__OnName__NameAssignment_3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4195:2: rule__OnName__NameAssignment_3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnName__NameAssignment_3_in_rule__OnName__Group__3__Impl8432);
+            pushFollow(FollowSets000.FOLLOW_rule__OnName__NameAssignment_3_in_rule__OnName__Group__3__Impl8558);
             rule__OnName__NameAssignment_3();
 
             state._fsp--;
@@ -11336,21 +11509,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4150:1: rule__OnExtension__Group__0 : rule__OnExtension__Group__0__Impl rule__OnExtension__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4213:1: rule__OnExtension__Group__0 : rule__OnExtension__Group__0__Impl rule__OnExtension__Group__1 ;
     public final void rule__OnExtension__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4154:1: ( rule__OnExtension__Group__0__Impl rule__OnExtension__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4155:2: rule__OnExtension__Group__0__Impl rule__OnExtension__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4217:1: ( rule__OnExtension__Group__0__Impl rule__OnExtension__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4218:2: rule__OnExtension__Group__0__Impl rule__OnExtension__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__0__Impl_in_rule__OnExtension__Group__08470);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__0__Impl_in_rule__OnExtension__Group__08596);
             rule__OnExtension__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__1_in_rule__OnExtension__Group__08473);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__1_in_rule__OnExtension__Group__08599);
             rule__OnExtension__Group__1();
 
             state._fsp--;
@@ -11374,21 +11547,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4162:1: rule__OnExtension__Group__0__Impl : ( () ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4225:1: rule__OnExtension__Group__0__Impl : ( () ) ;
     public final void rule__OnExtension__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4166:1: ( ( () ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4167:1: ( () )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4229:1: ( ( () ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4230:1: ( () )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4167:1: ( () )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4168:1: ()
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4230:1: ( () )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4231:1: ()
             {
              before(grammarAccess.getOnExtensionAccess().getOnExtensionAction_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4169:1: ()
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4171:1: 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4232:1: ()
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4234:1: 
             {
             }
 
@@ -11411,21 +11584,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4181:1: rule__OnExtension__Group__1 : rule__OnExtension__Group__1__Impl rule__OnExtension__Group__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4244:1: rule__OnExtension__Group__1 : rule__OnExtension__Group__1__Impl rule__OnExtension__Group__2 ;
     public final void rule__OnExtension__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4185:1: ( rule__OnExtension__Group__1__Impl rule__OnExtension__Group__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4186:2: rule__OnExtension__Group__1__Impl rule__OnExtension__Group__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4248:1: ( rule__OnExtension__Group__1__Impl rule__OnExtension__Group__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4249:2: rule__OnExtension__Group__1__Impl rule__OnExtension__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__1__Impl_in_rule__OnExtension__Group__18531);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__1__Impl_in_rule__OnExtension__Group__18657);
             rule__OnExtension__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__2_in_rule__OnExtension__Group__18534);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__2_in_rule__OnExtension__Group__18660);
             rule__OnExtension__Group__2();
 
             state._fsp--;
@@ -11449,20 +11622,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4193:1: rule__OnExtension__Group__1__Impl : ( 'extension is' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4256:1: rule__OnExtension__Group__1__Impl : ( 'extension is' ) ;
     public final void rule__OnExtension__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4197:1: ( ( 'extension is' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4198:1: ( 'extension is' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4260:1: ( ( 'extension is' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4261:1: ( 'extension is' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4198:1: ( 'extension is' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4199:1: 'extension is'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4261:1: ( 'extension is' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4262:1: 'extension is'
             {
              before(grammarAccess.getOnExtensionAccess().getExtensionIsKeyword_1()); 
-            match(input,64,FollowSets000.FOLLOW_64_in_rule__OnExtension__Group__1__Impl8562); 
+            match(input,65,FollowSets000.FOLLOW_65_in_rule__OnExtension__Group__1__Impl8688); 
              after(grammarAccess.getOnExtensionAccess().getExtensionIsKeyword_1()); 
 
             }
@@ -11486,21 +11659,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4212:1: rule__OnExtension__Group__2 : rule__OnExtension__Group__2__Impl rule__OnExtension__Group__3 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4275:1: rule__OnExtension__Group__2 : rule__OnExtension__Group__2__Impl rule__OnExtension__Group__3 ;
     public final void rule__OnExtension__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4216:1: ( rule__OnExtension__Group__2__Impl rule__OnExtension__Group__3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4217:2: rule__OnExtension__Group__2__Impl rule__OnExtension__Group__3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4279:1: ( rule__OnExtension__Group__2__Impl rule__OnExtension__Group__3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4280:2: rule__OnExtension__Group__2__Impl rule__OnExtension__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__2__Impl_in_rule__OnExtension__Group__28593);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__2__Impl_in_rule__OnExtension__Group__28719);
             rule__OnExtension__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__3_in_rule__OnExtension__Group__28596);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__3_in_rule__OnExtension__Group__28722);
             rule__OnExtension__Group__3();
 
             state._fsp--;
@@ -11524,31 +11697,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4224:1: rule__OnExtension__Group__2__Impl : ( ( rule__OnExtension__InverseAssignment_2 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4287:1: rule__OnExtension__Group__2__Impl : ( ( rule__OnExtension__InverseAssignment_2 )? ) ;
     public final void rule__OnExtension__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4228:1: ( ( ( rule__OnExtension__InverseAssignment_2 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4229:1: ( ( rule__OnExtension__InverseAssignment_2 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4291:1: ( ( ( rule__OnExtension__InverseAssignment_2 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4292:1: ( ( rule__OnExtension__InverseAssignment_2 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4229:1: ( ( rule__OnExtension__InverseAssignment_2 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4230:1: ( rule__OnExtension__InverseAssignment_2 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4292:1: ( ( rule__OnExtension__InverseAssignment_2 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4293:1: ( rule__OnExtension__InverseAssignment_2 )?
             {
              before(grammarAccess.getOnExtensionAccess().getInverseAssignment_2()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4231:1: ( rule__OnExtension__InverseAssignment_2 )?
-            int alt31=2;
-            int LA31_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4294:1: ( rule__OnExtension__InverseAssignment_2 )?
+            int alt32=2;
+            int LA32_0 = input.LA(1);
 
-            if ( (LA31_0==68) ) {
-                alt31=1;
+            if ( (LA32_0==69) ) {
+                alt32=1;
             }
-            switch (alt31) {
+            switch (alt32) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4231:2: rule__OnExtension__InverseAssignment_2
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4294:2: rule__OnExtension__InverseAssignment_2
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__OnExtension__InverseAssignment_2_in_rule__OnExtension__Group__2__Impl8623);
+                    pushFollow(FollowSets000.FOLLOW_rule__OnExtension__InverseAssignment_2_in_rule__OnExtension__Group__2__Impl8749);
                     rule__OnExtension__InverseAssignment_2();
 
                     state._fsp--;
@@ -11582,21 +11755,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group__3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4241:1: rule__OnExtension__Group__3 : rule__OnExtension__Group__3__Impl rule__OnExtension__Group__4 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4304:1: rule__OnExtension__Group__3 : rule__OnExtension__Group__3__Impl rule__OnExtension__Group__4 ;
     public final void rule__OnExtension__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4245:1: ( rule__OnExtension__Group__3__Impl rule__OnExtension__Group__4 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4246:2: rule__OnExtension__Group__3__Impl rule__OnExtension__Group__4
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4308:1: ( rule__OnExtension__Group__3__Impl rule__OnExtension__Group__4 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4309:2: rule__OnExtension__Group__3__Impl rule__OnExtension__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__3__Impl_in_rule__OnExtension__Group__38654);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__3__Impl_in_rule__OnExtension__Group__38780);
             rule__OnExtension__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__4_in_rule__OnExtension__Group__38657);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__4_in_rule__OnExtension__Group__38783);
             rule__OnExtension__Group__4();
 
             state._fsp--;
@@ -11620,20 +11793,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group__3__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4253:1: rule__OnExtension__Group__3__Impl : ( 'in [' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4316:1: rule__OnExtension__Group__3__Impl : ( 'in [' ) ;
     public final void rule__OnExtension__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4257:1: ( ( 'in [' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4258:1: ( 'in [' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4320:1: ( ( 'in [' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4321:1: ( 'in [' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4258:1: ( 'in [' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4259:1: 'in ['
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4321:1: ( 'in [' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4322:1: 'in ['
             {
              before(grammarAccess.getOnExtensionAccess().getInKeyword_3()); 
-            match(input,57,FollowSets000.FOLLOW_57_in_rule__OnExtension__Group__3__Impl8685); 
+            match(input,58,FollowSets000.FOLLOW_58_in_rule__OnExtension__Group__3__Impl8811); 
              after(grammarAccess.getOnExtensionAccess().getInKeyword_3()); 
 
             }
@@ -11657,21 +11830,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group__4"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4272:1: rule__OnExtension__Group__4 : rule__OnExtension__Group__4__Impl rule__OnExtension__Group__5 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4335:1: rule__OnExtension__Group__4 : rule__OnExtension__Group__4__Impl rule__OnExtension__Group__5 ;
     public final void rule__OnExtension__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4276:1: ( rule__OnExtension__Group__4__Impl rule__OnExtension__Group__5 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4277:2: rule__OnExtension__Group__4__Impl rule__OnExtension__Group__5
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4339:1: ( rule__OnExtension__Group__4__Impl rule__OnExtension__Group__5 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4340:2: rule__OnExtension__Group__4__Impl rule__OnExtension__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__4__Impl_in_rule__OnExtension__Group__48716);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__4__Impl_in_rule__OnExtension__Group__48842);
             rule__OnExtension__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__5_in_rule__OnExtension__Group__48719);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__5_in_rule__OnExtension__Group__48845);
             rule__OnExtension__Group__5();
 
             state._fsp--;
@@ -11695,31 +11868,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group__4__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4284:1: rule__OnExtension__Group__4__Impl : ( ( rule__OnExtension__Group_4__0 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4347:1: rule__OnExtension__Group__4__Impl : ( ( rule__OnExtension__Group_4__0 )? ) ;
     public final void rule__OnExtension__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4288:1: ( ( ( rule__OnExtension__Group_4__0 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4289:1: ( ( rule__OnExtension__Group_4__0 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4351:1: ( ( ( rule__OnExtension__Group_4__0 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4352:1: ( ( rule__OnExtension__Group_4__0 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4289:1: ( ( rule__OnExtension__Group_4__0 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4290:1: ( rule__OnExtension__Group_4__0 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4352:1: ( ( rule__OnExtension__Group_4__0 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4353:1: ( rule__OnExtension__Group_4__0 )?
             {
              before(grammarAccess.getOnExtensionAccess().getGroup_4()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4291:1: ( rule__OnExtension__Group_4__0 )?
-            int alt32=2;
-            int LA32_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4354:1: ( rule__OnExtension__Group_4__0 )?
+            int alt33=2;
+            int LA33_0 = input.LA(1);
 
-            if ( ((LA32_0>=RULE_STRING && LA32_0<=RULE_ID)) ) {
-                alt32=1;
+            if ( ((LA33_0>=RULE_STRING && LA33_0<=RULE_ID)) ) {
+                alt33=1;
             }
-            switch (alt32) {
+            switch (alt33) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4291:2: rule__OnExtension__Group_4__0
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4354:2: rule__OnExtension__Group_4__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4__0_in_rule__OnExtension__Group__4__Impl8746);
+                    pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4__0_in_rule__OnExtension__Group__4__Impl8872);
                     rule__OnExtension__Group_4__0();
 
                     state._fsp--;
@@ -11753,16 +11926,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group__5"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4301:1: rule__OnExtension__Group__5 : rule__OnExtension__Group__5__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4364:1: rule__OnExtension__Group__5 : rule__OnExtension__Group__5__Impl ;
     public final void rule__OnExtension__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4305:1: ( rule__OnExtension__Group__5__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4306:2: rule__OnExtension__Group__5__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4368:1: ( rule__OnExtension__Group__5__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4369:2: rule__OnExtension__Group__5__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__5__Impl_in_rule__OnExtension__Group__58777);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group__5__Impl_in_rule__OnExtension__Group__58903);
             rule__OnExtension__Group__5__Impl();
 
             state._fsp--;
@@ -11786,20 +11959,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group__5__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4312:1: rule__OnExtension__Group__5__Impl : ( ']' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4375:1: rule__OnExtension__Group__5__Impl : ( ']' ) ;
     public final void rule__OnExtension__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4316:1: ( ( ']' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4317:1: ( ']' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4379:1: ( ( ']' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4380:1: ( ']' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4317:1: ( ']' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4318:1: ']'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4380:1: ( ']' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4381:1: ']'
             {
              before(grammarAccess.getOnExtensionAccess().getRightSquareBracketKeyword_5()); 
-            match(input,58,FollowSets000.FOLLOW_58_in_rule__OnExtension__Group__5__Impl8805); 
+            match(input,59,FollowSets000.FOLLOW_59_in_rule__OnExtension__Group__5__Impl8931); 
              after(grammarAccess.getOnExtensionAccess().getRightSquareBracketKeyword_5()); 
 
             }
@@ -11823,21 +11996,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group_4__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4343:1: rule__OnExtension__Group_4__0 : rule__OnExtension__Group_4__0__Impl rule__OnExtension__Group_4__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4406:1: rule__OnExtension__Group_4__0 : rule__OnExtension__Group_4__0__Impl rule__OnExtension__Group_4__1 ;
     public final void rule__OnExtension__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4347:1: ( rule__OnExtension__Group_4__0__Impl rule__OnExtension__Group_4__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4348:2: rule__OnExtension__Group_4__0__Impl rule__OnExtension__Group_4__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4410:1: ( rule__OnExtension__Group_4__0__Impl rule__OnExtension__Group_4__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4411:2: rule__OnExtension__Group_4__0__Impl rule__OnExtension__Group_4__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4__0__Impl_in_rule__OnExtension__Group_4__08848);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4__0__Impl_in_rule__OnExtension__Group_4__08974);
             rule__OnExtension__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4__1_in_rule__OnExtension__Group_4__08851);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4__1_in_rule__OnExtension__Group_4__08977);
             rule__OnExtension__Group_4__1();
 
             state._fsp--;
@@ -11861,23 +12034,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group_4__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4355:1: rule__OnExtension__Group_4__0__Impl : ( ( rule__OnExtension__ExtensionsAssignment_4_0 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4418:1: rule__OnExtension__Group_4__0__Impl : ( ( rule__OnExtension__ExtensionsAssignment_4_0 ) ) ;
     public final void rule__OnExtension__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4359:1: ( ( ( rule__OnExtension__ExtensionsAssignment_4_0 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4360:1: ( ( rule__OnExtension__ExtensionsAssignment_4_0 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4422:1: ( ( ( rule__OnExtension__ExtensionsAssignment_4_0 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4423:1: ( ( rule__OnExtension__ExtensionsAssignment_4_0 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4360:1: ( ( rule__OnExtension__ExtensionsAssignment_4_0 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4361:1: ( rule__OnExtension__ExtensionsAssignment_4_0 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4423:1: ( ( rule__OnExtension__ExtensionsAssignment_4_0 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4424:1: ( rule__OnExtension__ExtensionsAssignment_4_0 )
             {
              before(grammarAccess.getOnExtensionAccess().getExtensionsAssignment_4_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4362:1: ( rule__OnExtension__ExtensionsAssignment_4_0 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4362:2: rule__OnExtension__ExtensionsAssignment_4_0
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4425:1: ( rule__OnExtension__ExtensionsAssignment_4_0 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4425:2: rule__OnExtension__ExtensionsAssignment_4_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__ExtensionsAssignment_4_0_in_rule__OnExtension__Group_4__0__Impl8878);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__ExtensionsAssignment_4_0_in_rule__OnExtension__Group_4__0__Impl9004);
             rule__OnExtension__ExtensionsAssignment_4_0();
 
             state._fsp--;
@@ -11908,16 +12081,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group_4__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4372:1: rule__OnExtension__Group_4__1 : rule__OnExtension__Group_4__1__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4435:1: rule__OnExtension__Group_4__1 : rule__OnExtension__Group_4__1__Impl ;
     public final void rule__OnExtension__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4376:1: ( rule__OnExtension__Group_4__1__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4377:2: rule__OnExtension__Group_4__1__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4439:1: ( rule__OnExtension__Group_4__1__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4440:2: rule__OnExtension__Group_4__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4__1__Impl_in_rule__OnExtension__Group_4__18908);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4__1__Impl_in_rule__OnExtension__Group_4__19034);
             rule__OnExtension__Group_4__1__Impl();
 
             state._fsp--;
@@ -11941,35 +12114,35 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group_4__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4383:1: rule__OnExtension__Group_4__1__Impl : ( ( rule__OnExtension__Group_4_1__0 )* ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4446:1: rule__OnExtension__Group_4__1__Impl : ( ( rule__OnExtension__Group_4_1__0 )* ) ;
     public final void rule__OnExtension__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4387:1: ( ( ( rule__OnExtension__Group_4_1__0 )* ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4388:1: ( ( rule__OnExtension__Group_4_1__0 )* )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4450:1: ( ( ( rule__OnExtension__Group_4_1__0 )* ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4451:1: ( ( rule__OnExtension__Group_4_1__0 )* )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4388:1: ( ( rule__OnExtension__Group_4_1__0 )* )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4389:1: ( rule__OnExtension__Group_4_1__0 )*
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4451:1: ( ( rule__OnExtension__Group_4_1__0 )* )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4452:1: ( rule__OnExtension__Group_4_1__0 )*
             {
              before(grammarAccess.getOnExtensionAccess().getGroup_4_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4390:1: ( rule__OnExtension__Group_4_1__0 )*
-            loop33:
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4453:1: ( rule__OnExtension__Group_4_1__0 )*
+            loop34:
             do {
-                int alt33=2;
-                int LA33_0 = input.LA(1);
+                int alt34=2;
+                int LA34_0 = input.LA(1);
 
-                if ( (LA33_0==46) ) {
-                    alt33=1;
+                if ( (LA34_0==47) ) {
+                    alt34=1;
                 }
 
 
-                switch (alt33) {
+                switch (alt34) {
             	case 1 :
-            	    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4390:2: rule__OnExtension__Group_4_1__0
+            	    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4453:2: rule__OnExtension__Group_4_1__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4_1__0_in_rule__OnExtension__Group_4__1__Impl8935);
+            	    pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4_1__0_in_rule__OnExtension__Group_4__1__Impl9061);
             	    rule__OnExtension__Group_4_1__0();
 
             	    state._fsp--;
@@ -11979,7 +12152,7 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop33;
+            	    break loop34;
                 }
             } while (true);
 
@@ -12006,21 +12179,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group_4_1__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4404:1: rule__OnExtension__Group_4_1__0 : rule__OnExtension__Group_4_1__0__Impl rule__OnExtension__Group_4_1__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4467:1: rule__OnExtension__Group_4_1__0 : rule__OnExtension__Group_4_1__0__Impl rule__OnExtension__Group_4_1__1 ;
     public final void rule__OnExtension__Group_4_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4408:1: ( rule__OnExtension__Group_4_1__0__Impl rule__OnExtension__Group_4_1__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4409:2: rule__OnExtension__Group_4_1__0__Impl rule__OnExtension__Group_4_1__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4471:1: ( rule__OnExtension__Group_4_1__0__Impl rule__OnExtension__Group_4_1__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4472:2: rule__OnExtension__Group_4_1__0__Impl rule__OnExtension__Group_4_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4_1__0__Impl_in_rule__OnExtension__Group_4_1__08970);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4_1__0__Impl_in_rule__OnExtension__Group_4_1__09096);
             rule__OnExtension__Group_4_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4_1__1_in_rule__OnExtension__Group_4_1__08973);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4_1__1_in_rule__OnExtension__Group_4_1__09099);
             rule__OnExtension__Group_4_1__1();
 
             state._fsp--;
@@ -12044,20 +12217,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group_4_1__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4416:1: rule__OnExtension__Group_4_1__0__Impl : ( ',' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4479:1: rule__OnExtension__Group_4_1__0__Impl : ( ',' ) ;
     public final void rule__OnExtension__Group_4_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4420:1: ( ( ',' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4421:1: ( ',' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4483:1: ( ( ',' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4484:1: ( ',' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4421:1: ( ',' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4422:1: ','
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4484:1: ( ',' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4485:1: ','
             {
              before(grammarAccess.getOnExtensionAccess().getCommaKeyword_4_1_0()); 
-            match(input,46,FollowSets000.FOLLOW_46_in_rule__OnExtension__Group_4_1__0__Impl9001); 
+            match(input,47,FollowSets000.FOLLOW_47_in_rule__OnExtension__Group_4_1__0__Impl9127); 
              after(grammarAccess.getOnExtensionAccess().getCommaKeyword_4_1_0()); 
 
             }
@@ -12081,16 +12254,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group_4_1__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4435:1: rule__OnExtension__Group_4_1__1 : rule__OnExtension__Group_4_1__1__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4498:1: rule__OnExtension__Group_4_1__1 : rule__OnExtension__Group_4_1__1__Impl ;
     public final void rule__OnExtension__Group_4_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4439:1: ( rule__OnExtension__Group_4_1__1__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4440:2: rule__OnExtension__Group_4_1__1__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4502:1: ( rule__OnExtension__Group_4_1__1__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4503:2: rule__OnExtension__Group_4_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4_1__1__Impl_in_rule__OnExtension__Group_4_1__19032);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__Group_4_1__1__Impl_in_rule__OnExtension__Group_4_1__19158);
             rule__OnExtension__Group_4_1__1__Impl();
 
             state._fsp--;
@@ -12114,23 +12287,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__Group_4_1__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4446:1: rule__OnExtension__Group_4_1__1__Impl : ( ( rule__OnExtension__ExtensionsAssignment_4_1_1 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4509:1: rule__OnExtension__Group_4_1__1__Impl : ( ( rule__OnExtension__ExtensionsAssignment_4_1_1 ) ) ;
     public final void rule__OnExtension__Group_4_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4450:1: ( ( ( rule__OnExtension__ExtensionsAssignment_4_1_1 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4451:1: ( ( rule__OnExtension__ExtensionsAssignment_4_1_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4513:1: ( ( ( rule__OnExtension__ExtensionsAssignment_4_1_1 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4514:1: ( ( rule__OnExtension__ExtensionsAssignment_4_1_1 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4451:1: ( ( rule__OnExtension__ExtensionsAssignment_4_1_1 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4452:1: ( rule__OnExtension__ExtensionsAssignment_4_1_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4514:1: ( ( rule__OnExtension__ExtensionsAssignment_4_1_1 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4515:1: ( rule__OnExtension__ExtensionsAssignment_4_1_1 )
             {
              before(grammarAccess.getOnExtensionAccess().getExtensionsAssignment_4_1_1()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4453:1: ( rule__OnExtension__ExtensionsAssignment_4_1_1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4453:2: rule__OnExtension__ExtensionsAssignment_4_1_1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4516:1: ( rule__OnExtension__ExtensionsAssignment_4_1_1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4516:2: rule__OnExtension__ExtensionsAssignment_4_1_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__ExtensionsAssignment_4_1_1_in_rule__OnExtension__Group_4_1__1__Impl9059);
+            pushFollow(FollowSets000.FOLLOW_rule__OnExtension__ExtensionsAssignment_4_1_1_in_rule__OnExtension__Group_4_1__1__Impl9185);
             rule__OnExtension__ExtensionsAssignment_4_1_1();
 
             state._fsp--;
@@ -12161,21 +12334,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IsEmpty__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4467:1: rule__IsEmpty__Group__0 : rule__IsEmpty__Group__0__Impl rule__IsEmpty__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4530:1: rule__IsEmpty__Group__0 : rule__IsEmpty__Group__0__Impl rule__IsEmpty__Group__1 ;
     public final void rule__IsEmpty__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4471:1: ( rule__IsEmpty__Group__0__Impl rule__IsEmpty__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4472:2: rule__IsEmpty__Group__0__Impl rule__IsEmpty__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4534:1: ( rule__IsEmpty__Group__0__Impl rule__IsEmpty__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4535:2: rule__IsEmpty__Group__0__Impl rule__IsEmpty__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__Group__0__Impl_in_rule__IsEmpty__Group__09093);
+            pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__Group__0__Impl_in_rule__IsEmpty__Group__09219);
             rule__IsEmpty__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__Group__1_in_rule__IsEmpty__Group__09096);
+            pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__Group__1_in_rule__IsEmpty__Group__09222);
             rule__IsEmpty__Group__1();
 
             state._fsp--;
@@ -12199,21 +12372,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IsEmpty__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4479:1: rule__IsEmpty__Group__0__Impl : ( () ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4542:1: rule__IsEmpty__Group__0__Impl : ( () ) ;
     public final void rule__IsEmpty__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4483:1: ( ( () ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4484:1: ( () )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4546:1: ( ( () ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4547:1: ( () )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4484:1: ( () )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4485:1: ()
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4547:1: ( () )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4548:1: ()
             {
              before(grammarAccess.getIsEmptyAccess().getIsEmptyAction_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4486:1: ()
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4488:1: 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4549:1: ()
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4551:1: 
             {
             }
 
@@ -12236,21 +12409,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IsEmpty__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4498:1: rule__IsEmpty__Group__1 : rule__IsEmpty__Group__1__Impl rule__IsEmpty__Group__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4561:1: rule__IsEmpty__Group__1 : rule__IsEmpty__Group__1__Impl rule__IsEmpty__Group__2 ;
     public final void rule__IsEmpty__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4502:1: ( rule__IsEmpty__Group__1__Impl rule__IsEmpty__Group__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4503:2: rule__IsEmpty__Group__1__Impl rule__IsEmpty__Group__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4565:1: ( rule__IsEmpty__Group__1__Impl rule__IsEmpty__Group__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4566:2: rule__IsEmpty__Group__1__Impl rule__IsEmpty__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__Group__1__Impl_in_rule__IsEmpty__Group__19154);
+            pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__Group__1__Impl_in_rule__IsEmpty__Group__19280);
             rule__IsEmpty__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__Group__2_in_rule__IsEmpty__Group__19157);
+            pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__Group__2_in_rule__IsEmpty__Group__19283);
             rule__IsEmpty__Group__2();
 
             state._fsp--;
@@ -12274,20 +12447,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IsEmpty__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4510:1: rule__IsEmpty__Group__1__Impl : ( 'is' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4573:1: rule__IsEmpty__Group__1__Impl : ( 'is' ) ;
     public final void rule__IsEmpty__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4514:1: ( ( 'is' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4515:1: ( 'is' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4577:1: ( ( 'is' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4578:1: ( 'is' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4515:1: ( 'is' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4516:1: 'is'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4578:1: ( 'is' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4579:1: 'is'
             {
              before(grammarAccess.getIsEmptyAccess().getIsKeyword_1()); 
-            match(input,56,FollowSets000.FOLLOW_56_in_rule__IsEmpty__Group__1__Impl9185); 
+            match(input,57,FollowSets000.FOLLOW_57_in_rule__IsEmpty__Group__1__Impl9311); 
              after(grammarAccess.getIsEmptyAccess().getIsKeyword_1()); 
 
             }
@@ -12311,21 +12484,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IsEmpty__Group__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4529:1: rule__IsEmpty__Group__2 : rule__IsEmpty__Group__2__Impl rule__IsEmpty__Group__3 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4592:1: rule__IsEmpty__Group__2 : rule__IsEmpty__Group__2__Impl rule__IsEmpty__Group__3 ;
     public final void rule__IsEmpty__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4533:1: ( rule__IsEmpty__Group__2__Impl rule__IsEmpty__Group__3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4534:2: rule__IsEmpty__Group__2__Impl rule__IsEmpty__Group__3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4596:1: ( rule__IsEmpty__Group__2__Impl rule__IsEmpty__Group__3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4597:2: rule__IsEmpty__Group__2__Impl rule__IsEmpty__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__Group__2__Impl_in_rule__IsEmpty__Group__29216);
+            pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__Group__2__Impl_in_rule__IsEmpty__Group__29342);
             rule__IsEmpty__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__Group__3_in_rule__IsEmpty__Group__29219);
+            pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__Group__3_in_rule__IsEmpty__Group__29345);
             rule__IsEmpty__Group__3();
 
             state._fsp--;
@@ -12349,31 +12522,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IsEmpty__Group__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4541:1: rule__IsEmpty__Group__2__Impl : ( ( rule__IsEmpty__InverseAssignment_2 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4604:1: rule__IsEmpty__Group__2__Impl : ( ( rule__IsEmpty__InverseAssignment_2 )? ) ;
     public final void rule__IsEmpty__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4545:1: ( ( ( rule__IsEmpty__InverseAssignment_2 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4546:1: ( ( rule__IsEmpty__InverseAssignment_2 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4608:1: ( ( ( rule__IsEmpty__InverseAssignment_2 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4609:1: ( ( rule__IsEmpty__InverseAssignment_2 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4546:1: ( ( rule__IsEmpty__InverseAssignment_2 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4547:1: ( rule__IsEmpty__InverseAssignment_2 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4609:1: ( ( rule__IsEmpty__InverseAssignment_2 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4610:1: ( rule__IsEmpty__InverseAssignment_2 )?
             {
              before(grammarAccess.getIsEmptyAccess().getInverseAssignment_2()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4548:1: ( rule__IsEmpty__InverseAssignment_2 )?
-            int alt34=2;
-            int LA34_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4611:1: ( rule__IsEmpty__InverseAssignment_2 )?
+            int alt35=2;
+            int LA35_0 = input.LA(1);
 
-            if ( (LA34_0==68) ) {
-                alt34=1;
+            if ( (LA35_0==69) ) {
+                alt35=1;
             }
-            switch (alt34) {
+            switch (alt35) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4548:2: rule__IsEmpty__InverseAssignment_2
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4611:2: rule__IsEmpty__InverseAssignment_2
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__InverseAssignment_2_in_rule__IsEmpty__Group__2__Impl9246);
+                    pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__InverseAssignment_2_in_rule__IsEmpty__Group__2__Impl9372);
                     rule__IsEmpty__InverseAssignment_2();
 
                     state._fsp--;
@@ -12407,16 +12580,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IsEmpty__Group__3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4558:1: rule__IsEmpty__Group__3 : rule__IsEmpty__Group__3__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4621:1: rule__IsEmpty__Group__3 : rule__IsEmpty__Group__3__Impl ;
     public final void rule__IsEmpty__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4562:1: ( rule__IsEmpty__Group__3__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4563:2: rule__IsEmpty__Group__3__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4625:1: ( rule__IsEmpty__Group__3__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4626:2: rule__IsEmpty__Group__3__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__Group__3__Impl_in_rule__IsEmpty__Group__39277);
+            pushFollow(FollowSets000.FOLLOW_rule__IsEmpty__Group__3__Impl_in_rule__IsEmpty__Group__39403);
             rule__IsEmpty__Group__3__Impl();
 
             state._fsp--;
@@ -12440,20 +12613,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IsEmpty__Group__3__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4569:1: rule__IsEmpty__Group__3__Impl : ( 'empty' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4632:1: rule__IsEmpty__Group__3__Impl : ( 'empty' ) ;
     public final void rule__IsEmpty__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4573:1: ( ( 'empty' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4574:1: ( 'empty' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4636:1: ( ( 'empty' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4637:1: ( 'empty' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4574:1: ( 'empty' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4575:1: 'empty'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4637:1: ( 'empty' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4638:1: 'empty'
             {
              before(grammarAccess.getIsEmptyAccess().getEmptyKeyword_3()); 
-            match(input,65,FollowSets000.FOLLOW_65_in_rule__IsEmpty__Group__3__Impl9305); 
+            match(input,66,FollowSets000.FOLLOW_66_in_rule__IsEmpty__Group__3__Impl9431); 
              after(grammarAccess.getIsEmptyAccess().getEmptyKeyword_3()); 
 
             }
@@ -12477,21 +12650,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnType__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4596:1: rule__OnType__Group__0 : rule__OnType__Group__0__Impl rule__OnType__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4659:1: rule__OnType__Group__0 : rule__OnType__Group__0__Impl rule__OnType__Group__1 ;
     public final void rule__OnType__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4600:1: ( rule__OnType__Group__0__Impl rule__OnType__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4601:2: rule__OnType__Group__0__Impl rule__OnType__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4663:1: ( rule__OnType__Group__0__Impl rule__OnType__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4664:2: rule__OnType__Group__0__Impl rule__OnType__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnType__Group__0__Impl_in_rule__OnType__Group__09344);
+            pushFollow(FollowSets000.FOLLOW_rule__OnType__Group__0__Impl_in_rule__OnType__Group__09470);
             rule__OnType__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnType__Group__1_in_rule__OnType__Group__09347);
+            pushFollow(FollowSets000.FOLLOW_rule__OnType__Group__1_in_rule__OnType__Group__09473);
             rule__OnType__Group__1();
 
             state._fsp--;
@@ -12515,20 +12688,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnType__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4608:1: rule__OnType__Group__0__Impl : ( 'file' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4671:1: rule__OnType__Group__0__Impl : ( 'file' ) ;
     public final void rule__OnType__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4612:1: ( ( 'file' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4613:1: ( 'file' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4675:1: ( ( 'file' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4676:1: ( 'file' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4613:1: ( 'file' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4614:1: 'file'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4676:1: ( 'file' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4677:1: 'file'
             {
              before(grammarAccess.getOnTypeAccess().getFileKeyword_0()); 
-            match(input,66,FollowSets000.FOLLOW_66_in_rule__OnType__Group__0__Impl9375); 
+            match(input,67,FollowSets000.FOLLOW_67_in_rule__OnType__Group__0__Impl9501); 
              after(grammarAccess.getOnTypeAccess().getFileKeyword_0()); 
 
             }
@@ -12552,21 +12725,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnType__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4627:1: rule__OnType__Group__1 : rule__OnType__Group__1__Impl rule__OnType__Group__2 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4690:1: rule__OnType__Group__1 : rule__OnType__Group__1__Impl rule__OnType__Group__2 ;
     public final void rule__OnType__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4631:1: ( rule__OnType__Group__1__Impl rule__OnType__Group__2 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4632:2: rule__OnType__Group__1__Impl rule__OnType__Group__2
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4694:1: ( rule__OnType__Group__1__Impl rule__OnType__Group__2 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4695:2: rule__OnType__Group__1__Impl rule__OnType__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnType__Group__1__Impl_in_rule__OnType__Group__19406);
+            pushFollow(FollowSets000.FOLLOW_rule__OnType__Group__1__Impl_in_rule__OnType__Group__19532);
             rule__OnType__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnType__Group__2_in_rule__OnType__Group__19409);
+            pushFollow(FollowSets000.FOLLOW_rule__OnType__Group__2_in_rule__OnType__Group__19535);
             rule__OnType__Group__2();
 
             state._fsp--;
@@ -12590,20 +12763,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnType__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4639:1: rule__OnType__Group__1__Impl : ( 'is' ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4702:1: rule__OnType__Group__1__Impl : ( 'is' ) ;
     public final void rule__OnType__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4643:1: ( ( 'is' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4644:1: ( 'is' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4706:1: ( ( 'is' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4707:1: ( 'is' )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4644:1: ( 'is' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4645:1: 'is'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4707:1: ( 'is' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4708:1: 'is'
             {
              before(grammarAccess.getOnTypeAccess().getIsKeyword_1()); 
-            match(input,56,FollowSets000.FOLLOW_56_in_rule__OnType__Group__1__Impl9437); 
+            match(input,57,FollowSets000.FOLLOW_57_in_rule__OnType__Group__1__Impl9563); 
              after(grammarAccess.getOnTypeAccess().getIsKeyword_1()); 
 
             }
@@ -12627,21 +12800,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnType__Group__2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4658:1: rule__OnType__Group__2 : rule__OnType__Group__2__Impl rule__OnType__Group__3 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4721:1: rule__OnType__Group__2 : rule__OnType__Group__2__Impl rule__OnType__Group__3 ;
     public final void rule__OnType__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4662:1: ( rule__OnType__Group__2__Impl rule__OnType__Group__3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4663:2: rule__OnType__Group__2__Impl rule__OnType__Group__3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4725:1: ( rule__OnType__Group__2__Impl rule__OnType__Group__3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4726:2: rule__OnType__Group__2__Impl rule__OnType__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnType__Group__2__Impl_in_rule__OnType__Group__29468);
+            pushFollow(FollowSets000.FOLLOW_rule__OnType__Group__2__Impl_in_rule__OnType__Group__29594);
             rule__OnType__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__OnType__Group__3_in_rule__OnType__Group__29471);
+            pushFollow(FollowSets000.FOLLOW_rule__OnType__Group__3_in_rule__OnType__Group__29597);
             rule__OnType__Group__3();
 
             state._fsp--;
@@ -12665,31 +12838,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnType__Group__2__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4670:1: rule__OnType__Group__2__Impl : ( ( rule__OnType__InverseAssignment_2 )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4733:1: rule__OnType__Group__2__Impl : ( ( rule__OnType__InverseAssignment_2 )? ) ;
     public final void rule__OnType__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4674:1: ( ( ( rule__OnType__InverseAssignment_2 )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4675:1: ( ( rule__OnType__InverseAssignment_2 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4737:1: ( ( ( rule__OnType__InverseAssignment_2 )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4738:1: ( ( rule__OnType__InverseAssignment_2 )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4675:1: ( ( rule__OnType__InverseAssignment_2 )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4676:1: ( rule__OnType__InverseAssignment_2 )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4738:1: ( ( rule__OnType__InverseAssignment_2 )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4739:1: ( rule__OnType__InverseAssignment_2 )?
             {
              before(grammarAccess.getOnTypeAccess().getInverseAssignment_2()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4677:1: ( rule__OnType__InverseAssignment_2 )?
-            int alt35=2;
-            int LA35_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4740:1: ( rule__OnType__InverseAssignment_2 )?
+            int alt36=2;
+            int LA36_0 = input.LA(1);
 
-            if ( (LA35_0==68) ) {
-                alt35=1;
+            if ( (LA36_0==69) ) {
+                alt36=1;
             }
-            switch (alt35) {
+            switch (alt36) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4677:2: rule__OnType__InverseAssignment_2
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4740:2: rule__OnType__InverseAssignment_2
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__OnType__InverseAssignment_2_in_rule__OnType__Group__2__Impl9498);
+                    pushFollow(FollowSets000.FOLLOW_rule__OnType__InverseAssignment_2_in_rule__OnType__Group__2__Impl9624);
                     rule__OnType__InverseAssignment_2();
 
                     state._fsp--;
@@ -12723,16 +12896,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnType__Group__3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4687:1: rule__OnType__Group__3 : rule__OnType__Group__3__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4750:1: rule__OnType__Group__3 : rule__OnType__Group__3__Impl ;
     public final void rule__OnType__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4691:1: ( rule__OnType__Group__3__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4692:2: rule__OnType__Group__3__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4754:1: ( rule__OnType__Group__3__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4755:2: rule__OnType__Group__3__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnType__Group__3__Impl_in_rule__OnType__Group__39529);
+            pushFollow(FollowSets000.FOLLOW_rule__OnType__Group__3__Impl_in_rule__OnType__Group__39655);
             rule__OnType__Group__3__Impl();
 
             state._fsp--;
@@ -12756,23 +12929,23 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnType__Group__3__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4698:1: rule__OnType__Group__3__Impl : ( ( rule__OnType__TypeAssignment_3 ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4761:1: rule__OnType__Group__3__Impl : ( ( rule__OnType__TypeAssignment_3 ) ) ;
     public final void rule__OnType__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4702:1: ( ( ( rule__OnType__TypeAssignment_3 ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4703:1: ( ( rule__OnType__TypeAssignment_3 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4765:1: ( ( ( rule__OnType__TypeAssignment_3 ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4766:1: ( ( rule__OnType__TypeAssignment_3 ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4703:1: ( ( rule__OnType__TypeAssignment_3 ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4704:1: ( rule__OnType__TypeAssignment_3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4766:1: ( ( rule__OnType__TypeAssignment_3 ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4767:1: ( rule__OnType__TypeAssignment_3 )
             {
              before(grammarAccess.getOnTypeAccess().getTypeAssignment_3()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4705:1: ( rule__OnType__TypeAssignment_3 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4705:2: rule__OnType__TypeAssignment_3
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4768:1: ( rule__OnType__TypeAssignment_3 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4768:2: rule__OnType__TypeAssignment_3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__OnType__TypeAssignment_3_in_rule__OnType__Group__3__Impl9556);
+            pushFollow(FollowSets000.FOLLOW_rule__OnType__TypeAssignment_3_in_rule__OnType__Group__3__Impl9682);
             rule__OnType__TypeAssignment_3();
 
             state._fsp--;
@@ -12803,21 +12976,21 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EInt__Group__0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4723:1: rule__EInt__Group__0 : rule__EInt__Group__0__Impl rule__EInt__Group__1 ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4786:1: rule__EInt__Group__0 : rule__EInt__Group__0__Impl rule__EInt__Group__1 ;
     public final void rule__EInt__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4727:1: ( rule__EInt__Group__0__Impl rule__EInt__Group__1 )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4728:2: rule__EInt__Group__0__Impl rule__EInt__Group__1
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4790:1: ( rule__EInt__Group__0__Impl rule__EInt__Group__1 )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4791:2: rule__EInt__Group__0__Impl rule__EInt__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__09594);
+            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__09720);
             rule__EInt__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__09597);
+            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__09723);
             rule__EInt__Group__1();
 
             state._fsp--;
@@ -12841,31 +13014,31 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EInt__Group__0__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4735:1: rule__EInt__Group__0__Impl : ( ( '-' )? ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4798:1: rule__EInt__Group__0__Impl : ( ( '-' )? ) ;
     public final void rule__EInt__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4739:1: ( ( ( '-' )? ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4740:1: ( ( '-' )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4802:1: ( ( ( '-' )? ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4803:1: ( ( '-' )? )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4740:1: ( ( '-' )? )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4741:1: ( '-' )?
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4803:1: ( ( '-' )? )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4804:1: ( '-' )?
             {
              before(grammarAccess.getEIntAccess().getHyphenMinusKeyword_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4742:1: ( '-' )?
-            int alt36=2;
-            int LA36_0 = input.LA(1);
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4805:1: ( '-' )?
+            int alt37=2;
+            int LA37_0 = input.LA(1);
 
-            if ( (LA36_0==67) ) {
-                alt36=1;
+            if ( (LA37_0==68) ) {
+                alt37=1;
             }
-            switch (alt36) {
+            switch (alt37) {
                 case 1 :
-                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4743:2: '-'
+                    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4806:2: '-'
                     {
-                    match(input,67,FollowSets000.FOLLOW_67_in_rule__EInt__Group__0__Impl9626); 
+                    match(input,68,FollowSets000.FOLLOW_68_in_rule__EInt__Group__0__Impl9752); 
 
                     }
                     break;
@@ -12895,16 +13068,16 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EInt__Group__1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4754:1: rule__EInt__Group__1 : rule__EInt__Group__1__Impl ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4817:1: rule__EInt__Group__1 : rule__EInt__Group__1__Impl ;
     public final void rule__EInt__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4758:1: ( rule__EInt__Group__1__Impl )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4759:2: rule__EInt__Group__1__Impl
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4821:1: ( rule__EInt__Group__1__Impl )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4822:2: rule__EInt__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__19659);
+            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__19785);
             rule__EInt__Group__1__Impl();
 
             state._fsp--;
@@ -12928,20 +13101,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EInt__Group__1__Impl"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4765:1: rule__EInt__Group__1__Impl : ( RULE_INT ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4828:1: rule__EInt__Group__1__Impl : ( RULE_INT ) ;
     public final void rule__EInt__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4769:1: ( ( RULE_INT ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4770:1: ( RULE_INT )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4832:1: ( ( RULE_INT ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4833:1: ( RULE_INT )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4770:1: ( RULE_INT )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4771:1: RULE_INT
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4833:1: ( RULE_INT )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4834:1: RULE_INT
             {
              before(grammarAccess.getEIntAccess().getINTTerminalRuleCall_1()); 
-            match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl9686); 
+            match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl9812); 
              after(grammarAccess.getEIntAccess().getINTTerminalRuleCall_1()); 
 
             }
@@ -12965,20 +13138,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__ExecutionsAssignment_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4787:1: rule__Model__ExecutionsAssignment_1 : ( ruleExecution ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4850:1: rule__Model__ExecutionsAssignment_1 : ( ruleExecution ) ;
     public final void rule__Model__ExecutionsAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4791:1: ( ( ruleExecution ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4792:1: ( ruleExecution )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4854:1: ( ( ruleExecution ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4855:1: ( ruleExecution )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4792:1: ( ruleExecution )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4793:1: ruleExecution
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4855:1: ( ruleExecution )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4856:1: ruleExecution
             {
              before(grammarAccess.getModelAccess().getExecutionsExecutionParserRuleCall_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleExecution_in_rule__Model__ExecutionsAssignment_19724);
+            pushFollow(FollowSets000.FOLLOW_ruleExecution_in_rule__Model__ExecutionsAssignment_19850);
             ruleExecution();
 
             state._fsp--;
@@ -13006,20 +13179,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__ExecutionsAssignment_2_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4802:1: rule__Model__ExecutionsAssignment_2_1 : ( ruleExecution ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4865:1: rule__Model__ExecutionsAssignment_2_1 : ( ruleExecution ) ;
     public final void rule__Model__ExecutionsAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4806:1: ( ( ruleExecution ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4807:1: ( ruleExecution )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4869:1: ( ( ruleExecution ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4870:1: ( ruleExecution )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4807:1: ( ruleExecution )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4808:1: ruleExecution
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4870:1: ( ruleExecution )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4871:1: ruleExecution
             {
              before(grammarAccess.getModelAccess().getExecutionsExecutionParserRuleCall_2_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleExecution_in_rule__Model__ExecutionsAssignment_2_19755);
+            pushFollow(FollowSets000.FOLLOW_ruleExecution_in_rule__Model__ExecutionsAssignment_2_19881);
             ruleExecution();
 
             state._fsp--;
@@ -13047,20 +13220,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PathVariable__NameAssignment_0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4817:1: rule__PathVariable__NameAssignment_0 : ( ruleEString ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4880:1: rule__PathVariable__NameAssignment_0 : ( ruleEString ) ;
     public final void rule__PathVariable__NameAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4821:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4822:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4884:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4885:1: ( ruleEString )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4822:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4823:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4885:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4886:1: ruleEString
             {
              before(grammarAccess.getPathVariableAccess().getNameEStringParserRuleCall_0_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__PathVariable__NameAssignment_09786);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__PathVariable__NameAssignment_09912);
             ruleEString();
 
             state._fsp--;
@@ -13088,20 +13261,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PathVariable__ValueAssignment_2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4832:1: rule__PathVariable__ValueAssignment_2 : ( rulePath ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4895:1: rule__PathVariable__ValueAssignment_2 : ( rulePath ) ;
     public final void rule__PathVariable__ValueAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4836:1: ( ( rulePath ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4837:1: ( rulePath )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4899:1: ( ( rulePath ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4900:1: ( rulePath )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4837:1: ( rulePath )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4838:1: rulePath
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4900:1: ( rulePath )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4901:1: rulePath
             {
              before(grammarAccess.getPathVariableAccess().getValuePathParserRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_rulePath_in_rule__PathVariable__ValueAssignment_29817);
+            pushFollow(FollowSets000.FOLLOW_rulePath_in_rule__PathVariable__ValueAssignment_29943);
             rulePath();
 
             state._fsp--;
@@ -13129,20 +13302,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Path__StepsAssignment_0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4847:1: rule__Path__StepsAssignment_0 : ( ruleGenericStep ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4910:1: rule__Path__StepsAssignment_0 : ( ruleGenericStep ) ;
     public final void rule__Path__StepsAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4851:1: ( ( ruleGenericStep ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4852:1: ( ruleGenericStep )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4914:1: ( ( ruleGenericStep ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4915:1: ( ruleGenericStep )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4852:1: ( ruleGenericStep )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4853:1: ruleGenericStep
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4915:1: ( ruleGenericStep )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4916:1: ruleGenericStep
             {
              before(grammarAccess.getPathAccess().getStepsGenericStepParserRuleCall_0_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGenericStep_in_rule__Path__StepsAssignment_09848);
+            pushFollow(FollowSets000.FOLLOW_ruleGenericStep_in_rule__Path__StepsAssignment_09974);
             ruleGenericStep();
 
             state._fsp--;
@@ -13170,20 +13343,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Path__StepsAssignment_1_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4862:1: rule__Path__StepsAssignment_1_1 : ( ruleGenericStep ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4925:1: rule__Path__StepsAssignment_1_1 : ( ruleGenericStep ) ;
     public final void rule__Path__StepsAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4866:1: ( ( ruleGenericStep ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4867:1: ( ruleGenericStep )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4929:1: ( ( ruleGenericStep ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4930:1: ( ruleGenericStep )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4867:1: ( ruleGenericStep )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4868:1: ruleGenericStep
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4930:1: ( ruleGenericStep )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4931:1: ruleGenericStep
             {
              before(grammarAccess.getPathAccess().getStepsGenericStepParserRuleCall_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGenericStep_in_rule__Path__StepsAssignment_1_19879);
+            pushFollow(FollowSets000.FOLLOW_ruleGenericStep_in_rule__Path__StepsAssignment_1_110005);
             ruleGenericStep();
 
             state._fsp--;
@@ -13210,26 +13383,26 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Path__StepsAssignment_1_1"
 
 
-    // $ANTLR start "rule__ConcreteStep__ValueAssignment"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4877:1: rule__ConcreteStep__ValueAssignment : ( ruleEString ) ;
-    public final void rule__ConcreteStep__ValueAssignment() throws RecognitionException {
+    // $ANTLR start "rule__ConcreteStep__ValueAssignment_0"
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4940:1: rule__ConcreteStep__ValueAssignment_0 : ( ruleEString ) ;
+    public final void rule__ConcreteStep__ValueAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4881:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4882:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4944:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4945:1: ( ruleEString )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4882:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4883:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4945:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4946:1: ruleEString
             {
-             before(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__ConcreteStep__ValueAssignment9910);
+             before(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_0_0()); 
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__ConcreteStep__ValueAssignment_010036);
             ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_0()); 
+             after(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_0_0()); 
 
             }
 
@@ -13248,28 +13421,28 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ConcreteStep__ValueAssignment"
+    // $ANTLR end "rule__ConcreteStep__ValueAssignment_0"
 
 
     // $ANTLR start "rule__VariableStep__ValueAssignment_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4892:1: rule__VariableStep__ValueAssignment_1 : ( ( ruleEString ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4955:1: rule__VariableStep__ValueAssignment_1 : ( ( ruleEString ) ) ;
     public final void rule__VariableStep__ValueAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4896:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4897:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4959:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4960:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4897:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4898:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4960:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4961:1: ( ruleEString )
             {
              before(grammarAccess.getVariableStepAccess().getValuePathVariableCrossReference_1_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4899:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4900:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4962:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4963:1: ruleEString
             {
              before(grammarAccess.getVariableStepAccess().getValuePathVariableEStringParserRuleCall_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__VariableStep__ValueAssignment_19945);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__VariableStep__ValueAssignment_110071);
             ruleEString();
 
             state._fsp--;
@@ -13301,20 +13474,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParametrizedStep__NameAssignment_2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4911:1: rule__ParametrizedStep__NameAssignment_2 : ( ruleEString ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4974:1: rule__ParametrizedStep__NameAssignment_2 : ( ruleEString ) ;
     public final void rule__ParametrizedStep__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4915:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4916:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4978:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4979:1: ( ruleEString )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4916:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4917:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4979:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4980:1: ruleEString
             {
              before(grammarAccess.getParametrizedStepAccess().getNameEStringParserRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__ParametrizedStep__NameAssignment_29980);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__ParametrizedStep__NameAssignment_210106);
             ruleEString();
 
             state._fsp--;
@@ -13342,20 +13515,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__NameAssignment_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4926:1: rule__Selection__NameAssignment_1 : ( ruleEString ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4989:1: rule__Selection__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Selection__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4930:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4931:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4993:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4994:1: ( ruleEString )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4931:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4932:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4994:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4995:1: ruleEString
             {
              before(grammarAccess.getSelectionAccess().getNameEStringParserRuleCall_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Selection__NameAssignment_110011);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Selection__NameAssignment_110137);
             ruleEString();
 
             state._fsp--;
@@ -13383,20 +13556,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__FromAssignment_3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4941:1: rule__Selection__FromAssignment_3 : ( rulePath ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5004:1: rule__Selection__FromAssignment_3 : ( rulePath ) ;
     public final void rule__Selection__FromAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4945:1: ( ( rulePath ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4946:1: ( rulePath )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5008:1: ( ( rulePath ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5009:1: ( rulePath )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4946:1: ( rulePath )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4947:1: rulePath
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5009:1: ( rulePath )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5010:1: rulePath
             {
              before(grammarAccess.getSelectionAccess().getFromPathParserRuleCall_3_0()); 
-            pushFollow(FollowSets000.FOLLOW_rulePath_in_rule__Selection__FromAssignment_310042);
+            pushFollow(FollowSets000.FOLLOW_rulePath_in_rule__Selection__FromAssignment_310168);
             rulePath();
 
             state._fsp--;
@@ -13424,20 +13597,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__WhereAssignment_4_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4956:1: rule__Selection__WhereAssignment_4_1 : ( ruleFilterComponent ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5019:1: rule__Selection__WhereAssignment_4_1 : ( ruleFilterComponent ) ;
     public final void rule__Selection__WhereAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4960:1: ( ( ruleFilterComponent ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4961:1: ( ruleFilterComponent )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5023:1: ( ( ruleFilterComponent ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5024:1: ( ruleFilterComponent )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4961:1: ( ruleFilterComponent )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4962:1: ruleFilterComponent
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5024:1: ( ruleFilterComponent )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5025:1: ruleFilterComponent
             {
              before(grammarAccess.getSelectionAccess().getWhereFilterComponentParserRuleCall_4_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleFilterComponent_in_rule__Selection__WhereAssignment_4_110073);
+            pushFollow(FollowSets000.FOLLOW_ruleFilterComponent_in_rule__Selection__WhereAssignment_4_110199);
             ruleFilterComponent();
 
             state._fsp--;
@@ -13465,20 +13638,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Selection__WhereAssignment_4_2_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4971:1: rule__Selection__WhereAssignment_4_2_1 : ( ruleFilterComponent ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5034:1: rule__Selection__WhereAssignment_4_2_1 : ( ruleFilterComponent ) ;
     public final void rule__Selection__WhereAssignment_4_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4975:1: ( ( ruleFilterComponent ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4976:1: ( ruleFilterComponent )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5038:1: ( ( ruleFilterComponent ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5039:1: ( ruleFilterComponent )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4976:1: ( ruleFilterComponent )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4977:1: ruleFilterComponent
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5039:1: ( ruleFilterComponent )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5040:1: ruleFilterComponent
             {
              before(grammarAccess.getSelectionAccess().getWhereFilterComponentParserRuleCall_4_2_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleFilterComponent_in_rule__Selection__WhereAssignment_4_2_110104);
+            pushFollow(FollowSets000.FOLLOW_ruleFilterComponent_in_rule__Selection__WhereAssignment_4_2_110230);
             ruleFilterComponent();
 
             state._fsp--;
@@ -13506,24 +13679,24 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__SourceAssignment_2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4986:1: rule__Copy__SourceAssignment_2 : ( ( ruleEString ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5049:1: rule__Copy__SourceAssignment_2 : ( ( ruleEString ) ) ;
     public final void rule__Copy__SourceAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4990:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4991:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5053:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5054:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4991:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4992:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5054:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5055:1: ( ruleEString )
             {
              before(grammarAccess.getCopyAccess().getSourceSelectionCrossReference_2_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4993:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:4994:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5056:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5057:1: ruleEString
             {
              before(grammarAccess.getCopyAccess().getSourceSelectionEStringParserRuleCall_2_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Copy__SourceAssignment_210139);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Copy__SourceAssignment_210265);
             ruleEString();
 
             state._fsp--;
@@ -13555,20 +13728,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__DestinationAssignment_4"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5005:1: rule__Copy__DestinationAssignment_4 : ( rulePath ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5068:1: rule__Copy__DestinationAssignment_4 : ( rulePath ) ;
     public final void rule__Copy__DestinationAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5009:1: ( ( rulePath ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5010:1: ( rulePath )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5072:1: ( ( rulePath ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5073:1: ( rulePath )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5010:1: ( rulePath )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5011:1: rulePath
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5073:1: ( rulePath )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5074:1: rulePath
             {
              before(grammarAccess.getCopyAccess().getDestinationPathParserRuleCall_4_0()); 
-            pushFollow(FollowSets000.FOLLOW_rulePath_in_rule__Copy__DestinationAssignment_410174);
+            pushFollow(FollowSets000.FOLLOW_rulePath_in_rule__Copy__DestinationAssignment_410300);
             rulePath();
 
             state._fsp--;
@@ -13596,20 +13769,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Copy__StrategyAssignment_5_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5020:1: rule__Copy__StrategyAssignment_5_1 : ( ruleStrategies ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5083:1: rule__Copy__StrategyAssignment_5_1 : ( ruleStrategies ) ;
     public final void rule__Copy__StrategyAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5024:1: ( ( ruleStrategies ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5025:1: ( ruleStrategies )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5087:1: ( ( ruleStrategies ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5088:1: ( ruleStrategies )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5025:1: ( ruleStrategies )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5026:1: ruleStrategies
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5088:1: ( ruleStrategies )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5089:1: ruleStrategies
             {
              before(grammarAccess.getCopyAccess().getStrategyStrategiesEnumRuleCall_5_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleStrategies_in_rule__Copy__StrategyAssignment_5_110205);
+            pushFollow(FollowSets000.FOLLOW_ruleStrategies_in_rule__Copy__StrategyAssignment_5_110331);
             ruleStrategies();
 
             state._fsp--;
@@ -13637,24 +13810,24 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__SourceAssignment_2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5035:1: rule__Move__SourceAssignment_2 : ( ( ruleEString ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5098:1: rule__Move__SourceAssignment_2 : ( ( ruleEString ) ) ;
     public final void rule__Move__SourceAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5039:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5040:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5102:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5103:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5040:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5041:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5103:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5104:1: ( ruleEString )
             {
              before(grammarAccess.getMoveAccess().getSourceSelectionCrossReference_2_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5042:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5043:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5105:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5106:1: ruleEString
             {
              before(grammarAccess.getMoveAccess().getSourceSelectionEStringParserRuleCall_2_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Move__SourceAssignment_210240);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Move__SourceAssignment_210366);
             ruleEString();
 
             state._fsp--;
@@ -13686,20 +13859,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__DestinationAssignment_4"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5054:1: rule__Move__DestinationAssignment_4 : ( rulePath ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5117:1: rule__Move__DestinationAssignment_4 : ( rulePath ) ;
     public final void rule__Move__DestinationAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5058:1: ( ( rulePath ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5059:1: ( rulePath )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5121:1: ( ( rulePath ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5122:1: ( rulePath )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5059:1: ( rulePath )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5060:1: rulePath
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5122:1: ( rulePath )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5123:1: rulePath
             {
              before(grammarAccess.getMoveAccess().getDestinationPathParserRuleCall_4_0()); 
-            pushFollow(FollowSets000.FOLLOW_rulePath_in_rule__Move__DestinationAssignment_410275);
+            pushFollow(FollowSets000.FOLLOW_rulePath_in_rule__Move__DestinationAssignment_410401);
             rulePath();
 
             state._fsp--;
@@ -13727,20 +13900,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Move__StrategyAssignment_5_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5069:1: rule__Move__StrategyAssignment_5_1 : ( ruleStrategies ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5132:1: rule__Move__StrategyAssignment_5_1 : ( ruleStrategies ) ;
     public final void rule__Move__StrategyAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5073:1: ( ( ruleStrategies ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5074:1: ( ruleStrategies )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5136:1: ( ( ruleStrategies ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5137:1: ( ruleStrategies )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5074:1: ( ruleStrategies )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5075:1: ruleStrategies
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5137:1: ( ruleStrategies )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5138:1: ruleStrategies
             {
              before(grammarAccess.getMoveAccess().getStrategyStrategiesEnumRuleCall_5_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleStrategies_in_rule__Move__StrategyAssignment_5_110306);
+            pushFollow(FollowSets000.FOLLOW_ruleStrategies_in_rule__Move__StrategyAssignment_5_110432);
             ruleStrategies();
 
             state._fsp--;
@@ -13768,24 +13941,24 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Delete__SourceAssignment_2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5084:1: rule__Delete__SourceAssignment_2 : ( ( ruleEString ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5147:1: rule__Delete__SourceAssignment_2 : ( ( ruleEString ) ) ;
     public final void rule__Delete__SourceAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5088:1: ( ( ( ruleEString ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5089:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5151:1: ( ( ( ruleEString ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5152:1: ( ( ruleEString ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5089:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5090:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5152:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5153:1: ( ruleEString )
             {
              before(grammarAccess.getDeleteAccess().getSourceSelectionCrossReference_2_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5091:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5092:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5154:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5155:1: ruleEString
             {
              before(grammarAccess.getDeleteAccess().getSourceSelectionEStringParserRuleCall_2_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Delete__SourceAssignment_210341);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Delete__SourceAssignment_210467);
             ruleEString();
 
             state._fsp--;
@@ -13817,20 +13990,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FilterContainer__LinksAssignment_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5103:1: rule__FilterContainer__LinksAssignment_1 : ( ruleLink ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5166:1: rule__FilterContainer__LinksAssignment_1 : ( ruleLink ) ;
     public final void rule__FilterContainer__LinksAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5107:1: ( ( ruleLink ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5108:1: ( ruleLink )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5170:1: ( ( ruleLink ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5171:1: ( ruleLink )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5108:1: ( ruleLink )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5109:1: ruleLink
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5171:1: ( ruleLink )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5172:1: ruleLink
             {
              before(grammarAccess.getFilterContainerAccess().getLinksLinkParserRuleCall_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleLink_in_rule__FilterContainer__LinksAssignment_110376);
+            pushFollow(FollowSets000.FOLLOW_ruleLink_in_rule__FilterContainer__LinksAssignment_110502);
             ruleLink();
 
             state._fsp--;
@@ -13858,20 +14031,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FilterContainer__LinksAssignment_2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5118:1: rule__FilterContainer__LinksAssignment_2 : ( ruleLink ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5181:1: rule__FilterContainer__LinksAssignment_2 : ( ruleLink ) ;
     public final void rule__FilterContainer__LinksAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5122:1: ( ( ruleLink ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5123:1: ( ruleLink )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5185:1: ( ( ruleLink ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5186:1: ( ruleLink )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5123:1: ( ruleLink )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5124:1: ruleLink
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5186:1: ( ruleLink )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5187:1: ruleLink
             {
              before(grammarAccess.getFilterContainerAccess().getLinksLinkParserRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleLink_in_rule__FilterContainer__LinksAssignment_210407);
+            pushFollow(FollowSets000.FOLLOW_ruleLink_in_rule__FilterContainer__LinksAssignment_210533);
             ruleLink();
 
             state._fsp--;
@@ -13899,20 +14072,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Link__CompositonTypeAssignment_0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5133:1: rule__Link__CompositonTypeAssignment_0 : ( ruleCompositionType ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5196:1: rule__Link__CompositonTypeAssignment_0 : ( ruleCompositionType ) ;
     public final void rule__Link__CompositonTypeAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5137:1: ( ( ruleCompositionType ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5138:1: ( ruleCompositionType )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5200:1: ( ( ruleCompositionType ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5201:1: ( ruleCompositionType )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5138:1: ( ruleCompositionType )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5139:1: ruleCompositionType
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5201:1: ( ruleCompositionType )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5202:1: ruleCompositionType
             {
              before(grammarAccess.getLinkAccess().getCompositonTypeCompositionTypeEnumRuleCall_0_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleCompositionType_in_rule__Link__CompositonTypeAssignment_010438);
+            pushFollow(FollowSets000.FOLLOW_ruleCompositionType_in_rule__Link__CompositonTypeAssignment_010564);
             ruleCompositionType();
 
             state._fsp--;
@@ -13940,20 +14113,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Link__ElementAssignment_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5148:1: rule__Link__ElementAssignment_1 : ( ruleFilterComponent ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5211:1: rule__Link__ElementAssignment_1 : ( ruleFilterComponent ) ;
     public final void rule__Link__ElementAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5152:1: ( ( ruleFilterComponent ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5153:1: ( ruleFilterComponent )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5215:1: ( ( ruleFilterComponent ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5216:1: ( ruleFilterComponent )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5153:1: ( ruleFilterComponent )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5154:1: ruleFilterComponent
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5216:1: ( ruleFilterComponent )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5217:1: ruleFilterComponent
             {
              before(grammarAccess.getLinkAccess().getElementFilterComponentParserRuleCall_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleFilterComponent_in_rule__Link__ElementAssignment_110469);
+            pushFollow(FollowSets000.FOLLOW_ruleFilterComponent_in_rule__Link__ElementAssignment_110595);
             ruleFilterComponent();
 
             state._fsp--;
@@ -13981,20 +14154,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__NameAssignment_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5163:1: rule__OnAttributes__NameAssignment_1 : ( ruleEString ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5226:1: rule__OnAttributes__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__OnAttributes__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5167:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5168:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5230:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5231:1: ( ruleEString )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5168:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5169:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5231:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5232:1: ruleEString
             {
              before(grammarAccess.getOnAttributesAccess().getNameEStringParserRuleCall_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__OnAttributes__NameAssignment_110500);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__OnAttributes__NameAssignment_110626);
             ruleEString();
 
             state._fsp--;
@@ -14022,24 +14195,24 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__InverseAssignment_2_0_0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5178:1: rule__OnAttributes__InverseAssignment_2_0_0 : ( ( 'not' ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5241:1: rule__OnAttributes__InverseAssignment_2_0_0 : ( ( 'not' ) ) ;
     public final void rule__OnAttributes__InverseAssignment_2_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5182:1: ( ( ( 'not' ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5183:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5245:1: ( ( ( 'not' ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5246:1: ( ( 'not' ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5183:1: ( ( 'not' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5184:1: ( 'not' )
-            {
-             before(grammarAccess.getOnAttributesAccess().getInverseNotKeyword_2_0_0_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5185:1: ( 'not' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5186:1: 'not'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5246:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5247:1: ( 'not' )
             {
              before(grammarAccess.getOnAttributesAccess().getInverseNotKeyword_2_0_0_0()); 
-            match(input,68,FollowSets000.FOLLOW_68_in_rule__OnAttributes__InverseAssignment_2_0_010536); 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5248:1: ( 'not' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5249:1: 'not'
+            {
+             before(grammarAccess.getOnAttributesAccess().getInverseNotKeyword_2_0_0_0()); 
+            match(input,69,FollowSets000.FOLLOW_69_in_rule__OnAttributes__InverseAssignment_2_0_010662); 
              after(grammarAccess.getOnAttributesAccess().getInverseNotKeyword_2_0_0_0()); 
 
             }
@@ -14067,24 +14240,24 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__InverseAssignment_2_1_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5201:1: rule__OnAttributes__InverseAssignment_2_1_1 : ( ( 'not' ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5264:1: rule__OnAttributes__InverseAssignment_2_1_1 : ( ( 'not' ) ) ;
     public final void rule__OnAttributes__InverseAssignment_2_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5205:1: ( ( ( 'not' ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5206:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5268:1: ( ( ( 'not' ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5269:1: ( ( 'not' ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5206:1: ( ( 'not' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5207:1: ( 'not' )
-            {
-             before(grammarAccess.getOnAttributesAccess().getInverseNotKeyword_2_1_1_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5208:1: ( 'not' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5209:1: 'not'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5269:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5270:1: ( 'not' )
             {
              before(grammarAccess.getOnAttributesAccess().getInverseNotKeyword_2_1_1_0()); 
-            match(input,68,FollowSets000.FOLLOW_68_in_rule__OnAttributes__InverseAssignment_2_1_110580); 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5271:1: ( 'not' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5272:1: 'not'
+            {
+             before(grammarAccess.getOnAttributesAccess().getInverseNotKeyword_2_1_1_0()); 
+            match(input,69,FollowSets000.FOLLOW_69_in_rule__OnAttributes__InverseAssignment_2_1_110706); 
              after(grammarAccess.getOnAttributesAccess().getInverseNotKeyword_2_1_1_0()); 
 
             }
@@ -14112,20 +14285,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnAttributes__ValueAssignment_2_1_2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5224:1: rule__OnAttributes__ValueAssignment_2_1_2 : ( ruleEString ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5287:1: rule__OnAttributes__ValueAssignment_2_1_2 : ( ruleEString ) ;
     public final void rule__OnAttributes__ValueAssignment_2_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5228:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5229:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5291:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5292:1: ( ruleEString )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5229:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5230:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5292:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5293:1: ruleEString
             {
              before(grammarAccess.getOnAttributesAccess().getValueEStringParserRuleCall_2_1_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__OnAttributes__ValueAssignment_2_1_210619);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__OnAttributes__ValueAssignment_2_1_210745);
             ruleEString();
 
             state._fsp--;
@@ -14153,20 +14326,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__TagsAssignment_1_0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5239:1: rule__OnTags__TagsAssignment_1_0 : ( ruleEString ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5302:1: rule__OnTags__TagsAssignment_1_0 : ( ruleEString ) ;
     public final void rule__OnTags__TagsAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5243:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5244:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5306:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5307:1: ( ruleEString )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5244:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5245:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5307:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5308:1: ruleEString
             {
              before(grammarAccess.getOnTagsAccess().getTagsEStringParserRuleCall_1_0_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__OnTags__TagsAssignment_1_010650);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__OnTags__TagsAssignment_1_010776);
             ruleEString();
 
             state._fsp--;
@@ -14194,20 +14367,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__TagsAssignment_1_1_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5254:1: rule__OnTags__TagsAssignment_1_1_1 : ( ruleEString ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5317:1: rule__OnTags__TagsAssignment_1_1_1 : ( ruleEString ) ;
     public final void rule__OnTags__TagsAssignment_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5258:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5259:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5321:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5322:1: ( ruleEString )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5259:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5260:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5322:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5323:1: ruleEString
             {
              before(grammarAccess.getOnTagsAccess().getTagsEStringParserRuleCall_1_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__OnTags__TagsAssignment_1_1_110681);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__OnTags__TagsAssignment_1_1_110807);
             ruleEString();
 
             state._fsp--;
@@ -14235,20 +14408,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__QuantificatorAssignment_3_0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5269:1: rule__OnTags__QuantificatorAssignment_3_0 : ( ruleQuantificators ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5332:1: rule__OnTags__QuantificatorAssignment_3_0 : ( ruleQuantificators ) ;
     public final void rule__OnTags__QuantificatorAssignment_3_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5273:1: ( ( ruleQuantificators ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5274:1: ( ruleQuantificators )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5336:1: ( ( ruleQuantificators ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5337:1: ( ruleQuantificators )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5274:1: ( ruleQuantificators )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5275:1: ruleQuantificators
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5337:1: ( ruleQuantificators )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5338:1: ruleQuantificators
             {
              before(grammarAccess.getOnTagsAccess().getQuantificatorQuantificatorsEnumRuleCall_3_0_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleQuantificators_in_rule__OnTags__QuantificatorAssignment_3_010712);
+            pushFollow(FollowSets000.FOLLOW_ruleQuantificators_in_rule__OnTags__QuantificatorAssignment_3_010838);
             ruleQuantificators();
 
             state._fsp--;
@@ -14276,20 +14449,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__TresholdAssignment_3_1_0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5284:1: rule__OnTags__TresholdAssignment_3_1_0 : ( ruleEInt ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5347:1: rule__OnTags__TresholdAssignment_3_1_0 : ( ruleEInt ) ;
     public final void rule__OnTags__TresholdAssignment_3_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5288:1: ( ( ruleEInt ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5289:1: ( ruleEInt )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5351:1: ( ( ruleEInt ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5352:1: ( ruleEInt )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5289:1: ( ruleEInt )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5290:1: ruleEInt
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5352:1: ( ruleEInt )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5353:1: ruleEInt
             {
              before(grammarAccess.getOnTagsAccess().getTresholdEIntParserRuleCall_3_1_0_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__OnTags__TresholdAssignment_3_1_010743);
+            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__OnTags__TresholdAssignment_3_1_010869);
             ruleEInt();
 
             state._fsp--;
@@ -14317,24 +14490,24 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__InverseAssignment_4"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5299:1: rule__OnTags__InverseAssignment_4 : ( ( 'not' ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5362:1: rule__OnTags__InverseAssignment_4 : ( ( 'not' ) ) ;
     public final void rule__OnTags__InverseAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5303:1: ( ( ( 'not' ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5304:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5366:1: ( ( ( 'not' ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5367:1: ( ( 'not' ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5304:1: ( ( 'not' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5305:1: ( 'not' )
-            {
-             before(grammarAccess.getOnTagsAccess().getInverseNotKeyword_4_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5306:1: ( 'not' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5307:1: 'not'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5367:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5368:1: ( 'not' )
             {
              before(grammarAccess.getOnTagsAccess().getInverseNotKeyword_4_0()); 
-            match(input,68,FollowSets000.FOLLOW_68_in_rule__OnTags__InverseAssignment_410779); 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5369:1: ( 'not' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5370:1: 'not'
+            {
+             before(grammarAccess.getOnTagsAccess().getInverseNotKeyword_4_0()); 
+            match(input,69,FollowSets000.FOLLOW_69_in_rule__OnTags__InverseAssignment_410905); 
              after(grammarAccess.getOnTagsAccess().getInverseNotKeyword_4_0()); 
 
             }
@@ -14362,24 +14535,24 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTags__OnlyAssignment_6"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5322:1: rule__OnTags__OnlyAssignment_6 : ( ( 'and no more tags' ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5385:1: rule__OnTags__OnlyAssignment_6 : ( ( 'and no more tags' ) ) ;
     public final void rule__OnTags__OnlyAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5326:1: ( ( ( 'and no more tags' ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5327:1: ( ( 'and no more tags' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5389:1: ( ( ( 'and no more tags' ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5390:1: ( ( 'and no more tags' ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5327:1: ( ( 'and no more tags' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5328:1: ( 'and no more tags' )
-            {
-             before(grammarAccess.getOnTagsAccess().getOnlyAndNoMoreTagsKeyword_6_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5329:1: ( 'and no more tags' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5330:1: 'and no more tags'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5390:1: ( ( 'and no more tags' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5391:1: ( 'and no more tags' )
             {
              before(grammarAccess.getOnTagsAccess().getOnlyAndNoMoreTagsKeyword_6_0()); 
-            match(input,69,FollowSets000.FOLLOW_69_in_rule__OnTags__OnlyAssignment_610823); 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5392:1: ( 'and no more tags' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5393:1: 'and no more tags'
+            {
+             before(grammarAccess.getOnTagsAccess().getOnlyAndNoMoreTagsKeyword_6_0()); 
+            match(input,70,FollowSets000.FOLLOW_70_in_rule__OnTags__OnlyAssignment_610949); 
              after(grammarAccess.getOnTagsAccess().getOnlyAndNoMoreTagsKeyword_6_0()); 
 
             }
@@ -14407,20 +14580,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTime__TimeOfAssignment_0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5345:1: rule__OnTime__TimeOfAssignment_0 : ( ruleTimeType ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5408:1: rule__OnTime__TimeOfAssignment_0 : ( ruleTimeType ) ;
     public final void rule__OnTime__TimeOfAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5349:1: ( ( ruleTimeType ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5350:1: ( ruleTimeType )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5412:1: ( ( ruleTimeType ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5413:1: ( ruleTimeType )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5350:1: ( ruleTimeType )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5351:1: ruleTimeType
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5413:1: ( ruleTimeType )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5414:1: ruleTimeType
             {
              before(grammarAccess.getOnTimeAccess().getTimeOfTimeTypeEnumRuleCall_0_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTimeType_in_rule__OnTime__TimeOfAssignment_010862);
+            pushFollow(FollowSets000.FOLLOW_ruleTimeType_in_rule__OnTime__TimeOfAssignment_010988);
             ruleTimeType();
 
             state._fsp--;
@@ -14448,20 +14621,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTime__OperatorAssignment_2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5360:1: rule__OnTime__OperatorAssignment_2 : ( ruleOperator ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5423:1: rule__OnTime__OperatorAssignment_2 : ( ruleOperator ) ;
     public final void rule__OnTime__OperatorAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5364:1: ( ( ruleOperator ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5365:1: ( ruleOperator )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5427:1: ( ( ruleOperator ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5428:1: ( ruleOperator )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5365:1: ( ruleOperator )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5366:1: ruleOperator
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5428:1: ( ruleOperator )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5429:1: ruleOperator
             {
              before(grammarAccess.getOnTimeAccess().getOperatorOperatorEnumRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleOperator_in_rule__OnTime__OperatorAssignment_210893);
+            pushFollow(FollowSets000.FOLLOW_ruleOperator_in_rule__OnTime__OperatorAssignment_211019);
             ruleOperator();
 
             state._fsp--;
@@ -14489,20 +14662,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTime__TresholdAssignment_3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5375:1: rule__OnTime__TresholdAssignment_3 : ( ruleEInt ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5438:1: rule__OnTime__TresholdAssignment_3 : ( ruleEInt ) ;
     public final void rule__OnTime__TresholdAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5379:1: ( ( ruleEInt ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5380:1: ( ruleEInt )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5442:1: ( ( ruleEInt ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5443:1: ( ruleEInt )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5380:1: ( ruleEInt )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5381:1: ruleEInt
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5443:1: ( ruleEInt )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5444:1: ruleEInt
             {
              before(grammarAccess.getOnTimeAccess().getTresholdEIntParserRuleCall_3_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__OnTime__TresholdAssignment_310924);
+            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__OnTime__TresholdAssignment_311050);
             ruleEInt();
 
             state._fsp--;
@@ -14530,20 +14703,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnTime__UnitAssignment_4"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5390:1: rule__OnTime__UnitAssignment_4 : ( ruleTimeUnit ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5453:1: rule__OnTime__UnitAssignment_4 : ( ruleTimeUnit ) ;
     public final void rule__OnTime__UnitAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5394:1: ( ( ruleTimeUnit ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5395:1: ( ruleTimeUnit )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5457:1: ( ( ruleTimeUnit ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5458:1: ( ruleTimeUnit )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5395:1: ( ruleTimeUnit )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5396:1: ruleTimeUnit
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5458:1: ( ruleTimeUnit )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5459:1: ruleTimeUnit
             {
              before(grammarAccess.getOnTimeAccess().getUnitTimeUnitEnumRuleCall_4_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTimeUnit_in_rule__OnTime__UnitAssignment_410955);
+            pushFollow(FollowSets000.FOLLOW_ruleTimeUnit_in_rule__OnTime__UnitAssignment_411081);
             ruleTimeUnit();
 
             state._fsp--;
@@ -14571,24 +14744,24 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnSize__InverseAssignment_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5405:1: rule__OnSize__InverseAssignment_1 : ( ( 'not' ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5468:1: rule__OnSize__InverseAssignment_1 : ( ( 'not' ) ) ;
     public final void rule__OnSize__InverseAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5409:1: ( ( ( 'not' ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5410:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5472:1: ( ( ( 'not' ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5473:1: ( ( 'not' ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5410:1: ( ( 'not' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5411:1: ( 'not' )
-            {
-             before(grammarAccess.getOnSizeAccess().getInverseNotKeyword_1_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5412:1: ( 'not' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5413:1: 'not'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5473:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5474:1: ( 'not' )
             {
              before(grammarAccess.getOnSizeAccess().getInverseNotKeyword_1_0()); 
-            match(input,68,FollowSets000.FOLLOW_68_in_rule__OnSize__InverseAssignment_110991); 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5475:1: ( 'not' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5476:1: 'not'
+            {
+             before(grammarAccess.getOnSizeAccess().getInverseNotKeyword_1_0()); 
+            match(input,69,FollowSets000.FOLLOW_69_in_rule__OnSize__InverseAssignment_111117); 
              after(grammarAccess.getOnSizeAccess().getInverseNotKeyword_1_0()); 
 
             }
@@ -14616,20 +14789,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnSize__OperatorAssignment_2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5428:1: rule__OnSize__OperatorAssignment_2 : ( ruleOperator ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5491:1: rule__OnSize__OperatorAssignment_2 : ( ruleOperator ) ;
     public final void rule__OnSize__OperatorAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5432:1: ( ( ruleOperator ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5433:1: ( ruleOperator )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5495:1: ( ( ruleOperator ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5496:1: ( ruleOperator )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5433:1: ( ruleOperator )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5434:1: ruleOperator
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5496:1: ( ruleOperator )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5497:1: ruleOperator
             {
              before(grammarAccess.getOnSizeAccess().getOperatorOperatorEnumRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleOperator_in_rule__OnSize__OperatorAssignment_211030);
+            pushFollow(FollowSets000.FOLLOW_ruleOperator_in_rule__OnSize__OperatorAssignment_211156);
             ruleOperator();
 
             state._fsp--;
@@ -14657,20 +14830,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnSize__TresholdAssignment_3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5443:1: rule__OnSize__TresholdAssignment_3 : ( ruleEInt ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5506:1: rule__OnSize__TresholdAssignment_3 : ( ruleEInt ) ;
     public final void rule__OnSize__TresholdAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5447:1: ( ( ruleEInt ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5448:1: ( ruleEInt )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5510:1: ( ( ruleEInt ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5511:1: ( ruleEInt )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5448:1: ( ruleEInt )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5449:1: ruleEInt
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5511:1: ( ruleEInt )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5512:1: ruleEInt
             {
              before(grammarAccess.getOnSizeAccess().getTresholdEIntParserRuleCall_3_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__OnSize__TresholdAssignment_311061);
+            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__OnSize__TresholdAssignment_311187);
             ruleEInt();
 
             state._fsp--;
@@ -14698,20 +14871,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnSize__UnitAssignment_4"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5458:1: rule__OnSize__UnitAssignment_4 : ( ruleMemoryUnit ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5521:1: rule__OnSize__UnitAssignment_4 : ( ruleMemoryUnit ) ;
     public final void rule__OnSize__UnitAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5462:1: ( ( ruleMemoryUnit ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5463:1: ( ruleMemoryUnit )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5525:1: ( ( ruleMemoryUnit ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5526:1: ( ruleMemoryUnit )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5463:1: ( ruleMemoryUnit )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5464:1: ruleMemoryUnit
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5526:1: ( ruleMemoryUnit )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5527:1: ruleMemoryUnit
             {
              before(grammarAccess.getOnSizeAccess().getUnitMemoryUnitEnumRuleCall_4_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleMemoryUnit_in_rule__OnSize__UnitAssignment_411092);
+            pushFollow(FollowSets000.FOLLOW_ruleMemoryUnit_in_rule__OnSize__UnitAssignment_411218);
             ruleMemoryUnit();
 
             state._fsp--;
@@ -14739,24 +14912,24 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnName__InverseAssignment_2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5473:1: rule__OnName__InverseAssignment_2 : ( ( 'not' ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5536:1: rule__OnName__InverseAssignment_2 : ( ( 'not' ) ) ;
     public final void rule__OnName__InverseAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5477:1: ( ( ( 'not' ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5478:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5540:1: ( ( ( 'not' ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5541:1: ( ( 'not' ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5478:1: ( ( 'not' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5479:1: ( 'not' )
-            {
-             before(grammarAccess.getOnNameAccess().getInverseNotKeyword_2_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5480:1: ( 'not' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5481:1: 'not'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5541:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5542:1: ( 'not' )
             {
              before(grammarAccess.getOnNameAccess().getInverseNotKeyword_2_0()); 
-            match(input,68,FollowSets000.FOLLOW_68_in_rule__OnName__InverseAssignment_211128); 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5543:1: ( 'not' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5544:1: 'not'
+            {
+             before(grammarAccess.getOnNameAccess().getInverseNotKeyword_2_0()); 
+            match(input,69,FollowSets000.FOLLOW_69_in_rule__OnName__InverseAssignment_211254); 
              after(grammarAccess.getOnNameAccess().getInverseNotKeyword_2_0()); 
 
             }
@@ -14784,20 +14957,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnName__NameAssignment_3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5496:1: rule__OnName__NameAssignment_3 : ( ruleEString ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5559:1: rule__OnName__NameAssignment_3 : ( ruleEString ) ;
     public final void rule__OnName__NameAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5500:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5501:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5563:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5564:1: ( ruleEString )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5501:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5502:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5564:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5565:1: ruleEString
             {
              before(grammarAccess.getOnNameAccess().getNameEStringParserRuleCall_3_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__OnName__NameAssignment_311167);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__OnName__NameAssignment_311293);
             ruleEString();
 
             state._fsp--;
@@ -14825,24 +14998,24 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__InverseAssignment_2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5511:1: rule__OnExtension__InverseAssignment_2 : ( ( 'not' ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5574:1: rule__OnExtension__InverseAssignment_2 : ( ( 'not' ) ) ;
     public final void rule__OnExtension__InverseAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5515:1: ( ( ( 'not' ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5516:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5578:1: ( ( ( 'not' ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5579:1: ( ( 'not' ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5516:1: ( ( 'not' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5517:1: ( 'not' )
-            {
-             before(grammarAccess.getOnExtensionAccess().getInverseNotKeyword_2_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5518:1: ( 'not' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5519:1: 'not'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5579:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5580:1: ( 'not' )
             {
              before(grammarAccess.getOnExtensionAccess().getInverseNotKeyword_2_0()); 
-            match(input,68,FollowSets000.FOLLOW_68_in_rule__OnExtension__InverseAssignment_211203); 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5581:1: ( 'not' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5582:1: 'not'
+            {
+             before(grammarAccess.getOnExtensionAccess().getInverseNotKeyword_2_0()); 
+            match(input,69,FollowSets000.FOLLOW_69_in_rule__OnExtension__InverseAssignment_211329); 
              after(grammarAccess.getOnExtensionAccess().getInverseNotKeyword_2_0()); 
 
             }
@@ -14870,20 +15043,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__ExtensionsAssignment_4_0"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5534:1: rule__OnExtension__ExtensionsAssignment_4_0 : ( ruleEString ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5597:1: rule__OnExtension__ExtensionsAssignment_4_0 : ( ruleEString ) ;
     public final void rule__OnExtension__ExtensionsAssignment_4_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5538:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5539:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5601:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5602:1: ( ruleEString )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5539:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5540:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5602:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5603:1: ruleEString
             {
              before(grammarAccess.getOnExtensionAccess().getExtensionsEStringParserRuleCall_4_0_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__OnExtension__ExtensionsAssignment_4_011242);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__OnExtension__ExtensionsAssignment_4_011368);
             ruleEString();
 
             state._fsp--;
@@ -14911,20 +15084,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnExtension__ExtensionsAssignment_4_1_1"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5549:1: rule__OnExtension__ExtensionsAssignment_4_1_1 : ( ruleEString ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5612:1: rule__OnExtension__ExtensionsAssignment_4_1_1 : ( ruleEString ) ;
     public final void rule__OnExtension__ExtensionsAssignment_4_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5553:1: ( ( ruleEString ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5554:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5616:1: ( ( ruleEString ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5617:1: ( ruleEString )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5554:1: ( ruleEString )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5555:1: ruleEString
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5617:1: ( ruleEString )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5618:1: ruleEString
             {
              before(grammarAccess.getOnExtensionAccess().getExtensionsEStringParserRuleCall_4_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__OnExtension__ExtensionsAssignment_4_1_111273);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__OnExtension__ExtensionsAssignment_4_1_111399);
             ruleEString();
 
             state._fsp--;
@@ -14952,24 +15125,24 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IsEmpty__InverseAssignment_2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5564:1: rule__IsEmpty__InverseAssignment_2 : ( ( 'not' ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5627:1: rule__IsEmpty__InverseAssignment_2 : ( ( 'not' ) ) ;
     public final void rule__IsEmpty__InverseAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5568:1: ( ( ( 'not' ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5569:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5631:1: ( ( ( 'not' ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5632:1: ( ( 'not' ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5569:1: ( ( 'not' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5570:1: ( 'not' )
-            {
-             before(grammarAccess.getIsEmptyAccess().getInverseNotKeyword_2_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5571:1: ( 'not' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5572:1: 'not'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5632:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5633:1: ( 'not' )
             {
              before(grammarAccess.getIsEmptyAccess().getInverseNotKeyword_2_0()); 
-            match(input,68,FollowSets000.FOLLOW_68_in_rule__IsEmpty__InverseAssignment_211309); 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5634:1: ( 'not' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5635:1: 'not'
+            {
+             before(grammarAccess.getIsEmptyAccess().getInverseNotKeyword_2_0()); 
+            match(input,69,FollowSets000.FOLLOW_69_in_rule__IsEmpty__InverseAssignment_211435); 
              after(grammarAccess.getIsEmptyAccess().getInverseNotKeyword_2_0()); 
 
             }
@@ -14997,24 +15170,24 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnType__InverseAssignment_2"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5587:1: rule__OnType__InverseAssignment_2 : ( ( 'not' ) ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5650:1: rule__OnType__InverseAssignment_2 : ( ( 'not' ) ) ;
     public final void rule__OnType__InverseAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5591:1: ( ( ( 'not' ) ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5592:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5654:1: ( ( ( 'not' ) ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5655:1: ( ( 'not' ) )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5592:1: ( ( 'not' ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5593:1: ( 'not' )
-            {
-             before(grammarAccess.getOnTypeAccess().getInverseNotKeyword_2_0()); 
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5594:1: ( 'not' )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5595:1: 'not'
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5655:1: ( ( 'not' ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5656:1: ( 'not' )
             {
              before(grammarAccess.getOnTypeAccess().getInverseNotKeyword_2_0()); 
-            match(input,68,FollowSets000.FOLLOW_68_in_rule__OnType__InverseAssignment_211353); 
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5657:1: ( 'not' )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5658:1: 'not'
+            {
+             before(grammarAccess.getOnTypeAccess().getInverseNotKeyword_2_0()); 
+            match(input,69,FollowSets000.FOLLOW_69_in_rule__OnType__InverseAssignment_211479); 
              after(grammarAccess.getOnTypeAccess().getInverseNotKeyword_2_0()); 
 
             }
@@ -15042,20 +15215,20 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OnType__TypeAssignment_3"
-    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5610:1: rule__OnType__TypeAssignment_3 : ( ruleFileType ) ;
+    // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5673:1: rule__OnType__TypeAssignment_3 : ( ruleFileType ) ;
     public final void rule__OnType__TypeAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5614:1: ( ( ruleFileType ) )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5615:1: ( ruleFileType )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5677:1: ( ( ruleFileType ) )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5678:1: ( ruleFileType )
             {
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5615:1: ( ruleFileType )
-            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5616:1: ruleFileType
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5678:1: ( ruleFileType )
+            // ../org.xtext.example.myFetl.ui/src-gen/org/xtext/example/myFetl/ui/contentassist/antlr/internal/InternalFETL.g:5679:1: ruleFileType
             {
              before(grammarAccess.getOnTypeAccess().getTypeFileTypeEnumRuleCall_3_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleFileType_in_rule__OnType__TypeAssignment_311392);
+            pushFollow(FollowSets000.FOLLOW_ruleFileType_in_rule__OnType__TypeAssignment_311518);
             ruleFileType();
 
             state._fsp--;
@@ -15105,7 +15278,7 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
         public static final BitSet FOLLOW_rule__GenericStep__Alternatives_in_ruleGenericStep334 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_ruleConcreteStep_in_entryRuleConcreteStep361 = new BitSet(new long[]{0x0000000000000000L});
         public static final BitSet FOLLOW_EOF_in_entryRuleConcreteStep368 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ConcreteStep__ValueAssignment_in_ruleConcreteStep394 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ConcreteStep__Group__0_in_ruleConcreteStep394 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_ruleVariableStep_in_entryRuleVariableStep421 = new BitSet(new long[]{0x0000000000000000L});
         public static final BitSet FOLLOW_EOF_in_entryRuleVariableStep428 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__VariableStep__Group__0_in_ruleVariableStep454 = new BitSet(new long[]{0x0000000000000002L});
@@ -15220,14 +15393,14 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
         public static final BitSet FOLLOW_34_in_rule__CompositionType__Alternatives2920 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_35_in_rule__FileType__Alternatives2956 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_36_in_rule__FileType__Alternatives2977 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Model__Group__0__Impl_in_rule__Model__Group__03010 = new BitSet(new long[]{0x000C880000000030L});
+        public static final BitSet FOLLOW_rule__Model__Group__0__Impl_in_rule__Model__Group__03010 = new BitSet(new long[]{0x0019100000000030L});
         public static final BitSet FOLLOW_rule__Model__Group__1_in_rule__Model__Group__03013 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Model__Group__1__Impl_in_rule__Model__Group__13071 = new BitSet(new long[]{0x0000002000000000L});
         public static final BitSet FOLLOW_rule__Model__Group__2_in_rule__Model__Group__13074 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Model__ExecutionsAssignment_1_in_rule__Model__Group__1__Impl3101 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Model__Group__2__Impl_in_rule__Model__Group__23131 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Model__Group_2__0_in_rule__Model__Group__2__Impl3158 = new BitSet(new long[]{0x0000002000000002L});
-        public static final BitSet FOLLOW_rule__Model__Group_2__0__Impl_in_rule__Model__Group_2__03195 = new BitSet(new long[]{0x000C880000000030L});
+        public static final BitSet FOLLOW_rule__Model__Group_2__0__Impl_in_rule__Model__Group_2__03195 = new BitSet(new long[]{0x0019100000000030L});
         public static final BitSet FOLLOW_rule__Model__Group_2__1_in_rule__Model__Group_2__03198 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_37_in_rule__Model__Group_2__0__Impl3226 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Model__Group_2__1__Impl_in_rule__Model__Group_2__13257 = new BitSet(new long[]{0x0000000000000002L});
@@ -15235,7 +15408,7 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
         public static final BitSet FOLLOW_rule__PathVariable__Group__0__Impl_in_rule__PathVariable__Group__03318 = new BitSet(new long[]{0x0000004000000000L});
         public static final BitSet FOLLOW_rule__PathVariable__Group__1_in_rule__PathVariable__Group__03321 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__PathVariable__NameAssignment_0_in_rule__PathVariable__Group__0__Impl3348 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PathVariable__Group__1__Impl_in_rule__PathVariable__Group__13378 = new BitSet(new long[]{0x000C8B0000000030L});
+        public static final BitSet FOLLOW_rule__PathVariable__Group__1__Impl_in_rule__PathVariable__Group__13378 = new BitSet(new long[]{0x0019160000000030L});
         public static final BitSet FOLLOW_rule__PathVariable__Group__2_in_rule__PathVariable__Group__13381 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_38_in_rule__PathVariable__Group__1__Impl3409 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__PathVariable__Group__2__Impl_in_rule__PathVariable__Group__23440 = new BitSet(new long[]{0x0000000000000002L});
@@ -15245,317 +15418,322 @@ public class InternalFETLParser extends AbstractInternalContentAssistParser {
         public static final BitSet FOLLOW_rule__Path__StepsAssignment_0_in_rule__Path__Group__0__Impl3533 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Path__Group__1__Impl_in_rule__Path__Group__13563 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Path__Group_1__0_in_rule__Path__Group__1__Impl3590 = new BitSet(new long[]{0x0000008000000002L});
-        public static final BitSet FOLLOW_rule__Path__Group_1__0__Impl_in_rule__Path__Group_1__03625 = new BitSet(new long[]{0x000C8B0000000030L});
+        public static final BitSet FOLLOW_rule__Path__Group_1__0__Impl_in_rule__Path__Group_1__03625 = new BitSet(new long[]{0x0019160000000030L});
         public static final BitSet FOLLOW_rule__Path__Group_1__1_in_rule__Path__Group_1__03628 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_39_in_rule__Path__Group_1__0__Impl3656 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Path__Group_1__1__Impl_in_rule__Path__Group_1__13687 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Path__StepsAssignment_1_1_in_rule__Path__Group_1__1__Impl3714 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__VariableStep__Group__0__Impl_in_rule__VariableStep__Group__03748 = new BitSet(new long[]{0x000C880000000030L});
-        public static final BitSet FOLLOW_rule__VariableStep__Group__1_in_rule__VariableStep__Group__03751 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_40_in_rule__VariableStep__Group__0__Impl3779 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__VariableStep__Group__1__Impl_in_rule__VariableStep__Group__13810 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__VariableStep__ValueAssignment_1_in_rule__VariableStep__Group__1__Impl3837 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ParametrizedStep__Group__0__Impl_in_rule__ParametrizedStep__Group__03871 = new BitSet(new long[]{0x000C8B0000000030L});
-        public static final BitSet FOLLOW_rule__ParametrizedStep__Group__1_in_rule__ParametrizedStep__Group__03874 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ParametrizedStep__Group__1__Impl_in_rule__ParametrizedStep__Group__13932 = new BitSet(new long[]{0x000C880000000030L});
-        public static final BitSet FOLLOW_rule__ParametrizedStep__Group__2_in_rule__ParametrizedStep__Group__13935 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_41_in_rule__ParametrizedStep__Group__1__Impl3963 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ParametrizedStep__Group__2__Impl_in_rule__ParametrizedStep__Group__23994 = new BitSet(new long[]{0x0000040000000000L});
-        public static final BitSet FOLLOW_rule__ParametrizedStep__Group__3_in_rule__ParametrizedStep__Group__23997 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ParametrizedStep__NameAssignment_2_in_rule__ParametrizedStep__Group__2__Impl4024 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ParametrizedStep__Group__3__Impl_in_rule__ParametrizedStep__Group__34054 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_42_in_rule__ParametrizedStep__Group__3__Impl4082 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__Group__0__Impl_in_rule__Selection__Group__04121 = new BitSet(new long[]{0x000C880000000030L});
-        public static final BitSet FOLLOW_rule__Selection__Group__1_in_rule__Selection__Group__04124 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_43_in_rule__Selection__Group__0__Impl4152 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__Group__1__Impl_in_rule__Selection__Group__14183 = new BitSet(new long[]{0x0000100000000000L});
-        public static final BitSet FOLLOW_rule__Selection__Group__2_in_rule__Selection__Group__14186 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__NameAssignment_1_in_rule__Selection__Group__1__Impl4213 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__Group__2__Impl_in_rule__Selection__Group__24243 = new BitSet(new long[]{0x000C8B0000000030L});
-        public static final BitSet FOLLOW_rule__Selection__Group__3_in_rule__Selection__Group__24246 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_44_in_rule__Selection__Group__2__Impl4274 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__Group__3__Impl_in_rule__Selection__Group__34305 = new BitSet(new long[]{0x0000200000000000L});
-        public static final BitSet FOLLOW_rule__Selection__Group__4_in_rule__Selection__Group__34308 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__FromAssignment_3_in_rule__Selection__Group__3__Impl4335 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__Group__4__Impl_in_rule__Selection__Group__44365 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__Group_4__0_in_rule__Selection__Group__4__Impl4392 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__Group_4__0__Impl_in_rule__Selection__Group_4__04433 = new BitSet(new long[]{0xC350000006000000L,0x0000000000000005L});
-        public static final BitSet FOLLOW_rule__Selection__Group_4__1_in_rule__Selection__Group_4__04436 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_45_in_rule__Selection__Group_4__0__Impl4464 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__Group_4__1__Impl_in_rule__Selection__Group_4__14495 = new BitSet(new long[]{0x0000400000000000L});
-        public static final BitSet FOLLOW_rule__Selection__Group_4__2_in_rule__Selection__Group_4__14498 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__WhereAssignment_4_1_in_rule__Selection__Group_4__1__Impl4525 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__Group_4__2__Impl_in_rule__Selection__Group_4__24555 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__Group_4_2__0_in_rule__Selection__Group_4__2__Impl4582 = new BitSet(new long[]{0x0000400000000002L});
-        public static final BitSet FOLLOW_rule__Selection__Group_4_2__0__Impl_in_rule__Selection__Group_4_2__04619 = new BitSet(new long[]{0xC350000006000000L,0x0000000000000005L});
-        public static final BitSet FOLLOW_rule__Selection__Group_4_2__1_in_rule__Selection__Group_4_2__04622 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_46_in_rule__Selection__Group_4_2__0__Impl4650 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__Group_4_2__1__Impl_in_rule__Selection__Group_4_2__14681 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Selection__WhereAssignment_4_2_1_in_rule__Selection__Group_4_2__1__Impl4708 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Copy__Group__0__Impl_in_rule__Copy__Group__04742 = new BitSet(new long[]{0x0000100000000000L});
-        public static final BitSet FOLLOW_rule__Copy__Group__1_in_rule__Copy__Group__04745 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_47_in_rule__Copy__Group__0__Impl4773 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Copy__Group__1__Impl_in_rule__Copy__Group__14804 = new BitSet(new long[]{0x000C880000000030L});
-        public static final BitSet FOLLOW_rule__Copy__Group__2_in_rule__Copy__Group__14807 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_44_in_rule__Copy__Group__1__Impl4835 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Copy__Group__2__Impl_in_rule__Copy__Group__24866 = new BitSet(new long[]{0x0001000000000000L});
-        public static final BitSet FOLLOW_rule__Copy__Group__3_in_rule__Copy__Group__24869 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Copy__SourceAssignment_2_in_rule__Copy__Group__2__Impl4896 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Copy__Group__3__Impl_in_rule__Copy__Group__34926 = new BitSet(new long[]{0x000C8B0000000030L});
-        public static final BitSet FOLLOW_rule__Copy__Group__4_in_rule__Copy__Group__34929 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_48_in_rule__Copy__Group__3__Impl4957 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Copy__Group__4__Impl_in_rule__Copy__Group__44988 = new BitSet(new long[]{0x0002000000000000L});
-        public static final BitSet FOLLOW_rule__Copy__Group__5_in_rule__Copy__Group__44991 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Copy__DestinationAssignment_4_in_rule__Copy__Group__4__Impl5018 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Copy__Group__5__Impl_in_rule__Copy__Group__55048 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Copy__Group_5__0_in_rule__Copy__Group__5__Impl5075 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Copy__Group_5__0__Impl_in_rule__Copy__Group_5__05118 = new BitSet(new long[]{0x0000000000003800L});
-        public static final BitSet FOLLOW_rule__Copy__Group_5__1_in_rule__Copy__Group_5__05121 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_49_in_rule__Copy__Group_5__0__Impl5149 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Copy__Group_5__1__Impl_in_rule__Copy__Group_5__15180 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Copy__StrategyAssignment_5_1_in_rule__Copy__Group_5__1__Impl5207 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Move__Group__0__Impl_in_rule__Move__Group__05241 = new BitSet(new long[]{0x0000100000000000L});
-        public static final BitSet FOLLOW_rule__Move__Group__1_in_rule__Move__Group__05244 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_50_in_rule__Move__Group__0__Impl5272 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Move__Group__1__Impl_in_rule__Move__Group__15303 = new BitSet(new long[]{0x000C880000000030L});
-        public static final BitSet FOLLOW_rule__Move__Group__2_in_rule__Move__Group__15306 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_44_in_rule__Move__Group__1__Impl5334 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Move__Group__2__Impl_in_rule__Move__Group__25365 = new BitSet(new long[]{0x0001000000000000L});
-        public static final BitSet FOLLOW_rule__Move__Group__3_in_rule__Move__Group__25368 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Move__SourceAssignment_2_in_rule__Move__Group__2__Impl5395 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Move__Group__3__Impl_in_rule__Move__Group__35425 = new BitSet(new long[]{0x000C8B0000000030L});
-        public static final BitSet FOLLOW_rule__Move__Group__4_in_rule__Move__Group__35428 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_48_in_rule__Move__Group__3__Impl5456 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Move__Group__4__Impl_in_rule__Move__Group__45487 = new BitSet(new long[]{0x0002000000000000L});
-        public static final BitSet FOLLOW_rule__Move__Group__5_in_rule__Move__Group__45490 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Move__DestinationAssignment_4_in_rule__Move__Group__4__Impl5517 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Move__Group__5__Impl_in_rule__Move__Group__55547 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Move__Group_5__0_in_rule__Move__Group__5__Impl5574 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Move__Group_5__0__Impl_in_rule__Move__Group_5__05617 = new BitSet(new long[]{0x0000000000003800L});
-        public static final BitSet FOLLOW_rule__Move__Group_5__1_in_rule__Move__Group_5__05620 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_49_in_rule__Move__Group_5__0__Impl5648 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Move__Group_5__1__Impl_in_rule__Move__Group_5__15679 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Move__StrategyAssignment_5_1_in_rule__Move__Group_5__1__Impl5706 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Delete__Group__0__Impl_in_rule__Delete__Group__05740 = new BitSet(new long[]{0x0000100000000000L});
-        public static final BitSet FOLLOW_rule__Delete__Group__1_in_rule__Delete__Group__05743 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_51_in_rule__Delete__Group__0__Impl5771 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Delete__Group__1__Impl_in_rule__Delete__Group__15802 = new BitSet(new long[]{0x000C880000000030L});
-        public static final BitSet FOLLOW_rule__Delete__Group__2_in_rule__Delete__Group__15805 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_44_in_rule__Delete__Group__1__Impl5833 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Delete__Group__2__Impl_in_rule__Delete__Group__25864 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Delete__SourceAssignment_2_in_rule__Delete__Group__2__Impl5891 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__FilterContainer__Group__0__Impl_in_rule__FilterContainer__Group__05927 = new BitSet(new long[]{0xC350000606000000L,0x0000000000000005L});
-        public static final BitSet FOLLOW_rule__FilterContainer__Group__1_in_rule__FilterContainer__Group__05930 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_52_in_rule__FilterContainer__Group__0__Impl5958 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__FilterContainer__Group__1__Impl_in_rule__FilterContainer__Group__15989 = new BitSet(new long[]{0xC370000606000000L,0x0000000000000005L});
-        public static final BitSet FOLLOW_rule__FilterContainer__Group__2_in_rule__FilterContainer__Group__15992 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__FilterContainer__LinksAssignment_1_in_rule__FilterContainer__Group__1__Impl6019 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__FilterContainer__Group__2__Impl_in_rule__FilterContainer__Group__26049 = new BitSet(new long[]{0xC370000606000000L,0x0000000000000005L});
-        public static final BitSet FOLLOW_rule__FilterContainer__Group__3_in_rule__FilterContainer__Group__26052 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__FilterContainer__LinksAssignment_2_in_rule__FilterContainer__Group__2__Impl6079 = new BitSet(new long[]{0xC350000606000002L,0x0000000000000005L});
-        public static final BitSet FOLLOW_rule__FilterContainer__Group__3__Impl_in_rule__FilterContainer__Group__36110 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_53_in_rule__FilterContainer__Group__3__Impl6138 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Link__Group__0__Impl_in_rule__Link__Group__06177 = new BitSet(new long[]{0xC350000606000000L,0x0000000000000005L});
-        public static final BitSet FOLLOW_rule__Link__Group__1_in_rule__Link__Group__06180 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Link__CompositonTypeAssignment_0_in_rule__Link__Group__0__Impl6207 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Link__Group__1__Impl_in_rule__Link__Group__16238 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Link__ElementAssignment_1_in_rule__Link__Group__1__Impl6265 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnAttributes__Group__0__Impl_in_rule__OnAttributes__Group__06299 = new BitSet(new long[]{0x000C880000000030L});
-        public static final BitSet FOLLOW_rule__OnAttributes__Group__1_in_rule__OnAttributes__Group__06302 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_54_in_rule__OnAttributes__Group__0__Impl6330 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnAttributes__Group__1__Impl_in_rule__OnAttributes__Group__16361 = new BitSet(new long[]{0x0180000000000000L,0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__OnAttributes__Group__2_in_rule__OnAttributes__Group__16364 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnAttributes__NameAssignment_1_in_rule__OnAttributes__Group__1__Impl6391 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnAttributes__Group__2__Impl_in_rule__OnAttributes__Group__26421 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnAttributes__Alternatives_2_in_rule__OnAttributes__Group__2__Impl6448 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_0__0__Impl_in_rule__OnAttributes__Group_2_0__06484 = new BitSet(new long[]{0x0080000000000000L,0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_0__1_in_rule__OnAttributes__Group_2_0__06487 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnAttributes__InverseAssignment_2_0_0_in_rule__OnAttributes__Group_2_0__0__Impl6514 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_0__1__Impl_in_rule__OnAttributes__Group_2_0__16545 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_55_in_rule__OnAttributes__Group_2_0__1__Impl6573 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_1__0__Impl_in_rule__OnAttributes__Group_2_1__06608 = new BitSet(new long[]{0x000C880000000030L,0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_1__1_in_rule__OnAttributes__Group_2_1__06611 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_56_in_rule__OnAttributes__Group_2_1__0__Impl6639 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_1__1__Impl_in_rule__OnAttributes__Group_2_1__16670 = new BitSet(new long[]{0x000C880000000030L,0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_1__2_in_rule__OnAttributes__Group_2_1__16673 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnAttributes__InverseAssignment_2_1_1_in_rule__OnAttributes__Group_2_1__1__Impl6700 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_1__2__Impl_in_rule__OnAttributes__Group_2_1__26731 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnAttributes__ValueAssignment_2_1_2_in_rule__OnAttributes__Group_2_1__2__Impl6758 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group__0__Impl_in_rule__OnTags__Group__06794 = new BitSet(new long[]{0x040C880000000030L});
-        public static final BitSet FOLLOW_rule__OnTags__Group__1_in_rule__OnTags__Group__06797 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_57_in_rule__OnTags__Group__0__Impl6825 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group__1__Impl_in_rule__OnTags__Group__16856 = new BitSet(new long[]{0x040C880000000030L});
-        public static final BitSet FOLLOW_rule__OnTags__Group__2_in_rule__OnTags__Group__16859 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group_1__0_in_rule__OnTags__Group__1__Impl6886 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group__2__Impl_in_rule__OnTags__Group__26917 = new BitSet(new long[]{0x0000000018000040L,0x0000000000000008L});
-        public static final BitSet FOLLOW_rule__OnTags__Group__3_in_rule__OnTags__Group__26920 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_58_in_rule__OnTags__Group__2__Impl6948 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group__3__Impl_in_rule__OnTags__Group__36979 = new BitSet(new long[]{0x0800000000000000L,0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__OnTags__Group__4_in_rule__OnTags__Group__36982 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Alternatives_3_in_rule__OnTags__Group__3__Impl7009 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group__4__Impl_in_rule__OnTags__Group__47039 = new BitSet(new long[]{0x0800000000000000L,0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__OnTags__Group__5_in_rule__OnTags__Group__47042 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__InverseAssignment_4_in_rule__OnTags__Group__4__Impl7069 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group__5__Impl_in_rule__OnTags__Group__57100 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000020L});
-        public static final BitSet FOLLOW_rule__OnTags__Group__6_in_rule__OnTags__Group__57103 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_59_in_rule__OnTags__Group__5__Impl7131 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group__6__Impl_in_rule__OnTags__Group__67162 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__OnlyAssignment_6_in_rule__OnTags__Group__6__Impl7189 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group_1__0__Impl_in_rule__OnTags__Group_1__07234 = new BitSet(new long[]{0x0000400000000000L});
-        public static final BitSet FOLLOW_rule__OnTags__Group_1__1_in_rule__OnTags__Group_1__07237 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__TagsAssignment_1_0_in_rule__OnTags__Group_1__0__Impl7264 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group_1__1__Impl_in_rule__OnTags__Group_1__17294 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group_1_1__0_in_rule__OnTags__Group_1__1__Impl7321 = new BitSet(new long[]{0x0000400000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group_1_1__0__Impl_in_rule__OnTags__Group_1_1__07356 = new BitSet(new long[]{0x000C880000000030L});
-        public static final BitSet FOLLOW_rule__OnTags__Group_1_1__1_in_rule__OnTags__Group_1_1__07359 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_46_in_rule__OnTags__Group_1_1__0__Impl7387 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group_1_1__1__Impl_in_rule__OnTags__Group_1_1__17418 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__TagsAssignment_1_1_1_in_rule__OnTags__Group_1_1__1__Impl7445 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group_3_1__0__Impl_in_rule__OnTags__Group_3_1__07479 = new BitSet(new long[]{0x1000000000000000L});
-        public static final BitSet FOLLOW_rule__OnTags__Group_3_1__1_in_rule__OnTags__Group_3_1__07482 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__TresholdAssignment_3_1_0_in_rule__OnTags__Group_3_1__0__Impl7509 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTags__Group_3_1__1__Impl_in_rule__OnTags__Group_3_1__17539 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_60_in_rule__OnTags__Group_3_1__1__Impl7567 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTime__Group__0__Impl_in_rule__OnTime__Group__07602 = new BitSet(new long[]{0x2000000000000000L});
-        public static final BitSet FOLLOW_rule__OnTime__Group__1_in_rule__OnTime__Group__07605 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTime__TimeOfAssignment_0_in_rule__OnTime__Group__0__Impl7632 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTime__Group__1__Impl_in_rule__OnTime__Group__17662 = new BitSet(new long[]{0x000000000007C000L});
-        public static final BitSet FOLLOW_rule__OnTime__Group__2_in_rule__OnTime__Group__17665 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_61_in_rule__OnTime__Group__1__Impl7693 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTime__Group__2__Impl_in_rule__OnTime__Group__27724 = new BitSet(new long[]{0x0000000018000040L,0x0000000000000008L});
-        public static final BitSet FOLLOW_rule__OnTime__Group__3_in_rule__OnTime__Group__27727 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTime__OperatorAssignment_2_in_rule__OnTime__Group__2__Impl7754 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTime__Group__3__Impl_in_rule__OnTime__Group__37784 = new BitSet(new long[]{0x0000000001F80000L});
-        public static final BitSet FOLLOW_rule__OnTime__Group__4_in_rule__OnTime__Group__37787 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTime__TresholdAssignment_3_in_rule__OnTime__Group__3__Impl7814 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTime__Group__4__Impl_in_rule__OnTime__Group__47844 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnTime__UnitAssignment_4_in_rule__OnTime__Group__4__Impl7871 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnSize__Group__0__Impl_in_rule__OnSize__Group__07911 = new BitSet(new long[]{0x000000000007C000L,0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__OnSize__Group__1_in_rule__OnSize__Group__07914 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_62_in_rule__OnSize__Group__0__Impl7942 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnSize__Group__1__Impl_in_rule__OnSize__Group__17973 = new BitSet(new long[]{0x000000000007C000L,0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__OnSize__Group__2_in_rule__OnSize__Group__17976 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnSize__InverseAssignment_1_in_rule__OnSize__Group__1__Impl8003 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnSize__Group__2__Impl_in_rule__OnSize__Group__28034 = new BitSet(new long[]{0x0000000018000040L,0x0000000000000008L});
-        public static final BitSet FOLLOW_rule__OnSize__Group__3_in_rule__OnSize__Group__28037 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnSize__OperatorAssignment_2_in_rule__OnSize__Group__2__Impl8064 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnSize__Group__3__Impl_in_rule__OnSize__Group__38094 = new BitSet(new long[]{0x00000001E0000000L});
-        public static final BitSet FOLLOW_rule__OnSize__Group__4_in_rule__OnSize__Group__38097 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnSize__TresholdAssignment_3_in_rule__OnSize__Group__3__Impl8124 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnSize__Group__4__Impl_in_rule__OnSize__Group__48154 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnSize__UnitAssignment_4_in_rule__OnSize__Group__4__Impl8181 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnName__Group__0__Impl_in_rule__OnName__Group__08221 = new BitSet(new long[]{0x8000000000000000L});
-        public static final BitSet FOLLOW_rule__OnName__Group__1_in_rule__OnName__Group__08224 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnName__Group__1__Impl_in_rule__OnName__Group__18282 = new BitSet(new long[]{0x000C880000000030L,0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__OnName__Group__2_in_rule__OnName__Group__18285 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_63_in_rule__OnName__Group__1__Impl8313 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnName__Group__2__Impl_in_rule__OnName__Group__28344 = new BitSet(new long[]{0x000C880000000030L,0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__OnName__Group__3_in_rule__OnName__Group__28347 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnName__InverseAssignment_2_in_rule__OnName__Group__2__Impl8374 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnName__Group__3__Impl_in_rule__OnName__Group__38405 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnName__NameAssignment_3_in_rule__OnName__Group__3__Impl8432 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group__0__Impl_in_rule__OnExtension__Group__08470 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000001L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group__1_in_rule__OnExtension__Group__08473 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group__1__Impl_in_rule__OnExtension__Group__18531 = new BitSet(new long[]{0x0200000000000000L,0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group__2_in_rule__OnExtension__Group__18534 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_64_in_rule__OnExtension__Group__1__Impl8562 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group__2__Impl_in_rule__OnExtension__Group__28593 = new BitSet(new long[]{0x0200000000000000L,0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group__3_in_rule__OnExtension__Group__28596 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__InverseAssignment_2_in_rule__OnExtension__Group__2__Impl8623 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group__3__Impl_in_rule__OnExtension__Group__38654 = new BitSet(new long[]{0x040C880000000030L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group__4_in_rule__OnExtension__Group__38657 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_57_in_rule__OnExtension__Group__3__Impl8685 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group__4__Impl_in_rule__OnExtension__Group__48716 = new BitSet(new long[]{0x040C880000000030L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group__5_in_rule__OnExtension__Group__48719 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group_4__0_in_rule__OnExtension__Group__4__Impl8746 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group__5__Impl_in_rule__OnExtension__Group__58777 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_58_in_rule__OnExtension__Group__5__Impl8805 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group_4__0__Impl_in_rule__OnExtension__Group_4__08848 = new BitSet(new long[]{0x0000400000000000L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group_4__1_in_rule__OnExtension__Group_4__08851 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__ExtensionsAssignment_4_0_in_rule__OnExtension__Group_4__0__Impl8878 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group_4__1__Impl_in_rule__OnExtension__Group_4__18908 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group_4_1__0_in_rule__OnExtension__Group_4__1__Impl8935 = new BitSet(new long[]{0x0000400000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group_4_1__0__Impl_in_rule__OnExtension__Group_4_1__08970 = new BitSet(new long[]{0x000C880000000030L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group_4_1__1_in_rule__OnExtension__Group_4_1__08973 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_46_in_rule__OnExtension__Group_4_1__0__Impl9001 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__Group_4_1__1__Impl_in_rule__OnExtension__Group_4_1__19032 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnExtension__ExtensionsAssignment_4_1_1_in_rule__OnExtension__Group_4_1__1__Impl9059 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__IsEmpty__Group__0__Impl_in_rule__IsEmpty__Group__09093 = new BitSet(new long[]{0x0100000000000000L});
-        public static final BitSet FOLLOW_rule__IsEmpty__Group__1_in_rule__IsEmpty__Group__09096 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__IsEmpty__Group__1__Impl_in_rule__IsEmpty__Group__19154 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000012L});
-        public static final BitSet FOLLOW_rule__IsEmpty__Group__2_in_rule__IsEmpty__Group__19157 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_56_in_rule__IsEmpty__Group__1__Impl9185 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__IsEmpty__Group__2__Impl_in_rule__IsEmpty__Group__29216 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000012L});
-        public static final BitSet FOLLOW_rule__IsEmpty__Group__3_in_rule__IsEmpty__Group__29219 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__IsEmpty__InverseAssignment_2_in_rule__IsEmpty__Group__2__Impl9246 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__IsEmpty__Group__3__Impl_in_rule__IsEmpty__Group__39277 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_65_in_rule__IsEmpty__Group__3__Impl9305 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnType__Group__0__Impl_in_rule__OnType__Group__09344 = new BitSet(new long[]{0x0100000000000000L});
-        public static final BitSet FOLLOW_rule__OnType__Group__1_in_rule__OnType__Group__09347 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_66_in_rule__OnType__Group__0__Impl9375 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnType__Group__1__Impl_in_rule__OnType__Group__19406 = new BitSet(new long[]{0x0000001800000000L,0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__OnType__Group__2_in_rule__OnType__Group__19409 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_56_in_rule__OnType__Group__1__Impl9437 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnType__Group__2__Impl_in_rule__OnType__Group__29468 = new BitSet(new long[]{0x0000001800000000L,0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__OnType__Group__3_in_rule__OnType__Group__29471 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnType__InverseAssignment_2_in_rule__OnType__Group__2__Impl9498 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnType__Group__3__Impl_in_rule__OnType__Group__39529 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__OnType__TypeAssignment_3_in_rule__OnType__Group__3__Impl9556 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__09594 = new BitSet(new long[]{0x0000000018000040L,0x0000000000000008L});
-        public static final BitSet FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__09597 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_67_in_rule__EInt__Group__0__Impl9626 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__19659 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl9686 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleExecution_in_rule__Model__ExecutionsAssignment_19724 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleExecution_in_rule__Model__ExecutionsAssignment_2_19755 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__PathVariable__NameAssignment_09786 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePath_in_rule__PathVariable__ValueAssignment_29817 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGenericStep_in_rule__Path__StepsAssignment_09848 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGenericStep_in_rule__Path__StepsAssignment_1_19879 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__ConcreteStep__ValueAssignment9910 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__VariableStep__ValueAssignment_19945 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__ParametrizedStep__NameAssignment_29980 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Selection__NameAssignment_110011 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePath_in_rule__Selection__FromAssignment_310042 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleFilterComponent_in_rule__Selection__WhereAssignment_4_110073 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleFilterComponent_in_rule__Selection__WhereAssignment_4_2_110104 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Copy__SourceAssignment_210139 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePath_in_rule__Copy__DestinationAssignment_410174 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleStrategies_in_rule__Copy__StrategyAssignment_5_110205 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Move__SourceAssignment_210240 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePath_in_rule__Move__DestinationAssignment_410275 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleStrategies_in_rule__Move__StrategyAssignment_5_110306 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Delete__SourceAssignment_210341 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleLink_in_rule__FilterContainer__LinksAssignment_110376 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleLink_in_rule__FilterContainer__LinksAssignment_210407 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleCompositionType_in_rule__Link__CompositonTypeAssignment_010438 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleFilterComponent_in_rule__Link__ElementAssignment_110469 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__OnAttributes__NameAssignment_110500 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_68_in_rule__OnAttributes__InverseAssignment_2_0_010536 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_68_in_rule__OnAttributes__InverseAssignment_2_1_110580 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__OnAttributes__ValueAssignment_2_1_210619 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__OnTags__TagsAssignment_1_010650 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__OnTags__TagsAssignment_1_1_110681 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleQuantificators_in_rule__OnTags__QuantificatorAssignment_3_010712 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEInt_in_rule__OnTags__TresholdAssignment_3_1_010743 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_68_in_rule__OnTags__InverseAssignment_410779 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_69_in_rule__OnTags__OnlyAssignment_610823 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTimeType_in_rule__OnTime__TimeOfAssignment_010862 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleOperator_in_rule__OnTime__OperatorAssignment_210893 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEInt_in_rule__OnTime__TresholdAssignment_310924 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTimeUnit_in_rule__OnTime__UnitAssignment_410955 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_68_in_rule__OnSize__InverseAssignment_110991 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleOperator_in_rule__OnSize__OperatorAssignment_211030 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEInt_in_rule__OnSize__TresholdAssignment_311061 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleMemoryUnit_in_rule__OnSize__UnitAssignment_411092 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_68_in_rule__OnName__InverseAssignment_211128 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__OnName__NameAssignment_311167 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_68_in_rule__OnExtension__InverseAssignment_211203 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__OnExtension__ExtensionsAssignment_4_011242 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__OnExtension__ExtensionsAssignment_4_1_111273 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_68_in_rule__IsEmpty__InverseAssignment_211309 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_68_in_rule__OnType__InverseAssignment_211353 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleFileType_in_rule__OnType__TypeAssignment_311392 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ConcreteStep__Group__0__Impl_in_rule__ConcreteStep__Group__03748 = new BitSet(new long[]{0x0000010000000000L});
+        public static final BitSet FOLLOW_rule__ConcreteStep__Group__1_in_rule__ConcreteStep__Group__03751 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ConcreteStep__ValueAssignment_0_in_rule__ConcreteStep__Group__0__Impl3778 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ConcreteStep__Group__1__Impl_in_rule__ConcreteStep__Group__13808 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_40_in_rule__ConcreteStep__Group__1__Impl3837 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__VariableStep__Group__0__Impl_in_rule__VariableStep__Group__03874 = new BitSet(new long[]{0x0019100000000030L});
+        public static final BitSet FOLLOW_rule__VariableStep__Group__1_in_rule__VariableStep__Group__03877 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_41_in_rule__VariableStep__Group__0__Impl3905 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__VariableStep__Group__1__Impl_in_rule__VariableStep__Group__13936 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__VariableStep__ValueAssignment_1_in_rule__VariableStep__Group__1__Impl3963 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ParametrizedStep__Group__0__Impl_in_rule__ParametrizedStep__Group__03997 = new BitSet(new long[]{0x0019160000000030L});
+        public static final BitSet FOLLOW_rule__ParametrizedStep__Group__1_in_rule__ParametrizedStep__Group__04000 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ParametrizedStep__Group__1__Impl_in_rule__ParametrizedStep__Group__14058 = new BitSet(new long[]{0x0019100000000030L});
+        public static final BitSet FOLLOW_rule__ParametrizedStep__Group__2_in_rule__ParametrizedStep__Group__14061 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_42_in_rule__ParametrizedStep__Group__1__Impl4089 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ParametrizedStep__Group__2__Impl_in_rule__ParametrizedStep__Group__24120 = new BitSet(new long[]{0x0000080000000000L});
+        public static final BitSet FOLLOW_rule__ParametrizedStep__Group__3_in_rule__ParametrizedStep__Group__24123 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ParametrizedStep__NameAssignment_2_in_rule__ParametrizedStep__Group__2__Impl4150 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ParametrizedStep__Group__3__Impl_in_rule__ParametrizedStep__Group__34180 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_43_in_rule__ParametrizedStep__Group__3__Impl4208 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__Group__0__Impl_in_rule__Selection__Group__04247 = new BitSet(new long[]{0x0019100000000030L});
+        public static final BitSet FOLLOW_rule__Selection__Group__1_in_rule__Selection__Group__04250 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_44_in_rule__Selection__Group__0__Impl4278 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__Group__1__Impl_in_rule__Selection__Group__14309 = new BitSet(new long[]{0x0000200000000000L});
+        public static final BitSet FOLLOW_rule__Selection__Group__2_in_rule__Selection__Group__14312 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__NameAssignment_1_in_rule__Selection__Group__1__Impl4339 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__Group__2__Impl_in_rule__Selection__Group__24369 = new BitSet(new long[]{0x0019160000000030L});
+        public static final BitSet FOLLOW_rule__Selection__Group__3_in_rule__Selection__Group__24372 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_45_in_rule__Selection__Group__2__Impl4400 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__Group__3__Impl_in_rule__Selection__Group__34431 = new BitSet(new long[]{0x0000400000000000L});
+        public static final BitSet FOLLOW_rule__Selection__Group__4_in_rule__Selection__Group__34434 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__FromAssignment_3_in_rule__Selection__Group__3__Impl4461 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__Group__4__Impl_in_rule__Selection__Group__44491 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__Group_4__0_in_rule__Selection__Group__4__Impl4518 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__Group_4__0__Impl_in_rule__Selection__Group_4__04559 = new BitSet(new long[]{0x86A0000006000000L,0x000000000000000BL});
+        public static final BitSet FOLLOW_rule__Selection__Group_4__1_in_rule__Selection__Group_4__04562 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_46_in_rule__Selection__Group_4__0__Impl4590 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__Group_4__1__Impl_in_rule__Selection__Group_4__14621 = new BitSet(new long[]{0x0000800000000000L});
+        public static final BitSet FOLLOW_rule__Selection__Group_4__2_in_rule__Selection__Group_4__14624 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__WhereAssignment_4_1_in_rule__Selection__Group_4__1__Impl4651 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__Group_4__2__Impl_in_rule__Selection__Group_4__24681 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__Group_4_2__0_in_rule__Selection__Group_4__2__Impl4708 = new BitSet(new long[]{0x0000800000000002L});
+        public static final BitSet FOLLOW_rule__Selection__Group_4_2__0__Impl_in_rule__Selection__Group_4_2__04745 = new BitSet(new long[]{0x86A0000006000000L,0x000000000000000BL});
+        public static final BitSet FOLLOW_rule__Selection__Group_4_2__1_in_rule__Selection__Group_4_2__04748 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_47_in_rule__Selection__Group_4_2__0__Impl4776 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__Group_4_2__1__Impl_in_rule__Selection__Group_4_2__14807 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Selection__WhereAssignment_4_2_1_in_rule__Selection__Group_4_2__1__Impl4834 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Copy__Group__0__Impl_in_rule__Copy__Group__04868 = new BitSet(new long[]{0x0000200000000000L});
+        public static final BitSet FOLLOW_rule__Copy__Group__1_in_rule__Copy__Group__04871 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_48_in_rule__Copy__Group__0__Impl4899 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Copy__Group__1__Impl_in_rule__Copy__Group__14930 = new BitSet(new long[]{0x0019100000000030L});
+        public static final BitSet FOLLOW_rule__Copy__Group__2_in_rule__Copy__Group__14933 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_45_in_rule__Copy__Group__1__Impl4961 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Copy__Group__2__Impl_in_rule__Copy__Group__24992 = new BitSet(new long[]{0x0002000000000000L});
+        public static final BitSet FOLLOW_rule__Copy__Group__3_in_rule__Copy__Group__24995 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Copy__SourceAssignment_2_in_rule__Copy__Group__2__Impl5022 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Copy__Group__3__Impl_in_rule__Copy__Group__35052 = new BitSet(new long[]{0x0019160000000030L});
+        public static final BitSet FOLLOW_rule__Copy__Group__4_in_rule__Copy__Group__35055 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_49_in_rule__Copy__Group__3__Impl5083 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Copy__Group__4__Impl_in_rule__Copy__Group__45114 = new BitSet(new long[]{0x0004000000000000L});
+        public static final BitSet FOLLOW_rule__Copy__Group__5_in_rule__Copy__Group__45117 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Copy__DestinationAssignment_4_in_rule__Copy__Group__4__Impl5144 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Copy__Group__5__Impl_in_rule__Copy__Group__55174 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Copy__Group_5__0_in_rule__Copy__Group__5__Impl5201 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Copy__Group_5__0__Impl_in_rule__Copy__Group_5__05244 = new BitSet(new long[]{0x0000000000003800L});
+        public static final BitSet FOLLOW_rule__Copy__Group_5__1_in_rule__Copy__Group_5__05247 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_50_in_rule__Copy__Group_5__0__Impl5275 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Copy__Group_5__1__Impl_in_rule__Copy__Group_5__15306 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Copy__StrategyAssignment_5_1_in_rule__Copy__Group_5__1__Impl5333 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Move__Group__0__Impl_in_rule__Move__Group__05367 = new BitSet(new long[]{0x0000200000000000L});
+        public static final BitSet FOLLOW_rule__Move__Group__1_in_rule__Move__Group__05370 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_51_in_rule__Move__Group__0__Impl5398 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Move__Group__1__Impl_in_rule__Move__Group__15429 = new BitSet(new long[]{0x0019100000000030L});
+        public static final BitSet FOLLOW_rule__Move__Group__2_in_rule__Move__Group__15432 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_45_in_rule__Move__Group__1__Impl5460 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Move__Group__2__Impl_in_rule__Move__Group__25491 = new BitSet(new long[]{0x0002000000000000L});
+        public static final BitSet FOLLOW_rule__Move__Group__3_in_rule__Move__Group__25494 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Move__SourceAssignment_2_in_rule__Move__Group__2__Impl5521 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Move__Group__3__Impl_in_rule__Move__Group__35551 = new BitSet(new long[]{0x0019160000000030L});
+        public static final BitSet FOLLOW_rule__Move__Group__4_in_rule__Move__Group__35554 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_49_in_rule__Move__Group__3__Impl5582 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Move__Group__4__Impl_in_rule__Move__Group__45613 = new BitSet(new long[]{0x0004000000000000L});
+        public static final BitSet FOLLOW_rule__Move__Group__5_in_rule__Move__Group__45616 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Move__DestinationAssignment_4_in_rule__Move__Group__4__Impl5643 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Move__Group__5__Impl_in_rule__Move__Group__55673 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Move__Group_5__0_in_rule__Move__Group__5__Impl5700 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Move__Group_5__0__Impl_in_rule__Move__Group_5__05743 = new BitSet(new long[]{0x0000000000003800L});
+        public static final BitSet FOLLOW_rule__Move__Group_5__1_in_rule__Move__Group_5__05746 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_50_in_rule__Move__Group_5__0__Impl5774 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Move__Group_5__1__Impl_in_rule__Move__Group_5__15805 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Move__StrategyAssignment_5_1_in_rule__Move__Group_5__1__Impl5832 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Delete__Group__0__Impl_in_rule__Delete__Group__05866 = new BitSet(new long[]{0x0000200000000000L});
+        public static final BitSet FOLLOW_rule__Delete__Group__1_in_rule__Delete__Group__05869 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_52_in_rule__Delete__Group__0__Impl5897 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Delete__Group__1__Impl_in_rule__Delete__Group__15928 = new BitSet(new long[]{0x0019100000000030L});
+        public static final BitSet FOLLOW_rule__Delete__Group__2_in_rule__Delete__Group__15931 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_45_in_rule__Delete__Group__1__Impl5959 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Delete__Group__2__Impl_in_rule__Delete__Group__25990 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Delete__SourceAssignment_2_in_rule__Delete__Group__2__Impl6017 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__FilterContainer__Group__0__Impl_in_rule__FilterContainer__Group__06053 = new BitSet(new long[]{0x86A0000606000000L,0x000000000000000BL});
+        public static final BitSet FOLLOW_rule__FilterContainer__Group__1_in_rule__FilterContainer__Group__06056 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_53_in_rule__FilterContainer__Group__0__Impl6084 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__FilterContainer__Group__1__Impl_in_rule__FilterContainer__Group__16115 = new BitSet(new long[]{0x86E0000606000000L,0x000000000000000BL});
+        public static final BitSet FOLLOW_rule__FilterContainer__Group__2_in_rule__FilterContainer__Group__16118 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__FilterContainer__LinksAssignment_1_in_rule__FilterContainer__Group__1__Impl6145 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__FilterContainer__Group__2__Impl_in_rule__FilterContainer__Group__26175 = new BitSet(new long[]{0x86E0000606000000L,0x000000000000000BL});
+        public static final BitSet FOLLOW_rule__FilterContainer__Group__3_in_rule__FilterContainer__Group__26178 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__FilterContainer__LinksAssignment_2_in_rule__FilterContainer__Group__2__Impl6205 = new BitSet(new long[]{0x86A0000606000002L,0x000000000000000BL});
+        public static final BitSet FOLLOW_rule__FilterContainer__Group__3__Impl_in_rule__FilterContainer__Group__36236 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_54_in_rule__FilterContainer__Group__3__Impl6264 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Link__Group__0__Impl_in_rule__Link__Group__06303 = new BitSet(new long[]{0x86A0000606000000L,0x000000000000000BL});
+        public static final BitSet FOLLOW_rule__Link__Group__1_in_rule__Link__Group__06306 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Link__CompositonTypeAssignment_0_in_rule__Link__Group__0__Impl6333 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Link__Group__1__Impl_in_rule__Link__Group__16364 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Link__ElementAssignment_1_in_rule__Link__Group__1__Impl6391 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnAttributes__Group__0__Impl_in_rule__OnAttributes__Group__06425 = new BitSet(new long[]{0x0019100000000030L});
+        public static final BitSet FOLLOW_rule__OnAttributes__Group__1_in_rule__OnAttributes__Group__06428 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_55_in_rule__OnAttributes__Group__0__Impl6456 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnAttributes__Group__1__Impl_in_rule__OnAttributes__Group__16487 = new BitSet(new long[]{0x0300000000000000L,0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__OnAttributes__Group__2_in_rule__OnAttributes__Group__16490 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnAttributes__NameAssignment_1_in_rule__OnAttributes__Group__1__Impl6517 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnAttributes__Group__2__Impl_in_rule__OnAttributes__Group__26547 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnAttributes__Alternatives_2_in_rule__OnAttributes__Group__2__Impl6574 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_0__0__Impl_in_rule__OnAttributes__Group_2_0__06610 = new BitSet(new long[]{0x0100000000000000L,0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_0__1_in_rule__OnAttributes__Group_2_0__06613 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnAttributes__InverseAssignment_2_0_0_in_rule__OnAttributes__Group_2_0__0__Impl6640 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_0__1__Impl_in_rule__OnAttributes__Group_2_0__16671 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_56_in_rule__OnAttributes__Group_2_0__1__Impl6699 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_1__0__Impl_in_rule__OnAttributes__Group_2_1__06734 = new BitSet(new long[]{0x0019100000000030L,0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_1__1_in_rule__OnAttributes__Group_2_1__06737 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_57_in_rule__OnAttributes__Group_2_1__0__Impl6765 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_1__1__Impl_in_rule__OnAttributes__Group_2_1__16796 = new BitSet(new long[]{0x0019100000000030L,0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_1__2_in_rule__OnAttributes__Group_2_1__16799 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnAttributes__InverseAssignment_2_1_1_in_rule__OnAttributes__Group_2_1__1__Impl6826 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnAttributes__Group_2_1__2__Impl_in_rule__OnAttributes__Group_2_1__26857 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnAttributes__ValueAssignment_2_1_2_in_rule__OnAttributes__Group_2_1__2__Impl6884 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group__0__Impl_in_rule__OnTags__Group__06920 = new BitSet(new long[]{0x0819100000000030L});
+        public static final BitSet FOLLOW_rule__OnTags__Group__1_in_rule__OnTags__Group__06923 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_58_in_rule__OnTags__Group__0__Impl6951 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group__1__Impl_in_rule__OnTags__Group__16982 = new BitSet(new long[]{0x0819100000000030L});
+        public static final BitSet FOLLOW_rule__OnTags__Group__2_in_rule__OnTags__Group__16985 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group_1__0_in_rule__OnTags__Group__1__Impl7012 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group__2__Impl_in_rule__OnTags__Group__27043 = new BitSet(new long[]{0x0000000018000040L,0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__OnTags__Group__3_in_rule__OnTags__Group__27046 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_59_in_rule__OnTags__Group__2__Impl7074 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group__3__Impl_in_rule__OnTags__Group__37105 = new BitSet(new long[]{0x1000000000000000L,0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__OnTags__Group__4_in_rule__OnTags__Group__37108 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Alternatives_3_in_rule__OnTags__Group__3__Impl7135 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group__4__Impl_in_rule__OnTags__Group__47165 = new BitSet(new long[]{0x1000000000000000L,0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__OnTags__Group__5_in_rule__OnTags__Group__47168 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__InverseAssignment_4_in_rule__OnTags__Group__4__Impl7195 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group__5__Impl_in_rule__OnTags__Group__57226 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000040L});
+        public static final BitSet FOLLOW_rule__OnTags__Group__6_in_rule__OnTags__Group__57229 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_60_in_rule__OnTags__Group__5__Impl7257 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group__6__Impl_in_rule__OnTags__Group__67288 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__OnlyAssignment_6_in_rule__OnTags__Group__6__Impl7315 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group_1__0__Impl_in_rule__OnTags__Group_1__07360 = new BitSet(new long[]{0x0000800000000000L});
+        public static final BitSet FOLLOW_rule__OnTags__Group_1__1_in_rule__OnTags__Group_1__07363 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__TagsAssignment_1_0_in_rule__OnTags__Group_1__0__Impl7390 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group_1__1__Impl_in_rule__OnTags__Group_1__17420 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group_1_1__0_in_rule__OnTags__Group_1__1__Impl7447 = new BitSet(new long[]{0x0000800000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group_1_1__0__Impl_in_rule__OnTags__Group_1_1__07482 = new BitSet(new long[]{0x0019100000000030L});
+        public static final BitSet FOLLOW_rule__OnTags__Group_1_1__1_in_rule__OnTags__Group_1_1__07485 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_47_in_rule__OnTags__Group_1_1__0__Impl7513 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group_1_1__1__Impl_in_rule__OnTags__Group_1_1__17544 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__TagsAssignment_1_1_1_in_rule__OnTags__Group_1_1__1__Impl7571 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group_3_1__0__Impl_in_rule__OnTags__Group_3_1__07605 = new BitSet(new long[]{0x2000000000000000L});
+        public static final BitSet FOLLOW_rule__OnTags__Group_3_1__1_in_rule__OnTags__Group_3_1__07608 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__TresholdAssignment_3_1_0_in_rule__OnTags__Group_3_1__0__Impl7635 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTags__Group_3_1__1__Impl_in_rule__OnTags__Group_3_1__17665 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_61_in_rule__OnTags__Group_3_1__1__Impl7693 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTime__Group__0__Impl_in_rule__OnTime__Group__07728 = new BitSet(new long[]{0x4000000000000000L});
+        public static final BitSet FOLLOW_rule__OnTime__Group__1_in_rule__OnTime__Group__07731 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTime__TimeOfAssignment_0_in_rule__OnTime__Group__0__Impl7758 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTime__Group__1__Impl_in_rule__OnTime__Group__17788 = new BitSet(new long[]{0x000000000007C000L});
+        public static final BitSet FOLLOW_rule__OnTime__Group__2_in_rule__OnTime__Group__17791 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_62_in_rule__OnTime__Group__1__Impl7819 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTime__Group__2__Impl_in_rule__OnTime__Group__27850 = new BitSet(new long[]{0x0000000018000040L,0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__OnTime__Group__3_in_rule__OnTime__Group__27853 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTime__OperatorAssignment_2_in_rule__OnTime__Group__2__Impl7880 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTime__Group__3__Impl_in_rule__OnTime__Group__37910 = new BitSet(new long[]{0x0000000001F80000L});
+        public static final BitSet FOLLOW_rule__OnTime__Group__4_in_rule__OnTime__Group__37913 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTime__TresholdAssignment_3_in_rule__OnTime__Group__3__Impl7940 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTime__Group__4__Impl_in_rule__OnTime__Group__47970 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnTime__UnitAssignment_4_in_rule__OnTime__Group__4__Impl7997 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnSize__Group__0__Impl_in_rule__OnSize__Group__08037 = new BitSet(new long[]{0x000000000007C000L,0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__OnSize__Group__1_in_rule__OnSize__Group__08040 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_63_in_rule__OnSize__Group__0__Impl8068 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnSize__Group__1__Impl_in_rule__OnSize__Group__18099 = new BitSet(new long[]{0x000000000007C000L,0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__OnSize__Group__2_in_rule__OnSize__Group__18102 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnSize__InverseAssignment_1_in_rule__OnSize__Group__1__Impl8129 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnSize__Group__2__Impl_in_rule__OnSize__Group__28160 = new BitSet(new long[]{0x0000000018000040L,0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__OnSize__Group__3_in_rule__OnSize__Group__28163 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnSize__OperatorAssignment_2_in_rule__OnSize__Group__2__Impl8190 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnSize__Group__3__Impl_in_rule__OnSize__Group__38220 = new BitSet(new long[]{0x00000001E0000000L});
+        public static final BitSet FOLLOW_rule__OnSize__Group__4_in_rule__OnSize__Group__38223 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnSize__TresholdAssignment_3_in_rule__OnSize__Group__3__Impl8250 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnSize__Group__4__Impl_in_rule__OnSize__Group__48280 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnSize__UnitAssignment_4_in_rule__OnSize__Group__4__Impl8307 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnName__Group__0__Impl_in_rule__OnName__Group__08347 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000001L});
+        public static final BitSet FOLLOW_rule__OnName__Group__1_in_rule__OnName__Group__08350 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnName__Group__1__Impl_in_rule__OnName__Group__18408 = new BitSet(new long[]{0x0019100000000030L,0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__OnName__Group__2_in_rule__OnName__Group__18411 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_64_in_rule__OnName__Group__1__Impl8439 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnName__Group__2__Impl_in_rule__OnName__Group__28470 = new BitSet(new long[]{0x0019100000000030L,0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__OnName__Group__3_in_rule__OnName__Group__28473 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnName__InverseAssignment_2_in_rule__OnName__Group__2__Impl8500 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnName__Group__3__Impl_in_rule__OnName__Group__38531 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnName__NameAssignment_3_in_rule__OnName__Group__3__Impl8558 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group__0__Impl_in_rule__OnExtension__Group__08596 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group__1_in_rule__OnExtension__Group__08599 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group__1__Impl_in_rule__OnExtension__Group__18657 = new BitSet(new long[]{0x0400000000000000L,0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group__2_in_rule__OnExtension__Group__18660 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_65_in_rule__OnExtension__Group__1__Impl8688 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group__2__Impl_in_rule__OnExtension__Group__28719 = new BitSet(new long[]{0x0400000000000000L,0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group__3_in_rule__OnExtension__Group__28722 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__InverseAssignment_2_in_rule__OnExtension__Group__2__Impl8749 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group__3__Impl_in_rule__OnExtension__Group__38780 = new BitSet(new long[]{0x0819100000000030L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group__4_in_rule__OnExtension__Group__38783 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_58_in_rule__OnExtension__Group__3__Impl8811 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group__4__Impl_in_rule__OnExtension__Group__48842 = new BitSet(new long[]{0x0819100000000030L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group__5_in_rule__OnExtension__Group__48845 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group_4__0_in_rule__OnExtension__Group__4__Impl8872 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group__5__Impl_in_rule__OnExtension__Group__58903 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_59_in_rule__OnExtension__Group__5__Impl8931 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group_4__0__Impl_in_rule__OnExtension__Group_4__08974 = new BitSet(new long[]{0x0000800000000000L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group_4__1_in_rule__OnExtension__Group_4__08977 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__ExtensionsAssignment_4_0_in_rule__OnExtension__Group_4__0__Impl9004 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group_4__1__Impl_in_rule__OnExtension__Group_4__19034 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group_4_1__0_in_rule__OnExtension__Group_4__1__Impl9061 = new BitSet(new long[]{0x0000800000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group_4_1__0__Impl_in_rule__OnExtension__Group_4_1__09096 = new BitSet(new long[]{0x0019100000000030L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group_4_1__1_in_rule__OnExtension__Group_4_1__09099 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_47_in_rule__OnExtension__Group_4_1__0__Impl9127 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__Group_4_1__1__Impl_in_rule__OnExtension__Group_4_1__19158 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnExtension__ExtensionsAssignment_4_1_1_in_rule__OnExtension__Group_4_1__1__Impl9185 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__IsEmpty__Group__0__Impl_in_rule__IsEmpty__Group__09219 = new BitSet(new long[]{0x0200000000000000L});
+        public static final BitSet FOLLOW_rule__IsEmpty__Group__1_in_rule__IsEmpty__Group__09222 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__IsEmpty__Group__1__Impl_in_rule__IsEmpty__Group__19280 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000024L});
+        public static final BitSet FOLLOW_rule__IsEmpty__Group__2_in_rule__IsEmpty__Group__19283 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_57_in_rule__IsEmpty__Group__1__Impl9311 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__IsEmpty__Group__2__Impl_in_rule__IsEmpty__Group__29342 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000024L});
+        public static final BitSet FOLLOW_rule__IsEmpty__Group__3_in_rule__IsEmpty__Group__29345 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__IsEmpty__InverseAssignment_2_in_rule__IsEmpty__Group__2__Impl9372 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__IsEmpty__Group__3__Impl_in_rule__IsEmpty__Group__39403 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_66_in_rule__IsEmpty__Group__3__Impl9431 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnType__Group__0__Impl_in_rule__OnType__Group__09470 = new BitSet(new long[]{0x0200000000000000L});
+        public static final BitSet FOLLOW_rule__OnType__Group__1_in_rule__OnType__Group__09473 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_67_in_rule__OnType__Group__0__Impl9501 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnType__Group__1__Impl_in_rule__OnType__Group__19532 = new BitSet(new long[]{0x0000001800000000L,0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__OnType__Group__2_in_rule__OnType__Group__19535 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_57_in_rule__OnType__Group__1__Impl9563 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnType__Group__2__Impl_in_rule__OnType__Group__29594 = new BitSet(new long[]{0x0000001800000000L,0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__OnType__Group__3_in_rule__OnType__Group__29597 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnType__InverseAssignment_2_in_rule__OnType__Group__2__Impl9624 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnType__Group__3__Impl_in_rule__OnType__Group__39655 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__OnType__TypeAssignment_3_in_rule__OnType__Group__3__Impl9682 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__09720 = new BitSet(new long[]{0x0000000018000040L,0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__09723 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_68_in_rule__EInt__Group__0__Impl9752 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__19785 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl9812 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleExecution_in_rule__Model__ExecutionsAssignment_19850 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleExecution_in_rule__Model__ExecutionsAssignment_2_19881 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__PathVariable__NameAssignment_09912 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePath_in_rule__PathVariable__ValueAssignment_29943 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGenericStep_in_rule__Path__StepsAssignment_09974 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGenericStep_in_rule__Path__StepsAssignment_1_110005 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__ConcreteStep__ValueAssignment_010036 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__VariableStep__ValueAssignment_110071 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__ParametrizedStep__NameAssignment_210106 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Selection__NameAssignment_110137 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePath_in_rule__Selection__FromAssignment_310168 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleFilterComponent_in_rule__Selection__WhereAssignment_4_110199 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleFilterComponent_in_rule__Selection__WhereAssignment_4_2_110230 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Copy__SourceAssignment_210265 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePath_in_rule__Copy__DestinationAssignment_410300 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleStrategies_in_rule__Copy__StrategyAssignment_5_110331 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Move__SourceAssignment_210366 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePath_in_rule__Move__DestinationAssignment_410401 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleStrategies_in_rule__Move__StrategyAssignment_5_110432 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Delete__SourceAssignment_210467 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleLink_in_rule__FilterContainer__LinksAssignment_110502 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleLink_in_rule__FilterContainer__LinksAssignment_210533 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleCompositionType_in_rule__Link__CompositonTypeAssignment_010564 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleFilterComponent_in_rule__Link__ElementAssignment_110595 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__OnAttributes__NameAssignment_110626 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_69_in_rule__OnAttributes__InverseAssignment_2_0_010662 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_69_in_rule__OnAttributes__InverseAssignment_2_1_110706 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__OnAttributes__ValueAssignment_2_1_210745 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__OnTags__TagsAssignment_1_010776 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__OnTags__TagsAssignment_1_1_110807 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleQuantificators_in_rule__OnTags__QuantificatorAssignment_3_010838 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEInt_in_rule__OnTags__TresholdAssignment_3_1_010869 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_69_in_rule__OnTags__InverseAssignment_410905 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_70_in_rule__OnTags__OnlyAssignment_610949 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTimeType_in_rule__OnTime__TimeOfAssignment_010988 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleOperator_in_rule__OnTime__OperatorAssignment_211019 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEInt_in_rule__OnTime__TresholdAssignment_311050 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTimeUnit_in_rule__OnTime__UnitAssignment_411081 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_69_in_rule__OnSize__InverseAssignment_111117 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleOperator_in_rule__OnSize__OperatorAssignment_211156 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEInt_in_rule__OnSize__TresholdAssignment_311187 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleMemoryUnit_in_rule__OnSize__UnitAssignment_411218 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_69_in_rule__OnName__InverseAssignment_211254 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__OnName__NameAssignment_311293 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_69_in_rule__OnExtension__InverseAssignment_211329 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__OnExtension__ExtensionsAssignment_4_011368 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__OnExtension__ExtensionsAssignment_4_1_111399 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_69_in_rule__IsEmpty__InverseAssignment_211435 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_69_in_rule__OnType__InverseAssignment_211479 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleFileType_in_rule__OnType__TypeAssignment_311518 = new BitSet(new long[]{0x0000000000000002L});
     }
 
 

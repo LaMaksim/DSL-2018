@@ -184,18 +184,26 @@ public class FETLGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class ConcreteStepElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ConcreteStep");
-		private final Assignment cValueAssignment = (Assignment)rule.eContents().get(1);
-		private final RuleCall cValueEStringParserRuleCall_0 = (RuleCall)cValueAssignment.eContents().get(0);
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Assignment cValueAssignment_0 = (Assignment)cGroup.eContents().get(0);
+		private final RuleCall cValueEStringParserRuleCall_0_0 = (RuleCall)cValueAssignment_0.eContents().get(0);
+		private final Keyword cColonKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		
 		//ConcreteStep:
-		//	value=EString;
+		//	value=EString ":"?;
 		public ParserRule getRule() { return rule; }
 
+		//value=EString ":"?
+		public Group getGroup() { return cGroup; }
+
 		//value=EString
-		public Assignment getValueAssignment() { return cValueAssignment; }
+		public Assignment getValueAssignment_0() { return cValueAssignment_0; }
 
 		//EString
-		public RuleCall getValueEStringParserRuleCall_0() { return cValueEStringParserRuleCall_0; }
+		public RuleCall getValueEStringParserRuleCall_0_0() { return cValueEStringParserRuleCall_0_0; }
+
+		//":"?
+		public Keyword getColonKeyword_1() { return cColonKeyword_1; }
 	}
 
 	public class VariableStepElements extends AbstractParserRuleElementFinder {
@@ -1522,7 +1530,7 @@ public class FETLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ConcreteStep:
-	//	value=EString;
+	//	value=EString ":"?;
 	public ConcreteStepElements getConcreteStepAccess() {
 		return (pConcreteStep != null) ? pConcreteStep : (pConcreteStep = new ConcreteStepElements());
 	}
