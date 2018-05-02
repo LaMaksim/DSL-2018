@@ -4,11 +4,19 @@
 package org.xtext.example.myFetl.validation;
 
 import FileTransferPackage.ConcreteStep;
+import FileTransferPackage.Copy;
+import FileTransferPackage.Execution;
 import FileTransferPackage.FileTransferPackagePackage;
+import FileTransferPackage.FilterContainer;
 import FileTransferPackage.GenericStep;
+import FileTransferPackage.Link;
+import FileTransferPackage.Move;
+import FileTransferPackage.ParametrizedStep;
 import FileTransferPackage.Path;
+import FileTransferPackage.PathVariable;
+import FileTransferPackage.Selection;
+import FileTransferPackage.VariableStep;
 import com.google.common.base.Objects;
-import java.math.BigDecimal;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtext.validation.Check;
 import org.xtext.example.myFetl.validation.AbstractFETLValidator;
@@ -20,25 +28,160 @@ import org.xtext.example.myFetl.validation.AbstractFETLValidator;
  */
 @SuppressWarnings("all")
 public class FETLValidator extends AbstractFETLValidator {
-  @Check
-  public void onlyFirstStepCanBeAbsolute(final Path path) {
-    final BigDecimal i = BigDecimal.ZERO;
+  public boolean isStepAbsolute(final GenericStep step) {
+    if ((step instanceof ConcreteStep)) {
+      final ConcreteStep cstep = ((ConcreteStep) step);
+      return cstep.isAbsolute();
+    } else {
+      if ((step instanceof VariableStep)) {
+        final VariableStep vstep = ((VariableStep) step);
+        PathVariable _value = vstep.getValue();
+        Path _value_1 = _value.getValue();
+        return this.isPathAbsolute(_value_1);
+      } else {
+        return false;
+      }
+    }
+  }
+  
+  public boolean isPathAbsolute(final Path path) {
     EList<GenericStep> _steps = path.getSteps();
-    for (final GenericStep step : _steps) {
+    final GenericStep step = _steps.get(0);
+    return this.isStepAbsolute(step);
+  }
+  
+  public boolean isStepValid(final GenericStep step) {
+    boolean _or = false;
+    if ((step instanceof ConcreteStep)) {
+      _or = true;
+    } else {
+      _or = (step instanceof ParametrizedStep);
+    }
+    if (_or) {
+      return true;
+    } else {
+      final VariableStep vstep = ((VariableStep) step);
+      PathVariable _value = vstep.getValue();
+      Path _value_1 = _value.getValue();
+      return this.isPathValid(_value_1);
+    }
+  }
+  
+  @Check
+  public boolean isPathValid(final Path path) {
+    EList<GenericStep> _steps = path.getSteps();
+    GenericStep _get = _steps.get(0);
+    final GenericStep step0 = ((GenericStep) _get);
+    boolean _isStepValid = this.isStepValid(step0);
+    boolean _not = (!_isStepValid);
+    if (_not) {
+      return false;
+    }
+    EList<GenericStep> _steps_1 = path.getSteps();
+    for (final GenericStep step : _steps_1) {
       boolean _and = false;
-      EList<GenericStep> _steps_1 = path.getSteps();
-      GenericStep _get = _steps_1.get(0);
-      boolean _notEquals = (!Objects.equal(_get, step));
+      EList<GenericStep> _steps_2 = path.getSteps();
+      GenericStep _get_1 = _steps_2.get(0);
+      boolean _notEquals = (!Objects.equal(step, _get_1));
       if (!_notEquals) {
         _and = false;
       } else {
-        _and = (step instanceof ConcreteStep);
+        boolean _isStepAbsolute = this.isStepAbsolute(step);
+        _and = _isStepAbsolute;
       }
       if (_and) {
-        final ConcreteStep cstep = ((ConcreteStep) step);
-        boolean _isAbsolute = cstep.isAbsolute();
-        if (_isAbsolute) {
-          this.error("Only first concrete step can be absolute.", path, FileTransferPackagePackage.Literals.PATH__STEPS);
+        return false;
+      }
+    }
+    return true;
+  }
+  
+  @Check
+  public void checkIsValidPath(final Path path) {
+    boolean _isPathValid = this.isPathValid(path);
+    boolean _not = (!_isPathValid);
+    if (_not) {
+      this.error("Invalid path. Only first concrete step can be absolute.", path, FileTransferPackagePackage.Literals.PATH__STEPS);
+    }
+  }
+  
+  @Check
+  public void checkPathSelection(final Selection selection) {
+    Path _from = selection.getFrom();
+    boolean _isPathAbsolute = this.isPathAbsolute(_from);
+    boolean _not = (!_isPathAbsolute);
+    if (_not) {
+      this.error("Invalid path. Path selection has to be absolute.", selection, FileTransferPackagePackage.Literals.SELECTION__FROM);
+    }
+  }
+  
+  @Check
+  public void checkCreationPath(final Execution execution) {
+    if ((execution instanceof Move)) {
+      final Move mv = ((Move) execution);
+      Path _destination = mv.getDestination();
+      boolean _isPathAbsolute = this.isPathAbsolute(_destination);
+      boolean _not = (!_isPathAbsolute);
+      if (_not) {
+        this.error("Invalid path. Destination has to be absolute.", execution, FileTransferPackagePackage.Literals.CREATING__DESTINATION);
+      }
+    }
+    if ((execution instanceof Copy)) {
+      final Copy cp = ((Copy) execution);
+      Path _destination_1 = cp.getDestination();
+      boolean _isPathAbsolute_1 = this.isPathAbsolute(_destination_1);
+      boolean _not_1 = (!_isPathAbsolute_1);
+      if (_not_1) {
+        this.error("Invalid path. Destination has to be absolute.", execution, FileTransferPackagePackage.Literals.CREATING__DESTINATION);
+      }
+    }
+  }
+  
+  public boolean isLinkAdditioinan(final Link link) {
+    boolean _or = false;
+    boolean _isAnd = link.isAnd();
+    if (_isAnd) {
+      _or = true;
+    } else {
+      boolean _isOr = link.isOr();
+      _or = _isOr;
+    }
+    return _or;
+  }
+  
+  @Check
+  public void checkFilterChainConnectors(final FilterContainer containter) {
+    EList<Link> _links = containter.getLinks();
+    for (final Link iter : _links) {
+      {
+        final Link link = ((Link) iter);
+        boolean _and = false;
+        EList<Link> _links_1 = containter.getLinks();
+        Link _get = _links_1.get(0);
+        boolean _equals = Objects.equal(link, _get);
+        if (!_equals) {
+          _and = false;
+        } else {
+          boolean _isLinkAdditioinan = this.isLinkAdditioinan(link);
+          _and = _isLinkAdditioinan;
+        }
+        if (_and) {
+          this.error("First filter in group can\'t have and/or in front of themself.", link, FileTransferPackagePackage.Literals.LINK__AND);
+        } else {
+          boolean _and_1 = false;
+          EList<Link> _links_2 = containter.getLinks();
+          Link _get_1 = _links_2.get(0);
+          boolean _notEquals = (!Objects.equal(link, _get_1));
+          if (!_notEquals) {
+            _and_1 = false;
+          } else {
+            boolean _isLinkAdditioinan_1 = this.isLinkAdditioinan(link);
+            boolean _not = (!_isLinkAdditioinan_1);
+            _and_1 = _not;
+          }
+          if (_and_1) {
+            this.error("All filters after first one have to have and/or in front of themself.", link, FileTransferPackagePackage.Literals.LINK__AND);
+          }
         }
       }
     }

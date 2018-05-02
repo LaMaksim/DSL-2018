@@ -7,6 +7,16 @@ import org.eclipse.xtext.validation.Check
 import FileTransferPackage.Path
 import FileTransferPackage.ConcreteStep
 import FileTransferPackage.FileTransferPackagePackage
+import java.lang.reflect.Parameter
+import FileTransferPackage.ParametrizedStep
+import FileTransferPackage.VariableStep
+import FileTransferPackage.GenericStep
+import FileTransferPackage.Selection
+import FileTransferPackage.Move
+import FileTransferPackage.Copy
+import FileTransferPackage.Execution
+import FileTransferPackage.Link
+import FileTransferPackage.FilterContainer
 
 //import org.eclipse.xtext.validation.Check
 
@@ -27,23 +37,103 @@ class FETLValidator extends AbstractFETLValidator {
 //					INVALID_NAME)
 //		}
 //	}
+	
+	
+	def boolean isStepAbsolute(GenericStep step){
+		
+		if (step instanceof ConcreteStep){
+			val cstep = step as ConcreteStep;
+			return cstep.absolute;
+		}else if (step instanceof VariableStep){
+			val vstep = step as VariableStep;
+			return isPathAbsolute(vstep.value.value);
+		}else{
+			return false; // ParametrizedStep - uvek relativan
+		}
+	}// def
+	
+	def boolean isPathAbsolute(Path path){
+		val step = path.steps.get(0);
+		return isStepAbsolute(step); 
+	}// def
+	
+	def boolean isStepValid(GenericStep step){
+		if (step instanceof ConcreteStep || step instanceof ParametrizedStep){
+			return true;
+		}else{
+			// VariableStep
+			val vstep = step as VariableStep;
+			return isPathValid(vstep.value.value);
+		}		
+	}// def
+	
+	@Check
+	def boolean isPathValid(Path path){
+		val step0 = path.steps.get(0) as GenericStep;
+		
+		if (!isStepValid(step0))
+			return false;
+		
+		
+		
+		for(step : path.steps){
+			if (step != path.steps.get(0)  && isStepAbsolute(step)){
+				return false
+			}	
+		}	
+		
+		
+		
+		
+		return true;
+		
+	}// def
+
+
 
 	@Check
-	def onlyFirstStepCanBeAbsolute(Path path){
-		val i = 0BD;
-		for(step: path.steps){
+	def checkIsValidPath(Path path){
+		if(!isPathValid(path)){
+			error('Invalid path. Only first concrete step can be absolute.',path,FileTransferPackagePackage.Literals.PATH__STEPS);
+		}
+	}//def
+	
+	@Check
+	def checkPathSelection(Selection selection){
+		if(!isPathAbsolute(selection.from))
+			error('Invalid path. Path selection has to be absolute.',selection,FileTransferPackagePackage.Literals.SELECTION__FROM);
+	}
+	
+	@Check
+	def checkCreationPath(Execution execution){
+		if (execution instanceof Move){
+			val mv = execution as Move;
+			if(!isPathAbsolute(mv.destination)) 
+				error('Invalid path. Destination has to be absolute.',execution,FileTransferPackagePackage.Literals.CREATING__DESTINATION);
+		}
+		if (execution instanceof Copy){
+			val cp = execution as Copy;
+			if(!isPathAbsolute(cp.destination)) 
+				error('Invalid path. Destination has to be absolute.',execution,FileTransferPackagePackage.Literals.CREATING__DESTINATION);
+		}
+	}
+	
+	def boolean isLinkAdditioinan(Link link){
+		return link.and || link.or;
+	}
+	
+	@Check
+	def checkFilterChainConnectors(FilterContainer containter){
+		for(iter : containter.links){
+			val link = iter as Link;
 			
-			if(path.steps.get(0)!=step  && step instanceof ConcreteStep){
-				val cstep = step as ConcreteStep;
-				if (cstep.absolute){
-					//warning("",FileTransferPackagePackage.Literals.CONCRETE_STEP__ABSOLUTE);
-					error('Only first concrete step can be absolute.',path,FileTransferPackagePackage.Literals.PATH__STEPS);
-				} 
-				
+			if(link == containter.links.get(0) && isLinkAdditioinan(link)){
+				error("First filter in group can't have and/or in front of themself.",link,FileTransferPackagePackage.Literals.LINK__AND);
+			}else if(link != containter.links.get(0) && !isLinkAdditioinan(link) ){
+				error("All filters after first one have to have and/or in front of themself.",link,FileTransferPackagePackage.Literals.LINK__AND);
 			}
 			
 		}
 	}
-
 
 }
