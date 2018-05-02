@@ -63,22 +63,15 @@ public class InternalFetlLexer extends Lexer {
     public static final int T__38=38;
     public static final int T__39=39;
     public static final int T__33=33;
-    public static final int T__77=77;
     public static final int T__34=34;
-    public static final int T__78=78;
     public static final int T__35=35;
-    public static final int T__79=79;
     public static final int T__36=36;
     public static final int T__73=73;
     public static final int EOF=-1;
     public static final int T__30=30;
     public static final int T__74=74;
     public static final int T__31=31;
-    public static final int T__75=75;
     public static final int T__32=32;
-    public static final int T__76=76;
-    public static final int T__80=80;
-    public static final int T__81=81;
     public static final int RULE_WS=9;
     public static final int RULE_ANY_OTHER=10;
     public static final int T__48=48;
@@ -110,11 +103,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__11;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:11:7: ( 'Model' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:11:9: 'Model'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:11:7: ( ';' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:11:9: ';'
             {
-            match("Model"); 
-
+            match(';'); 
 
             }
 
@@ -131,10 +123,11 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__12;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:12:7: ( '{' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:12:9: '{'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:12:7: ( 'copy' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:12:9: 'copy'
             {
-            match('{'); 
+            match("copy"); 
+
 
             }
 
@@ -151,10 +144,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__13;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:13:7: ( 'executions' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:13:9: 'executions'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:13:7: ( 'from' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:13:9: 'from'
             {
-            match("executions"); 
+            match("from"); 
 
 
             }
@@ -172,10 +165,11 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:14:7: ( ',' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:14:9: ','
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:14:7: ( 'to' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:14:9: 'to'
             {
-            match(','); 
+            match("to"); 
+
 
             }
 
@@ -192,10 +186,11 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:15:7: ( '}' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:15:9: '}'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:15:7: ( 'strategy:' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:15:9: 'strategy:'
             {
-            match('}'); 
+            match("strategy:"); 
+
 
             }
 
@@ -212,10 +207,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:16:7: ( 'Copy' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:16:9: 'Copy'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:16:7: ( 'move' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:16:9: 'move'
             {
-            match("Copy"); 
+            match("move"); 
 
 
             }
@@ -233,10 +228,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:17:7: ( 'strategy' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:17:9: 'strategy'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:17:7: ( 'delete' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:17:9: 'delete'
             {
-            match("strategy"); 
+            match("delete"); 
 
 
             }
@@ -254,11 +249,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:18:7: ( 'source' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:18:9: 'source'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:18:7: ( '=' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:18:9: '='
             {
-            match("source"); 
-
+            match('='); 
 
             }
 
@@ -275,10 +269,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:19:7: ( 'destination' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:19:9: 'destination'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:19:7: ( 'view' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:19:9: 'view'
             {
-            match("destination"); 
+            match("view"); 
 
 
             }
@@ -296,10 +290,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:20:7: ( 'Move' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:20:9: 'Move'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:20:7: ( 'as' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:20:9: 'as'
             {
-            match("Move"); 
+            match("as"); 
 
 
             }
@@ -317,10 +311,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:21:7: ( 'Delete' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:21:9: 'Delete'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:21:7: ( '[absolute:' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:21:9: '[absolute:'
             {
-            match("Delete"); 
+            match("[absolute:"); 
 
 
             }
@@ -338,11 +332,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:22:7: ( 'PathVariable' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:22:9: 'PathVariable'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:22:7: ( ']' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:22:9: ']'
             {
-            match("PathVariable"); 
-
+            match(']'); 
 
             }
 
@@ -359,11 +352,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:23:7: ( 'value' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:23:9: 'value'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:23:7: ( '+' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:23:9: '+'
             {
-            match("value"); 
-
+            match('+'); 
 
             }
 
@@ -380,10 +372,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:24:7: ( 'SelectionVariable' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:24:9: 'SelectionVariable'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:24:7: ( 'true' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:24:9: 'true'
             {
-            match("SelectionVariable"); 
+            match("true"); 
 
 
             }
@@ -401,10 +393,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:25:7: ( 'Path' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:25:9: 'Path'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:25:7: ( 'false' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:25:9: 'false'
             {
-            match("Path"); 
+            match("false"); 
 
 
             }
@@ -422,10 +414,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:26:7: ( 'absolute' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:26:9: 'absolute'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:26:7: ( 'path' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:26:9: 'path'
             {
-            match("absolute"); 
+            match("path"); 
 
 
             }
@@ -443,10 +435,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:27:7: ( 'steps' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:27:9: 'steps'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:27:7: ( '{$' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:27:9: '{$'
             {
-            match("steps"); 
+            match("{$"); 
 
 
             }
@@ -464,11 +456,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:28:7: ( 'true' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:28:9: 'true'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:28:7: ( '}' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:28:9: '}'
             {
-            match("true"); 
-
+            match('}'); 
 
             }
 
@@ -485,10 +476,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:29:7: ( 'false' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:29:9: 'false'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:29:7: ( 'select' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:29:9: 'select'
             {
-            match("false"); 
+            match("select"); 
 
 
             }
@@ -506,10 +497,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:30:7: ( 'ConcreteStep' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:30:9: 'ConcreteStep'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:30:7: ( 'where' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:30:9: 'where'
             {
-            match("ConcreteStep"); 
+            match("where"); 
 
 
             }
@@ -527,11 +518,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:31:7: ( 'VariableStep' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:31:9: 'VariableStep'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:31:7: ( ',' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:31:9: ','
             {
-            match("VariableStep"); 
-
+            match(','); 
 
             }
 
@@ -548,10 +538,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:32:7: ( 'ParametrizedStep' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:32:9: 'ParametrizedStep'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:32:7: ( 'name' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:32:9: 'name'
             {
-            match("ParametrizedStep"); 
+            match("name"); 
 
 
             }
@@ -569,10 +559,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:33:7: ( 'Selection' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:33:9: 'Selection'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:33:7: ( 'keep' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:33:9: 'keep'
             {
-            match("Selection"); 
+            match("keep"); 
 
 
             }
@@ -590,10 +580,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__34;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:34:7: ( 'where' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:34:9: 'where'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:34:7: ( 'extension' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:34:9: 'extension'
             {
-            match("where"); 
+            match("extension"); 
 
 
             }
@@ -611,10 +601,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__35;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:35:7: ( 'from' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:35:9: 'from'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:35:7: ( 'in [' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:35:9: 'in ['
             {
-            match("from"); 
+            match("in ["); 
 
 
             }
@@ -632,10 +622,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__36;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:36:7: ( 'OnName' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:36:9: 'OnName'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:36:7: ( 'time' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:36:9: 'time'
             {
-            match("OnName"); 
+            match("time"); 
 
 
             }
@@ -653,10 +643,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__37;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:37:7: ( 'trueFalseSearch' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:37:9: 'trueFalseSearch'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:37:7: ( 'of' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:37:9: 'of'
             {
-            match("trueFalseSearch"); 
+            match("of"); 
 
 
             }
@@ -674,10 +664,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__38;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:38:7: ( 'OnExtension' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:38:9: 'OnExtension'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:38:7: ( 'attribute' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:38:9: 'attribute'
             {
-            match("OnExtension"); 
+            match("attribute"); 
 
 
             }
@@ -695,10 +685,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__39;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:39:7: ( 'extensions' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:39:9: 'extensions'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:39:7: ( 'is' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:39:9: 'is'
             {
-            match("extensions"); 
+            match("is"); 
 
 
             }
@@ -716,11 +706,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__40;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:40:7: ( 'OnTime' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:40:9: 'OnTime'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:40:7: ( '[' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:40:9: '['
             {
-            match("OnTime"); 
-
+            match('['); 
 
             }
 
@@ -737,10 +726,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__41;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:41:7: ( 'operator' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:41:9: 'operator'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:41:7: ( 'in tags' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:41:9: 'in tags'
             {
-            match("operator"); 
+            match("in tags"); 
 
 
             }
@@ -758,10 +747,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__42;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:42:7: ( 'treshold' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:42:9: 'treshold'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:42:7: ( 'exclusively' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:42:9: 'exclusively'
             {
-            match("treshold"); 
+            match("exclusively"); 
 
 
             }
@@ -779,10 +768,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__43;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:43:7: ( 'unit' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:43:9: 'unit'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:43:7: ( 'size' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:43:9: 'size'
             {
-            match("unit"); 
+            match("size"); 
 
 
             }
@@ -800,11 +789,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__44;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:44:7: ( 'timeOf' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:44:9: 'timeOf'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:44:7: ( '{' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:44:9: '{'
             {
-            match("timeOf"); 
-
+            match('{'); 
 
             }
 
@@ -821,11 +809,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__45;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:45:7: ( 'OnAttributes' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:45:9: 'OnAttributes'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:45:7: ( '(' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:45:9: '('
             {
-            match("OnAttributes"); 
-
+            match('('); 
 
             }
 
@@ -842,11 +829,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__46;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:46:7: ( 'only' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:46:9: 'only'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:46:7: ( ')' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:46:9: ')'
             {
-            match("only"); 
-
+            match(')'); 
 
             }
 
@@ -863,10 +849,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__47;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:47:7: ( 'OnTags' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:47:9: 'OnTags'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:47:7: ( 'empty' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:47:9: 'empty'
             {
-            match("OnTags"); 
+            match("empty"); 
 
 
             }
@@ -884,10 +870,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__48;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:48:7: ( 'tags' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:48:9: 'tags'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:48:7: ( 'file' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:48:9: 'file'
             {
-            match("tags"); 
+            match("file"); 
 
 
             }
@@ -905,11 +891,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__49;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:49:7: ( 'OnSize' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:49:9: 'OnSize'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:49:7: ( '-' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:49:9: '-'
             {
-            match("OnSize"); 
-
+            match('-'); 
 
             }
 
@@ -926,10 +911,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__50;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:50:7: ( 'FilterContainer' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:50:9: 'FilterContainer'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:50:7: ( 'forced' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:50:9: 'forced'
             {
-            match("FilterContainer"); 
+            match("forced"); 
 
 
             }
@@ -947,10 +932,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__51;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:51:7: ( 'compositionType' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:51:9: 'compositionType'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:51:7: ( 'append' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:51:9: 'append'
             {
-            match("compositionType"); 
+            match("append"); 
 
 
             }
@@ -968,10 +953,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__52;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:52:7: ( 'segments' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:52:9: 'segments'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:52:7: ( 'carefully' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:52:9: 'carefully'
             {
-            match("segments"); 
+            match("carefully"); 
 
 
             }
@@ -989,10 +974,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__53;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:53:7: ( 'IsEmpty' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:53:9: 'IsEmpty'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:53:7: ( '==' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:53:9: '=='
             {
-            match("IsEmpty"); 
+            match("=="); 
 
 
             }
@@ -1010,11 +995,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__54;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:54:7: ( 'OnType' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:54:9: 'OnType'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:54:7: ( '<' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:54:9: '<'
             {
-            match("OnType"); 
-
+            match('<'); 
 
             }
 
@@ -1031,11 +1015,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__55;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:55:7: ( 'type' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:55:9: 'type'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:55:7: ( '>' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:55:9: '>'
             {
-            match("type"); 
-
+            match('>'); 
 
             }
 
@@ -1052,10 +1035,11 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__56;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:56:7: ( '-' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:56:9: '-'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:56:7: ( '<=' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:56:9: '<='
             {
-            match('-'); 
+            match("<="); 
+
 
             }
 
@@ -1072,10 +1056,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__57;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:57:7: ( 'forced' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:57:9: 'forced'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:57:7: ( '>=' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:57:9: '>='
             {
-            match("forced"); 
+            match(">="); 
 
 
             }
@@ -1093,10 +1077,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__58;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:58:7: ( 'append' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:58:9: 'append'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:58:7: ( 'min' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:58:9: 'min'
             {
-            match("append"); 
+            match("min"); 
 
 
             }
@@ -1114,10 +1098,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__59;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:59:7: ( 'carefully' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:59:9: 'carefully'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:59:7: ( 'hour' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:59:9: 'hour'
             {
-            match("carefully"); 
+            match("hour"); 
 
 
             }
@@ -1135,10 +1119,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__60;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:60:7: ( 'equal' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:60:9: 'equal'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:60:7: ( 'day' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:60:9: 'day'
             {
-            match("equal"); 
+            match("day"); 
 
 
             }
@@ -1156,10 +1140,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__61;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:61:7: ( 'less' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:61:9: 'less'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:61:7: ( 'week' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:61:9: 'week'
             {
-            match("less"); 
+            match("week"); 
 
 
             }
@@ -1177,10 +1161,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__62;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:62:7: ( 'more' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:62:9: 'more'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:62:7: ( 'month' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:62:9: 'month'
             {
-            match("more"); 
+            match("month"); 
 
 
             }
@@ -1198,10 +1182,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__63;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:63:7: ( 'less_equal' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:63:9: 'less_equal'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:63:7: ( 'year' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:63:9: 'year'
             {
-            match("less_equal"); 
+            match("year"); 
 
 
             }
@@ -1219,10 +1203,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__64;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:64:7: ( 'more_equal' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:64:9: 'more_equal'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:64:7: ( 'modification' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:64:9: 'modification'
             {
-            match("more_equal"); 
+            match("modification"); 
 
 
             }
@@ -1240,10 +1224,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__65;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:65:7: ( 'min' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:65:9: 'min'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:65:7: ( 'cretion' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:65:9: 'cretion'
             {
-            match("min"); 
+            match("cretion"); 
 
 
             }
@@ -1261,10 +1245,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__66;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:66:7: ( 'hour' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:66:9: 'hour'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:66:7: ( 'KB' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:66:9: 'KB'
             {
-            match("hour"); 
+            match("KB"); 
 
 
             }
@@ -1282,10 +1266,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__67;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:67:7: ( 'day' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:67:9: 'day'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:67:7: ( 'MB' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:67:9: 'MB'
             {
-            match("day"); 
+            match("MB"); 
 
 
             }
@@ -1303,10 +1287,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__68;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:68:7: ( 'week' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:68:9: 'week'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:68:7: ( 'GB' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:68:9: 'GB'
             {
-            match("week"); 
+            match("GB"); 
 
 
             }
@@ -1324,10 +1308,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__69;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:69:7: ( 'month' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:69:9: 'month'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:69:7: ( 'TB' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:69:9: 'TB'
             {
-            match("month"); 
+            match("TB"); 
 
 
             }
@@ -1345,10 +1329,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__70;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:70:7: ( 'year' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:70:9: 'year'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:70:7: ( 'all of' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:70:9: 'all of'
             {
-            match("year"); 
+            match("all of"); 
 
 
             }
@@ -1366,10 +1350,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__71;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:71:7: ( 'modification' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:71:9: 'modification'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:71:7: ( 'any of' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:71:9: 'any of'
             {
-            match("modification"); 
+            match("any of"); 
 
 
             }
@@ -1387,10 +1371,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__72;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:72:7: ( 'cretion' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:72:9: 'cretion'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:72:7: ( 'none' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:72:9: 'none'
             {
-            match("cretion"); 
+            match("none"); 
 
 
             }
@@ -1408,10 +1392,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__73;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:73:7: ( 'KB' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:73:9: 'KB'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:73:7: ( 'Document' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:73:9: 'Document'
             {
-            match("KB"); 
+            match("Document"); 
 
 
             }
@@ -1429,155 +1413,8 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = T__74;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:74:7: ( 'MB' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:74:9: 'MB'
-            {
-            match("MB"); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__74"
-
-    // $ANTLR start "T__75"
-    public final void mT__75() throws RecognitionException {
-        try {
-            int _type = T__75;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:75:7: ( 'GB' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:75:9: 'GB'
-            {
-            match("GB"); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__75"
-
-    // $ANTLR start "T__76"
-    public final void mT__76() throws RecognitionException {
-        try {
-            int _type = T__76;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:76:7: ( 'TB' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:76:9: 'TB'
-            {
-            match("TB"); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__76"
-
-    // $ANTLR start "T__77"
-    public final void mT__77() throws RecognitionException {
-        try {
-            int _type = T__77;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:77:7: ( 'and' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:77:9: 'and'
-            {
-            match("and"); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__77"
-
-    // $ANTLR start "T__78"
-    public final void mT__78() throws RecognitionException {
-        try {
-            int _type = T__78;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:78:7: ( 'or' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:78:9: 'or'
-            {
-            match("or"); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__78"
-
-    // $ANTLR start "T__79"
-    public final void mT__79() throws RecognitionException {
-        try {
-            int _type = T__79;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:79:7: ( 'none' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:79:9: 'none'
-            {
-            match("none"); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__79"
-
-    // $ANTLR start "T__80"
-    public final void mT__80() throws RecognitionException {
-        try {
-            int _type = T__80;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:80:7: ( 'Document' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:80:9: 'Document'
-            {
-            match("Document"); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__80"
-
-    // $ANTLR start "T__81"
-    public final void mT__81() throws RecognitionException {
-        try {
-            int _type = T__81;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:81:7: ( 'Folder' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:81:9: 'Folder'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:74:7: ( 'Folder' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:74:9: 'Folder'
             {
             match("Folder"); 
 
@@ -1590,17 +1427,17 @@ public class InternalFetlLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end "T__81"
+    // $ANTLR end "T__74"
 
     // $ANTLR start "RULE_ID"
     public final void mRULE_ID() throws RecognitionException {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2391:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2391:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2155:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2155:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2391:11: ( '^' )?
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2155:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -1609,7 +1446,7 @@ public class InternalFetlLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2391:11: '^'
+                    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2155:11: '^'
                     {
                     match('^'); 
 
@@ -1627,7 +1464,7 @@ public class InternalFetlLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2391:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2155:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -1676,10 +1513,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2393:10: ( ( '0' .. '9' )+ )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2393:12: ( '0' .. '9' )+
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2157:10: ( ( '0' .. '9' )+ )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2157:12: ( '0' .. '9' )+
             {
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2393:12: ( '0' .. '9' )+
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2157:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -1693,7 +1530,7 @@ public class InternalFetlLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2393:13: '0' .. '9'
+            	    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2157:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -1725,10 +1562,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2395:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2395:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2159:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2159:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2395:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2159:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -1746,10 +1583,10 @@ public class InternalFetlLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2395:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2159:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2395:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2159:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -1765,7 +1602,7 @@ public class InternalFetlLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2395:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2159:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1781,7 +1618,7 @@ public class InternalFetlLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2395:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2159:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1806,10 +1643,10 @@ public class InternalFetlLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2395:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2159:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2395:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2159:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -1825,7 +1662,7 @@ public class InternalFetlLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2395:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2159:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1841,7 +1678,7 @@ public class InternalFetlLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2395:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2159:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1884,12 +1721,12 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2397:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2397:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2161:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2161:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2397:24: ( options {greedy=false; } : . )*
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2161:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -1914,7 +1751,7 @@ public class InternalFetlLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2397:52: .
+            	    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2161:52: .
             	    {
             	    matchAny(); 
 
@@ -1944,12 +1781,12 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2399:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2399:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2163:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2163:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2399:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2163:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -1962,7 +1799,7 @@ public class InternalFetlLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2399:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2163:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1982,7 +1819,7 @@ public class InternalFetlLexer extends Lexer {
                 }
             } while (true);
 
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2399:40: ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2163:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1991,9 +1828,9 @@ public class InternalFetlLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2399:41: ( '\\r' )? '\\n'
+                    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2163:41: ( '\\r' )? '\\n'
                     {
-                    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2399:41: ( '\\r' )?
+                    // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2163:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -2002,7 +1839,7 @@ public class InternalFetlLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2399:41: '\\r'
+                            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2163:41: '\\r'
                             {
                             match('\r'); 
 
@@ -2034,10 +1871,10 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2401:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2401:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2165:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2165:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2401:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2165:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -2091,8 +1928,8 @@ public class InternalFetlLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2403:16: ( . )
-            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2403:18: .
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2167:16: ( . )
+            // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:2167:18: .
             {
             matchAny(); 
 
@@ -2107,8 +1944,8 @@ public class InternalFetlLexer extends Lexer {
     // $ANTLR end "RULE_ANY_OTHER"
 
     public void mTokens() throws RecognitionException {
-        // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:8: ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
-        int alt12=78;
+        // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:8: ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
+        int alt12=71;
         alt12 = dfa12.predict(input);
         switch (alt12) {
             case 1 :
@@ -2560,98 +2397,49 @@ public class InternalFetlLexer extends Lexer {
                 }
                 break;
             case 65 :
-                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:394: T__75
-                {
-                mT__75(); 
-
-                }
-                break;
-            case 66 :
-                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:400: T__76
-                {
-                mT__76(); 
-
-                }
-                break;
-            case 67 :
-                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:406: T__77
-                {
-                mT__77(); 
-
-                }
-                break;
-            case 68 :
-                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:412: T__78
-                {
-                mT__78(); 
-
-                }
-                break;
-            case 69 :
-                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:418: T__79
-                {
-                mT__79(); 
-
-                }
-                break;
-            case 70 :
-                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:424: T__80
-                {
-                mT__80(); 
-
-                }
-                break;
-            case 71 :
-                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:430: T__81
-                {
-                mT__81(); 
-
-                }
-                break;
-            case 72 :
-                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:436: RULE_ID
+                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:394: RULE_ID
                 {
                 mRULE_ID(); 
 
                 }
                 break;
-            case 73 :
-                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:444: RULE_INT
+            case 66 :
+                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:402: RULE_INT
                 {
                 mRULE_INT(); 
 
                 }
                 break;
-            case 74 :
-                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:453: RULE_STRING
+            case 67 :
+                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:411: RULE_STRING
                 {
                 mRULE_STRING(); 
 
                 }
                 break;
-            case 75 :
-                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:465: RULE_ML_COMMENT
+            case 68 :
+                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:423: RULE_ML_COMMENT
                 {
                 mRULE_ML_COMMENT(); 
 
                 }
                 break;
-            case 76 :
-                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:481: RULE_SL_COMMENT
+            case 69 :
+                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:439: RULE_SL_COMMENT
                 {
                 mRULE_SL_COMMENT(); 
 
                 }
                 break;
-            case 77 :
-                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:497: RULE_WS
+            case 70 :
+                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:455: RULE_WS
                 {
                 mRULE_WS(); 
 
                 }
                 break;
-            case 78 :
-                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:505: RULE_ANY_OTHER
+            case 71 :
+                // ../org.xtext.example.miniFetl/src-gen/org/xtext/example/miniFetl/parser/antlr/internal/InternalFetl.g:1:463: RULE_ANY_OTHER
                 {
                 mRULE_ANY_OTHER(); 
 
@@ -2665,238 +2453,209 @@ public class InternalFetlLexer extends Lexer {
 
     protected DFA12 dfa12 = new DFA12(this);
     static final String DFA12_eotS =
-        "\1\uffff\1\53\1\uffff\1\53\2\uffff\22\53\1\uffff\10\53\1\50\2\uffff"+
-        "\3\50\2\uffff\1\53\1\145\2\uffff\2\53\2\uffff\33\53\1\u008c\7\53"+
-        "\1\uffff\5\53\1\u009b\1\u009c\1\u009d\1\53\5\uffff\2\53\1\uffff"+
-        "\12\53\1\u00ab\10\53\1\u00b4\22\53\1\uffff\13\53\1\u00d4\2\53\3"+
-        "\uffff\2\53\1\u00d9\3\53\1\u00dd\6\53\1\uffff\2\53\1\u00e7\5\53"+
-        "\1\uffff\1\u00ee\2\53\1\u00f1\1\u00f2\1\53\1\u00f4\3\53\1\u00f8"+
-        "\10\53\1\u0101\1\u0102\6\53\1\u010a\1\u010c\2\53\1\uffff\1\u010f"+
-        "\1\u0110\1\u0111\1\u0112\1\uffff\2\53\1\u0115\1\uffff\2\53\1\u0118"+
-        "\6\53\1\uffff\1\53\1\u0120\4\53\1\uffff\2\53\2\uffff\1\u0127\1\uffff"+
-        "\2\53\1\u012a\1\uffff\10\53\2\uffff\7\53\1\uffff\1\53\1\uffff\1"+
-        "\u013b\1\53\4\uffff\2\53\1\uffff\2\53\1\uffff\1\u0141\2\53\1\u0144"+
-        "\3\53\1\uffff\2\53\1\u014a\2\53\1\u014d\1\uffff\1\u014e\1\53\1\uffff"+
-        "\1\u0150\1\53\1\u0152\1\u0153\1\u0154\1\53\1\u0156\2\53\1\u0159"+
-        "\6\53\1\uffff\5\53\1\uffff\2\53\1\uffff\5\53\1\uffff\2\53\2\uffff"+
-        "\1\53\1\uffff\1\53\3\uffff\1\53\1\uffff\2\53\1\uffff\2\53\1\u0175"+
-        "\1\u0176\6\53\1\u017d\1\u017e\1\53\1\u0180\3\53\1\u0184\1\53\1\u0186"+
-        "\3\53\1\u018a\3\53\2\uffff\6\53\2\uffff\1\53\1\uffff\2\53\1\u0198"+
-        "\1\uffff\1\53\1\uffff\3\53\1\uffff\2\53\1\u019f\3\53\1\u01a3\1\u01a4"+
-        "\5\53\1\uffff\6\53\1\uffff\1\u01b0\1\u01b1\1\53\2\uffff\1\53\1\u01b4"+
-        "\5\53\1\u01ba\3\53\2\uffff\1\53\1\u01bf\1\uffff\1\u01c0\3\53\1\u01c4"+
-        "\1\uffff\1\u01c5\2\53\1\u01c8\2\uffff\3\53\2\uffff\2\53\1\uffff"+
-        "\7\53\1\u01d5\1\u01d6\1\u01d7\1\u01d8\1\53\4\uffff\1\u01da\1\uffff";
+        "\2\uffff\6\61\1\101\2\61\1\111\2\uffff\1\61\1\116\1\uffff\1\61"+
+        "\1\uffff\5\61\3\uffff\1\137\1\141\10\61\1\54\2\uffff\3\54\3\uffff"+
+        "\3\61\1\uffff\4\61\1\166\11\61\2\uffff\1\61\1\u0083\4\61\4\uffff"+
+        "\1\61\3\uffff\2\61\1\uffff\6\61\1\u0092\1\u0093\7\uffff\2\61\1\u0096"+
+        "\1\u0097\1\u0098\1\u0099\2\61\5\uffff\7\61\1\uffff\10\61\1\u00ab"+
+        "\1\61\1\u00ad\1\61\1\uffff\15\61\3\uffff\2\61\4\uffff\2\61\1\u00c2"+
+        "\2\61\1\u00c5\1\61\1\u00c7\1\61\1\u00c9\1\u00ca\2\61\1\u00cd\1\u00ce"+
+        "\2\61\1\uffff\1\61\1\uffff\1\u00d2\2\61\2\uffff\1\u00d5\1\61\1\u00d7"+
+        "\1\u00d8\1\u00d9\1\u00da\3\61\2\uffff\1\u00de\1\u00df\2\61\1\uffff"+
+        "\2\61\1\uffff\1\u00e4\1\uffff\1\61\2\uffff\2\61\2\uffff\1\u00e8"+
+        "\2\61\1\uffff\2\61\1\uffff\1\u00ed\4\uffff\2\61\1\u00f0\2\uffff"+
+        "\4\61\1\uffff\1\u00f5\1\61\1\u00f7\1\uffff\1\61\1\u00f9\1\61\1\u00fb"+
+        "\1\uffff\2\61\1\uffff\1\61\1\u00ff\1\61\1\u0101\1\uffff\1\61\1\uffff"+
+        "\1\61\1\uffff\1\61\1\uffff\3\61\1\uffff\1\61\1\uffff\5\61\1\u010e"+
+        "\1\u010f\1\uffff\1\61\1\u0111\1\u0112\1\61\2\uffff\1\61\2\uffff"+
+        "\2\61\1\u0117\1\u0118\2\uffff";
     static final String DFA12_eofS =
-        "\u01db\uffff";
+        "\u0119\uffff";
     static final String DFA12_minS =
-        "\1\0\1\102\1\uffff\1\161\2\uffff\1\157\1\145\1\141\1\145\2\141"+
-        "\1\145\1\142\3\141\1\145\3\156\1\151\1\141\1\163\1\uffff\1\145\1"+
-        "\151\1\157\1\145\3\102\1\157\1\101\2\uffff\2\0\1\52\2\uffff\1\144"+
-        "\1\60\2\uffff\1\145\1\165\2\uffff\1\156\1\145\1\165\1\147\1\163"+
-        "\1\171\1\154\1\143\1\162\2\154\1\163\1\160\1\144\1\145\1\155\1\147"+
-        "\1\160\1\154\1\157\2\162\2\145\1\101\1\145\1\154\1\60\1\151\2\154"+
-        "\1\155\1\162\1\145\1\105\1\uffff\1\163\1\144\1\156\1\165\1\141\3"+
-        "\60\1\156\5\uffff\2\145\1\uffff\1\143\1\145\1\141\1\171\1\143\1"+
-        "\141\1\160\1\162\1\155\1\164\1\60\1\145\1\165\1\150\1\141\1\165"+
-        "\1\145\1\157\1\145\1\60\1\145\1\163\1\145\1\163\1\145\1\163\1\155"+
-        "\1\143\1\151\1\162\1\153\1\141\1\170\1\141\1\164\1\151\1\162\1\171"+
-        "\1\uffff\2\164\1\144\1\160\1\145\1\164\1\155\1\163\1\145\1\164\1"+
-        "\151\1\60\2\162\3\uffff\1\145\1\154\1\60\1\165\1\156\1\154\1\60"+
-        "\1\162\1\164\1\163\1\143\1\145\1\151\1\uffff\1\164\1\155\1\60\1"+
-        "\155\1\145\1\143\1\154\1\156\1\uffff\1\60\1\150\1\117\2\60\1\145"+
-        "\1\60\1\145\1\141\1\145\1\60\1\155\1\164\1\155\1\147\1\160\1\164"+
-        "\1\172\1\141\2\60\2\145\1\157\1\146\1\151\1\160\2\60\1\150\1\146"+
-        "\1\uffff\4\60\1\uffff\1\164\1\163\1\60\1\uffff\2\145\1\60\1\145"+
-        "\2\156\2\145\1\141\1\uffff\1\145\1\60\1\164\1\165\1\144\1\141\1"+
-        "\uffff\1\157\1\146\2\uffff\1\60\1\uffff\1\144\1\142\1\60\1\uffff"+
-        "\3\145\1\163\1\145\1\162\1\145\1\164\2\uffff\2\162\1\163\1\165\1"+
-        "\157\1\164\1\145\1\uffff\1\145\1\uffff\1\60\1\151\4\uffff\2\151"+
-        "\1\uffff\1\164\1\147\1\uffff\1\60\1\164\1\141\1\60\1\156\1\162\1"+
-        "\164\1\uffff\1\151\1\164\1\60\2\154\1\60\1\uffff\1\60\1\154\1\uffff"+
-        "\1\60\1\156\3\60\1\151\1\60\1\157\1\103\1\60\1\151\1\154\1\156\1"+
-        "\171\2\161\1\uffff\1\143\2\157\1\145\1\171\1\uffff\1\163\1\164\1"+
-        "\uffff\1\164\1\151\1\162\1\157\1\145\1\uffff\1\163\1\144\2\uffff"+
-        "\1\145\1\uffff\1\163\3\uffff\1\142\1\uffff\1\162\1\157\1\uffff\1"+
-        "\164\1\154\2\60\2\165\1\141\2\156\1\123\2\60\1\151\1\60\1\141\1"+
-        "\151\1\156\1\60\1\145\1\60\1\123\1\151\1\165\1\60\1\156\1\151\1"+
-        "\171\2\uffff\2\141\1\164\2\163\1\164\2\uffff\1\157\1\uffff\1\142"+
-        "\1\172\1\60\1\uffff\1\123\1\uffff\1\164\1\157\1\164\1\uffff\1\164"+
-        "\1\157\1\60\2\154\1\151\2\60\1\145\1\156\1\154\1\145\1\141\1\uffff"+
-        "\2\145\1\156\1\145\1\141\1\156\1\uffff\2\60\1\157\2\uffff\1\160"+
-        "\1\60\1\145\1\144\1\162\1\141\1\160\1\60\1\163\1\151\1\124\2\uffff"+
-        "\1\156\1\60\1\uffff\1\60\1\123\1\151\1\162\1\60\1\uffff\1\60\1\156"+
-        "\1\171\1\60\2\uffff\1\164\1\141\1\143\2\uffff\1\145\1\160\1\uffff"+
-        "\1\145\1\142\1\150\1\162\1\145\1\160\1\154\4\60\1\145\4\uffff\1"+
-        "\60\1\uffff";
+        "\1\0\1\uffff\2\141\1\151\1\145\1\151\1\141\1\75\1\151\1\154\1\141"+
+        "\2\uffff\1\141\1\44\1\uffff\1\145\1\uffff\1\141\1\145\1\155\1\156"+
+        "\1\146\3\uffff\2\75\1\157\1\145\4\102\2\157\1\101\2\uffff\2\0\1"+
+        "\52\3\uffff\1\160\1\162\1\145\1\uffff\1\157\2\154\1\162\1\60\1\165"+
+        "\1\155\1\162\1\154\1\172\1\144\1\156\1\154\1\171\2\uffff\1\145\1"+
+        "\60\1\164\1\160\1\154\1\171\4\uffff\1\164\3\uffff\2\145\1\uffff"+
+        "\1\155\1\156\1\145\1\143\1\160\1\40\2\60\7\uffff\1\165\1\141\4\60"+
+        "\1\143\1\154\5\uffff\1\171\1\145\1\164\1\155\1\163\1\145\1\143\1"+
+        "\uffff\2\145\1\141\3\145\1\164\1\151\1\60\1\145\1\60\1\167\1\uffff"+
+        "\1\162\1\145\2\40\1\150\1\162\1\153\2\145\1\160\1\145\1\154\1\164"+
+        "\1\133\2\uffff\2\162\4\uffff\1\165\1\144\1\60\1\146\1\151\1\60\1"+
+        "\145\1\60\1\145\2\60\1\164\1\143\2\60\1\150\1\146\1\uffff\1\164"+
+        "\1\uffff\1\60\1\151\1\156\2\uffff\1\60\1\145\4\60\1\156\1\165\1"+
+        "\171\2\uffff\2\60\1\155\1\145\1\uffff\1\165\1\157\1\uffff\1\60\1"+
+        "\uffff\1\144\2\uffff\1\145\1\164\2\uffff\1\60\1\151\1\145\1\uffff"+
+        "\1\142\1\144\1\uffff\1\60\4\uffff\2\163\1\60\2\uffff\1\145\1\162"+
+        "\1\154\1\156\1\uffff\1\60\1\147\1\60\1\uffff\1\143\1\60\1\165\1"+
+        "\60\1\uffff\2\151\1\uffff\1\156\1\60\1\154\1\60\1\uffff\1\171\1"+
+        "\uffff\1\141\1\uffff\1\164\1\uffff\1\157\1\166\1\164\1\uffff\1\171"+
+        "\1\uffff\1\72\1\164\1\145\1\156\1\145\2\60\1\uffff\1\151\2\60\1"+
+        "\154\2\uffff\1\157\2\uffff\1\171\1\156\2\60\2\uffff";
     static final String DFA12_maxS =
-        "\1\uffff\1\157\1\uffff\1\170\2\uffff\1\157\1\164\1\145\1\157\2"+
-        "\141\1\145\1\160\1\171\1\162\1\141\1\150\1\156\1\162\1\156\1\157"+
-        "\1\162\1\163\1\uffff\1\145\2\157\1\145\3\102\1\157\1\172\2\uffff"+
-        "\2\uffff\1\57\2\uffff\1\166\1\172\2\uffff\1\164\1\165\2\uffff\1"+
-        "\160\1\162\1\165\1\147\1\163\1\171\1\154\1\143\1\164\2\154\1\163"+
-        "\1\160\1\144\1\165\1\155\1\147\1\160\1\154\1\157\2\162\2\145\1\124"+
-        "\1\145\1\154\1\172\1\151\2\154\1\155\1\162\1\145\1\105\1\uffff\1"+
-        "\163\1\162\1\156\1\165\1\141\3\172\1\156\5\uffff\2\145\1\uffff\1"+
-        "\143\1\145\1\141\1\171\1\143\1\141\1\160\1\162\1\155\1\164\1\172"+
-        "\1\145\1\165\1\150\1\141\1\165\1\145\1\157\1\145\1\172\1\145\1\163"+
-        "\1\145\1\163\1\145\1\163\1\155\1\143\1\151\1\162\1\153\1\141\1\170"+
-        "\1\171\1\164\1\151\1\162\1\171\1\uffff\2\164\1\144\1\160\1\145\1"+
-        "\164\1\155\1\163\1\145\1\164\1\151\1\172\2\162\3\uffff\1\145\1\154"+
-        "\1\172\1\165\1\156\1\154\1\172\1\162\1\164\1\163\1\143\1\145\1\151"+
-        "\1\uffff\1\164\1\155\1\172\1\155\1\145\1\143\1\154\1\156\1\uffff"+
-        "\1\172\1\150\1\117\2\172\1\145\1\172\1\145\1\141\1\145\1\172\1\155"+
-        "\1\164\1\155\1\147\1\160\1\164\1\172\1\141\2\172\2\145\1\157\1\146"+
-        "\1\151\1\160\2\172\1\150\1\146\1\uffff\4\172\1\uffff\1\164\1\163"+
-        "\1\172\1\uffff\2\145\1\172\1\145\2\156\2\145\1\141\1\uffff\1\145"+
-        "\1\172\1\164\1\165\1\144\1\141\1\uffff\1\157\1\146\2\uffff\1\172"+
-        "\1\uffff\1\144\1\142\1\172\1\uffff\3\145\1\163\1\145\1\162\1\145"+
-        "\1\164\2\uffff\2\162\1\163\1\165\1\157\1\164\1\145\1\uffff\1\145"+
-        "\1\uffff\1\172\1\151\4\uffff\2\151\1\uffff\1\164\1\147\1\uffff\1"+
-        "\172\1\164\1\141\1\172\1\156\1\162\1\164\1\uffff\1\151\1\164\1\172"+
-        "\2\154\1\172\1\uffff\1\172\1\154\1\uffff\1\172\1\156\3\172\1\151"+
-        "\1\172\1\157\1\103\1\172\1\151\1\154\1\156\1\171\2\161\1\uffff\1"+
-        "\143\2\157\1\145\1\171\1\uffff\1\163\1\164\1\uffff\1\164\1\151\1"+
-        "\162\1\157\1\145\1\uffff\1\163\1\144\2\uffff\1\145\1\uffff\1\163"+
-        "\3\uffff\1\142\1\uffff\1\162\1\157\1\uffff\1\164\1\154\2\172\2\165"+
-        "\1\141\2\156\1\123\2\172\1\151\1\172\1\141\1\151\1\156\1\172\1\145"+
-        "\1\172\1\123\1\151\1\165\1\172\1\156\1\151\1\171\2\uffff\2\141\1"+
-        "\164\2\163\1\164\2\uffff\1\157\1\uffff\1\142\2\172\1\uffff\1\123"+
-        "\1\uffff\1\164\1\157\1\164\1\uffff\1\164\1\157\1\172\2\154\1\151"+
-        "\2\172\1\145\1\156\1\154\1\145\1\141\1\uffff\2\145\1\156\1\145\1"+
-        "\141\1\156\1\uffff\2\172\1\157\2\uffff\1\160\1\172\1\145\1\144\1"+
-        "\162\1\141\1\160\1\172\1\163\1\151\1\124\2\uffff\1\156\1\172\1\uffff"+
-        "\1\172\1\123\1\151\1\162\1\172\1\uffff\1\172\1\156\1\171\1\172\2"+
-        "\uffff\1\164\1\141\1\143\2\uffff\1\145\1\160\1\uffff\1\145\1\142"+
-        "\1\150\1\162\1\145\1\160\1\154\4\172\1\145\4\uffff\1\172\1\uffff";
+        "\1\uffff\1\uffff\3\162\1\164\1\157\1\145\1\75\1\151\1\164\1\141"+
+        "\2\uffff\1\141\1\44\1\uffff\1\150\1\uffff\1\157\1\145\1\170\1\163"+
+        "\1\146\3\uffff\2\75\1\157\1\145\4\102\2\157\1\172\2\uffff\2\uffff"+
+        "\1\57\3\uffff\1\160\1\162\1\145\1\uffff\1\157\2\154\1\162\1\172"+
+        "\1\165\1\155\1\162\1\154\1\172\1\166\1\156\1\154\1\171\2\uffff\1"+
+        "\145\1\172\1\164\1\160\1\154\1\171\4\uffff\1\164\3\uffff\2\145\1"+
+        "\uffff\1\155\1\156\1\145\1\164\1\160\1\40\2\172\7\uffff\1\165\1"+
+        "\141\4\172\1\143\1\154\5\uffff\1\171\1\145\1\164\1\155\1\163\1\145"+
+        "\1\143\1\uffff\2\145\1\141\3\145\1\164\1\151\1\172\1\145\1\172\1"+
+        "\167\1\uffff\1\162\1\145\2\40\1\150\1\162\1\153\2\145\1\160\1\145"+
+        "\1\154\2\164\2\uffff\2\162\4\uffff\1\165\1\144\1\172\1\146\1\151"+
+        "\1\172\1\145\1\172\1\145\2\172\1\164\1\143\2\172\1\150\1\146\1\uffff"+
+        "\1\164\1\uffff\1\172\1\151\1\156\2\uffff\1\172\1\145\4\172\1\156"+
+        "\1\165\1\171\2\uffff\2\172\1\155\1\145\1\uffff\1\165\1\157\1\uffff"+
+        "\1\172\1\uffff\1\144\2\uffff\1\145\1\164\2\uffff\1\172\1\151\1\145"+
+        "\1\uffff\1\142\1\144\1\uffff\1\172\4\uffff\2\163\1\172\2\uffff\1"+
+        "\145\1\162\1\154\1\156\1\uffff\1\172\1\147\1\172\1\uffff\1\143\1"+
+        "\172\1\165\1\172\1\uffff\2\151\1\uffff\1\156\1\172\1\154\1\172\1"+
+        "\uffff\1\171\1\uffff\1\141\1\uffff\1\164\1\uffff\1\157\1\166\1\164"+
+        "\1\uffff\1\171\1\uffff\1\72\1\164\1\145\1\156\1\145\2\172\1\uffff"+
+        "\1\151\2\172\1\154\2\uffff\1\157\2\uffff\1\171\1\156\2\172\2\uffff";
     static final String DFA12_acceptS =
-        "\2\uffff\1\2\1\uffff\1\4\1\5\22\uffff\1\56\11\uffff\1\110\1\111"+
-        "\3\uffff\1\115\1\116\2\uffff\1\110\1\2\2\uffff\1\4\1\5\43\uffff"+
-        "\1\56\11\uffff\1\111\1\112\1\113\1\114\1\115\2\uffff\1\100\46\uffff"+
-        "\1\104\16\uffff\1\77\1\101\1\102\15\uffff\1\71\10\uffff\1\103\37"+
-        "\uffff\1\67\4\uffff\1\12\3\uffff\1\6\11\uffff\1\17\6\uffff\1\22"+
-        "\2\uffff\1\46\1\55\1\uffff\1\31\3\uffff\1\72\10\uffff\1\44\1\41"+
-        "\7\uffff\1\63\1\uffff\1\64\2\uffff\1\70\1\74\1\105\1\1\2\uffff\1"+
-        "\62\2\uffff\1\21\7\uffff\1\15\6\uffff\1\23\2\uffff\1\30\20\uffff"+
-        "\1\73\5\uffff\1\10\2\uffff\1\13\5\uffff\1\60\2\uffff\1\42\1\57\1"+
-        "\uffff\1\32\1\uffff\1\36\1\45\1\54\1\uffff\1\47\2\uffff\1\107\33"+
-        "\uffff\1\76\1\53\6\uffff\1\7\1\52\1\uffff\1\106\3\uffff\1\20\1\uffff"+
-        "\1\40\3\uffff\1\37\15\uffff\1\27\6\uffff\1\61\3\uffff\1\3\1\35\13"+
-        "\uffff\1\65\1\66\2\uffff\1\11\5\uffff\1\34\4\uffff\1\24\1\14\3\uffff"+
-        "\1\25\1\43\2\uffff\1\75\14\uffff\1\33\1\50\1\51\1\26\1\uffff\1\16";
+        "\1\uffff\1\1\12\uffff\1\14\1\15\2\uffff\1\22\1\uffff\1\25\5\uffff"+
+        "\1\43\1\44\1\47\13\uffff\1\101\1\102\3\uffff\1\106\1\107\1\1\3\uffff"+
+        "\1\101\16\uffff\1\53\1\10\6\uffff\1\13\1\36\1\14\1\15\1\uffff\1"+
+        "\21\1\42\1\22\2\uffff\1\25\10\uffff\1\43\1\44\1\47\1\56\1\54\1\57"+
+        "\1\55\10\uffff\1\102\1\103\1\104\1\105\1\106\7\uffff\1\4\14\uffff"+
+        "\1\12\16\uffff\1\35\1\33\2\uffff\1\70\1\71\1\72\1\73\21\uffff\1"+
+        "\60\1\uffff\1\62\3\uffff\1\74\1\75\11\uffff\1\31\1\37\4\uffff\1"+
+        "\2\2\uffff\1\3\1\uffff\1\46\1\uffff\1\16\1\32\2\uffff\1\41\1\6\3"+
+        "\uffff\1\11\2\uffff\1\20\1\uffff\1\63\1\26\1\76\1\27\3\uffff\1\61"+
+        "\1\65\4\uffff\1\17\3\uffff\1\64\4\uffff\1\24\2\uffff\1\45\4\uffff"+
+        "\1\50\1\uffff\1\23\1\uffff\1\7\1\uffff\1\51\3\uffff\1\100\1\uffff"+
+        "\1\67\7\uffff\1\5\4\uffff\1\77\1\52\1\uffff\1\34\1\30\4\uffff\1"+
+        "\40\1\66";
     static final String DFA12_specialS =
-        "\1\0\43\uffff\1\1\1\2\u01b5\uffff}>";
+        "\1\0\47\uffff\1\1\1\2\u00ef\uffff}>";
     static final String[] DFA12_transitionS = {
-            "\11\50\2\47\2\50\1\47\22\50\1\47\1\50\1\44\4\50\1\45\4\50\1"+
-            "\4\1\30\1\50\1\46\12\43\7\50\2\42\1\6\1\11\1\42\1\25\1\36\1"+
-            "\42\1\27\1\42\1\35\1\42\1\1\1\42\1\22\1\12\2\42\1\14\1\37\1"+
-            "\42\1\20\4\42\3\50\1\41\1\42\1\50\1\15\1\42\1\26\1\10\1\3\1"+
-            "\17\1\42\1\33\3\42\1\31\1\32\1\40\1\23\3\42\1\7\1\16\1\24\1"+
-            "\13\1\21\1\42\1\34\1\42\1\2\1\50\1\5\uff82\50",
-            "\1\52\54\uffff\1\51",
+            "\11\54\2\53\2\54\1\53\22\54\1\53\1\54\1\50\4\54\1\51\1\30\1"+
+            "\31\1\54\1\15\1\22\1\32\1\54\1\52\12\47\1\54\1\1\1\33\1\10\1"+
+            "\34\2\54\3\46\1\43\1\46\1\44\1\41\3\46\1\37\1\46\1\40\6\46\1"+
+            "\42\6\46\1\13\1\54\1\14\1\45\1\46\1\54\1\12\1\46\1\2\1\7\1\25"+
+            "\1\3\1\46\1\35\1\26\1\46\1\24\1\46\1\6\1\23\1\27\1\16\2\46\1"+
+            "\5\1\4\1\46\1\11\1\21\1\46\1\36\1\46\1\17\1\54\1\20\uff82\54",
             "",
-            "\1\56\6\uffff\1\55",
+            "\1\57\15\uffff\1\56\2\uffff\1\60",
+            "\1\63\7\uffff\1\64\5\uffff\1\65\2\uffff\1\62",
+            "\1\70\5\uffff\1\66\2\uffff\1\67",
+            "\1\72\3\uffff\1\73\12\uffff\1\71",
+            "\1\75\5\uffff\1\74",
+            "\1\77\3\uffff\1\76",
+            "\1\100",
+            "\1\102",
+            "\1\106\1\uffff\1\107\1\uffff\1\105\2\uffff\1\103\1\104",
+            "\1\110",
             "",
             "",
-            "\1\61",
-            "\1\64\11\uffff\1\63\4\uffff\1\62",
-            "\1\66\3\uffff\1\65",
-            "\1\67\11\uffff\1\70",
-            "\1\71",
-            "\1\72",
-            "\1\73",
-            "\1\74\13\uffff\1\76\1\uffff\1\75",
-            "\1\101\7\uffff\1\100\10\uffff\1\77\6\uffff\1\102",
-            "\1\103\15\uffff\1\105\2\uffff\1\104",
-            "\1\106",
-            "\1\110\2\uffff\1\107",
-            "\1\111",
-            "\1\113\1\uffff\1\112\1\uffff\1\114",
+            "\1\114",
             "\1\115",
-            "\1\116\5\uffff\1\117",
-            "\1\121\15\uffff\1\120\2\uffff\1\122",
-            "\1\123",
             "",
+            "\1\121\2\uffff\1\120",
+            "",
+            "\1\123\15\uffff\1\124",
             "\1\125",
-            "\1\127\5\uffff\1\126",
-            "\1\130",
-            "\1\131",
+            "\1\127\12\uffff\1\126",
+            "\1\130\4\uffff\1\131",
             "\1\132",
-            "\1\133",
-            "\1\134",
-            "\1\135",
-            "\32\53\4\uffff\1\53\1\uffff\32\53",
             "",
             "",
-            "\0\137",
-            "\0\137",
-            "\1\140\4\uffff\1\141",
             "",
-            "",
-            "\1\143\21\uffff\1\144",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "",
-            "",
-            "\1\146\16\uffff\1\147",
+            "\1\136",
+            "\1\140",
+            "\1\142",
+            "\1\143",
+            "\1\144",
+            "\1\145",
+            "\1\146",
+            "\1\147",
             "\1\150",
+            "\1\151",
+            "\32\61\4\uffff\1\61\1\uffff\32\61",
             "",
             "",
-            "\1\152\1\uffff\1\151",
-            "\1\154\14\uffff\1\153",
-            "\1\155",
-            "\1\156",
+            "\0\153",
+            "\0\153",
+            "\1\154\4\uffff\1\155",
+            "",
+            "",
+            "",
             "\1\157",
             "\1\160",
             "\1\161",
+            "",
             "\1\162",
-            "\1\164\1\uffff\1\163",
+            "\1\163",
+            "\1\164",
             "\1\165",
-            "\1\166",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\167",
             "\1\170",
             "\1\171",
-            "\1\173\17\uffff\1\172",
-            "\1\174",
-            "\1\175",
-            "\1\176",
+            "\1\172",
+            "\1\173",
+            "\1\176\11\uffff\1\175\7\uffff\1\174",
             "\1\177",
             "\1\u0080",
             "\1\u0081",
+            "",
+            "",
             "\1\u0082",
-            "\1\u0083",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u0084",
-            "\1\u0088\3\uffff\1\u0086\10\uffff\1\u0085\4\uffff\1\u0089"+
+            "\1\u0085",
+            "\1\u0086",
             "\1\u0087",
+            "",
+            "",
+            "",
+            "",
+            "\1\u0088",
+            "",
+            "",
+            "",
+            "\1\u0089",
             "\1\u008a",
+            "",
             "\1\u008b",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
+            "\1\u008c",
             "\1\u008d",
-            "\1\u008e",
-            "\1\u008f",
+            "\1\u008f\20\uffff\1\u008e",
             "\1\u0090",
             "\1\u0091",
-            "\1\u0092",
-            "\1\u0093",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "\1\u0094",
-            "\1\u0097\11\uffff\1\u0096\3\uffff\1\u0095",
-            "\1\u0098",
-            "\1\u0099",
+            "\1\u0095",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u009a",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
+            "\1\u009b",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "\1\u009c",
+            "\1\u009d",
             "\1\u009e",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\1\u009f",
             "\1\u00a0",
-            "",
             "\1\u00a1",
             "\1\u00a2",
+            "",
             "\1\u00a3",
             "\1\u00a4",
             "\1\u00a5",
@@ -2905,16 +2664,17 @@ public class InternalFetlLexer extends Lexer {
             "\1\u00a8",
             "\1\u00a9",
             "\1\u00aa",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u00ac",
-            "\1\u00ad",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u00ae",
+            "",
             "\1\u00af",
             "\1\u00b0",
             "\1\u00b1",
             "\1\u00b2",
             "\1\u00b3",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
+            "\1\u00b4",
             "\1\u00b5",
             "\1\u00b6",
             "\1\u00b7",
@@ -2922,354 +2682,141 @@ public class InternalFetlLexer extends Lexer {
             "\1\u00b9",
             "\1\u00ba",
             "\1\u00bb",
-            "\1\u00bc",
-            "\1\u00bd",
+            "\1\u00bc\30\uffff\1\u00bd",
+            "",
+            "",
             "\1\u00be",
             "\1\u00bf",
+            "",
+            "",
+            "",
+            "",
             "\1\u00c0",
             "\1\u00c1",
-            "\1\u00c3\7\uffff\1\u00c2\17\uffff\1\u00c4",
-            "\1\u00c5",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\1\u00c3",
+            "\1\u00c4",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u00c6",
-            "\1\u00c7",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u00c8",
-            "",
-            "\1\u00c9",
-            "\1\u00ca",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u00cb",
             "\1\u00cc",
-            "\1\u00cd",
-            "\1\u00ce",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u00cf",
             "\1\u00d0",
+            "",
             "\1\u00d1",
-            "\1\u00d2",
+            "",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u00d3",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u00d5",
+            "\1\u00d4",
+            "",
+            "",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u00d6",
-            "",
-            "",
-            "",
-            "\1\u00d7",
-            "\1\u00d8",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u00da",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u00db",
             "\1\u00dc",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u00de",
-            "\1\u00df",
+            "\1\u00dd",
+            "",
+            "",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u00e0",
             "\1\u00e1",
+            "",
             "\1\u00e2",
             "\1\u00e3",
             "",
-            "\1\u00e4",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "",
             "\1\u00e5",
-            "\12\53\7\uffff\25\53\1\u00e6\4\53\4\uffff\1\53\1\uffff\32"+
-            "\53",
-            "\1\u00e8",
+            "",
+            "",
+            "\1\u00e6",
+            "\1\u00e7",
+            "",
+            "",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u00e9",
             "\1\u00ea",
+            "",
             "\1\u00eb",
             "\1\u00ec",
             "",
-            "\12\53\7\uffff\5\53\1\u00ed\24\53\4\uffff\1\53\1\uffff\32"+
-            "\53",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "",
+            "",
+            "",
+            "",
+            "\1\u00ee",
             "\1\u00ef",
-            "\1\u00f0",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "",
+            "",
+            "\1\u00f1",
+            "\1\u00f2",
             "\1\u00f3",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u00f5",
+            "\1\u00f4",
+            "",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u00f6",
-            "\1\u00f7",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u00f9",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "",
+            "\1\u00f8",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u00fa",
-            "\1\u00fb",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "",
             "\1\u00fc",
             "\1\u00fd",
+            "",
             "\1\u00fe",
-            "\1\u00ff",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u0100",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "",
+            "\1\u0102",
+            "",
             "\1\u0103",
+            "",
             "\1\u0104",
+            "",
             "\1\u0105",
             "\1\u0106",
             "\1\u0107",
+            "",
             "\1\u0108",
-            "\12\53\7\uffff\32\53\4\uffff\1\u0109\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\u010b\1\uffff\32\53",
+            "",
+            "\1\u0109",
+            "\1\u010a",
+            "\1\u010b",
+            "\1\u010c",
             "\1\u010d",
-            "\1\u010e",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "",
+            "\1\u0110",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "\1\u0113",
+            "",
+            "",
             "\1\u0114",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
             "",
+            "",
+            "\1\u0115",
             "\1\u0116",
-            "\1\u0117",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u0119",
-            "\1\u011a",
-            "\1\u011b",
-            "\1\u011c",
-            "\1\u011d",
-            "\1\u011e",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
+            "\12\61\7\uffff\32\61\4\uffff\1\61\1\uffff\32\61",
             "",
-            "\1\u011f",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u0121",
-            "\1\u0122",
-            "\1\u0123",
-            "\1\u0124",
-            "",
-            "\1\u0125",
-            "\1\u0126",
-            "",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "",
-            "\1\u0128",
-            "\1\u0129",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "",
-            "\1\u012b",
-            "\1\u012c",
-            "\1\u012d",
-            "\1\u012e",
-            "\1\u012f",
-            "\1\u0130",
-            "\1\u0131",
-            "\1\u0132",
-            "",
-            "",
-            "\1\u0133",
-            "\1\u0134",
-            "\1\u0135",
-            "\1\u0136",
-            "\1\u0137",
-            "\1\u0138",
-            "\1\u0139",
-            "",
-            "\1\u013a",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u013c",
-            "",
-            "",
-            "",
-            "",
-            "\1\u013d",
-            "\1\u013e",
-            "",
-            "\1\u013f",
-            "\1\u0140",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u0142",
-            "\1\u0143",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u0145",
-            "\1\u0146",
-            "\1\u0147",
-            "",
-            "\1\u0148",
-            "\1\u0149",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u014b",
-            "\1\u014c",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u014f",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u0151",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u0155",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u0157",
-            "\1\u0158",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u015a",
-            "\1\u015b",
-            "\1\u015c",
-            "\1\u015d",
-            "\1\u015e",
-            "\1\u015f",
-            "",
-            "\1\u0160",
-            "\1\u0161",
-            "\1\u0162",
-            "\1\u0163",
-            "\1\u0164",
-            "",
-            "\1\u0165",
-            "\1\u0166",
-            "",
-            "\1\u0167",
-            "\1\u0168",
-            "\1\u0169",
-            "\1\u016a",
-            "\1\u016b",
-            "",
-            "\1\u016c",
-            "\1\u016d",
-            "",
-            "",
-            "\1\u016e",
-            "",
-            "\1\u016f",
-            "",
-            "",
-            "",
-            "\1\u0170",
-            "",
-            "\1\u0171",
-            "\1\u0172",
-            "",
-            "\1\u0173",
-            "\1\u0174",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u0177",
-            "\1\u0178",
-            "\1\u0179",
-            "\1\u017a",
-            "\1\u017b",
-            "\1\u017c",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u017f",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u0181",
-            "\1\u0182",
-            "\1\u0183",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u0185",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u0187",
-            "\1\u0188",
-            "\1\u0189",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u018b",
-            "\1\u018c",
-            "\1\u018d",
-            "",
-            "",
-            "\1\u018e",
-            "\1\u018f",
-            "\1\u0190",
-            "\1\u0191",
-            "\1\u0192",
-            "\1\u0193",
-            "",
-            "",
-            "\1\u0194",
-            "",
-            "\1\u0195",
-            "\1\u0196",
-            "\12\53\7\uffff\25\53\1\u0197\4\53\4\uffff\1\53\1\uffff\32"+
-            "\53",
-            "",
-            "\1\u0199",
-            "",
-            "\1\u019a",
-            "\1\u019b",
-            "\1\u019c",
-            "",
-            "\1\u019d",
-            "\1\u019e",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u01a0",
-            "\1\u01a1",
-            "\1\u01a2",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u01a5",
-            "\1\u01a6",
-            "\1\u01a7",
-            "\1\u01a8",
-            "\1\u01a9",
-            "",
-            "\1\u01aa",
-            "\1\u01ab",
-            "\1\u01ac",
-            "\1\u01ad",
-            "\1\u01ae",
-            "\1\u01af",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u01b2",
-            "",
-            "",
-            "\1\u01b3",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u01b5",
-            "\1\u01b6",
-            "\1\u01b7",
-            "\1\u01b8",
-            "\1\u01b9",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u01bb",
-            "\1\u01bc",
-            "\1\u01bd",
-            "",
-            "",
-            "\1\u01be",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u01c1",
-            "\1\u01c2",
-            "\1\u01c3",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u01c6",
-            "\1\u01c7",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "",
-            "",
-            "\1\u01c9",
-            "\1\u01ca",
-            "\1\u01cb",
-            "",
-            "",
-            "\1\u01cc",
-            "\1\u01cd",
-            "",
-            "\1\u01ce",
-            "\1\u01cf",
-            "\1\u01d0",
-            "\1\u01d1",
-            "\1\u01d2",
-            "\1\u01d3",
-            "\1\u01d4",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
-            "\1\u01d9",
-            "",
-            "",
-            "",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
             ""
     };
 
@@ -3303,7 +2850,7 @@ public class InternalFetlLexer extends Lexer {
             this.transition = DFA12_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
+            return "1:1: Tokens : ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
@@ -3313,105 +2860,113 @@ public class InternalFetlLexer extends Lexer {
                         int LA12_0 = input.LA(1);
 
                         s = -1;
-                        if ( (LA12_0=='M') ) {s = 1;}
+                        if ( (LA12_0==';') ) {s = 1;}
 
-                        else if ( (LA12_0=='{') ) {s = 2;}
+                        else if ( (LA12_0=='c') ) {s = 2;}
 
-                        else if ( (LA12_0=='e') ) {s = 3;}
+                        else if ( (LA12_0=='f') ) {s = 3;}
 
-                        else if ( (LA12_0==',') ) {s = 4;}
+                        else if ( (LA12_0=='t') ) {s = 4;}
 
-                        else if ( (LA12_0=='}') ) {s = 5;}
+                        else if ( (LA12_0=='s') ) {s = 5;}
 
-                        else if ( (LA12_0=='C') ) {s = 6;}
+                        else if ( (LA12_0=='m') ) {s = 6;}
 
-                        else if ( (LA12_0=='s') ) {s = 7;}
+                        else if ( (LA12_0=='d') ) {s = 7;}
 
-                        else if ( (LA12_0=='d') ) {s = 8;}
+                        else if ( (LA12_0=='=') ) {s = 8;}
 
-                        else if ( (LA12_0=='D') ) {s = 9;}
+                        else if ( (LA12_0=='v') ) {s = 9;}
 
-                        else if ( (LA12_0=='P') ) {s = 10;}
+                        else if ( (LA12_0=='a') ) {s = 10;}
 
-                        else if ( (LA12_0=='v') ) {s = 11;}
+                        else if ( (LA12_0=='[') ) {s = 11;}
 
-                        else if ( (LA12_0=='S') ) {s = 12;}
+                        else if ( (LA12_0==']') ) {s = 12;}
 
-                        else if ( (LA12_0=='a') ) {s = 13;}
+                        else if ( (LA12_0=='+') ) {s = 13;}
 
-                        else if ( (LA12_0=='t') ) {s = 14;}
+                        else if ( (LA12_0=='p') ) {s = 14;}
 
-                        else if ( (LA12_0=='f') ) {s = 15;}
+                        else if ( (LA12_0=='{') ) {s = 15;}
 
-                        else if ( (LA12_0=='V') ) {s = 16;}
+                        else if ( (LA12_0=='}') ) {s = 16;}
 
                         else if ( (LA12_0=='w') ) {s = 17;}
 
-                        else if ( (LA12_0=='O') ) {s = 18;}
+                        else if ( (LA12_0==',') ) {s = 18;}
 
-                        else if ( (LA12_0=='o') ) {s = 19;}
+                        else if ( (LA12_0=='n') ) {s = 19;}
 
-                        else if ( (LA12_0=='u') ) {s = 20;}
+                        else if ( (LA12_0=='k') ) {s = 20;}
 
-                        else if ( (LA12_0=='F') ) {s = 21;}
+                        else if ( (LA12_0=='e') ) {s = 21;}
 
-                        else if ( (LA12_0=='c') ) {s = 22;}
+                        else if ( (LA12_0=='i') ) {s = 22;}
 
-                        else if ( (LA12_0=='I') ) {s = 23;}
+                        else if ( (LA12_0=='o') ) {s = 23;}
 
-                        else if ( (LA12_0=='-') ) {s = 24;}
+                        else if ( (LA12_0=='(') ) {s = 24;}
 
-                        else if ( (LA12_0=='l') ) {s = 25;}
+                        else if ( (LA12_0==')') ) {s = 25;}
 
-                        else if ( (LA12_0=='m') ) {s = 26;}
+                        else if ( (LA12_0=='-') ) {s = 26;}
 
-                        else if ( (LA12_0=='h') ) {s = 27;}
+                        else if ( (LA12_0=='<') ) {s = 27;}
 
-                        else if ( (LA12_0=='y') ) {s = 28;}
+                        else if ( (LA12_0=='>') ) {s = 28;}
 
-                        else if ( (LA12_0=='K') ) {s = 29;}
+                        else if ( (LA12_0=='h') ) {s = 29;}
 
-                        else if ( (LA12_0=='G') ) {s = 30;}
+                        else if ( (LA12_0=='y') ) {s = 30;}
 
-                        else if ( (LA12_0=='T') ) {s = 31;}
+                        else if ( (LA12_0=='K') ) {s = 31;}
 
-                        else if ( (LA12_0=='n') ) {s = 32;}
+                        else if ( (LA12_0=='M') ) {s = 32;}
 
-                        else if ( (LA12_0=='^') ) {s = 33;}
+                        else if ( (LA12_0=='G') ) {s = 33;}
 
-                        else if ( ((LA12_0>='A' && LA12_0<='B')||LA12_0=='E'||LA12_0=='H'||LA12_0=='J'||LA12_0=='L'||LA12_0=='N'||(LA12_0>='Q' && LA12_0<='R')||LA12_0=='U'||(LA12_0>='W' && LA12_0<='Z')||LA12_0=='_'||LA12_0=='b'||LA12_0=='g'||(LA12_0>='i' && LA12_0<='k')||(LA12_0>='p' && LA12_0<='r')||LA12_0=='x'||LA12_0=='z') ) {s = 34;}
+                        else if ( (LA12_0=='T') ) {s = 34;}
 
-                        else if ( ((LA12_0>='0' && LA12_0<='9')) ) {s = 35;}
+                        else if ( (LA12_0=='D') ) {s = 35;}
 
-                        else if ( (LA12_0=='\"') ) {s = 36;}
+                        else if ( (LA12_0=='F') ) {s = 36;}
 
-                        else if ( (LA12_0=='\'') ) {s = 37;}
+                        else if ( (LA12_0=='^') ) {s = 37;}
 
-                        else if ( (LA12_0=='/') ) {s = 38;}
+                        else if ( ((LA12_0>='A' && LA12_0<='C')||LA12_0=='E'||(LA12_0>='H' && LA12_0<='J')||LA12_0=='L'||(LA12_0>='N' && LA12_0<='S')||(LA12_0>='U' && LA12_0<='Z')||LA12_0=='_'||LA12_0=='b'||LA12_0=='g'||LA12_0=='j'||LA12_0=='l'||(LA12_0>='q' && LA12_0<='r')||LA12_0=='u'||LA12_0=='x'||LA12_0=='z') ) {s = 38;}
 
-                        else if ( ((LA12_0>='\t' && LA12_0<='\n')||LA12_0=='\r'||LA12_0==' ') ) {s = 39;}
+                        else if ( ((LA12_0>='0' && LA12_0<='9')) ) {s = 39;}
 
-                        else if ( ((LA12_0>='\u0000' && LA12_0<='\b')||(LA12_0>='\u000B' && LA12_0<='\f')||(LA12_0>='\u000E' && LA12_0<='\u001F')||LA12_0=='!'||(LA12_0>='#' && LA12_0<='&')||(LA12_0>='(' && LA12_0<='+')||LA12_0=='.'||(LA12_0>=':' && LA12_0<='@')||(LA12_0>='[' && LA12_0<=']')||LA12_0=='`'||LA12_0=='|'||(LA12_0>='~' && LA12_0<='\uFFFF')) ) {s = 40;}
+                        else if ( (LA12_0=='\"') ) {s = 40;}
+
+                        else if ( (LA12_0=='\'') ) {s = 41;}
+
+                        else if ( (LA12_0=='/') ) {s = 42;}
+
+                        else if ( ((LA12_0>='\t' && LA12_0<='\n')||LA12_0=='\r'||LA12_0==' ') ) {s = 43;}
+
+                        else if ( ((LA12_0>='\u0000' && LA12_0<='\b')||(LA12_0>='\u000B' && LA12_0<='\f')||(LA12_0>='\u000E' && LA12_0<='\u001F')||LA12_0=='!'||(LA12_0>='#' && LA12_0<='&')||LA12_0=='*'||LA12_0=='.'||LA12_0==':'||(LA12_0>='?' && LA12_0<='@')||LA12_0=='\\'||LA12_0=='`'||LA12_0=='|'||(LA12_0>='~' && LA12_0<='\uFFFF')) ) {s = 44;}
 
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA12_36 = input.LA(1);
+                        int LA12_40 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA12_36>='\u0000' && LA12_36<='\uFFFF')) ) {s = 95;}
+                        if ( ((LA12_40>='\u0000' && LA12_40<='\uFFFF')) ) {s = 107;}
 
-                        else s = 40;
+                        else s = 44;
 
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
-                        int LA12_37 = input.LA(1);
+                        int LA12_41 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA12_37>='\u0000' && LA12_37<='\uFFFF')) ) {s = 95;}
+                        if ( ((LA12_41>='\u0000' && LA12_41<='\uFFFF')) ) {s = 107;}
 
-                        else s = 40;
+                        else s = 44;
 
                         if ( s>=0 ) return s;
                         break;

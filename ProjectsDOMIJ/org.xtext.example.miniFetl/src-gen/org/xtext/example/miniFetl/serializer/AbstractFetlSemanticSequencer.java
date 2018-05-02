@@ -196,14 +196,14 @@ public abstract class AbstractFetlSemanticSequencer extends AbstractDelegatingSe
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_3_0(), semanticObject.getValue());
+		feeder.accept(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_0(), semanticObject.getValue());
 		feeder.finish();
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     (strategy=Strategies? source=[SelectionVariable|EString] destination=Path)
+	 *     (source=[SelectionVariable|EString] destination=Path strategy=Strategies?)
 	 */
 	protected void sequence_Copy(EObject context, Copy semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -221,14 +221,14 @@ public abstract class AbstractFetlSemanticSequencer extends AbstractDelegatingSe
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getDeleteAccess().getSourceSelectionVariableEStringParserRuleCall_3_0_1(), semanticObject.getSource());
+		feeder.accept(grammarAccess.getDeleteAccess().getSourceSelectionVariableEStringParserRuleCall_2_0_1(), semanticObject.getSource());
 		feeder.finish();
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     (compositionType=CompositionType? segments+=FilterComponent segments+=FilterComponent*)
+	 *     (compositionType=CompositionType segments+=FilterComponent segments+=FilterComponent*)
 	 */
 	protected void sequence_FilterContainer(EObject context, FilterContainer semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -246,7 +246,7 @@ public abstract class AbstractFetlSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     ((executions+=Execution executions+=Execution*)?)
+	 *     (executions+=Execution executions+=Execution*)
 	 */
 	protected void sequence_Model(EObject context, Model semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -255,7 +255,7 @@ public abstract class AbstractFetlSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (strategy=Strategies? source=[SelectionVariable|EString] destination=Path)
+	 *     (source=[SelectionVariable|EString] destination=Path strategy=Strategies?)
 	 */
 	protected void sequence_Move(EObject context, Move semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -264,7 +264,7 @@ public abstract class AbstractFetlSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (name=EString trueFalseSearch=EBoolean? value=EString)
+	 *     (name=EString value=EString? trueFalseSearch=EBoolean?)
 	 */
 	protected void sequence_OnAttributes(EObject context, OnAttributes semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -273,7 +273,7 @@ public abstract class AbstractFetlSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (trueFalseSearch=EBoolean? (extensions+=EString extensions+=EString*)?)
+	 *     ((extensions+=EString extensions+=EString*)? trueFalseSearch=EBoolean?)
 	 */
 	protected void sequence_OnExtension(EObject context, OnExtension semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -291,7 +291,7 @@ public abstract class AbstractFetlSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (trueFalseSearch=EBoolean? operator=Operator treshold=EInt unit=MemoryUnit)
+	 *     (operator=Operator treshold=EInt unit=MemoryUnit trueFalseSearch=EBoolean?)
 	 */
 	protected void sequence_OnSize(EObject context, OnSize semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -300,7 +300,7 @@ public abstract class AbstractFetlSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (only?='only'? trueFalseSearch=EBoolean? (tags+=EString tags+=EString*)? treshold=EInt)
+	 *     ((tags+=EString tags+=EString*)? treshold=EInt only?='exclusively'? trueFalseSearch=EBoolean?)
 	 */
 	protected void sequence_OnTags(EObject context, OnTags semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -309,7 +309,7 @@ public abstract class AbstractFetlSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (trueFalseSearch=EBoolean? operator=Operator treshold=EInt unit=TimeUnit timeOf=TimeType)
+	 *     (timeOf=TimeType operator=Operator treshold=EInt unit=TimeUnit trueFalseSearch=EBoolean?)
 	 */
 	protected void sequence_OnTime(EObject context, OnTime semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -318,7 +318,7 @@ public abstract class AbstractFetlSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (trueFalseSearch=EBoolean? type=FileType)
+	 *     (type=FileType trueFalseSearch=EBoolean?)
 	 */
 	protected void sequence_OnType(EObject context, OnType semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -354,8 +354,8 @@ public abstract class AbstractFetlSemanticSequencer extends AbstractDelegatingSe
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getPathVariableAccess().getNameEStringParserRuleCall_1_0(), semanticObject.getName());
-		feeder.accept(grammarAccess.getPathVariableAccess().getValuePathParserRuleCall_4_0(), semanticObject.getValue());
+		feeder.accept(grammarAccess.getPathVariableAccess().getNameEStringParserRuleCall_0_0(), semanticObject.getName());
+		feeder.accept(grammarAccess.getPathVariableAccess().getValuePathParserRuleCall_2_0(), semanticObject.getValue());
 		feeder.finish();
 	}
 	
@@ -383,14 +383,14 @@ public abstract class AbstractFetlSemanticSequencer extends AbstractDelegatingSe
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
 		feeder.accept(grammarAccess.getSelectionVariableAccess().getNameEStringParserRuleCall_1_0(), semanticObject.getName());
-		feeder.accept(grammarAccess.getSelectionVariableAccess().getValueSelectionParserRuleCall_4_0(), semanticObject.getValue());
+		feeder.accept(grammarAccess.getSelectionVariableAccess().getValueSelectionParserRuleCall_3_0(), semanticObject.getValue());
 		feeder.finish();
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     ((where+=FilterComponent where+=FilterComponent*)? from=Path)
+	 *     (from=Path (where+=FilterComponent where+=FilterComponent*)?)
 	 */
 	protected void sequence_Selection(EObject context, Selection semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -408,7 +408,7 @@ public abstract class AbstractFetlSemanticSequencer extends AbstractDelegatingSe
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getVariableStepAccess().getValuePathVariableEStringParserRuleCall_3_0_1(), semanticObject.getValue());
+		feeder.accept(grammarAccess.getVariableStepAccess().getValuePathVariableEStringParserRuleCall_1_0_1(), semanticObject.getValue());
 		feeder.finish();
 	}
 }
