@@ -3,6 +3,14 @@
  */
 package org.xtext.example.myFetl.validation;
 
+import FileTransferPackage.ConcreteStep;
+import FileTransferPackage.FileTransferPackagePackage;
+import FileTransferPackage.GenericStep;
+import FileTransferPackage.Path;
+import com.google.common.base.Objects;
+import java.math.BigDecimal;
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.xtext.validation.Check;
 import org.xtext.example.myFetl.validation.AbstractFETLValidator;
 
 /**
@@ -12,4 +20,27 @@ import org.xtext.example.myFetl.validation.AbstractFETLValidator;
  */
 @SuppressWarnings("all")
 public class FETLValidator extends AbstractFETLValidator {
+  @Check
+  public void onlyFirstStepCanBeAbsolute(final Path path) {
+    final BigDecimal i = BigDecimal.ZERO;
+    EList<GenericStep> _steps = path.getSteps();
+    for (final GenericStep step : _steps) {
+      boolean _and = false;
+      EList<GenericStep> _steps_1 = path.getSteps();
+      GenericStep _get = _steps_1.get(0);
+      boolean _notEquals = (!Objects.equal(_get, step));
+      if (!_notEquals) {
+        _and = false;
+      } else {
+        _and = (step instanceof ConcreteStep);
+      }
+      if (_and) {
+        final ConcreteStep cstep = ((ConcreteStep) step);
+        Boolean _absolute = cstep.getAbsolute();
+        if ((_absolute).booleanValue()) {
+          this.error("Only first concrete step can be absolute.", path, FileTransferPackagePackage.Literals.PATH__STEPS);
+        }
+      }
+    }
+  }
 }
