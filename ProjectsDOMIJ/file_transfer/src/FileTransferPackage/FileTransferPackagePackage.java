@@ -464,13 +464,22 @@ public interface FileTransferPackagePackage extends EPackage {
 	int CONCRETE_STEP__VALUE = GENERIC_STEP_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Absolute</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONCRETE_STEP__ABSOLUTE = GENERIC_STEP_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Concrete Step</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONCRETE_STEP_FEATURE_COUNT = GENERIC_STEP_FEATURE_COUNT + 1;
+	int CONCRETE_STEP_FEATURE_COUNT = GENERIC_STEP_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Concrete Step</em>' class.
@@ -1605,6 +1614,17 @@ public interface FileTransferPackagePackage extends EPackage {
 	EAttribute getConcreteStep_Value();
 
 	/**
+	 * Returns the meta object for the attribute '{@link FileTransferPackage.ConcreteStep#getAbsolute <em>Absolute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Absolute</em>'.
+	 * @see FileTransferPackage.ConcreteStep#getAbsolute()
+	 * @see #getConcreteStep()
+	 * @generated
+	 */
+	EAttribute getConcreteStep_Absolute();
+
+	/**
 	 * Returns the meta object for class '{@link FileTransferPackage.PathVariable <em>Path Variable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2313,6 +2333,14 @@ public interface FileTransferPackagePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CONCRETE_STEP__VALUE = eINSTANCE.getConcreteStep_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Absolute</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONCRETE_STEP__ABSOLUTE = eINSTANCE.getConcreteStep_Absolute();
 
 		/**
 		 * The meta object literal for the '{@link FileTransferPackage.impl.PathVariableImpl <em>Path Variable</em>}' class.

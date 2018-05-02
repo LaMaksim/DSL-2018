@@ -68,6 +68,7 @@
     <genClasses ecoreClass="file_transfer_metamodel.ecore#//Delete"/>
     <genClasses ecoreClass="file_transfer_metamodel.ecore#//ConcreteStep">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//ConcreteStep/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//ConcreteStep/absolute"/>
     </genClasses>
     <genClasses ecoreClass="file_transfer_metamodel.ecore#//PathVariable">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference file_transfer_metamodel.ecore#//PathVariable/value"/>

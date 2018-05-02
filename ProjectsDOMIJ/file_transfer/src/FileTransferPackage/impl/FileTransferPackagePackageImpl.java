@@ -538,6 +538,15 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getConcreteStep_Absolute() {
+		return (EAttribute)concreteStepEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getPathVariable() {
 		return pathVariableEClass;
 	}
@@ -1052,6 +1061,7 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 
 		concreteStepEClass = createEClass(CONCRETE_STEP);
 		createEAttribute(concreteStepEClass, CONCRETE_STEP__VALUE);
+		createEAttribute(concreteStepEClass, CONCRETE_STEP__ABSOLUTE);
 
 		pathVariableEClass = createEClass(PATH_VARIABLE);
 		createEReference(pathVariableEClass, PATH_VARIABLE__VALUE);
@@ -1205,6 +1215,7 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 
 		initEClass(concreteStepEClass, ConcreteStep.class, "ConcreteStep", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getConcreteStep_Value(), ecorePackage.getEString(), "value", "\"a\"", 1, 1, ConcreteStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getConcreteStep_Absolute(), ecorePackage.getEBooleanObject(), "absolute", "false", 0, 1, ConcreteStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(pathVariableEClass, PathVariable.class, "PathVariable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPathVariable_Value(), this.getPath(), null, "value", null, 1, 1, PathVariable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
