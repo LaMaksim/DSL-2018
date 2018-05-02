@@ -71,7 +71,6 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 			case FileTransferPackagePackage.ON_TAGS: return createOnTags();
 			case FileTransferPackagePackage.ON_SIZE: return createOnSize();
 			case FileTransferPackagePackage.FILTER_CONTAINER: return createFilterContainer();
-			case FileTransferPackagePackage.SELECTION_VARIABLE: return createSelectionVariable();
 			case FileTransferPackagePackage.MODEL: return createModel();
 			case FileTransferPackagePackage.VARIABLE_STEP: return createVariableStep();
 			case FileTransferPackagePackage.IS_EMPTY: return createIsEmpty();
@@ -104,6 +103,8 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 				return createStrategiesFromString(eDataType, initialValue);
 			case FileTransferPackagePackage.COMPOSITION_TYPE:
 				return createCompositionTypeFromString(eDataType, initialValue);
+			case FileTransferPackagePackage.QUANTIFICATORS:
+				return createQuantificatorsFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -131,6 +132,8 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 				return convertStrategiesToString(eDataType, instanceValue);
 			case FileTransferPackagePackage.COMPOSITION_TYPE:
 				return convertCompositionTypeToString(eDataType, instanceValue);
+			case FileTransferPackagePackage.QUANTIFICATORS:
+				return convertQuantificatorsToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -274,16 +277,6 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 	public FilterContainer createFilterContainer() {
 		FilterContainerImpl filterContainer = new FilterContainerImpl();
 		return filterContainer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SelectionVariable createSelectionVariable() {
-		SelectionVariableImpl selectionVariable = new SelectionVariableImpl();
-		return selectionVariable;
 	}
 
 	/**
@@ -473,6 +466,26 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 	 * @generated
 	 */
 	public String convertCompositionTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Quantificators createQuantificatorsFromString(EDataType eDataType, String initialValue) {
+		Quantificators result = Quantificators.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertQuantificatorsToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link FileTransferPackage.impl.FilterLeafImpl#isTrueFalseSearch <em>True False Search</em>}</li>
+ *   <li>{@link FileTransferPackage.impl.FilterLeafImpl#isInverse <em>Inverse</em>}</li>
  * </ul>
  * </p>
  *
@@ -26,24 +26,24 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public abstract class FilterLeafImpl extends FilterComponentImpl implements FilterLeaf {
 	/**
-	 * The default value of the '{@link #isTrueFalseSearch() <em>True False Search</em>}' attribute.
+	 * The default value of the '{@link #isInverse() <em>Inverse</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isTrueFalseSearch()
+	 * @see #isInverse()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final boolean TRUE_FALSE_SEARCH_EDEFAULT = true;
+	protected static final boolean INVERSE_EDEFAULT = false;
 
 	/**
-	 * The cached value of the '{@link #isTrueFalseSearch() <em>True False Search</em>}' attribute.
+	 * The cached value of the '{@link #isInverse() <em>Inverse</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isTrueFalseSearch()
+	 * @see #isInverse()
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean trueFalseSearch = TRUE_FALSE_SEARCH_EDEFAULT;
+	protected boolean inverse = INVERSE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -69,8 +69,8 @@ public abstract class FilterLeafImpl extends FilterComponentImpl implements Filt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isTrueFalseSearch() {
-		return trueFalseSearch;
+	public boolean isInverse() {
+		return inverse;
 	}
 
 	/**
@@ -78,11 +78,11 @@ public abstract class FilterLeafImpl extends FilterComponentImpl implements Filt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTrueFalseSearch(boolean newTrueFalseSearch) {
-		boolean oldTrueFalseSearch = trueFalseSearch;
-		trueFalseSearch = newTrueFalseSearch;
+	public void setInverse(boolean newInverse) {
+		boolean oldInverse = inverse;
+		inverse = newInverse;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FileTransferPackagePackage.FILTER_LEAF__TRUE_FALSE_SEARCH, oldTrueFalseSearch, trueFalseSearch));
+			eNotify(new ENotificationImpl(this, Notification.SET, FileTransferPackagePackage.FILTER_LEAF__INVERSE, oldInverse, inverse));
 	}
 
 	/**
@@ -93,8 +93,8 @@ public abstract class FilterLeafImpl extends FilterComponentImpl implements Filt
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FileTransferPackagePackage.FILTER_LEAF__TRUE_FALSE_SEARCH:
-				return isTrueFalseSearch();
+			case FileTransferPackagePackage.FILTER_LEAF__INVERSE:
+				return isInverse();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -107,8 +107,8 @@ public abstract class FilterLeafImpl extends FilterComponentImpl implements Filt
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FileTransferPackagePackage.FILTER_LEAF__TRUE_FALSE_SEARCH:
-				setTrueFalseSearch((Boolean)newValue);
+			case FileTransferPackagePackage.FILTER_LEAF__INVERSE:
+				setInverse((Boolean)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -122,8 +122,8 @@ public abstract class FilterLeafImpl extends FilterComponentImpl implements Filt
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FileTransferPackagePackage.FILTER_LEAF__TRUE_FALSE_SEARCH:
-				setTrueFalseSearch(TRUE_FALSE_SEARCH_EDEFAULT);
+			case FileTransferPackagePackage.FILTER_LEAF__INVERSE:
+				setInverse(INVERSE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -137,8 +137,8 @@ public abstract class FilterLeafImpl extends FilterComponentImpl implements Filt
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FileTransferPackagePackage.FILTER_LEAF__TRUE_FALSE_SEARCH:
-				return trueFalseSearch != TRUE_FALSE_SEARCH_EDEFAULT;
+			case FileTransferPackagePackage.FILTER_LEAF__INVERSE:
+				return inverse != INVERSE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -153,8 +153,8 @@ public abstract class FilterLeafImpl extends FilterComponentImpl implements Filt
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (trueFalseSearch: ");
-		result.append(trueFalseSearch);
+		result.append(" (inverse: ");
+		result.append(inverse);
 		result.append(')');
 		return result.toString();
 	}

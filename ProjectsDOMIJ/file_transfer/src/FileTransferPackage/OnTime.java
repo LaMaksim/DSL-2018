@@ -34,7 +34,7 @@ public interface OnTime extends OnMeasure {
 	 * @see FileTransferPackage.TimeUnit
 	 * @see #setUnit(TimeUnit)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getOnTime_Unit()
-	 * @model required="true"
+	 * @model unique="false" required="true"
 	 * @generated
 	 */
 	TimeUnit getUnit();
@@ -63,7 +63,7 @@ public interface OnTime extends OnMeasure {
 	 * @see FileTransferPackage.TimeType
 	 * @see #setTimeOf(TimeType)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getOnTime_TimeOf()
-	 * @model required="true"
+	 * @model unique="false" required="true"
 	 * @generated
 	 */
 	TimeType getTimeOf();

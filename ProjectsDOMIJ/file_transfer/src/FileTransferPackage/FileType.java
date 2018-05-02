@@ -29,14 +29,14 @@ public enum FileType implements Enumerator {
 	DOCUMENT(0, "Document", "Document"),
 
 	/**
-	 * The '<em><b>Folder</b></em>' literal object.
+	 * The '<em><b>Directory</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #FOLDER_VALUE
+	 * @see #DIRECTORY_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	FOLDER(1, "Folder", "Folder");
+	DIRECTORY(1, "Directory", "Directory");
 
 	/**
 	 * The '<em><b>Document</b></em>' literal value.
@@ -54,19 +54,19 @@ public enum FileType implements Enumerator {
 	public static final int DOCUMENT_VALUE = 0;
 
 	/**
-	 * The '<em><b>Folder</b></em>' literal value.
+	 * The '<em><b>Directory</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Folder</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Directory</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #FOLDER
-	 * @model name="Folder"
+	 * @see #DIRECTORY
+	 * @model name="Directory"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int FOLDER_VALUE = 1;
+	public static final int DIRECTORY_VALUE = 1;
 
 	/**
 	 * An array of all the '<em><b>File Type</b></em>' enumerators.
@@ -77,7 +77,7 @@ public enum FileType implements Enumerator {
 	private static final FileType[] VALUES_ARRAY =
 		new FileType[] {
 			DOCUMENT,
-			FOLDER,
+			DIRECTORY,
 		};
 
 	/**
@@ -129,7 +129,7 @@ public enum FileType implements Enumerator {
 	public static FileType get(int value) {
 		switch (value) {
 			case DOCUMENT_VALUE: return DOCUMENT;
-			case FOLDER_VALUE: return FOLDER;
+			case DIRECTORY_VALUE: return DIRECTORY;
 		}
 		return null;
 	}

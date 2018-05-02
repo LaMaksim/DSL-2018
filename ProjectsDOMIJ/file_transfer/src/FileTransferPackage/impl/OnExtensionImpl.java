@@ -11,7 +11,7 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
+import org.eclipse.emf.ecore.util.EDataTypeEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -63,7 +63,7 @@ public class OnExtensionImpl extends OnBasicImpl implements OnExtension {
 	 */
 	public EList<String> getExtensions() {
 		if (extensions == null) {
-			extensions = new EDataTypeUniqueEList<String>(String.class, this, FileTransferPackagePackage.ON_EXTENSION__EXTENSIONS);
+			extensions = new EDataTypeEList<String>(String.class, this, FileTransferPackagePackage.ON_EXTENSION__EXTENSIONS);
 		}
 		return extensions;
 	}

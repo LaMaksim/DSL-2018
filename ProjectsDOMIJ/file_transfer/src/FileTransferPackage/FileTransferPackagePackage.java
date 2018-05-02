@@ -77,22 +77,13 @@ public interface FileTransferPackagePackage extends EPackage {
 	int PATH__STEPS = 0;
 
 	/**
-	 * The feature id for the '<em><b>Absolute</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PATH__ABSOLUTE = 1;
-
-	/**
 	 * The number of structural features of the '<em>Path</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PATH_FEATURE_COUNT = 2;
+	int PATH_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Path</em>' class.
@@ -104,60 +95,14 @@ public interface FileTransferPackagePackage extends EPackage {
 	int PATH_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link FileTransferPackage.impl.SelectionImpl <em>Selection</em>}' class.
+	 * The meta object id for the '{@link FileTransferPackage.Execution <em>Execution</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see FileTransferPackage.impl.SelectionImpl
-	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getSelection()
-	 * @generated
-	 */
-	int SELECTION = 1;
-
-	/**
-	 * The feature id for the '<em><b>Where</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTION__WHERE = 0;
-
-	/**
-	 * The feature id for the '<em><b>From</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTION__FROM = 1;
-
-	/**
-	 * The number of structural features of the '<em>Selection</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTION_FEATURE_COUNT = 2;
-
-	/**
-	 * The number of operations of the '<em>Selection</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTION_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link FileTransferPackage.impl.ExecutionImpl <em>Execution</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see FileTransferPackage.impl.ExecutionImpl
+	 * @see FileTransferPackage.Execution
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getExecution()
 	 * @generated
 	 */
-	int EXECUTION = 28;
+	int EXECUTION = 27;
 
 	/**
 	 * The number of structural features of the '<em>Execution</em>' class.
@@ -178,10 +123,65 @@ public interface FileTransferPackagePackage extends EPackage {
 	int EXECUTION_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link FileTransferPackage.impl.TransformationImpl <em>Transformation</em>}' class.
+	 * The meta object id for the '{@link FileTransferPackage.impl.SelectionImpl <em>Selection</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see FileTransferPackage.impl.TransformationImpl
+	 * @see FileTransferPackage.impl.SelectionImpl
+	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getSelection()
+	 * @generated
+	 */
+	int SELECTION = 1;
+
+	/**
+	 * The feature id for the '<em><b>Where</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECTION__WHERE = EXECUTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>From</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECTION__FROM = EXECUTION_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECTION__NAME = EXECUTION_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Selection</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECTION_FEATURE_COUNT = EXECUTION_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of operations of the '<em>Selection</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECTION_OPERATION_COUNT = EXECUTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link FileTransferPackage.Transformation <em>Transformation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see FileTransferPackage.Transformation
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getTransformation()
 	 * @generated
 	 */
@@ -215,10 +215,10 @@ public interface FileTransferPackagePackage extends EPackage {
 	int TRANSFORMATION_OPERATION_COUNT = EXECUTION_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link FileTransferPackage.impl.CreatingImpl <em>Creating</em>}' class.
+	 * The meta object id for the '{@link FileTransferPackage.Creating <em>Creating</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see FileTransferPackage.impl.CreatingImpl
+	 * @see FileTransferPackage.Creating
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getCreating()
 	 * @generated
 	 */
@@ -424,7 +424,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getGenericStep()
 	 * @generated
 	 */
-	int GENERIC_STEP = 23;
+	int GENERIC_STEP = 22;
 
 	/**
 	 * The number of structural features of the '<em>Generic Step</em>' class.
@@ -566,13 +566,13 @@ public interface FileTransferPackagePackage extends EPackage {
 	int FILTER_LEAF = 9;
 
 	/**
-	 * The feature id for the '<em><b>True False Search</b></em>' attribute.
+	 * The feature id for the '<em><b>Inverse</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FILTER_LEAF__TRUE_FALSE_SEARCH = FILTER_COMPONENT_FEATURE_COUNT + 0;
+	int FILTER_LEAF__INVERSE = FILTER_COMPONENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Filter Leaf</em>' class.
@@ -603,13 +603,13 @@ public interface FileTransferPackagePackage extends EPackage {
 	int ON_BASIC = 17;
 
 	/**
-	 * The feature id for the '<em><b>True False Search</b></em>' attribute.
+	 * The feature id for the '<em><b>Inverse</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ON_BASIC__TRUE_FALSE_SEARCH = FILTER_LEAF__TRUE_FALSE_SEARCH;
+	int ON_BASIC__INVERSE = FILTER_LEAF__INVERSE;
 
 	/**
 	 * The number of structural features of the '<em>On Basic</em>' class.
@@ -640,13 +640,13 @@ public interface FileTransferPackagePackage extends EPackage {
 	int ON_NAME = 10;
 
 	/**
-	 * The feature id for the '<em><b>True False Search</b></em>' attribute.
+	 * The feature id for the '<em><b>Inverse</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ON_NAME__TRUE_FALSE_SEARCH = ON_BASIC__TRUE_FALSE_SEARCH;
+	int ON_NAME__INVERSE = ON_BASIC__INVERSE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -686,13 +686,13 @@ public interface FileTransferPackagePackage extends EPackage {
 	int ON_EXTENSION = 11;
 
 	/**
-	 * The feature id for the '<em><b>True False Search</b></em>' attribute.
+	 * The feature id for the '<em><b>Inverse</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ON_EXTENSION__TRUE_FALSE_SEARCH = ON_BASIC__TRUE_FALSE_SEARCH;
+	int ON_EXTENSION__INVERSE = ON_BASIC__INVERSE;
 
 	/**
 	 * The feature id for the '<em><b>Extensions</b></em>' attribute list.
@@ -732,13 +732,13 @@ public interface FileTransferPackagePackage extends EPackage {
 	int ON_MEASURE = 12;
 
 	/**
-	 * The feature id for the '<em><b>True False Search</b></em>' attribute.
+	 * The feature id for the '<em><b>Inverse</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ON_MEASURE__TRUE_FALSE_SEARCH = FILTER_LEAF__TRUE_FALSE_SEARCH;
+	int ON_MEASURE__INVERSE = FILTER_LEAF__INVERSE;
 
 	/**
 	 * The feature id for the '<em><b>Operator</b></em>' attribute.
@@ -787,13 +787,13 @@ public interface FileTransferPackagePackage extends EPackage {
 	int ON_TIME = 13;
 
 	/**
-	 * The feature id for the '<em><b>True False Search</b></em>' attribute.
+	 * The feature id for the '<em><b>Inverse</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ON_TIME__TRUE_FALSE_SEARCH = ON_MEASURE__TRUE_FALSE_SEARCH;
+	int ON_TIME__INVERSE = ON_MEASURE__INVERSE;
 
 	/**
 	 * The feature id for the '<em><b>Operator</b></em>' attribute.
@@ -860,13 +860,13 @@ public interface FileTransferPackagePackage extends EPackage {
 	int ON_CUSTOM = 18;
 
 	/**
-	 * The feature id for the '<em><b>True False Search</b></em>' attribute.
+	 * The feature id for the '<em><b>Inverse</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ON_CUSTOM__TRUE_FALSE_SEARCH = FILTER_LEAF__TRUE_FALSE_SEARCH;
+	int ON_CUSTOM__INVERSE = FILTER_LEAF__INVERSE;
 
 	/**
 	 * The number of structural features of the '<em>On Custom</em>' class.
@@ -897,13 +897,13 @@ public interface FileTransferPackagePackage extends EPackage {
 	int ON_ATTRIBUTES = 14;
 
 	/**
-	 * The feature id for the '<em><b>True False Search</b></em>' attribute.
+	 * The feature id for the '<em><b>Inverse</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ON_ATTRIBUTES__TRUE_FALSE_SEARCH = ON_CUSTOM__TRUE_FALSE_SEARCH;
+	int ON_ATTRIBUTES__INVERSE = ON_CUSTOM__INVERSE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -952,13 +952,13 @@ public interface FileTransferPackagePackage extends EPackage {
 	int ON_TAGS = 15;
 
 	/**
-	 * The feature id for the '<em><b>True False Search</b></em>' attribute.
+	 * The feature id for the '<em><b>Inverse</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ON_TAGS__TRUE_FALSE_SEARCH = ON_CUSTOM__TRUE_FALSE_SEARCH;
+	int ON_TAGS__INVERSE = ON_CUSTOM__INVERSE;
 
 	/**
 	 * The feature id for the '<em><b>Tags</b></em>' attribute list.
@@ -988,13 +988,22 @@ public interface FileTransferPackagePackage extends EPackage {
 	int ON_TAGS__TRESHOLD = ON_CUSTOM_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Quantificator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ON_TAGS__QUANTIFICATOR = ON_CUSTOM_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>On Tags</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ON_TAGS_FEATURE_COUNT = ON_CUSTOM_FEATURE_COUNT + 3;
+	int ON_TAGS_FEATURE_COUNT = ON_CUSTOM_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of operations of the '<em>On Tags</em>' class.
@@ -1016,13 +1025,13 @@ public interface FileTransferPackagePackage extends EPackage {
 	int ON_SIZE = 16;
 
 	/**
-	 * The feature id for the '<em><b>True False Search</b></em>' attribute.
+	 * The feature id for the '<em><b>Inverse</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ON_SIZE__TRUE_FALSE_SEARCH = ON_MEASURE__TRUE_FALSE_SEARCH;
+	int ON_SIZE__INVERSE = ON_MEASURE__INVERSE;
 
 	/**
 	 * The feature id for the '<em><b>Operator</b></em>' attribute.
@@ -1116,52 +1125,6 @@ public interface FileTransferPackagePackage extends EPackage {
 	int FILTER_CONTAINER_OPERATION_COUNT = FILTER_COMPONENT_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link FileTransferPackage.impl.SelectionVariableImpl <em>Selection Variable</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see FileTransferPackage.impl.SelectionVariableImpl
-	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getSelectionVariable()
-	 * @generated
-	 */
-	int SELECTION_VARIABLE = 21;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTION_VARIABLE__NAME = EXECUTION_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Value</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTION_VARIABLE__VALUE = EXECUTION_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Selection Variable</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTION_VARIABLE_FEATURE_COUNT = EXECUTION_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>Selection Variable</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTION_VARIABLE_OPERATION_COUNT = EXECUTION_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link FileTransferPackage.impl.ModelImpl <em>Model</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1169,7 +1132,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getModel()
 	 * @generated
 	 */
-	int MODEL = 22;
+	int MODEL = 21;
 
 	/**
 	 * The feature id for the '<em><b>Executions</b></em>' containment reference list.
@@ -1206,7 +1169,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getVariableStep()
 	 * @generated
 	 */
-	int VARIABLE_STEP = 24;
+	int VARIABLE_STEP = 23;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' reference.
@@ -1243,16 +1206,16 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getIsEmpty()
 	 * @generated
 	 */
-	int IS_EMPTY = 25;
+	int IS_EMPTY = 24;
 
 	/**
-	 * The feature id for the '<em><b>True False Search</b></em>' attribute.
+	 * The feature id for the '<em><b>Inverse</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IS_EMPTY__TRUE_FALSE_SEARCH = ON_BASIC__TRUE_FALSE_SEARCH;
+	int IS_EMPTY__INVERSE = ON_BASIC__INVERSE;
 
 	/**
 	 * The number of structural features of the '<em>Is Empty</em>' class.
@@ -1280,16 +1243,16 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getOnType()
 	 * @generated
 	 */
-	int ON_TYPE = 26;
+	int ON_TYPE = 25;
 
 	/**
-	 * The feature id for the '<em><b>True False Search</b></em>' attribute.
+	 * The feature id for the '<em><b>Inverse</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ON_TYPE__TRUE_FALSE_SEARCH = ON_BASIC__TRUE_FALSE_SEARCH;
+	int ON_TYPE__INVERSE = ON_BASIC__INVERSE;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -1326,7 +1289,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getParametrizedStep()
 	 * @generated
 	 */
-	int PARAMETRIZED_STEP = 27;
+	int PARAMETRIZED_STEP = 26;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1363,7 +1326,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getOperator()
 	 * @generated
 	 */
-	int OPERATOR = 29;
+	int OPERATOR = 28;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.FileType <em>File Type</em>}' enum.
@@ -1373,7 +1336,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getFileType()
 	 * @generated
 	 */
-	int FILE_TYPE = 30;
+	int FILE_TYPE = 29;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.TimeType <em>Time Type</em>}' enum.
@@ -1383,7 +1346,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getTimeType()
 	 * @generated
 	 */
-	int TIME_TYPE = 31;
+	int TIME_TYPE = 30;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.MemoryUnit <em>Memory Unit</em>}' enum.
@@ -1393,7 +1356,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getMemoryUnit()
 	 * @generated
 	 */
-	int MEMORY_UNIT = 32;
+	int MEMORY_UNIT = 31;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.TimeUnit <em>Time Unit</em>}' enum.
@@ -1403,7 +1366,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getTimeUnit()
 	 * @generated
 	 */
-	int TIME_UNIT = 33;
+	int TIME_UNIT = 32;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.Strategies <em>Strategies</em>}' enum.
@@ -1413,7 +1376,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getStrategies()
 	 * @generated
 	 */
-	int STRATEGIES = 34;
+	int STRATEGIES = 33;
 
 	/**
 	 * The meta object id for the '{@link FileTransferPackage.CompositionType <em>Composition Type</em>}' enum.
@@ -1423,7 +1386,17 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getCompositionType()
 	 * @generated
 	 */
-	int COMPOSITION_TYPE = 35;
+	int COMPOSITION_TYPE = 34;
+
+	/**
+	 * The meta object id for the '{@link FileTransferPackage.Quantificators <em>Quantificators</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see FileTransferPackage.Quantificators
+	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getQuantificators()
+	 * @generated
+	 */
+	int QUANTIFICATORS = 35;
 
 
 	/**
@@ -1446,17 +1419,6 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getPath_Steps();
-
-	/**
-	 * Returns the meta object for the attribute '{@link FileTransferPackage.Path#isAbsolute <em>Absolute</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Absolute</em>'.
-	 * @see FileTransferPackage.Path#isAbsolute()
-	 * @see #getPath()
-	 * @generated
-	 */
-	EAttribute getPath_Absolute();
 
 	/**
 	 * Returns the meta object for class '{@link FileTransferPackage.Selection <em>Selection</em>}'.
@@ -1489,6 +1451,17 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getSelection_From();
+
+	/**
+	 * Returns the meta object for the attribute '{@link FileTransferPackage.Selection#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see FileTransferPackage.Selection#getName()
+	 * @see #getSelection()
+	 * @generated
+	 */
+	EAttribute getSelection_Name();
 
 	/**
 	 * Returns the meta object for class '{@link FileTransferPackage.Transformation <em>Transformation</em>}'.
@@ -1637,15 +1610,15 @@ public interface FileTransferPackagePackage extends EPackage {
 	EClass getFilterLeaf();
 
 	/**
-	 * Returns the meta object for the attribute '{@link FileTransferPackage.FilterLeaf#isTrueFalseSearch <em>True False Search</em>}'.
+	 * Returns the meta object for the attribute '{@link FileTransferPackage.FilterLeaf#isInverse <em>Inverse</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>True False Search</em>'.
-	 * @see FileTransferPackage.FilterLeaf#isTrueFalseSearch()
+	 * @return the meta object for the attribute '<em>Inverse</em>'.
+	 * @see FileTransferPackage.FilterLeaf#isInverse()
 	 * @see #getFilterLeaf()
 	 * @generated
 	 */
-	EAttribute getFilterLeaf_TrueFalseSearch();
+	EAttribute getFilterLeaf_Inverse();
 
 	/**
 	 * Returns the meta object for class '{@link FileTransferPackage.OnName <em>On Name</em>}'.
@@ -1829,6 +1802,17 @@ public interface FileTransferPackagePackage extends EPackage {
 	EAttribute getOnTags_Treshold();
 
 	/**
+	 * Returns the meta object for the attribute '{@link FileTransferPackage.OnTags#getQuantificator <em>Quantificator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Quantificator</em>'.
+	 * @see FileTransferPackage.OnTags#getQuantificator()
+	 * @see #getOnTags()
+	 * @generated
+	 */
+	EAttribute getOnTags_Quantificator();
+
+	/**
 	 * Returns the meta object for class '{@link FileTransferPackage.OnSize <em>On Size</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1910,38 +1894,6 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getFilterComponent();
-
-	/**
-	 * Returns the meta object for class '{@link FileTransferPackage.SelectionVariable <em>Selection Variable</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Selection Variable</em>'.
-	 * @see FileTransferPackage.SelectionVariable
-	 * @generated
-	 */
-	EClass getSelectionVariable();
-
-	/**
-	 * Returns the meta object for the attribute '{@link FileTransferPackage.SelectionVariable#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see FileTransferPackage.SelectionVariable#getName()
-	 * @see #getSelectionVariable()
-	 * @generated
-	 */
-	EAttribute getSelectionVariable_Name();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link FileTransferPackage.SelectionVariable#getValue <em>Value</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Value</em>'.
-	 * @see FileTransferPackage.SelectionVariable#getValue()
-	 * @see #getSelectionVariable()
-	 * @generated
-	 */
-	EReference getSelectionVariable_Value();
 
 	/**
 	 * Returns the meta object for class '{@link FileTransferPackage.Model <em>Model</em>}'.
@@ -2128,6 +2080,16 @@ public interface FileTransferPackagePackage extends EPackage {
 	EEnum getCompositionType();
 
 	/**
+	 * Returns the meta object for enum '{@link FileTransferPackage.Quantificators <em>Quantificators</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Quantificators</em>'.
+	 * @see FileTransferPackage.Quantificators
+	 * @generated
+	 */
+	EEnum getQuantificators();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2169,14 +2131,6 @@ public interface FileTransferPackagePackage extends EPackage {
 		EReference PATH__STEPS = eINSTANCE.getPath_Steps();
 
 		/**
-		 * The meta object literal for the '<em><b>Absolute</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PATH__ABSOLUTE = eINSTANCE.getPath_Absolute();
-
-		/**
 		 * The meta object literal for the '{@link FileTransferPackage.impl.SelectionImpl <em>Selection</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2203,10 +2157,18 @@ public interface FileTransferPackagePackage extends EPackage {
 		EReference SELECTION__FROM = eINSTANCE.getSelection_From();
 
 		/**
-		 * The meta object literal for the '{@link FileTransferPackage.impl.TransformationImpl <em>Transformation</em>}' class.
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see FileTransferPackage.impl.TransformationImpl
+		 * @generated
+		 */
+		EAttribute SELECTION__NAME = eINSTANCE.getSelection_Name();
+
+		/**
+		 * The meta object literal for the '{@link FileTransferPackage.Transformation <em>Transformation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see FileTransferPackage.Transformation
 		 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getTransformation()
 		 * @generated
 		 */
@@ -2221,10 +2183,10 @@ public interface FileTransferPackagePackage extends EPackage {
 		EReference TRANSFORMATION__SOURCE = eINSTANCE.getTransformation_Source();
 
 		/**
-		 * The meta object literal for the '{@link FileTransferPackage.impl.CreatingImpl <em>Creating</em>}' class.
+		 * The meta object literal for the '{@link FileTransferPackage.Creating <em>Creating</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see FileTransferPackage.impl.CreatingImpl
+		 * @see FileTransferPackage.Creating
 		 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getCreating()
 		 * @generated
 		 */
@@ -2331,12 +2293,12 @@ public interface FileTransferPackagePackage extends EPackage {
 		EClass FILTER_LEAF = eINSTANCE.getFilterLeaf();
 
 		/**
-		 * The meta object literal for the '<em><b>True False Search</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Inverse</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute FILTER_LEAF__TRUE_FALSE_SEARCH = eINSTANCE.getFilterLeaf_TrueFalseSearch();
+		EAttribute FILTER_LEAF__INVERSE = eINSTANCE.getFilterLeaf_Inverse();
 
 		/**
 		 * The meta object literal for the '{@link FileTransferPackage.impl.OnNameImpl <em>On Name</em>}' class.
@@ -2487,6 +2449,14 @@ public interface FileTransferPackagePackage extends EPackage {
 		EAttribute ON_TAGS__TRESHOLD = eINSTANCE.getOnTags_Treshold();
 
 		/**
+		 * The meta object literal for the '<em><b>Quantificator</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ON_TAGS__QUANTIFICATOR = eINSTANCE.getOnTags_Quantificator();
+
+		/**
 		 * The meta object literal for the '{@link FileTransferPackage.impl.OnSizeImpl <em>On Size</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2559,32 +2529,6 @@ public interface FileTransferPackagePackage extends EPackage {
 		 * @generated
 		 */
 		EClass FILTER_COMPONENT = eINSTANCE.getFilterComponent();
-
-		/**
-		 * The meta object literal for the '{@link FileTransferPackage.impl.SelectionVariableImpl <em>Selection Variable</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see FileTransferPackage.impl.SelectionVariableImpl
-		 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getSelectionVariable()
-		 * @generated
-		 */
-		EClass SELECTION_VARIABLE = eINSTANCE.getSelectionVariable();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SELECTION_VARIABLE__NAME = eINSTANCE.getSelectionVariable_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Value</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SELECTION_VARIABLE__VALUE = eINSTANCE.getSelectionVariable_Value();
 
 		/**
 		 * The meta object literal for the '{@link FileTransferPackage.impl.ModelImpl <em>Model</em>}' class.
@@ -2679,10 +2623,10 @@ public interface FileTransferPackagePackage extends EPackage {
 		EAttribute PARAMETRIZED_STEP__NAME = eINSTANCE.getParametrizedStep_Name();
 
 		/**
-		 * The meta object literal for the '{@link FileTransferPackage.impl.ExecutionImpl <em>Execution</em>}' class.
+		 * The meta object literal for the '{@link FileTransferPackage.Execution <em>Execution</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see FileTransferPackage.impl.ExecutionImpl
+		 * @see FileTransferPackage.Execution
 		 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getExecution()
 		 * @generated
 		 */
@@ -2757,6 +2701,16 @@ public interface FileTransferPackagePackage extends EPackage {
 		 * @generated
 		 */
 		EEnum COMPOSITION_TYPE = eINSTANCE.getCompositionType();
+
+		/**
+		 * The meta object literal for the '{@link FileTransferPackage.Quantificators <em>Quantificators</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see FileTransferPackage.Quantificators
+		 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getQuantificators()
+		 * @generated
+		 */
+		EEnum QUANTIFICATORS = eINSTANCE.getQuantificators();
 
 	}
 

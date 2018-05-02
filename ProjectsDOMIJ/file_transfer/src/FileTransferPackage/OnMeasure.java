@@ -36,7 +36,7 @@ public interface OnMeasure extends FilterLeaf {
 	 * @see FileTransferPackage.Operator
 	 * @see #setOperator(Operator)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getOnMeasure_Operator()
-	 * @model required="true"
+	 * @model unique="false" required="true"
 	 * @generated
 	 */
 	Operator getOperator();
@@ -63,7 +63,7 @@ public interface OnMeasure extends FilterLeaf {
 	 * @return the value of the '<em>Treshold</em>' attribute.
 	 * @see #setTreshold(int)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getOnMeasure_Treshold()
-	 * @model required="true"
+	 * @model unique="false" required="true"
 	 * @generated
 	 */
 	int getTreshold();

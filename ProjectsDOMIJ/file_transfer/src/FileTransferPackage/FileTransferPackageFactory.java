@@ -148,15 +148,6 @@ public interface FileTransferPackageFactory extends EFactory {
 	FilterContainer createFilterContainer();
 
 	/**
-	 * Returns a new object of class '<em>Selection Variable</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Selection Variable</em>'.
-	 * @generated
-	 */
-	SelectionVariable createSelectionVariable();
-
-	/**
 	 * Returns a new object of class '<em>Model</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

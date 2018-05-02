@@ -15,11 +15,11 @@
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="file_transfer_metamodel.ecore#//FileType">
       <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//FileType/Document"/>
-      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//FileType/Folder"/>
+      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//FileType/Directory"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="file_transfer_metamodel.ecore#//TimeType">
-      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeType/modification"/>
-      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeType/cretion"/>
+      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeType/modified"/>
+      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeType/created"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="file_transfer_metamodel.ecore#//MemoryUnit">
       <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//MemoryUnit/KB"/>
@@ -28,12 +28,12 @@
       <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//MemoryUnit/TB"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="file_transfer_metamodel.ecore#//TimeUnit">
-      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeUnit/min"/>
-      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeUnit/hour"/>
-      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeUnit/day"/>
-      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeUnit/week"/>
-      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeUnit/month"/>
-      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeUnit/year"/>
+      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeUnit/mins"/>
+      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeUnit/hours"/>
+      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeUnit/days"/>
+      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeUnit/weeks"/>
+      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeUnit/months"/>
+      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//TimeUnit/years"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="file_transfer_metamodel.ecore#//Strategies">
       <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//Strategies/forced"/>
@@ -43,15 +43,18 @@
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="file_transfer_metamodel.ecore#//CompositionType">
       <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//CompositionType/and"/>
       <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//CompositionType/or"/>
-      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//CompositionType/none"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="file_transfer_metamodel.ecore#//Quantificators">
+      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//Quantificators/any"/>
+      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//Quantificators/all"/>
     </genEnums>
     <genClasses ecoreClass="file_transfer_metamodel.ecore#//Path">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference file_transfer_metamodel.ecore#//Path/steps"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//Path/absolute"/>
     </genClasses>
     <genClasses ecoreClass="file_transfer_metamodel.ecore#//Selection">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference file_transfer_metamodel.ecore#//Selection/where"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference file_transfer_metamodel.ecore#//Selection/from"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//Selection/name"/>
     </genClasses>
     <genClasses image="false" ecoreClass="file_transfer_metamodel.ecore#//Transformation">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference file_transfer_metamodel.ecore#//Transformation/source"/>
@@ -71,7 +74,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//PathVariable/name"/>
     </genClasses>
     <genClasses image="false" ecoreClass="file_transfer_metamodel.ecore#//FilterLeaf">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//FilterLeaf/trueFalseSearch"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//FilterLeaf/inverse"/>
     </genClasses>
     <genClasses ecoreClass="file_transfer_metamodel.ecore#//OnName">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//OnName/name"/>
@@ -95,6 +98,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//OnTags/tags"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//OnTags/only"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//OnTags/treshold"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//OnTags/quantificator"/>
     </genClasses>
     <genClasses ecoreClass="file_transfer_metamodel.ecore#//OnSize">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//OnSize/unit"/>
@@ -106,10 +110,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//FilterContainer/compositionType"/>
     </genClasses>
     <genClasses image="false" ecoreClass="file_transfer_metamodel.ecore#//FilterComponent"/>
-    <genClasses ecoreClass="file_transfer_metamodel.ecore#//SelectionVariable">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//SelectionVariable/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference file_transfer_metamodel.ecore#//SelectionVariable/value"/>
-    </genClasses>
     <genClasses ecoreClass="file_transfer_metamodel.ecore#//Model">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference file_transfer_metamodel.ecore#//Model/executions"/>
     </genClasses>

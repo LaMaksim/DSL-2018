@@ -33,7 +33,7 @@ public interface OnType extends OnBasic {
 	 * @see FileTransferPackage.FileType
 	 * @see #setType(FileType)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getOnType_Type()
-	 * @model required="true"
+	 * @model unique="false" required="true"
 	 * @generated
 	 */
 	FileType getType();

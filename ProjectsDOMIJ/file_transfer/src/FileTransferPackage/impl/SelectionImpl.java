@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link FileTransferPackage.impl.SelectionImpl#getWhere <em>Where</em>}</li>
  *   <li>{@link FileTransferPackage.impl.SelectionImpl#getFrom <em>From</em>}</li>
+ *   <li>{@link FileTransferPackage.impl.SelectionImpl#getName <em>Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -57,6 +58,26 @@ public class SelectionImpl extends MinimalEObjectImpl.Container implements Selec
 	 * @ordered
 	 */
 	protected Path from;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -137,6 +158,27 @@ public class SelectionImpl extends MinimalEObjectImpl.Container implements Selec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FileTransferPackagePackage.SELECTION__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -160,6 +202,8 @@ public class SelectionImpl extends MinimalEObjectImpl.Container implements Selec
 				return getWhere();
 			case FileTransferPackagePackage.SELECTION__FROM:
 				return getFrom();
+			case FileTransferPackagePackage.SELECTION__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -180,6 +224,9 @@ public class SelectionImpl extends MinimalEObjectImpl.Container implements Selec
 			case FileTransferPackagePackage.SELECTION__FROM:
 				setFrom((Path)newValue);
 				return;
+			case FileTransferPackagePackage.SELECTION__NAME:
+				setName((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -198,6 +245,9 @@ public class SelectionImpl extends MinimalEObjectImpl.Container implements Selec
 			case FileTransferPackagePackage.SELECTION__FROM:
 				setFrom((Path)null);
 				return;
+			case FileTransferPackagePackage.SELECTION__NAME:
+				setName(NAME_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -214,8 +264,26 @@ public class SelectionImpl extends MinimalEObjectImpl.Container implements Selec
 				return where != null && !where.isEmpty();
 			case FileTransferPackagePackage.SELECTION__FROM:
 				return from != null;
+			case FileTransferPackagePackage.SELECTION__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(')');
+		return result.toString();
 	}
 
 } //SelectionImpl

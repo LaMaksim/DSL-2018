@@ -128,8 +128,6 @@ public class FileTransferPackageValidator extends EObjectValidator {
 				return validateFilterContainer((FilterContainer)value, diagnostics, context);
 			case FileTransferPackagePackage.FILTER_COMPONENT:
 				return validateFilterComponent((FilterComponent)value, diagnostics, context);
-			case FileTransferPackagePackage.SELECTION_VARIABLE:
-				return validateSelectionVariable((SelectionVariable)value, diagnostics, context);
 			case FileTransferPackagePackage.MODEL:
 				return validateModel((Model)value, diagnostics, context);
 			case FileTransferPackagePackage.GENERIC_STEP:
@@ -158,6 +156,8 @@ public class FileTransferPackageValidator extends EObjectValidator {
 				return validateStrategies((Strategies)value, diagnostics, context);
 			case FileTransferPackagePackage.COMPOSITION_TYPE:
 				return validateCompositionType((CompositionType)value, diagnostics, context);
+			case FileTransferPackagePackage.QUANTIFICATORS:
+				return validateQuantificators((Quantificators)value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -701,53 +701,6 @@ public class FileTransferPackageValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSelectionVariable(SelectionVariable selectionVariable, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(selectionVariable, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(selectionVariable, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(selectionVariable, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(selectionVariable, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(selectionVariable, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(selectionVariable, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(selectionVariable, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(selectionVariable, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(selectionVariable, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSelectionVariable_selectionVariableRegularName(selectionVariable, diagnostics, context);
-		return result;
-	}
-
-	/**
-	 * Validates the selectionVariableRegularName constraint of '<em>Selection Variable</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSelectionVariable_selectionVariableRegularName(SelectionVariable selectionVariable, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO implement the constraint
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "selectionVariableRegularName", getObjectLabel(selectionVariable, context) },
-						 new Object[] { selectionVariable },
-						 context));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateModel(Model model, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(model, diagnostics, context);
 	}
@@ -904,6 +857,15 @@ public class FileTransferPackageValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateCompositionType(CompositionType compositionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return true;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateQuantificators(Quantificators quantificators, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 

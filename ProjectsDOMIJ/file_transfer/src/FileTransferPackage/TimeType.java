@@ -19,54 +19,54 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum TimeType implements Enumerator {
 	/**
-	 * The '<em><b>Modification</b></em>' literal object.
+	 * The '<em><b>Modified</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #MODIFICATION_VALUE
+	 * @see #MODIFIED_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	MODIFICATION(0, "modification", "modification"),
+	MODIFIED(0, "modified", "modified"),
 
 	/**
-	 * The '<em><b>Cretion</b></em>' literal object.
+	 * The '<em><b>Created</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #CRETION_VALUE
+	 * @see #CREATED_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	CRETION(1, "cretion", "cretion");
+	CREATED(1, "created", "created");
 
 	/**
-	 * The '<em><b>Modification</b></em>' literal value.
+	 * The '<em><b>Modified</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Modification</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Modified</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #MODIFICATION
-	 * @model name="modification"
+	 * @see #MODIFIED
+	 * @model name="modified"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int MODIFICATION_VALUE = 0;
+	public static final int MODIFIED_VALUE = 0;
 
 	/**
-	 * The '<em><b>Cretion</b></em>' literal value.
+	 * The '<em><b>Created</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Cretion</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Created</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #CRETION
-	 * @model name="cretion"
+	 * @see #CREATED
+	 * @model name="created"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int CRETION_VALUE = 1;
+	public static final int CREATED_VALUE = 1;
 
 	/**
 	 * An array of all the '<em><b>Time Type</b></em>' enumerators.
@@ -76,8 +76,8 @@ public enum TimeType implements Enumerator {
 	 */
 	private static final TimeType[] VALUES_ARRAY =
 		new TimeType[] {
-			MODIFICATION,
-			CRETION,
+			MODIFIED,
+			CREATED,
 		};
 
 	/**
@@ -128,8 +128,8 @@ public enum TimeType implements Enumerator {
 	 */
 	public static TimeType get(int value) {
 		switch (value) {
-			case MODIFICATION_VALUE: return MODIFICATION;
-			case CRETION_VALUE: return CRETION;
+			case MODIFIED_VALUE: return MODIFIED;
+			case CREATED_VALUE: return CREATED;
 		}
 		return null;
 	}

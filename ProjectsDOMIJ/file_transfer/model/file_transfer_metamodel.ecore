@@ -4,20 +4,21 @@
   <eClassifiers xsi:type="ecore:EClass" name="Path">
     <eStructuralFeatures xsi:type="ecore:EReference" name="steps" lowerBound="1" upperBound="-1"
         eType="#//GenericStep" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="absolute" unique="false"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Selection">
+  <eClassifiers xsi:type="ecore:EClass" name="Selection" eSuperTypes="#//Execution">
     <eStructuralFeatures xsi:type="ecore:EReference" name="where" upperBound="-1"
         eType="#//FilterComponent" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="from" lowerBound="1" eType="#//Path"
         containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Transformation" abstract="true" eSuperTypes="#//Execution">
+  <eClassifiers xsi:type="ecore:EClass" name="Transformation" abstract="true" interface="true"
+      eSuperTypes="#//Execution">
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
-        eType="#//SelectionVariable"/>
+        eType="#//Selection"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Creating" abstract="true" eSuperTypes="#//Transformation">
+  <eClassifiers xsi:type="ecore:EClass" name="Creating" abstract="true" interface="true"
+      eSuperTypes="#//Transformation">
     <eStructuralFeatures xsi:type="ecore:EReference" name="destination" lowerBound="1"
         eType="#//Path" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="strategy" unique="false"
@@ -50,8 +51,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FilterLeaf" abstract="true" eSuperTypes="#//FilterComponent">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="trueFalseSearch" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
-        defaultValueLiteral="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="inverse" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OnName" eSuperTypes="#//OnBasic">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -119,11 +120,13 @@
       <details key="TagsContent$message" value="'Tags must be regular identifiers'"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tags" unique="false" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral=""/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="only" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
         defaultValueLiteral="false"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="treshold" unique="false"
-        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="-1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantificator" unique="false"
+        eType="#//Quantificators" defaultValueLiteral="all"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Operator">
     <eLiterals name="equal"/>
@@ -139,12 +142,12 @@
   <eClassifiers xsi:type="ecore:EClass" name="OnBasic" abstract="true" eSuperTypes="#//FilterLeaf"/>
   <eClassifiers xsi:type="ecore:EEnum" name="FileType">
     <eLiterals name="Document" literal="Document"/>
-    <eLiterals name="Folder" value="1"/>
+    <eLiterals name="Directory" value="1"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OnCustom" abstract="true" eSuperTypes="#//FilterLeaf"/>
   <eClassifiers xsi:type="ecore:EEnum" name="TimeType">
-    <eLiterals name="modification"/>
-    <eLiterals name="cretion" value="1"/>
+    <eLiterals name="modified"/>
+    <eLiterals name="created" value="1"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="MemoryUnit">
     <eLiterals name="KB"/>
@@ -153,12 +156,12 @@
     <eLiterals name="TB" value="3"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TimeUnit">
-    <eLiterals name="min"/>
-    <eLiterals name="hour" value="1"/>
-    <eLiterals name="day" value="2"/>
-    <eLiterals name="week" value="3"/>
-    <eLiterals name="month" value="4"/>
-    <eLiterals name="year" value="5"/>
+    <eLiterals name="mins" literal="mins"/>
+    <eLiterals name="hours" value="1"/>
+    <eLiterals name="days" value="2"/>
+    <eLiterals name="weeks" value="3"/>
+    <eLiterals name="months" value="4"/>
+    <eLiterals name="years" value="5"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Strategies">
     <eLiterals name="forced"/>
@@ -166,9 +169,8 @@
     <eLiterals name="carefully" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CompositionType">
-    <eLiterals name="and"/>
+    <eLiterals name="and" literal="and"/>
     <eLiterals name="or" value="1"/>
-    <eLiterals name="none" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FilterContainer" eSuperTypes="#//FilterComponent">
     <eStructuralFeatures xsi:type="ecore:EReference" name="segments" lowerBound="2"
@@ -177,18 +179,6 @@
         eType="#//CompositionType"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FilterComponent" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="SelectionVariable" eSuperTypes="#//Execution">
-    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
-      <details key="constraints" value="selectionVariableRegularName"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
-      <details key="selectionVariableRegularName" value="&#xA;&#x9;&#x9;&#x9;name.matches('[a-zA-Z][a-zA-Z0-9]*')"/>
-      <details key="selectionVariableRegularName$message" value="'Must use regular name, starting with letter followed by letters and numbers only'"/>
-    </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="value" lowerBound="1" eType="#//Selection"
-        containment="true"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Model">
     <eStructuralFeatures xsi:type="ecore:EReference" name="executions" upperBound="-1"
         eType="#//Execution" containment="true"/>
@@ -214,5 +204,9 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" unique="false" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Execution" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Execution" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="Quantificators">
+    <eLiterals name="any"/>
+    <eLiterals name="all" value="1"/>
+  </eClassifiers>
 </ecore:EPackage>

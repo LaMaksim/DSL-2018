@@ -19,154 +19,154 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum TimeUnit implements Enumerator {
 	/**
-	 * The '<em><b>Min</b></em>' literal object.
+	 * The '<em><b>Mins</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #MIN_VALUE
+	 * @see #MINS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	MIN(0, "min", "min"),
+	MINS(0, "mins", "mins"),
 
 	/**
-	 * The '<em><b>Hour</b></em>' literal object.
+	 * The '<em><b>Hours</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #HOUR_VALUE
+	 * @see #HOURS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	HOUR(1, "hour", "hour"),
+	HOURS(1, "hours", "hours"),
 
 	/**
-	 * The '<em><b>Day</b></em>' literal object.
+	 * The '<em><b>Days</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #DAY_VALUE
+	 * @see #DAYS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	DAY(2, "day", "day"),
+	DAYS(2, "days", "days"),
 
 	/**
-	 * The '<em><b>Week</b></em>' literal object.
+	 * The '<em><b>Weeks</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #WEEK_VALUE
+	 * @see #WEEKS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	WEEK(3, "week", "week"),
+	WEEKS(3, "weeks", "weeks"),
 
 	/**
-	 * The '<em><b>Month</b></em>' literal object.
+	 * The '<em><b>Months</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #MONTH_VALUE
+	 * @see #MONTHS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	MONTH(4, "month", "month"),
+	MONTHS(4, "months", "months"),
 
 	/**
-	 * The '<em><b>Year</b></em>' literal object.
+	 * The '<em><b>Years</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #YEAR_VALUE
+	 * @see #YEARS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	YEAR(5, "year", "year");
+	YEARS(5, "years", "years");
 
 	/**
-	 * The '<em><b>Min</b></em>' literal value.
+	 * The '<em><b>Mins</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Min</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Mins</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #MIN
-	 * @model name="min"
+	 * @see #MINS
+	 * @model name="mins"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int MIN_VALUE = 0;
+	public static final int MINS_VALUE = 0;
 
 	/**
-	 * The '<em><b>Hour</b></em>' literal value.
+	 * The '<em><b>Hours</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Hour</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Hours</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #HOUR
-	 * @model name="hour"
+	 * @see #HOURS
+	 * @model name="hours"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int HOUR_VALUE = 1;
+	public static final int HOURS_VALUE = 1;
 
 	/**
-	 * The '<em><b>Day</b></em>' literal value.
+	 * The '<em><b>Days</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Day</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Days</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #DAY
-	 * @model name="day"
+	 * @see #DAYS
+	 * @model name="days"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int DAY_VALUE = 2;
+	public static final int DAYS_VALUE = 2;
 
 	/**
-	 * The '<em><b>Week</b></em>' literal value.
+	 * The '<em><b>Weeks</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Week</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Weeks</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #WEEK
-	 * @model name="week"
+	 * @see #WEEKS
+	 * @model name="weeks"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int WEEK_VALUE = 3;
+	public static final int WEEKS_VALUE = 3;
 
 	/**
-	 * The '<em><b>Month</b></em>' literal value.
+	 * The '<em><b>Months</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Month</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Months</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #MONTH
-	 * @model name="month"
+	 * @see #MONTHS
+	 * @model name="months"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int MONTH_VALUE = 4;
+	public static final int MONTHS_VALUE = 4;
 
 	/**
-	 * The '<em><b>Year</b></em>' literal value.
+	 * The '<em><b>Years</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Year</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Years</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #YEAR
-	 * @model name="year"
+	 * @see #YEARS
+	 * @model name="years"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int YEAR_VALUE = 5;
+	public static final int YEARS_VALUE = 5;
 
 	/**
 	 * An array of all the '<em><b>Time Unit</b></em>' enumerators.
@@ -176,12 +176,12 @@ public enum TimeUnit implements Enumerator {
 	 */
 	private static final TimeUnit[] VALUES_ARRAY =
 		new TimeUnit[] {
-			MIN,
-			HOUR,
-			DAY,
-			WEEK,
-			MONTH,
-			YEAR,
+			MINS,
+			HOURS,
+			DAYS,
+			WEEKS,
+			MONTHS,
+			YEARS,
 		};
 
 	/**
@@ -232,12 +232,12 @@ public enum TimeUnit implements Enumerator {
 	 */
 	public static TimeUnit get(int value) {
 		switch (value) {
-			case MIN_VALUE: return MIN;
-			case HOUR_VALUE: return HOUR;
-			case DAY_VALUE: return DAY;
-			case WEEK_VALUE: return WEEK;
-			case MONTH_VALUE: return MONTH;
-			case YEAR_VALUE: return YEAR;
+			case MINS_VALUE: return MINS;
+			case HOURS_VALUE: return HOURS;
+			case DAYS_VALUE: return DAYS;
+			case WEEKS_VALUE: return WEEKS;
+			case MONTHS_VALUE: return MONTHS;
+			case YEARS_VALUE: return YEARS;
 		}
 		return null;
 	}

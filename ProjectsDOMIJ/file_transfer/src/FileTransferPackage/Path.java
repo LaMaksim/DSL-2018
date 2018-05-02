@@ -15,7 +15,6 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * <ul>
  *   <li>{@link FileTransferPackage.Path#getSteps <em>Steps</em>}</li>
- *   <li>{@link FileTransferPackage.Path#isAbsolute <em>Absolute</em>}</li>
  * </ul>
  * </p>
  *
@@ -39,32 +38,5 @@ public interface Path extends EObject {
 	 * @generated
 	 */
 	EList<GenericStep> getSteps();
-
-	/**
-	 * Returns the value of the '<em><b>Absolute</b></em>' attribute.
-	 * The default value is <code>"true"</code>.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Absolute</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Absolute</em>' attribute.
-	 * @see #setAbsolute(boolean)
-	 * @see FileTransferPackage.FileTransferPackagePackage#getPath_Absolute()
-	 * @model default="true" unique="false"
-	 * @generated
-	 */
-	boolean isAbsolute();
-
-	/**
-	 * Sets the value of the '{@link FileTransferPackage.Path#isAbsolute <em>Absolute</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Absolute</em>' attribute.
-	 * @see #isAbsolute()
-	 * @generated
-	 */
-	void setAbsolute(boolean value);
 
 } // Path

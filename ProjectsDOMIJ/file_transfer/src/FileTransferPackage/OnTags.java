@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link FileTransferPackage.OnTags#getTags <em>Tags</em>}</li>
  *   <li>{@link FileTransferPackage.OnTags#isOnly <em>Only</em>}</li>
  *   <li>{@link FileTransferPackage.OnTags#getTreshold <em>Treshold</em>}</li>
+ *   <li>{@link FileTransferPackage.OnTags#getQuantificator <em>Quantificator</em>}</li>
  * </ul>
  * </p>
  *
@@ -35,7 +36,7 @@ public interface OnTags extends OnCustom {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tags</em>' attribute list.
 	 * @see FileTransferPackage.FileTransferPackagePackage#getOnTags_Tags()
-	 * @model
+	 * @model default="" unique="false"
 	 * @generated
 	 */
 	EList<String> getTags();
@@ -52,7 +53,7 @@ public interface OnTags extends OnCustom {
 	 * @return the value of the '<em>Only</em>' attribute.
 	 * @see #setOnly(boolean)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getOnTags_Only()
-	 * @model default="false"
+	 * @model default="false" unique="false"
 	 * @generated
 	 */
 	boolean isOnly();
@@ -69,6 +70,7 @@ public interface OnTags extends OnCustom {
 
 	/**
 	 * Returns the value of the '<em><b>Treshold</b></em>' attribute.
+	 * The default value is <code>"-1"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Treshold</em>' attribute isn't clear,
@@ -78,7 +80,7 @@ public interface OnTags extends OnCustom {
 	 * @return the value of the '<em>Treshold</em>' attribute.
 	 * @see #setTreshold(int)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getOnTags_Treshold()
-	 * @model required="true"
+	 * @model default="-1" unique="false"
 	 * @generated
 	 */
 	int getTreshold();
@@ -92,5 +94,35 @@ public interface OnTags extends OnCustom {
 	 * @generated
 	 */
 	void setTreshold(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Quantificator</b></em>' attribute.
+	 * The default value is <code>"all"</code>.
+	 * The literals are from the enumeration {@link FileTransferPackage.Quantificators}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Quantificator</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Quantificator</em>' attribute.
+	 * @see FileTransferPackage.Quantificators
+	 * @see #setQuantificator(Quantificators)
+	 * @see FileTransferPackage.FileTransferPackagePackage#getOnTags_Quantificator()
+	 * @model default="all" unique="false"
+	 * @generated
+	 */
+	Quantificators getQuantificator();
+
+	/**
+	 * Sets the value of the '{@link FileTransferPackage.OnTags#getQuantificator <em>Quantificator</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Quantificator</em>' attribute.
+	 * @see FileTransferPackage.Quantificators
+	 * @see #getQuantificator()
+	 * @generated
+	 */
+	void setQuantificator(Quantificators value);
 
 } // OnTags

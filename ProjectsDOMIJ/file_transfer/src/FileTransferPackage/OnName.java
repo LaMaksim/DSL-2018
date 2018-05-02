@@ -32,7 +32,7 @@ public interface OnName extends OnBasic {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getOnName_Name()
-	 * @model required="true"
+	 * @model unique="false" required="true"
 	 * @generated
 	 */
 	String getName();

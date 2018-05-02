@@ -33,7 +33,7 @@ public interface OnAttributes extends OnCustom {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getOnAttributes_Name()
-	 * @model required="true"
+	 * @model unique="false" required="true"
 	 * @generated
 	 */
 	String getName();
@@ -59,7 +59,7 @@ public interface OnAttributes extends OnCustom {
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(String)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getOnAttributes_Value()
-	 * @model required="true"
+	 * @model unique="false"
 	 * @generated
 	 */
 	String getValue();

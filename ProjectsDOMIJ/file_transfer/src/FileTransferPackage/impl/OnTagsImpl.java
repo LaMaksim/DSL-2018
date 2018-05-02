@@ -4,6 +4,7 @@ package FileTransferPackage.impl;
 
 import FileTransferPackage.FileTransferPackagePackage;
 import FileTransferPackage.OnTags;
+import FileTransferPackage.Quantificators;
 
 import java.util.Collection;
 
@@ -15,7 +16,7 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
-import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
+import org.eclipse.emf.ecore.util.EDataTypeEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,6 +28,7 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  *   <li>{@link FileTransferPackage.impl.OnTagsImpl#getTags <em>Tags</em>}</li>
  *   <li>{@link FileTransferPackage.impl.OnTagsImpl#isOnly <em>Only</em>}</li>
  *   <li>{@link FileTransferPackage.impl.OnTagsImpl#getTreshold <em>Treshold</em>}</li>
+ *   <li>{@link FileTransferPackage.impl.OnTagsImpl#getQuantificator <em>Quantificator</em>}</li>
  * </ul>
  * </p>
  *
@@ -71,7 +73,7 @@ public class OnTagsImpl extends OnCustomImpl implements OnTags {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int TRESHOLD_EDEFAULT = 0;
+	protected static final int TRESHOLD_EDEFAULT = -1;
 
 	/**
 	 * The cached value of the '{@link #getTreshold() <em>Treshold</em>}' attribute.
@@ -82,6 +84,26 @@ public class OnTagsImpl extends OnCustomImpl implements OnTags {
 	 * @ordered
 	 */
 	protected int treshold = TRESHOLD_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getQuantificator() <em>Quantificator</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getQuantificator()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Quantificators QUANTIFICATOR_EDEFAULT = Quantificators.ALL;
+
+	/**
+	 * The cached value of the '{@link #getQuantificator() <em>Quantificator</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getQuantificator()
+	 * @generated
+	 * @ordered
+	 */
+	protected Quantificators quantificator = QUANTIFICATOR_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -109,7 +131,7 @@ public class OnTagsImpl extends OnCustomImpl implements OnTags {
 	 */
 	public EList<String> getTags() {
 		if (tags == null) {
-			tags = new EDataTypeUniqueEList<String>(String.class, this, FileTransferPackagePackage.ON_TAGS__TAGS);
+			tags = new EDataTypeEList<String>(String.class, this, FileTransferPackagePackage.ON_TAGS__TAGS);
 		}
 		return tags;
 	}
@@ -161,6 +183,27 @@ public class OnTagsImpl extends OnCustomImpl implements OnTags {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Quantificators getQuantificator() {
+		return quantificator;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setQuantificator(Quantificators newQuantificator) {
+		Quantificators oldQuantificator = quantificator;
+		quantificator = newQuantificator == null ? QUANTIFICATOR_EDEFAULT : newQuantificator;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FileTransferPackagePackage.ON_TAGS__QUANTIFICATOR, oldQuantificator, quantificator));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -170,6 +213,8 @@ public class OnTagsImpl extends OnCustomImpl implements OnTags {
 				return isOnly();
 			case FileTransferPackagePackage.ON_TAGS__TRESHOLD:
 				return getTreshold();
+			case FileTransferPackagePackage.ON_TAGS__QUANTIFICATOR:
+				return getQuantificator();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -193,6 +238,9 @@ public class OnTagsImpl extends OnCustomImpl implements OnTags {
 			case FileTransferPackagePackage.ON_TAGS__TRESHOLD:
 				setTreshold((Integer)newValue);
 				return;
+			case FileTransferPackagePackage.ON_TAGS__QUANTIFICATOR:
+				setQuantificator((Quantificators)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -214,6 +262,9 @@ public class OnTagsImpl extends OnCustomImpl implements OnTags {
 			case FileTransferPackagePackage.ON_TAGS__TRESHOLD:
 				setTreshold(TRESHOLD_EDEFAULT);
 				return;
+			case FileTransferPackagePackage.ON_TAGS__QUANTIFICATOR:
+				setQuantificator(QUANTIFICATOR_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -232,6 +283,8 @@ public class OnTagsImpl extends OnCustomImpl implements OnTags {
 				return only != ONLY_EDEFAULT;
 			case FileTransferPackagePackage.ON_TAGS__TRESHOLD:
 				return treshold != TRESHOLD_EDEFAULT;
+			case FileTransferPackagePackage.ON_TAGS__QUANTIFICATOR:
+				return quantificator != QUANTIFICATOR_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -252,6 +305,8 @@ public class OnTagsImpl extends OnCustomImpl implements OnTags {
 		result.append(only);
 		result.append(", treshold: ");
 		result.append(treshold);
+		result.append(", quantificator: ");
+		result.append(quantificator);
 		result.append(')');
 		return result.toString();
 	}

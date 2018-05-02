@@ -36,7 +36,7 @@ public class OnTimeImpl extends OnMeasureImpl implements OnTime {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final TimeUnit UNIT_EDEFAULT = TimeUnit.MIN;
+	protected static final TimeUnit UNIT_EDEFAULT = TimeUnit.MINS;
 
 	/**
 	 * The cached value of the '{@link #getUnit() <em>Unit</em>}' attribute.
@@ -56,7 +56,7 @@ public class OnTimeImpl extends OnMeasureImpl implements OnTime {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final TimeType TIME_OF_EDEFAULT = TimeType.MODIFICATION;
+	protected static final TimeType TIME_OF_EDEFAULT = TimeType.MODIFIED;
 
 	/**
 	 * The cached value of the '{@link #getTimeOf() <em>Time Of</em>}' attribute.

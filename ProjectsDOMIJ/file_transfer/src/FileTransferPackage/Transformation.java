@@ -16,7 +16,7 @@ package FileTransferPackage;
  * </p>
  *
  * @see FileTransferPackage.FileTransferPackagePackage#getTransformation()
- * @model abstract="true"
+ * @model interface="true" abstract="true"
  * @generated
  */
 public interface Transformation extends Execution {
@@ -29,12 +29,12 @@ public interface Transformation extends Execution {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source</em>' reference.
-	 * @see #setSource(SelectionVariable)
+	 * @see #setSource(Selection)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getTransformation_Source()
 	 * @model required="true"
 	 * @generated
 	 */
-	SelectionVariable getSource();
+	Selection getSource();
 
 	/**
 	 * Sets the value of the '{@link FileTransferPackage.Transformation#getSource <em>Source</em>}' reference.
@@ -44,6 +44,6 @@ public interface Transformation extends Execution {
 	 * @see #getSource()
 	 * @generated
 	 */
-	void setSource(SelectionVariable value);
+	void setSource(Selection value);
 
 } // Transformation

@@ -11,7 +11,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  *
  * @see FileTransferPackage.FileTransferPackagePackage#getExecution()
- * @model abstract="true"
+ * @model interface="true" abstract="true"
  * @generated
  */
 public interface Execution extends EObject {

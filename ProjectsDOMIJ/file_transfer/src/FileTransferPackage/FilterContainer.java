@@ -51,7 +51,7 @@ public interface FilterContainer extends FilterComponent {
 	 * @see FileTransferPackage.CompositionType
 	 * @see #setCompositionType(CompositionType)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getFilterContainer_CompositionType()
-	 * @model
+	 * @model unique="false"
 	 * @generated
 	 */
 	CompositionType getCompositionType();

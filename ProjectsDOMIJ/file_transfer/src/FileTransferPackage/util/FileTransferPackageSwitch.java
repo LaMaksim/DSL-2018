@@ -75,6 +75,7 @@ public class FileTransferPackageSwitch<T> extends Switch<T> {
 			case FileTransferPackagePackage.SELECTION: {
 				Selection selection = (Selection)theEObject;
 				T result = caseSelection(selection);
+				if (result == null) result = caseExecution(selection);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -228,13 +229,6 @@ public class FileTransferPackageSwitch<T> extends Switch<T> {
 			case FileTransferPackagePackage.FILTER_COMPONENT: {
 				FilterComponent filterComponent = (FilterComponent)theEObject;
 				T result = caseFilterComponent(filterComponent);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case FileTransferPackagePackage.SELECTION_VARIABLE: {
-				SelectionVariable selectionVariable = (SelectionVariable)theEObject;
-				T result = caseSelectionVariable(selectionVariable);
-				if (result == null) result = caseExecution(selectionVariable);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -604,21 +598,6 @@ public class FileTransferPackageSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseFilterComponent(FilterComponent object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Selection Variable</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Selection Variable</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSelectionVariable(SelectionVariable object) {
 		return null;
 	}
 

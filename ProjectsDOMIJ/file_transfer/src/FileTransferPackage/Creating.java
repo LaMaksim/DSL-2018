@@ -17,7 +17,7 @@ package FileTransferPackage;
  * </p>
  *
  * @see FileTransferPackage.FileTransferPackagePackage#getCreating()
- * @model abstract="true"
+ * @model interface="true" abstract="true"
  * @generated
  */
 public interface Creating extends Transformation {
@@ -60,7 +60,7 @@ public interface Creating extends Transformation {
 	 * @see FileTransferPackage.Strategies
 	 * @see #setStrategy(Strategies)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getCreating_Strategy()
-	 * @model
+	 * @model unique="false"
 	 * @generated
 	 */
 	Strategies getStrategy();

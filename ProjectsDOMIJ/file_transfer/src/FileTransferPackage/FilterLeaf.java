@@ -11,7 +11,7 @@ package FileTransferPackage;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link FileTransferPackage.FilterLeaf#isTrueFalseSearch <em>True False Search</em>}</li>
+ *   <li>{@link FileTransferPackage.FilterLeaf#isInverse <em>Inverse</em>}</li>
  * </ul>
  * </p>
  *
@@ -21,30 +21,30 @@ package FileTransferPackage;
  */
 public interface FilterLeaf extends FilterComponent {
 	/**
-	 * Returns the value of the '<em><b>True False Search</b></em>' attribute.
-	 * The default value is <code>"true"</code>.
+	 * Returns the value of the '<em><b>Inverse</b></em>' attribute.
+	 * The default value is <code>"false"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>True False Search</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Inverse</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>True False Search</em>' attribute.
-	 * @see #setTrueFalseSearch(boolean)
-	 * @see FileTransferPackage.FileTransferPackagePackage#getFilterLeaf_TrueFalseSearch()
-	 * @model default="true"
+	 * @return the value of the '<em>Inverse</em>' attribute.
+	 * @see #setInverse(boolean)
+	 * @see FileTransferPackage.FileTransferPackagePackage#getFilterLeaf_Inverse()
+	 * @model default="false"
 	 * @generated
 	 */
-	boolean isTrueFalseSearch();
+	boolean isInverse();
 
 	/**
-	 * Sets the value of the '{@link FileTransferPackage.FilterLeaf#isTrueFalseSearch <em>True False Search</em>}' attribute.
+	 * Sets the value of the '{@link FileTransferPackage.FilterLeaf#isInverse <em>Inverse</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>True False Search</em>' attribute.
-	 * @see #isTrueFalseSearch()
+	 * @param value the new value of the '<em>Inverse</em>' attribute.
+	 * @see #isInverse()
 	 * @generated
 	 */
-	void setTrueFalseSearch(boolean value);
+	void setInverse(boolean value);
 
 } // FilterLeaf

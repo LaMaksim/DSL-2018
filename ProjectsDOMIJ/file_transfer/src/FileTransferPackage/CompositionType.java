@@ -36,17 +36,7 @@ public enum CompositionType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	OR(1, "or", "or"),
-
-	/**
-	 * The '<em><b>None</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #NONE_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	NONE(2, "none", "none");
+	OR(1, "or", "or");
 
 	/**
 	 * The '<em><b>And</b></em>' literal value.
@@ -79,21 +69,6 @@ public enum CompositionType implements Enumerator {
 	public static final int OR_VALUE = 1;
 
 	/**
-	 * The '<em><b>None</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>None</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #NONE
-	 * @model name="none"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int NONE_VALUE = 2;
-
-	/**
 	 * An array of all the '<em><b>Composition Type</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -103,7 +78,6 @@ public enum CompositionType implements Enumerator {
 		new CompositionType[] {
 			AND,
 			OR,
-			NONE,
 		};
 
 	/**
@@ -156,7 +130,6 @@ public enum CompositionType implements Enumerator {
 		switch (value) {
 			case AND_VALUE: return AND;
 			case OR_VALUE: return OR;
-			case NONE_VALUE: return NONE;
 		}
 		return null;
 	}

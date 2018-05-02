@@ -33,7 +33,7 @@ public interface OnExtension extends OnBasic {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Extensions</em>' attribute list.
 	 * @see FileTransferPackage.FileTransferPackagePackage#getOnExtension_Extensions()
-	 * @model
+	 * @model unique="false"
 	 * @generated
 	 */
 	EList<String> getExtensions();

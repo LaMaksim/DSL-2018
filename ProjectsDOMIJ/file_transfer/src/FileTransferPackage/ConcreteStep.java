@@ -33,7 +33,7 @@ public interface ConcreteStep extends GenericStep {
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(String)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getConcreteStep_Value()
-	 * @model default="\"a\"" required="true"
+	 * @model default="\"a\"" unique="false" required="true"
 	 * @generated
 	 */
 	String getValue();

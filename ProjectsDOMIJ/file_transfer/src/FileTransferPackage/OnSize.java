@@ -33,7 +33,7 @@ public interface OnSize extends OnMeasure {
 	 * @see FileTransferPackage.MemoryUnit
 	 * @see #setUnit(MemoryUnit)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getOnSize_Unit()
-	 * @model required="true"
+	 * @model unique="false" required="true"
 	 * @generated
 	 */
 	MemoryUnit getUnit();
