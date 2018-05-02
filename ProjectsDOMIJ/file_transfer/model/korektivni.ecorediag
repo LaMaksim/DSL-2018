@@ -123,6 +123,10 @@
   <children xmi:type="notation:Node" xmi:id="_CMFc2E2BEeizhpBerVWJHA" type="1001">
     <children xmi:type="notation:Node" xmi:id="_CMGD4E2BEeizhpBerVWJHA" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_CMGD4U2BEeizhpBerVWJHA" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_bZouUE4ZEeip99KGOml7cg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="file_transfer_metamodel.ecore#//ConcreteStep/absolute"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bZouUU4ZEeip99KGOml7cg"/>
+      </children>
       <children xmi:type="notation:Node" xmi:id="_CMGD6U2BEeizhpBerVWJHA" type="2001">
         <element xmi:type="ecore:EAttribute" href="file_transfer_metamodel.ecore#//ConcreteStep/value"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_CMGD6k2BEeizhpBerVWJHA"/>
@@ -530,25 +534,6 @@
     <element xmi:type="ecore:EEnum" href="file_transfer_metamodel.ecore#//Strategies"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CMa0Ak2BEeizhpBerVWJHA" x="1661"/>
   </children>
-  <children xmi:type="notation:Node" xmi:id="_CMbbEE2BEeizhpBerVWJHA" type="1005">
-    <children xmi:type="notation:Node" xmi:id="_CMbbE02BEeizhpBerVWJHA" type="4010"/>
-    <children xmi:type="notation:Node" xmi:id="_CMbbFE2BEeizhpBerVWJHA" type="5008">
-      <children xmi:type="notation:Node" xmi:id="_CMbbGE2BEeizhpBerVWJHA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="file_transfer_metamodel.ecore#//CompositionType/and"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_CMbbGU2BEeizhpBerVWJHA"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_CMbbGk2BEeizhpBerVWJHA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="file_transfer_metamodel.ecore#//CompositionType/or"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_CMbbG02BEeizhpBerVWJHA"/>
-      </children>
-      <styles xmi:type="notation:DrawerStyle" xmi:id="_CMbbFU2BEeizhpBerVWJHA"/>
-      <styles xmi:type="notation:SortingStyle" xmi:id="_CMbbFk2BEeizhpBerVWJHA"/>
-      <styles xmi:type="notation:FilteringStyle" xmi:id="_CMbbF02BEeizhpBerVWJHA"/>
-    </children>
-    <styles xmi:type="notation:ShapeStyle" xmi:id="_CMbbEU2BEeizhpBerVWJHA" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EEnum" href="file_transfer_metamodel.ecore#//CompositionType"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CMbbEk2BEeizhpBerVWJHA" x="1976"/>
-  </children>
   <children xmi:type="notation:Node" xmi:id="_CMcCIk2BEeizhpBerVWJHA" type="1001">
     <children xmi:type="notation:Node" xmi:id="_CMcpME2BEeizhpBerVWJHA" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_CMcpMU2BEeizhpBerVWJHA" type="5001">
@@ -718,14 +703,18 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_xHkQQU2eEeizhpBerVWJHA" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EEnum" href="file_transfer_metamodel.ecore#//Quantificators"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xHkQQk2eEeizhpBerVWJHA" x="2205"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xHkQQk2eEeizhpBerVWJHA" x="1920" y="15"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_KFZvYE22EeijZd2E_D-jTw" type="1001">
     <children xmi:type="notation:Node" xmi:id="_KFbkkE22EeijZd2E_D-jTw" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_KFcLoE22EeijZd2E_D-jTw" type="5001">
-      <children xmi:type="notation:Node" xmi:id="_WadnkE22EeijZd2E_D-jTw" type="2001">
-        <element xmi:type="ecore:EAttribute" href="file_transfer_metamodel.ecore#//Link/compositonType"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_WadnkU22EeijZd2E_D-jTw"/>
+      <children xmi:type="notation:Node" xmi:id="_WKl98E4WEeip99KGOml7cg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="file_transfer_metamodel.ecore#//Link/or"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WKl98U4WEeip99KGOml7cg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Le_98E4WEeip99KGOml7cg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="file_transfer_metamodel.ecore#//Link/and"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Le_98U4WEeip99KGOml7cg"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_KFcLoU22EeijZd2E_D-jTw"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_KFcLok22EeijZd2E_D-jTw"/>
@@ -738,7 +727,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_KFZvYU22EeijZd2E_D-jTw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="file_transfer_metamodel.ecore#//Link"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KFZvYk22EeijZd2E_D-jTw" x="1920" y="780"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KFZvYk22EeijZd2E_D-jTw" x="1965" y="765"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_CLfm8U2BEeizhpBerVWJHA"/>
   <element xmi:type="ecore:EPackage" href="file_transfer_metamodel.ecore#/"/>
@@ -848,7 +837,7 @@
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_CMtu8U2BEeizhpBerVWJHA" routing="Rectilinear" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_CMtu8k2BEeizhpBerVWJHA" fontName="Segoe UI"/>
     <element xsi:nil="true"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CMtu802BEeizhpBerVWJHA" points="[-53, 0, 77, 103]$[-53, -103, 77, 0]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CMtu802BEeizhpBerVWJHA" points="[0, 0, 150, 103]$[0, -126, 150, -23]$[-54, -126, 96, -23]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CQ7gkk2BEeizhpBerVWJHA" id="(0.49640287769784175,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CQ8HoE2BEeizhpBerVWJHA" id="(0.12442396313364056,1.0)"/>
   </edges>

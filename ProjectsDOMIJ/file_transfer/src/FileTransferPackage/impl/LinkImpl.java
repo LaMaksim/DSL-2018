@@ -2,7 +2,6 @@
  */
 package FileTransferPackage.impl;
 
-import FileTransferPackage.CompositionType;
 import FileTransferPackage.FileTransferPackagePackage;
 import FileTransferPackage.FilterComponent;
 import FileTransferPackage.Link;
@@ -23,34 +22,15 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link FileTransferPackage.impl.LinkImpl#getCompositonType <em>Compositon Type</em>}</li>
  *   <li>{@link FileTransferPackage.impl.LinkImpl#getElement <em>Element</em>}</li>
+ *   <li>{@link FileTransferPackage.impl.LinkImpl#isAnd <em>And</em>}</li>
+ *   <li>{@link FileTransferPackage.impl.LinkImpl#isOr <em>Or</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
 public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
-	/**
-	 * The default value of the '{@link #getCompositonType() <em>Compositon Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCompositonType()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final CompositionType COMPOSITON_TYPE_EDEFAULT = CompositionType.AND;
-
-	/**
-	 * The cached value of the '{@link #getCompositonType() <em>Compositon Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCompositonType()
-	 * @generated
-	 * @ordered
-	 */
-	protected CompositionType compositonType = COMPOSITON_TYPE_EDEFAULT;
-
 	/**
 	 * The cached value of the '{@link #getElement() <em>Element</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -60,6 +40,46 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	 * @ordered
 	 */
 	protected FilterComponent element;
+
+	/**
+	 * The default value of the '{@link #isAnd() <em>And</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isAnd()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean AND_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isAnd() <em>And</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isAnd()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean and = AND_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #isOr() <em>Or</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isOr()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean OR_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isOr() <em>Or</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isOr()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean or = OR_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,27 +98,6 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	@Override
 	protected EClass eStaticClass() {
 		return FileTransferPackagePackage.Literals.LINK;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CompositionType getCompositonType() {
-		return compositonType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setCompositonType(CompositionType newCompositonType) {
-		CompositionType oldCompositonType = compositonType;
-		compositonType = newCompositonType == null ? COMPOSITON_TYPE_EDEFAULT : newCompositonType;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FileTransferPackagePackage.LINK__COMPOSITON_TYPE, oldCompositonType, compositonType));
 	}
 
 	/**
@@ -149,6 +148,48 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean isAnd() {
+		return and;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAnd(boolean newAnd) {
+		boolean oldAnd = and;
+		and = newAnd;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FileTransferPackagePackage.LINK__AND, oldAnd, and));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isOr() {
+		return or;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setOr(boolean newOr) {
+		boolean oldOr = or;
+		or = newOr;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FileTransferPackagePackage.LINK__OR, oldOr, or));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -166,10 +207,12 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FileTransferPackagePackage.LINK__COMPOSITON_TYPE:
-				return getCompositonType();
 			case FileTransferPackagePackage.LINK__ELEMENT:
 				return getElement();
+			case FileTransferPackagePackage.LINK__AND:
+				return isAnd();
+			case FileTransferPackagePackage.LINK__OR:
+				return isOr();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -182,11 +225,14 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FileTransferPackagePackage.LINK__COMPOSITON_TYPE:
-				setCompositonType((CompositionType)newValue);
-				return;
 			case FileTransferPackagePackage.LINK__ELEMENT:
 				setElement((FilterComponent)newValue);
+				return;
+			case FileTransferPackagePackage.LINK__AND:
+				setAnd((Boolean)newValue);
+				return;
+			case FileTransferPackagePackage.LINK__OR:
+				setOr((Boolean)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -200,11 +246,14 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FileTransferPackagePackage.LINK__COMPOSITON_TYPE:
-				setCompositonType(COMPOSITON_TYPE_EDEFAULT);
-				return;
 			case FileTransferPackagePackage.LINK__ELEMENT:
 				setElement((FilterComponent)null);
+				return;
+			case FileTransferPackagePackage.LINK__AND:
+				setAnd(AND_EDEFAULT);
+				return;
+			case FileTransferPackagePackage.LINK__OR:
+				setOr(OR_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -218,10 +267,12 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FileTransferPackagePackage.LINK__COMPOSITON_TYPE:
-				return compositonType != COMPOSITON_TYPE_EDEFAULT;
 			case FileTransferPackagePackage.LINK__ELEMENT:
 				return element != null;
+			case FileTransferPackagePackage.LINK__AND:
+				return and != AND_EDEFAULT;
+			case FileTransferPackagePackage.LINK__OR:
+				return or != OR_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -236,8 +287,10 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (compositonType: ");
-		result.append(compositonType);
+		result.append(" (and: ");
+		result.append(and);
+		result.append(", or: ");
+		result.append(or);
 		result.append(')');
 		return result.toString();
 	}

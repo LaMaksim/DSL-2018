@@ -40,10 +40,6 @@
       <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//Strategies/append"/>
       <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//Strategies/carefully"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="file_transfer_metamodel.ecore#//CompositionType">
-      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//CompositionType/and"/>
-      <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//CompositionType/or"/>
-    </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="file_transfer_metamodel.ecore#//Quantificators">
       <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//Quantificators/any"/>
       <genEnumLiterals ecoreEnumLiteral="file_transfer_metamodel.ecore#//Quantificators/all"/>
@@ -68,6 +64,7 @@
     <genClasses ecoreClass="file_transfer_metamodel.ecore#//Delete"/>
     <genClasses ecoreClass="file_transfer_metamodel.ecore#//ConcreteStep">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//ConcreteStep/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//ConcreteStep/absolute"/>
     </genClasses>
     <genClasses ecoreClass="file_transfer_metamodel.ecore#//PathVariable">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference file_transfer_metamodel.ecore#//PathVariable/value"/>
@@ -125,8 +122,9 @@
     </genClasses>
     <genClasses image="false" ecoreClass="file_transfer_metamodel.ecore#//Execution"/>
     <genClasses ecoreClass="file_transfer_metamodel.ecore#//Link">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//Link/compositonType"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference file_transfer_metamodel.ecore#//Link/element"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//Link/and"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute file_transfer_metamodel.ecore#//Link/or"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

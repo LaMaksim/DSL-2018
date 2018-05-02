@@ -2,7 +2,6 @@
  */
 package FileTransferPackage.impl;
 
-import FileTransferPackage.CompositionType;
 import FileTransferPackage.ConcreteStep;
 import FileTransferPackage.Copy;
 import FileTransferPackage.Creating;
@@ -310,13 +309,6 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum compositionTypeEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EEnum quantificatorsEEnum = null;
 
 	/**
@@ -531,6 +523,15 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 	 */
 	public EAttribute getConcreteStep_Value() {
 		return (EAttribute)concreteStepEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getConcreteStep_Absolute() {
+		return (EAttribute)concreteStepEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -916,8 +917,8 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLink_CompositonType() {
-		return (EAttribute)linkEClass.getEStructuralFeatures().get(0);
+	public EReference getLink_Element() {
+		return (EReference)linkEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -925,8 +926,17 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getLink_Element() {
-		return (EReference)linkEClass.getEStructuralFeatures().get(1);
+	public EAttribute getLink_And() {
+		return (EAttribute)linkEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getLink_Or() {
+		return (EAttribute)linkEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -981,15 +991,6 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 	 */
 	public EEnum getStrategies() {
 		return strategiesEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EEnum getCompositionType() {
-		return compositionTypeEEnum;
 	}
 
 	/**
@@ -1052,6 +1053,7 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 
 		concreteStepEClass = createEClass(CONCRETE_STEP);
 		createEAttribute(concreteStepEClass, CONCRETE_STEP__VALUE);
+		createEAttribute(concreteStepEClass, CONCRETE_STEP__ABSOLUTE);
 
 		pathVariableEClass = createEClass(PATH_VARIABLE);
 		createEReference(pathVariableEClass, PATH_VARIABLE__VALUE);
@@ -1115,8 +1117,9 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		executionEClass = createEClass(EXECUTION);
 
 		linkEClass = createEClass(LINK);
-		createEAttribute(linkEClass, LINK__COMPOSITON_TYPE);
 		createEReference(linkEClass, LINK__ELEMENT);
+		createEAttribute(linkEClass, LINK__AND);
+		createEAttribute(linkEClass, LINK__OR);
 
 		// Create enums
 		operatorEEnum = createEEnum(OPERATOR);
@@ -1125,7 +1128,6 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		memoryUnitEEnum = createEEnum(MEMORY_UNIT);
 		timeUnitEEnum = createEEnum(TIME_UNIT);
 		strategiesEEnum = createEEnum(STRATEGIES);
-		compositionTypeEEnum = createEEnum(COMPOSITION_TYPE);
 		quantificatorsEEnum = createEEnum(QUANTIFICATORS);
 	}
 
@@ -1186,7 +1188,7 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		initEReference(getPath_Steps(), this.getGenericStep(), null, "steps", null, 1, -1, Path.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(selectionEClass, Selection.class, "Selection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getSelection_Where(), this.getFilterComponent(), null, "where", null, 0, -1, Selection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSelection_Where(), this.getFilterComponent(), null, "where", null, 0, 1, Selection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSelection_From(), this.getPath(), null, "from", null, 1, 1, Selection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSelection_Name(), ecorePackage.getEString(), "name", null, 1, 1, Selection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1205,6 +1207,7 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 
 		initEClass(concreteStepEClass, ConcreteStep.class, "ConcreteStep", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getConcreteStep_Value(), ecorePackage.getEString(), "value", "\"a\"", 1, 1, ConcreteStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getConcreteStep_Absolute(), ecorePackage.getEBoolean(), "absolute", "false", 0, 1, ConcreteStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(pathVariableEClass, PathVariable.class, "PathVariable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPathVariable_Value(), this.getPath(), null, "value", null, 1, 1, PathVariable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1268,8 +1271,9 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		initEClass(executionEClass, Execution.class, "Execution", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(linkEClass, Link.class, "Link", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getLink_CompositonType(), this.getCompositionType(), "compositonType", "and", 0, 1, Link.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getLink_Element(), this.getFilterComponent(), null, "element", null, 1, 1, Link.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLink_And(), ecorePackage.getEBoolean(), "and", "false", 0, 1, Link.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLink_Or(), ecorePackage.getEBoolean(), "or", "false", 0, 1, Link.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(operatorEEnum, Operator.class, "Operator");
@@ -1305,10 +1309,6 @@ public class FileTransferPackagePackageImpl extends EPackageImpl implements File
 		addEEnumLiteral(strategiesEEnum, Strategies.FORCED);
 		addEEnumLiteral(strategiesEEnum, Strategies.APPEND);
 		addEEnumLiteral(strategiesEEnum, Strategies.CAREFULLY);
-
-		initEEnum(compositionTypeEEnum, CompositionType.class, "CompositionType");
-		addEEnumLiteral(compositionTypeEEnum, CompositionType.AND);
-		addEEnumLiteral(compositionTypeEEnum, CompositionType.OR);
 
 		initEEnum(quantificatorsEEnum, Quantificators.class, "Quantificators");
 		addEEnumLiteral(quantificatorsEEnum, Quantificators.ANY);

@@ -187,17 +187,10 @@ public abstract class AbstractFETLSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     value=EString
+	 *     (value=EString absolute?=':'?)
 	 */
 	protected void sequence_ConcreteStep(EObject context, ConcreteStep semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, FileTransferPackagePackage.Literals.CONCRETE_STEP__VALUE) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, FileTransferPackagePackage.Literals.CONCRETE_STEP__VALUE));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getConcreteStepAccess().getValueEStringParserRuleCall_0_0(), semanticObject.getValue());
-		feeder.finish();
+		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
@@ -246,7 +239,7 @@ public abstract class AbstractFETLSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (compositonType=CompositionType? element=FilterComponent)
+	 *     ((and?='and' | or?='or')? element=FilterComponent)
 	 */
 	protected void sequence_Link(EObject context, Link semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -380,7 +373,7 @@ public abstract class AbstractFETLSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (name=EString from=Path (where+=FilterComponent where+=FilterComponent*)?)
+	 *     (name=EString from=Path where=FilterComponent?)
 	 */
 	protected void sequence_Selection(EObject context, Selection semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

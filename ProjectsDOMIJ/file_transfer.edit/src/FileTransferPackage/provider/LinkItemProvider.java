@@ -3,7 +3,6 @@
 package FileTransferPackage.provider;
 
 
-import FileTransferPackage.CompositionType;
 import FileTransferPackage.FileTransferPackageFactory;
 import FileTransferPackage.FileTransferPackagePackage;
 import FileTransferPackage.Link;
@@ -64,29 +63,52 @@ public class LinkItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addCompositonTypePropertyDescriptor(object);
+			addAndPropertyDescriptor(object);
+			addOrPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Compositon Type feature.
+	 * This adds a property descriptor for the And feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addCompositonTypePropertyDescriptor(Object object) {
+	protected void addAndPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Link_compositonType_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Link_compositonType_feature", "_UI_Link_type"),
-				 FileTransferPackagePackage.Literals.LINK__COMPOSITON_TYPE,
+				 getString("_UI_Link_and_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Link_and_feature", "_UI_Link_type"),
+				 FileTransferPackagePackage.Literals.LINK__AND,
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Or feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addOrPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Link_or_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Link_or_feature", "_UI_Link_type"),
+				 FileTransferPackagePackage.Literals.LINK__OR,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -140,11 +162,8 @@ public class LinkItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		CompositionType labelValue = ((Link)object).getCompositonType();
-		String label = labelValue == null ? null : labelValue.toString();
-		return label == null || label.length() == 0 ?
-			getString("_UI_Link_type") :
-			getString("_UI_Link_type") + " " + label;
+		Link link = (Link)object;
+		return getString("_UI_Link_type") + " " + link.isAnd();
 	}
 
 	/**
@@ -159,7 +178,8 @@ public class LinkItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Link.class)) {
-			case FileTransferPackagePackage.LINK__COMPOSITON_TYPE:
+			case FileTransferPackagePackage.LINK__AND:
+			case FileTransferPackagePackage.LINK__OR:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case FileTransferPackagePackage.LINK__ELEMENT:

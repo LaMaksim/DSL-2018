@@ -187,13 +187,14 @@ public class FETLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cValueAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cValueEStringParserRuleCall_0_0 = (RuleCall)cValueAssignment_0.eContents().get(0);
-		private final Keyword cColonKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Assignment cAbsoluteAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final Keyword cAbsoluteColonKeyword_1_0 = (Keyword)cAbsoluteAssignment_1.eContents().get(0);
 		
 		//ConcreteStep:
-		//	value=EString ":"?;
+		//	value=EString absolute?=":"?;
 		public ParserRule getRule() { return rule; }
 
-		//value=EString ":"?
+		//value=EString absolute?=":"?
 		public Group getGroup() { return cGroup; }
 
 		//value=EString
@@ -202,8 +203,11 @@ public class FETLGrammarAccess extends AbstractGrammarElementFinder {
 		//EString
 		public RuleCall getValueEStringParserRuleCall_0_0() { return cValueEStringParserRuleCall_0_0; }
 
-		//":"?
-		public Keyword getColonKeyword_1() { return cColonKeyword_1; }
+		//absolute?=":"?
+		public Assignment getAbsoluteAssignment_1() { return cAbsoluteAssignment_1; }
+
+		//":"
+		public Keyword getAbsoluteColonKeyword_1_0() { return cAbsoluteColonKeyword_1_0; }
 	}
 
 	public class VariableStepElements extends AbstractParserRuleElementFinder {
@@ -279,16 +283,12 @@ public class FETLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cWhereKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
 		private final Assignment cWhereAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
 		private final RuleCall cWhereFilterComponentParserRuleCall_4_1_0 = (RuleCall)cWhereAssignment_4_1.eContents().get(0);
-		private final Group cGroup_4_2 = (Group)cGroup_4.eContents().get(2);
-		private final Keyword cCommaKeyword_4_2_0 = (Keyword)cGroup_4_2.eContents().get(0);
-		private final Assignment cWhereAssignment_4_2_1 = (Assignment)cGroup_4_2.eContents().get(1);
-		private final RuleCall cWhereFilterComponentParserRuleCall_4_2_1_0 = (RuleCall)cWhereAssignment_4_2_1.eContents().get(0);
 		
 		//Selection:
-		//	"select" name=EString "from" from=Path ("where" where+=FilterComponent ("," where+=FilterComponent)*)?;
+		//	"select" name=EString "from" from=Path ("where" where=FilterComponent)?;
 		public ParserRule getRule() { return rule; }
 
-		//"select" name=EString "from" from=Path ("where" where+=FilterComponent ("," where+=FilterComponent)*)?
+		//"select" name=EString "from" from=Path ("where" where=FilterComponent)?
 		public Group getGroup() { return cGroup; }
 
 		//"select"
@@ -309,29 +309,17 @@ public class FETLGrammarAccess extends AbstractGrammarElementFinder {
 		//Path
 		public RuleCall getFromPathParserRuleCall_3_0() { return cFromPathParserRuleCall_3_0; }
 
-		//("where" where+=FilterComponent ("," where+=FilterComponent)*)?
+		//("where" where=FilterComponent)?
 		public Group getGroup_4() { return cGroup_4; }
 
 		//"where"
 		public Keyword getWhereKeyword_4_0() { return cWhereKeyword_4_0; }
 
-		//where+=FilterComponent
+		//where=FilterComponent
 		public Assignment getWhereAssignment_4_1() { return cWhereAssignment_4_1; }
 
 		//FilterComponent
 		public RuleCall getWhereFilterComponentParserRuleCall_4_1_0() { return cWhereFilterComponentParserRuleCall_4_1_0; }
-
-		//("," where+=FilterComponent)*
-		public Group getGroup_4_2() { return cGroup_4_2; }
-
-		//","
-		public Keyword getCommaKeyword_4_2_0() { return cCommaKeyword_4_2_0; }
-
-		//where+=FilterComponent
-		public Assignment getWhereAssignment_4_2_1() { return cWhereAssignment_4_2_1; }
-
-		//FilterComponent
-		public RuleCall getWhereFilterComponentParserRuleCall_4_2_1_0() { return cWhereFilterComponentParserRuleCall_4_2_1_0; }
 	}
 
 	public class CopyElements extends AbstractParserRuleElementFinder {
@@ -525,23 +513,35 @@ public class FETLGrammarAccess extends AbstractGrammarElementFinder {
 	public class LinkElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Link");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cCompositonTypeAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cCompositonTypeCompositionTypeEnumRuleCall_0_0 = (RuleCall)cCompositonTypeAssignment_0.eContents().get(0);
+		private final Alternatives cAlternatives_0 = (Alternatives)cGroup.eContents().get(0);
+		private final Assignment cAndAssignment_0_0 = (Assignment)cAlternatives_0.eContents().get(0);
+		private final Keyword cAndAndKeyword_0_0_0 = (Keyword)cAndAssignment_0_0.eContents().get(0);
+		private final Assignment cOrAssignment_0_1 = (Assignment)cAlternatives_0.eContents().get(1);
+		private final Keyword cOrOrKeyword_0_1_0 = (Keyword)cOrAssignment_0_1.eContents().get(0);
 		private final Assignment cElementAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cElementFilterComponentParserRuleCall_1_0 = (RuleCall)cElementAssignment_1.eContents().get(0);
 		
 		//Link:
-		//	compositonType=CompositionType? element=FilterComponent;
+		//	(and?="and" | or?="or")? element=FilterComponent;
 		public ParserRule getRule() { return rule; }
 
-		//compositonType=CompositionType? element=FilterComponent
+		//(and?="and" | or?="or")? element=FilterComponent
 		public Group getGroup() { return cGroup; }
 
-		//compositonType=CompositionType?
-		public Assignment getCompositonTypeAssignment_0() { return cCompositonTypeAssignment_0; }
+		//(and?="and" | or?="or")?
+		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 
-		//CompositionType
-		public RuleCall getCompositonTypeCompositionTypeEnumRuleCall_0_0() { return cCompositonTypeCompositionTypeEnumRuleCall_0_0; }
+		//and?="and"
+		public Assignment getAndAssignment_0_0() { return cAndAssignment_0_0; }
+
+		//"and"
+		public Keyword getAndAndKeyword_0_0_0() { return cAndAndKeyword_0_0_0; }
+
+		//or?="or"
+		public Assignment getOrAssignment_0_1() { return cOrAssignment_0_1; }
+
+		//"or"
+		public Keyword getOrOrKeyword_0_1_0() { return cOrOrKeyword_0_1_0; }
 
 		//element=FilterComponent
 		public Assignment getElementAssignment_1() { return cElementAssignment_1; }
@@ -1350,34 +1350,6 @@ public class FETLGrammarAccess extends AbstractGrammarElementFinder {
 		public Keyword getTBTBKeyword_3_0() { return cTBTBKeyword_3_0; }
 	}
 
-	public class CompositionTypeElements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "CompositionType");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final EnumLiteralDeclaration cAndEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
-		private final Keyword cAndAndKeyword_0_0 = (Keyword)cAndEnumLiteralDeclaration_0.eContents().get(0);
-		private final EnumLiteralDeclaration cOrEnumLiteralDeclaration_1 = (EnumLiteralDeclaration)cAlternatives.eContents().get(1);
-		private final Keyword cOrOrKeyword_1_0 = (Keyword)cOrEnumLiteralDeclaration_1.eContents().get(0);
-		
-		//enum CompositionType:
-		//	and | or;
-		public EnumRule getRule() { return rule; }
-
-		//and | or
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//and
-		public EnumLiteralDeclaration getAndEnumLiteralDeclaration_0() { return cAndEnumLiteralDeclaration_0; }
-
-		//"and"
-		public Keyword getAndAndKeyword_0_0() { return cAndAndKeyword_0_0; }
-
-		//or
-		public EnumLiteralDeclaration getOrEnumLiteralDeclaration_1() { return cOrEnumLiteralDeclaration_1; }
-
-		//"or"
-		public Keyword getOrOrKeyword_1_0() { return cOrOrKeyword_1_0; }
-	}
-
 	public class FileTypeElements extends AbstractEnumRuleElementFinder {
 		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "FileType");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
@@ -1435,7 +1407,6 @@ public class FETLGrammarAccess extends AbstractGrammarElementFinder {
 	private TimeTypeElements unknownRuleTimeType;
 	private QuantificatorsElements unknownRuleQuantificators;
 	private MemoryUnitElements unknownRuleMemoryUnit;
-	private CompositionTypeElements unknownRuleCompositionType;
 	private FileTypeElements unknownRuleFileType;
 	private EIntElements pEInt;
 	private EBooleanElements pEBoolean;
@@ -1530,7 +1501,7 @@ public class FETLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ConcreteStep:
-	//	value=EString ":"?;
+	//	value=EString absolute?=":"?;
 	public ConcreteStepElements getConcreteStepAccess() {
 		return (pConcreteStep != null) ? pConcreteStep : (pConcreteStep = new ConcreteStepElements());
 	}
@@ -1560,7 +1531,7 @@ public class FETLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Selection:
-	//	"select" name=EString "from" from=Path ("where" where+=FilterComponent ("," where+=FilterComponent)*)?;
+	//	"select" name=EString "from" from=Path ("where" where=FilterComponent)?;
 	public SelectionElements getSelectionAccess() {
 		return (pSelection != null) ? pSelection : (pSelection = new SelectionElements());
 	}
@@ -1610,7 +1581,7 @@ public class FETLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Link:
-	//	compositonType=CompositionType? element=FilterComponent;
+	//	(and?="and" | or?="or")? element=FilterComponent;
 	public LinkElements getLinkAccess() {
 		return (pLink != null) ? pLink : (pLink = new LinkElements());
 	}
@@ -1781,16 +1752,6 @@ public class FETLGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public EnumRule getMemoryUnitRule() {
 		return getMemoryUnitAccess().getRule();
-	}
-
-	//enum CompositionType:
-	//	and | or;
-	public CompositionTypeElements getCompositionTypeAccess() {
-		return (unknownRuleCompositionType != null) ? unknownRuleCompositionType : (unknownRuleCompositionType = new CompositionTypeElements());
-	}
-	
-	public EnumRule getCompositionTypeRule() {
-		return getCompositionTypeAccess().getRule();
 	}
 
 	//enum FileType:

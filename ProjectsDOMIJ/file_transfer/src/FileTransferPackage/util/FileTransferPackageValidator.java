@@ -156,8 +156,6 @@ public class FileTransferPackageValidator extends EObjectValidator {
 				return validateTimeUnit((TimeUnit)value, diagnostics, context);
 			case FileTransferPackagePackage.STRATEGIES:
 				return validateStrategies((Strategies)value, diagnostics, context);
-			case FileTransferPackagePackage.COMPOSITION_TYPE:
-				return validateCompositionType((CompositionType)value, diagnostics, context);
 			case FileTransferPackagePackage.QUANTIFICATORS:
 				return validateQuantificators((Quantificators)value, diagnostics, context);
 			default:
@@ -859,15 +857,6 @@ public class FileTransferPackageValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateStrategies(Strategies strategies, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return true;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCompositionType(CompositionType compositionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 

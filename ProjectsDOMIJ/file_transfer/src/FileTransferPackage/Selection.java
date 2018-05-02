@@ -2,7 +2,6 @@
  */
 package FileTransferPackage;
 
-import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,20 +23,30 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface Selection extends Execution {
 	/**
-	 * Returns the value of the '<em><b>Where</b></em>' containment reference list.
-	 * The list contents are of type {@link FileTransferPackage.FilterComponent}.
+	 * Returns the value of the '<em><b>Where</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Where</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Where</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Where</em>' containment reference list.
+	 * @return the value of the '<em>Where</em>' containment reference.
+	 * @see #setWhere(FilterComponent)
 	 * @see FileTransferPackage.FileTransferPackagePackage#getSelection_Where()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<FilterComponent> getWhere();
+	FilterComponent getWhere();
+
+	/**
+	 * Sets the value of the '{@link FileTransferPackage.Selection#getWhere <em>Where</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Where</em>' containment reference.
+	 * @see #getWhere()
+	 * @generated
+	 */
+	void setWhere(FilterComponent value);
 
 	/**
 	 * Returns the value of the '<em><b>From</b></em>' containment reference.

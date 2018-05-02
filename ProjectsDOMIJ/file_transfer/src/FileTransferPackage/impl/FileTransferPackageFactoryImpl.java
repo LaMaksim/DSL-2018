@@ -102,8 +102,6 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 				return createTimeUnitFromString(eDataType, initialValue);
 			case FileTransferPackagePackage.STRATEGIES:
 				return createStrategiesFromString(eDataType, initialValue);
-			case FileTransferPackagePackage.COMPOSITION_TYPE:
-				return createCompositionTypeFromString(eDataType, initialValue);
 			case FileTransferPackagePackage.QUANTIFICATORS:
 				return createQuantificatorsFromString(eDataType, initialValue);
 			default:
@@ -131,8 +129,6 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 				return convertTimeUnitToString(eDataType, instanceValue);
 			case FileTransferPackagePackage.STRATEGIES:
 				return convertStrategiesToString(eDataType, instanceValue);
-			case FileTransferPackagePackage.COMPOSITION_TYPE:
-				return convertCompositionTypeToString(eDataType, instanceValue);
 			case FileTransferPackagePackage.QUANTIFICATORS:
 				return convertQuantificatorsToString(eDataType, instanceValue);
 			default:
@@ -457,26 +453,6 @@ public class FileTransferPackageFactoryImpl extends EFactoryImpl implements File
 	 * @generated
 	 */
 	public String convertStrategiesToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CompositionType createCompositionTypeFromString(EDataType eDataType, String initialValue) {
-		CompositionType result = CompositionType.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertCompositionTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

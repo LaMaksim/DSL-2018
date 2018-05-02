@@ -36,8 +36,8 @@ public class FETLValidator extends AbstractFETLValidator {
       }
       if (_and) {
         final ConcreteStep cstep = ((ConcreteStep) step);
-        Boolean _absolute = cstep.getAbsolute();
-        if ((_absolute).booleanValue()) {
+        boolean _isAbsolute = cstep.isAbsolute();
+        if (_isAbsolute) {
           this.error("Only first concrete step can be absolute.", path, FileTransferPackagePackage.Literals.PATH__STEPS);
         }
       }

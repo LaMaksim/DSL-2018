@@ -3,12 +3,10 @@
  */
 package org.xtext.example.myFetl.validation
 
-import FileTransferPackage.Path
 import org.eclipse.xtext.validation.Check
-import org.eclipse.xtext.xbase.formatting.IntegerKey
+import FileTransferPackage.Path
 import FileTransferPackage.ConcreteStep
 import FileTransferPackage.FileTransferPackagePackage
-import org.eclipse.emf.codegen.ecore.genmodel.impl.Literals
 
 //import org.eclipse.xtext.validation.Check
 
@@ -46,4 +44,6 @@ class FETLValidator extends AbstractFETLValidator {
 			
 		}
 	}
+
+
 }

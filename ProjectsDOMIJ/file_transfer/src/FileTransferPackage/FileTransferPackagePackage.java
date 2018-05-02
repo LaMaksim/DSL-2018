@@ -133,7 +133,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	int SELECTION = 1;
 
 	/**
-	 * The feature id for the '<em><b>Where</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Where</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -464,13 +464,22 @@ public interface FileTransferPackagePackage extends EPackage {
 	int CONCRETE_STEP__VALUE = GENERIC_STEP_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Absolute</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONCRETE_STEP__ABSOLUTE = GENERIC_STEP_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Concrete Step</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONCRETE_STEP_FEATURE_COUNT = GENERIC_STEP_FEATURE_COUNT + 1;
+	int CONCRETE_STEP_FEATURE_COUNT = GENERIC_STEP_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Concrete Step</em>' class.
@@ -1320,22 +1329,31 @@ public interface FileTransferPackagePackage extends EPackage {
 	int LINK = 28;
 
 	/**
-	 * The feature id for the '<em><b>Compositon Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LINK__COMPOSITON_TYPE = 0;
-
-	/**
 	 * The feature id for the '<em><b>Element</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LINK__ELEMENT = 1;
+	int LINK__ELEMENT = 0;
+
+	/**
+	 * The feature id for the '<em><b>And</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINK__AND = 1;
+
+	/**
+	 * The feature id for the '<em><b>Or</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINK__OR = 2;
 
 	/**
 	 * The number of structural features of the '<em>Link</em>' class.
@@ -1344,7 +1362,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINK_FEATURE_COUNT = 2;
+	int LINK_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Link</em>' class.
@@ -1416,16 +1434,6 @@ public interface FileTransferPackagePackage extends EPackage {
 	int STRATEGIES = 34;
 
 	/**
-	 * The meta object id for the '{@link FileTransferPackage.CompositionType <em>Composition Type</em>}' enum.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see FileTransferPackage.CompositionType
-	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getCompositionType()
-	 * @generated
-	 */
-	int COMPOSITION_TYPE = 35;
-
-	/**
 	 * The meta object id for the '{@link FileTransferPackage.Quantificators <em>Quantificators</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1433,7 +1441,7 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getQuantificators()
 	 * @generated
 	 */
-	int QUANTIFICATORS = 36;
+	int QUANTIFICATORS = 35;
 
 
 	/**
@@ -1468,10 +1476,10 @@ public interface FileTransferPackagePackage extends EPackage {
 	EClass getSelection();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link FileTransferPackage.Selection#getWhere <em>Where</em>}'.
+	 * Returns the meta object for the containment reference '{@link FileTransferPackage.Selection#getWhere <em>Where</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Where</em>'.
+	 * @return the meta object for the containment reference '<em>Where</em>'.
 	 * @see FileTransferPackage.Selection#getWhere()
 	 * @see #getSelection()
 	 * @generated
@@ -1603,6 +1611,17 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getConcreteStep_Value();
+
+	/**
+	 * Returns the meta object for the attribute '{@link FileTransferPackage.ConcreteStep#isAbsolute <em>Absolute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Absolute</em>'.
+	 * @see FileTransferPackage.ConcreteStep#isAbsolute()
+	 * @see #getConcreteStep()
+	 * @generated
+	 */
+	EAttribute getConcreteStep_Absolute();
 
 	/**
 	 * Returns the meta object for class '{@link FileTransferPackage.PathVariable <em>Path Variable</em>}'.
@@ -2046,17 +2065,6 @@ public interface FileTransferPackagePackage extends EPackage {
 	EClass getLink();
 
 	/**
-	 * Returns the meta object for the attribute '{@link FileTransferPackage.Link#getCompositonType <em>Compositon Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Compositon Type</em>'.
-	 * @see FileTransferPackage.Link#getCompositonType()
-	 * @see #getLink()
-	 * @generated
-	 */
-	EAttribute getLink_CompositonType();
-
-	/**
 	 * Returns the meta object for the containment reference '{@link FileTransferPackage.Link#getElement <em>Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2066,6 +2074,28 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getLink_Element();
+
+	/**
+	 * Returns the meta object for the attribute '{@link FileTransferPackage.Link#isAnd <em>And</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>And</em>'.
+	 * @see FileTransferPackage.Link#isAnd()
+	 * @see #getLink()
+	 * @generated
+	 */
+	EAttribute getLink_And();
+
+	/**
+	 * Returns the meta object for the attribute '{@link FileTransferPackage.Link#isOr <em>Or</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Or</em>'.
+	 * @see FileTransferPackage.Link#isOr()
+	 * @see #getLink()
+	 * @generated
+	 */
+	EAttribute getLink_Or();
 
 	/**
 	 * Returns the meta object for enum '{@link FileTransferPackage.Operator <em>Operator</em>}'.
@@ -2126,16 +2156,6 @@ public interface FileTransferPackagePackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getStrategies();
-
-	/**
-	 * Returns the meta object for enum '{@link FileTransferPackage.CompositionType <em>Composition Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Composition Type</em>'.
-	 * @see FileTransferPackage.CompositionType
-	 * @generated
-	 */
-	EEnum getCompositionType();
 
 	/**
 	 * Returns the meta object for enum '{@link FileTransferPackage.Quantificators <em>Quantificators</em>}'.
@@ -2199,7 +2219,7 @@ public interface FileTransferPackagePackage extends EPackage {
 		EClass SELECTION = eINSTANCE.getSelection();
 
 		/**
-		 * The meta object literal for the '<em><b>Where</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Where</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -2313,6 +2333,14 @@ public interface FileTransferPackagePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CONCRETE_STEP__VALUE = eINSTANCE.getConcreteStep_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Absolute</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONCRETE_STEP__ABSOLUTE = eINSTANCE.getConcreteStep_Absolute();
 
 		/**
 		 * The meta object literal for the '{@link FileTransferPackage.impl.PathVariableImpl <em>Path Variable</em>}' class.
@@ -2693,20 +2721,28 @@ public interface FileTransferPackagePackage extends EPackage {
 		EClass LINK = eINSTANCE.getLink();
 
 		/**
-		 * The meta object literal for the '<em><b>Compositon Type</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute LINK__COMPOSITON_TYPE = eINSTANCE.getLink_CompositonType();
-
-		/**
 		 * The meta object literal for the '<em><b>Element</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference LINK__ELEMENT = eINSTANCE.getLink_Element();
+
+		/**
+		 * The meta object literal for the '<em><b>And</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LINK__AND = eINSTANCE.getLink_And();
+
+		/**
+		 * The meta object literal for the '<em><b>Or</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LINK__OR = eINSTANCE.getLink_Or();
 
 		/**
 		 * The meta object literal for the '{@link FileTransferPackage.Operator <em>Operator</em>}' enum.
@@ -2767,16 +2803,6 @@ public interface FileTransferPackagePackage extends EPackage {
 		 * @generated
 		 */
 		EEnum STRATEGIES = eINSTANCE.getStrategies();
-
-		/**
-		 * The meta object literal for the '{@link FileTransferPackage.CompositionType <em>Composition Type</em>}' enum.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see FileTransferPackage.CompositionType
-		 * @see FileTransferPackage.impl.FileTransferPackagePackageImpl#getCompositionType()
-		 * @generated
-		 */
-		EEnum COMPOSITION_TYPE = eINSTANCE.getCompositionType();
 
 		/**
 		 * The meta object literal for the '{@link FileTransferPackage.Quantificators <em>Quantificators</em>}' enum.

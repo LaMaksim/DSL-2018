@@ -7,21 +7,14 @@ import FileTransferPackage.FilterComponent;
 import FileTransferPackage.Path;
 import FileTransferPackage.Selection;
 
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,14 +33,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class SelectionImpl extends MinimalEObjectImpl.Container implements Selection {
 	/**
-	 * The cached value of the '{@link #getWhere() <em>Where</em>}' containment reference list.
+	 * The cached value of the '{@link #getWhere() <em>Where</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getWhere()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<FilterComponent> where;
+	protected FilterComponent where;
 
 	/**
 	 * The cached value of the '{@link #getFrom() <em>From</em>}' containment reference.
@@ -103,11 +96,42 @@ public class SelectionImpl extends MinimalEObjectImpl.Container implements Selec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<FilterComponent> getWhere() {
-		if (where == null) {
-			where = new EObjectContainmentEList<FilterComponent>(FilterComponent.class, this, FileTransferPackagePackage.SELECTION__WHERE);
-		}
+	public FilterComponent getWhere() {
 		return where;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetWhere(FilterComponent newWhere, NotificationChain msgs) {
+		FilterComponent oldWhere = where;
+		where = newWhere;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FileTransferPackagePackage.SELECTION__WHERE, oldWhere, newWhere);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setWhere(FilterComponent newWhere) {
+		if (newWhere != where) {
+			NotificationChain msgs = null;
+			if (where != null)
+				msgs = ((InternalEObject)where).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - FileTransferPackagePackage.SELECTION__WHERE, null, msgs);
+			if (newWhere != null)
+				msgs = ((InternalEObject)newWhere).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - FileTransferPackagePackage.SELECTION__WHERE, null, msgs);
+			msgs = basicSetWhere(newWhere, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FileTransferPackagePackage.SELECTION__WHERE, newWhere, newWhere));
 	}
 
 	/**
@@ -183,7 +207,7 @@ public class SelectionImpl extends MinimalEObjectImpl.Container implements Selec
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case FileTransferPackagePackage.SELECTION__WHERE:
-				return ((InternalEList<?>)getWhere()).basicRemove(otherEnd, msgs);
+				return basicSetWhere(null, msgs);
 			case FileTransferPackagePackage.SELECTION__FROM:
 				return basicSetFrom(null, msgs);
 		}
@@ -213,13 +237,11 @@ public class SelectionImpl extends MinimalEObjectImpl.Container implements Selec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case FileTransferPackagePackage.SELECTION__WHERE:
-				getWhere().clear();
-				getWhere().addAll((Collection<? extends FilterComponent>)newValue);
+				setWhere((FilterComponent)newValue);
 				return;
 			case FileTransferPackagePackage.SELECTION__FROM:
 				setFrom((Path)newValue);
@@ -240,7 +262,7 @@ public class SelectionImpl extends MinimalEObjectImpl.Container implements Selec
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case FileTransferPackagePackage.SELECTION__WHERE:
-				getWhere().clear();
+				setWhere((FilterComponent)null);
 				return;
 			case FileTransferPackagePackage.SELECTION__FROM:
 				setFrom((Path)null);
@@ -261,7 +283,7 @@ public class SelectionImpl extends MinimalEObjectImpl.Container implements Selec
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case FileTransferPackagePackage.SELECTION__WHERE:
-				return where != null && !where.isEmpty();
+				return where != null;
 			case FileTransferPackagePackage.SELECTION__FROM:
 				return from != null;
 			case FileTransferPackagePackage.SELECTION__NAME:

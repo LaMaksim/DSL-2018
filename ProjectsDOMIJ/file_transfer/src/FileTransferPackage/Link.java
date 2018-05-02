@@ -12,8 +12,9 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link FileTransferPackage.Link#getCompositonType <em>Compositon Type</em>}</li>
  *   <li>{@link FileTransferPackage.Link#getElement <em>Element</em>}</li>
+ *   <li>{@link FileTransferPackage.Link#isAnd <em>And</em>}</li>
+ *   <li>{@link FileTransferPackage.Link#isOr <em>Or</em>}</li>
  * </ul>
  * </p>
  *
@@ -22,36 +23,6 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface Link extends EObject {
-	/**
-	 * Returns the value of the '<em><b>Compositon Type</b></em>' attribute.
-	 * The default value is <code>"and"</code>.
-	 * The literals are from the enumeration {@link FileTransferPackage.CompositionType}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Compositon Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Compositon Type</em>' attribute.
-	 * @see FileTransferPackage.CompositionType
-	 * @see #setCompositonType(CompositionType)
-	 * @see FileTransferPackage.FileTransferPackagePackage#getLink_CompositonType()
-	 * @model default="and" unique="false"
-	 * @generated
-	 */
-	CompositionType getCompositonType();
-
-	/**
-	 * Sets the value of the '{@link FileTransferPackage.Link#getCompositonType <em>Compositon Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Compositon Type</em>' attribute.
-	 * @see FileTransferPackage.CompositionType
-	 * @see #getCompositonType()
-	 * @generated
-	 */
-	void setCompositonType(CompositionType value);
-
 	/**
 	 * Returns the value of the '<em><b>Element</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -77,5 +48,59 @@ public interface Link extends EObject {
 	 * @generated
 	 */
 	void setElement(FilterComponent value);
+
+	/**
+	 * Returns the value of the '<em><b>And</b></em>' attribute.
+	 * The default value is <code>"false"</code>.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>And</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>And</em>' attribute.
+	 * @see #setAnd(boolean)
+	 * @see FileTransferPackage.FileTransferPackagePackage#getLink_And()
+	 * @model default="false" unique="false"
+	 * @generated
+	 */
+	boolean isAnd();
+
+	/**
+	 * Sets the value of the '{@link FileTransferPackage.Link#isAnd <em>And</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>And</em>' attribute.
+	 * @see #isAnd()
+	 * @generated
+	 */
+	void setAnd(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Or</b></em>' attribute.
+	 * The default value is <code>"false"</code>.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Or</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Or</em>' attribute.
+	 * @see #setOr(boolean)
+	 * @see FileTransferPackage.FileTransferPackagePackage#getLink_Or()
+	 * @model default="false" unique="false"
+	 * @generated
+	 */
+	boolean isOr();
+
+	/**
+	 * Sets the value of the '{@link FileTransferPackage.Link#isOr <em>Or</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Or</em>' attribute.
+	 * @see #isOr()
+	 * @generated
+	 */
+	void setOr(boolean value);
 
 } // Link

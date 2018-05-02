@@ -6,8 +6,8 @@
         eType="#//GenericStep" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Selection" eSuperTypes="#//Execution">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="where" upperBound="-1"
-        eType="#//FilterComponent" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="where" eType="#//FilterComponent"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="from" lowerBound="1" eType="#//Path"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -37,6 +37,8 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" unique="false" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="&quot;a&quot;"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="absolute" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="false"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PathVariable" eSuperTypes="#//Execution">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -168,10 +170,6 @@
     <eLiterals name="append" value="1"/>
     <eLiterals name="carefully" value="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="CompositionType">
-    <eLiterals name="and" literal="and"/>
-    <eLiterals name="or" value="1"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FilterContainer" eSuperTypes="#//FilterComponent">
     <eStructuralFeatures xsi:type="ecore:EReference" name="links" lowerBound="2" upperBound="-1"
         eType="#//Link" containment="true"/>
@@ -208,9 +206,11 @@
     <eLiterals name="all" value="1"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Link">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="compositonType" unique="false"
-        eType="#//CompositionType" defaultValueLiteral="and"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="element" unique="false"
         lowerBound="1" eType="#//FilterComponent" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="and" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="or" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
   </eClassifiers>
 </ecore:EPackage>

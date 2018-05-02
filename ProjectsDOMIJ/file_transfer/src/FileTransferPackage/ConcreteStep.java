@@ -12,6 +12,7 @@ package FileTransferPackage;
  * The following features are supported:
  * <ul>
  *   <li>{@link FileTransferPackage.ConcreteStep#getValue <em>Value</em>}</li>
+ *   <li>{@link FileTransferPackage.ConcreteStep#isAbsolute <em>Absolute</em>}</li>
  * </ul>
  * </p>
  *
@@ -47,5 +48,32 @@ public interface ConcreteStep extends GenericStep {
 	 * @generated
 	 */
 	void setValue(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Absolute</b></em>' attribute.
+	 * The default value is <code>"false"</code>.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Absolute</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Absolute</em>' attribute.
+	 * @see #setAbsolute(boolean)
+	 * @see FileTransferPackage.FileTransferPackagePackage#getConcreteStep_Absolute()
+	 * @model default="false" unique="false"
+	 * @generated
+	 */
+	boolean isAbsolute();
+
+	/**
+	 * Sets the value of the '{@link FileTransferPackage.ConcreteStep#isAbsolute <em>Absolute</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Absolute</em>' attribute.
+	 * @see #isAbsolute()
+	 * @generated
+	 */
+	void setAbsolute(boolean value);
 
 } // ConcreteStep

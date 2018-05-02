@@ -303,10 +303,11 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:21:7: ( ',' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:21:9: ','
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:21:7: ( 'copy' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:21:9: 'copy'
             {
-            match(','); 
+            match("copy"); 
+
 
             }
 
@@ -323,10 +324,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:22:7: ( 'copy' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:22:9: 'copy'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:22:7: ( 'to' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:22:9: 'to'
             {
-            match("copy"); 
+            match("to"); 
 
 
             }
@@ -344,10 +345,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:23:7: ( 'to' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:23:9: 'to'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:23:7: ( 'strategy:' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:23:9: 'strategy:'
             {
-            match("to"); 
+            match("strategy:"); 
 
 
             }
@@ -365,10 +366,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:24:7: ( 'strategy:' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:24:9: 'strategy:'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:24:7: ( 'move' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:24:9: 'move'
             {
-            match("strategy:"); 
+            match("move"); 
 
 
             }
@@ -386,10 +387,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:25:7: ( 'move' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:25:9: 'move'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:25:7: ( 'delete' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:25:9: 'delete'
             {
-            match("move"); 
+            match("delete"); 
 
 
             }
@@ -407,11 +408,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:26:7: ( 'delete' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:26:9: 'delete'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:26:7: ( '(' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:26:9: '('
             {
-            match("delete"); 
-
+            match('('); 
 
             }
 
@@ -428,10 +428,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:27:7: ( '(' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:27:9: '('
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:27:7: ( ')' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:27:9: ')'
             {
-            match('('); 
+            match(')'); 
 
             }
 
@@ -448,10 +448,11 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:28:7: ( ')' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:28:9: ')'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:28:7: ( 'and' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:28:9: 'and'
             {
-            match(')'); 
+            match("and"); 
+
 
             }
 
@@ -468,10 +469,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:29:7: ( 'attribute' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:29:9: 'attribute'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:29:7: ( 'or' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:29:9: 'or'
             {
-            match("attribute"); 
+            match("or"); 
 
 
             }
@@ -489,10 +490,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:30:7: ( 'not' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:30:9: 'not'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:30:7: ( 'attribute' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:30:9: 'attribute'
             {
-            match("not"); 
+            match("attribute"); 
 
 
             }
@@ -510,10 +511,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:31:7: ( 'exist' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:31:9: 'exist'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:31:7: ( 'not' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:31:9: 'not'
             {
-            match("exist"); 
+            match("not"); 
 
 
             }
@@ -531,10 +532,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:32:7: ( 'is' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:32:9: 'is'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:32:7: ( 'exist' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:32:9: 'exist'
             {
-            match("is"); 
+            match("exist"); 
 
 
             }
@@ -552,10 +553,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:33:7: ( 'in [' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:33:9: 'in ['
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:33:7: ( 'is' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:33:9: 'is'
             {
-            match("in ["); 
+            match("is"); 
 
 
             }
@@ -573,10 +574,11 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__34;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:34:7: ( ']' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:34:9: ']'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:34:7: ( 'in [' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:34:9: 'in ['
             {
-            match(']'); 
+            match("in ["); 
+
 
             }
 
@@ -593,11 +595,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__35;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:35:7: ( 'are' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:35:9: 'are'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:35:7: ( ',' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:35:9: ','
             {
-            match("are"); 
-
+            match(','); 
 
             }
 
@@ -614,11 +615,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__36;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:36:7: ( 'in tags' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:36:9: 'in tags'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:36:7: ( ']' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:36:9: ']'
             {
-            match("in tags"); 
-
+            match(']'); 
 
             }
 
@@ -635,10 +635,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__37;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:37:7: ( 'and no more tags' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:37:9: 'and no more tags'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:37:7: ( 'are' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:37:9: 'are'
             {
-            match("and no more tags"); 
+            match("are"); 
 
 
             }
@@ -656,10 +656,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__38;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:38:7: ( 'before' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:38:9: 'before'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:38:7: ( 'in tags' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:38:9: 'in tags'
             {
-            match("before"); 
+            match("in tags"); 
 
 
             }
@@ -677,10 +677,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__39;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:39:7: ( 'size of file' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:39:9: 'size of file'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:39:7: ( 'and no more tags' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:39:9: 'and no more tags'
             {
-            match("size of file"); 
+            match("and no more tags"); 
 
 
             }
@@ -698,10 +698,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__40;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:40:7: ( 'name is' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:40:9: 'name is'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:40:7: ( 'before' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:40:9: 'before'
             {
-            match("name is"); 
+            match("before"); 
 
 
             }
@@ -719,10 +719,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__41;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:41:7: ( 'extension is' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:41:9: 'extension is'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:41:7: ( 'size of file' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:41:9: 'size of file'
             {
-            match("extension is"); 
+            match("size of file"); 
 
 
             }
@@ -740,10 +740,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__42;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:42:7: ( 'empty' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:42:9: 'empty'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:42:7: ( 'name is' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:42:9: 'name is'
             {
-            match("empty"); 
+            match("name is"); 
 
 
             }
@@ -761,10 +761,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__43;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:43:7: ( 'file' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:43:9: 'file'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:43:7: ( 'extension is' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:43:9: 'extension is'
             {
-            match("file"); 
+            match("extension is"); 
 
 
             }
@@ -782,10 +782,11 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__44;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:44:7: ( '-' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:44:9: '-'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:44:7: ( 'empty' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:44:9: 'empty'
             {
-            match('-'); 
+            match("empty"); 
+
 
             }
 
@@ -802,10 +803,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__45;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:45:7: ( 'forced' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:45:9: 'forced'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:45:7: ( 'file' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:45:9: 'file'
             {
-            match("forced"); 
+            match("file"); 
 
 
             }
@@ -823,11 +824,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__46;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:46:7: ( 'append' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:46:9: 'append'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:46:7: ( '-' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:46:9: '-'
             {
-            match("append"); 
-
+            match('-'); 
 
             }
 
@@ -844,10 +844,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__47;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:47:7: ( 'carefully' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:47:9: 'carefully'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:47:7: ( 'forced' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:47:9: 'forced'
             {
-            match("carefully"); 
+            match("forced"); 
 
 
             }
@@ -865,10 +865,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__48;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:48:7: ( '==' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:48:9: '=='
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:48:7: ( 'append' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:48:9: 'append'
             {
-            match("=="); 
+            match("append"); 
 
 
             }
@@ -886,10 +886,11 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__49;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:49:7: ( '<' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:49:9: '<'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:49:7: ( 'carefully' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:49:9: 'carefully'
             {
-            match('<'); 
+            match("carefully"); 
+
 
             }
 
@@ -906,10 +907,11 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__50;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:50:7: ( '>' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:50:9: '>'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:50:7: ( '==' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:50:9: '=='
             {
-            match('>'); 
+            match("=="); 
+
 
             }
 
@@ -926,11 +928,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__51;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:51:7: ( '<=' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:51:9: '<='
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:51:7: ( '<' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:51:9: '<'
             {
-            match("<="); 
-
+            match('<'); 
 
             }
 
@@ -947,11 +948,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__52;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:52:7: ( '>=' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:52:9: '>='
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:52:7: ( '>' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:52:9: '>'
             {
-            match(">="); 
-
+            match('>'); 
 
             }
 
@@ -968,10 +968,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__53;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:53:7: ( 'mins' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:53:9: 'mins'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:53:7: ( '<=' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:53:9: '<='
             {
-            match("mins"); 
+            match("<="); 
 
 
             }
@@ -989,10 +989,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__54;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:54:7: ( 'hours' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:54:9: 'hours'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:54:7: ( '>=' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:54:9: '>='
             {
-            match("hours"); 
+            match(">="); 
 
 
             }
@@ -1010,10 +1010,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__55;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:55:7: ( 'days' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:55:9: 'days'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:55:7: ( 'mins' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:55:9: 'mins'
             {
-            match("days"); 
+            match("mins"); 
 
 
             }
@@ -1031,10 +1031,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__56;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:56:7: ( 'weeks' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:56:9: 'weeks'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:56:7: ( 'hours' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:56:9: 'hours'
             {
-            match("weeks"); 
+            match("hours"); 
 
 
             }
@@ -1052,10 +1052,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__57;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:57:7: ( 'months' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:57:9: 'months'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:57:7: ( 'days' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:57:9: 'days'
             {
-            match("months"); 
+            match("days"); 
 
 
             }
@@ -1073,10 +1073,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__58;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:58:7: ( 'years' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:58:9: 'years'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:58:7: ( 'weeks' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:58:9: 'weeks'
             {
-            match("years"); 
+            match("weeks"); 
 
 
             }
@@ -1094,10 +1094,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__59;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:59:7: ( 'modified' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:59:9: 'modified'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:59:7: ( 'months' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:59:9: 'months'
             {
-            match("modified"); 
+            match("months"); 
 
 
             }
@@ -1115,10 +1115,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__60;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:60:7: ( 'created' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:60:9: 'created'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:60:7: ( 'years' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:60:9: 'years'
             {
-            match("created"); 
+            match("years"); 
 
 
             }
@@ -1136,10 +1136,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__61;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:61:7: ( 'any are' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:61:9: 'any are'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:61:7: ( 'modified' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:61:9: 'modified'
             {
-            match("any are"); 
+            match("modified"); 
 
 
             }
@@ -1157,10 +1157,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__62;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:62:7: ( 'all are' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:62:9: 'all are'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:62:7: ( 'created' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:62:9: 'created'
             {
-            match("all are"); 
+            match("created"); 
 
 
             }
@@ -1178,10 +1178,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__63;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:63:7: ( 'KB' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:63:9: 'KB'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:63:7: ( 'any are' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:63:9: 'any are'
             {
-            match("KB"); 
+            match("any are"); 
 
 
             }
@@ -1199,10 +1199,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__64;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:64:7: ( 'MB' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:64:9: 'MB'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:64:7: ( 'all are' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:64:9: 'all are'
             {
-            match("MB"); 
+            match("all are"); 
 
 
             }
@@ -1220,10 +1220,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__65;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:65:7: ( 'GB' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:65:9: 'GB'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:65:7: ( 'KB' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:65:9: 'KB'
             {
-            match("GB"); 
+            match("KB"); 
 
 
             }
@@ -1241,10 +1241,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__66;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:66:7: ( 'TB' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:66:9: 'TB'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:66:7: ( 'MB' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:66:9: 'MB'
             {
-            match("TB"); 
+            match("MB"); 
 
 
             }
@@ -1262,10 +1262,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__67;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:67:7: ( 'and' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:67:9: 'and'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:67:7: ( 'GB' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:67:9: 'GB'
             {
-            match("and"); 
+            match("GB"); 
 
 
             }
@@ -1283,10 +1283,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = T__68;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:68:7: ( 'or' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:68:9: 'or'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:68:7: ( 'TB' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:68:9: 'TB'
             {
-            match("or"); 
+            match("TB"); 
 
 
             }
@@ -1346,10 +1346,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2062:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2062:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2045:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2045:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2062:11: ( '^' )?
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2045:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -1358,7 +1358,7 @@ public class InternalFETLLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2062:11: '^'
+                    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2045:11: '^'
                     {
                     match('^'); 
 
@@ -1376,7 +1376,7 @@ public class InternalFETLLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2062:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2045:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -1425,10 +1425,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2064:10: ( ( '0' .. '9' )+ )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2064:12: ( '0' .. '9' )+
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2047:10: ( ( '0' .. '9' )+ )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2047:12: ( '0' .. '9' )+
             {
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2064:12: ( '0' .. '9' )+
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2047:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -1442,7 +1442,7 @@ public class InternalFETLLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2064:13: '0' .. '9'
+            	    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2047:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -1474,10 +1474,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2066:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2066:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2049:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2049:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2066:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2049:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -1495,10 +1495,10 @@ public class InternalFETLLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2066:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2049:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2066:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2049:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -1514,7 +1514,7 @@ public class InternalFETLLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2066:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2049:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1530,7 +1530,7 @@ public class InternalFETLLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2066:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2049:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1555,10 +1555,10 @@ public class InternalFETLLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2066:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2049:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2066:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2049:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -1574,7 +1574,7 @@ public class InternalFETLLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2066:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2049:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1590,7 +1590,7 @@ public class InternalFETLLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2066:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2049:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1633,12 +1633,12 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2068:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2068:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2051:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2051:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2068:24: ( options {greedy=false; } : . )*
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2051:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -1663,7 +1663,7 @@ public class InternalFETLLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2068:52: .
+            	    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2051:52: .
             	    {
             	    matchAny(); 
 
@@ -1693,12 +1693,12 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2070:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2070:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2053:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2053:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2070:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2053:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -1711,7 +1711,7 @@ public class InternalFETLLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2070:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2053:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1731,7 +1731,7 @@ public class InternalFETLLexer extends Lexer {
                 }
             } while (true);
 
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2070:40: ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2053:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1740,9 +1740,9 @@ public class InternalFETLLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2070:41: ( '\\r' )? '\\n'
+                    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2053:41: ( '\\r' )? '\\n'
                     {
-                    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2070:41: ( '\\r' )?
+                    // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2053:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -1751,7 +1751,7 @@ public class InternalFETLLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2070:41: '\\r'
+                            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2053:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1783,10 +1783,10 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2072:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2072:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2055:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2055:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2072:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2055:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -1840,8 +1840,8 @@ public class InternalFETLLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2074:16: ( . )
-            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2074:18: .
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2057:16: ( . )
+            // ../org.xtext.example.myFetl/src-gen/org/xtext/example/myFetl/parser/antlr/internal/InternalFETL.g:2057:18: .
             {
             matchAny(); 
 
@@ -2337,87 +2337,88 @@ public class InternalFETLLexer extends Lexer {
 
     protected DFA12 dfa12 = new DFA12(this);
     static final String DFA12_eotS =
-        "\2\uffff\1\54\1\57\2\uffff\1\51\1\uffff\3\67\1\uffff\4\67\2\uffff"+
-        "\4\67\1\uffff\1\67\1\uffff\1\127\1\131\10\67\1\51\2\uffff\2\51\14"+
-        "\uffff\3\67\1\uffff\5\67\1\uffff\3\67\1\161\4\67\2\uffff\11\67\1"+
-        "\u0083\1\67\1\uffff\1\67\5\uffff\2\67\1\u0088\1\u0089\1\u008a\1"+
-        "\u008b\1\u008c\2\67\3\uffff\13\67\1\uffff\7\67\1\u00a1\1\u00a3\3"+
-        "\67\1\u00a7\4\67\2\uffff\3\67\5\uffff\5\67\1\u00b6\1\u00b7\3\67"+
-        "\1\u00bb\2\67\1\u00be\2\67\1\u00c1\1\67\1\u00c3\1\67\4\uffff\1\67"+
-        "\2\uffff\4\67\2\uffff\7\67\3\uffff\1\67\1\u00d2\1\u00d3\1\uffff"+
-        "\2\67\1\uffff\2\67\1\uffff\1\67\1\uffff\2\67\1\uffff\1\u00db\1\67"+
-        "\1\u00dd\1\67\1\u00df\1\u00e0\2\67\1\u00e3\1\67\1\u00e5\2\uffff"+
-        "\2\67\1\u00e8\1\67\1\u00ea\1\67\1\u00ec\1\uffff\1\67\1\uffff\1\u00ee"+
-        "\2\uffff\2\67\1\uffff\1\67\1\uffff\1\67\1\u00f3\1\uffff\1\67\1\uffff"+
-        "\1\67\1\uffff\1\67\1\uffff\4\67\1\uffff\1\u00fb\2\67\1\u00fe\1\67"+
-        "\1\uffff\1\u0100\1\uffff\1\u0101\1\67\1\uffff\1\u0103\4\uffff";
+        "\2\uffff\1\54\1\57\2\uffff\1\51\1\uffff\7\67\2\uffff\5\67\2\uffff"+
+        "\1\67\1\uffff\1\130\1\132\7\67\1\51\2\uffff\2\51\14\uffff\3\67\1"+
+        "\uffff\10\67\1\161\4\67\2\uffff\5\67\1\176\4\67\1\u0084\1\67\2\uffff"+
+        "\1\67\5\uffff\2\67\1\u0089\1\u008a\1\u008b\1\u008c\2\67\3\uffff"+
+        "\13\67\1\uffff\6\67\1\u00a1\2\67\1\u00a4\2\67\1\uffff\1\u00a7\4"+
+        "\67\2\uffff\3\67\4\uffff\5\67\1\u00b6\1\u00b7\3\67\1\u00bb\2\67"+
+        "\1\u00be\2\67\1\u00c1\1\67\1\u00c3\3\uffff\1\67\1\uffff\1\67\2\uffff"+
+        "\4\67\2\uffff\7\67\3\uffff\1\67\1\u00d2\1\u00d3\1\uffff\2\67\1\uffff"+
+        "\2\67\1\uffff\1\67\1\uffff\2\67\1\uffff\1\u00db\1\67\1\u00dd\1\67"+
+        "\1\u00df\1\u00e0\2\67\1\u00e3\1\67\1\u00e5\2\uffff\2\67\1\u00e8"+
+        "\1\67\1\u00ea\1\67\1\u00ec\1\uffff\1\67\1\uffff\1\u00ee\2\uffff"+
+        "\2\67\1\uffff\1\67\1\uffff\1\67\1\u00f3\1\uffff\1\67\1\uffff\1\67"+
+        "\1\uffff\1\67\1\uffff\4\67\1\uffff\1\u00fb\2\67\1\u00fe\1\67\1\uffff"+
+        "\1\u0100\1\uffff\1\u0101\1\67\1\uffff\1\u0103\4\uffff";
     static final String DFA12_eofS =
         "\u0104\uffff";
     static final String DFA12_minS =
         "\1\0\1\uffff\1\75\1\52\2\uffff\1\44\1\uffff\1\145\1\151\1\145\1"+
-        "\uffff\1\141\1\157\1\151\1\141\2\uffff\1\154\1\141\1\155\1\156\1"+
-        "\uffff\1\145\1\uffff\2\75\1\157\1\145\4\102\1\162\1\151\1\101\2"+
-        "\uffff\2\0\14\uffff\1\154\1\162\1\172\1\uffff\1\157\1\154\1\162"+
-        "\2\145\1\uffff\1\160\1\162\1\145\1\60\1\144\1\156\1\154\1\171\2"+
-        "\uffff\1\164\1\145\1\144\1\160\1\154\1\164\1\155\1\151\1\160\1\60"+
-        "\1\40\1\uffff\1\146\5\uffff\1\165\1\141\5\60\1\143\1\162\3\uffff"+
-        "\1\145\1\141\1\145\1\155\1\145\1\143\1\162\1\153\1\171\1\145\1\141"+
-        "\1\uffff\1\145\1\164\1\151\1\163\1\145\1\163\1\162\1\60\2\40\1\145"+
-        "\1\40\1\60\1\145\1\163\1\145\1\164\1\uffff\1\133\1\157\2\162\5\uffff"+
+        "\141\1\157\1\151\1\141\2\uffff\1\154\1\162\1\141\1\155\1\156\2\uffff"+
+        "\1\145\1\uffff\2\75\1\157\1\145\4\102\1\151\1\101\2\uffff\2\0\14"+
+        "\uffff\1\154\1\162\1\172\1\uffff\1\157\1\154\1\162\2\145\1\160\1"+
+        "\162\1\145\1\60\1\144\1\156\1\154\1\171\2\uffff\1\144\1\164\1\145"+
+        "\1\160\1\154\1\60\1\164\1\155\1\151\1\160\1\60\1\40\2\uffff\1\146"+
+        "\5\uffff\1\165\1\141\4\60\1\143\1\162\3\uffff\1\145\1\141\1\145"+
+        "\1\155\1\145\1\143\1\162\1\153\1\171\1\145\1\141\1\uffff\1\145\1"+
+        "\164\1\151\1\163\1\145\1\163\2\40\1\162\1\60\1\145\1\40\1\uffff"+
+        "\1\60\1\145\1\163\1\145\1\164\1\uffff\1\133\1\157\2\162\4\uffff"+
         "\1\165\1\145\1\143\1\164\1\40\2\60\2\145\1\163\1\60\1\146\1\164"+
-        "\1\60\1\150\1\146\1\60\1\164\1\60\1\151\4\uffff\1\156\2\uffff\1"+
-        "\40\1\164\1\156\1\171\2\uffff\1\162\2\163\1\155\1\143\1\164\1\145"+
-        "\3\uffff\1\144\2\60\1\uffff\1\165\1\145\1\uffff\1\163\1\151\1\uffff"+
-        "\1\145\1\uffff\1\142\1\144\1\uffff\1\60\1\163\1\60\1\145\2\60\1"+
-        "\145\1\164\1\60\1\147\1\60\2\uffff\1\154\1\144\1\60\1\145\1\60\1"+
-        "\165\1\60\1\uffff\1\151\1\uffff\1\60\2\uffff\1\156\1\157\1\uffff"+
-        "\1\171\1\uffff\1\154\1\60\1\uffff\1\144\1\uffff\1\164\1\uffff\1"+
-        "\157\1\uffff\1\164\1\162\1\72\1\171\1\uffff\1\60\1\145\1\156\1\60"+
-        "\1\171\1\uffff\1\60\1\uffff\1\60\1\40\1\uffff\1\60\4\uffff";
+        "\1\60\1\150\1\146\1\60\1\164\1\60\3\uffff\1\151\1\uffff\1\156\2"+
+        "\uffff\1\40\1\164\1\156\1\171\2\uffff\1\162\2\163\1\155\1\143\1"+
+        "\164\1\145\3\uffff\1\144\2\60\1\uffff\1\165\1\145\1\uffff\1\163"+
+        "\1\151\1\uffff\1\145\1\uffff\1\142\1\144\1\uffff\1\60\1\163\1\60"+
+        "\1\145\2\60\1\145\1\164\1\60\1\147\1\60\2\uffff\1\154\1\144\1\60"+
+        "\1\145\1\60\1\165\1\60\1\uffff\1\151\1\uffff\1\60\2\uffff\1\156"+
+        "\1\157\1\uffff\1\171\1\uffff\1\154\1\60\1\uffff\1\144\1\uffff\1"+
+        "\164\1\uffff\1\157\1\uffff\1\164\1\162\1\72\1\171\1\uffff\1\60\1"+
+        "\145\1\156\1\60\1\171\1\uffff\1\60\1\uffff\1\60\1\40\1\uffff\1\60"+
+        "\4\uffff";
     static final String DFA12_maxS =
         "\1\uffff\1\uffff\1\75\1\57\2\uffff\1\44\1\uffff\1\164\1\162\1\150"+
-        "\1\uffff\1\162\2\157\1\145\2\uffff\1\164\1\157\1\170\1\163\1\uffff"+
-        "\1\145\1\uffff\2\75\1\157\1\145\4\102\1\162\1\157\1\172\2\uffff"+
-        "\2\uffff\14\uffff\1\154\1\162\1\172\1\uffff\1\157\1\154\1\162\2"+
-        "\145\1\uffff\1\160\1\162\1\145\1\172\1\166\1\156\1\154\1\171\2\uffff"+
-        "\1\164\1\145\1\171\1\160\1\154\1\164\1\155\1\164\1\160\1\172\1\40"+
-        "\1\uffff\1\146\5\uffff\1\165\1\141\5\172\1\143\1\162\3\uffff\1\145"+
-        "\1\141\1\145\1\155\1\145\1\143\1\162\1\153\1\171\1\145\1\141\1\uffff"+
-        "\1\145\1\164\1\151\1\163\1\145\1\163\1\162\2\172\1\40\1\145\1\40"+
-        "\1\172\1\145\1\163\1\145\1\164\1\uffff\1\164\1\157\2\162\5\uffff"+
-        "\1\165\1\145\1\143\1\164\1\40\2\172\2\145\1\163\1\172\1\146\1\164"+
-        "\1\172\1\150\1\146\1\172\1\164\1\172\1\151\4\uffff\1\156\2\uffff"+
-        "\1\40\1\164\1\156\1\171\2\uffff\1\162\2\163\1\155\1\143\1\164\1"+
-        "\145\3\uffff\1\144\2\172\1\uffff\1\165\1\145\1\uffff\1\163\1\151"+
-        "\1\uffff\1\145\1\uffff\1\142\1\144\1\uffff\1\172\1\163\1\172\1\145"+
-        "\2\172\1\145\1\164\1\172\1\147\1\172\2\uffff\1\154\1\144\1\172\1"+
-        "\145\1\172\1\165\1\172\1\uffff\1\151\1\uffff\1\172\2\uffff\1\156"+
-        "\1\157\1\uffff\1\171\1\uffff\1\154\1\172\1\uffff\1\144\1\uffff\1"+
-        "\164\1\uffff\1\157\1\uffff\1\164\1\162\1\72\1\171\1\uffff\1\172"+
-        "\1\145\1\156\1\172\1\171\1\uffff\1\172\1\uffff\1\172\1\40\1\uffff"+
-        "\1\172\4\uffff";
+        "\1\162\2\157\1\145\2\uffff\1\164\1\162\1\157\1\170\1\163\2\uffff"+
+        "\1\145\1\uffff\2\75\1\157\1\145\4\102\1\157\1\172\2\uffff\2\uffff"+
+        "\14\uffff\1\154\1\162\1\172\1\uffff\1\157\1\154\1\162\2\145\1\160"+
+        "\1\162\1\145\1\172\1\166\1\156\1\154\1\171\2\uffff\1\171\1\164\1"+
+        "\145\1\160\1\154\1\172\1\164\1\155\1\164\1\160\1\172\1\40\2\uffff"+
+        "\1\146\5\uffff\1\165\1\141\4\172\1\143\1\162\3\uffff\1\145\1\141"+
+        "\1\145\1\155\1\145\1\143\1\162\1\153\1\171\1\145\1\141\1\uffff\1"+
+        "\145\1\164\1\151\1\163\1\145\1\163\1\172\1\40\1\162\1\172\1\145"+
+        "\1\40\1\uffff\1\172\1\145\1\163\1\145\1\164\1\uffff\1\164\1\157"+
+        "\2\162\4\uffff\1\165\1\145\1\143\1\164\1\40\2\172\2\145\1\163\1"+
+        "\172\1\146\1\164\1\172\1\150\1\146\1\172\1\164\1\172\3\uffff\1\151"+
+        "\1\uffff\1\156\2\uffff\1\40\1\164\1\156\1\171\2\uffff\1\162\2\163"+
+        "\1\155\1\143\1\164\1\145\3\uffff\1\144\2\172\1\uffff\1\165\1\145"+
+        "\1\uffff\1\163\1\151\1\uffff\1\145\1\uffff\1\142\1\144\1\uffff\1"+
+        "\172\1\163\1\172\1\145\2\172\1\145\1\164\1\172\1\147\1\172\2\uffff"+
+        "\1\154\1\144\1\172\1\145\1\172\1\165\1\172\1\uffff\1\151\1\uffff"+
+        "\1\172\2\uffff\1\156\1\157\1\uffff\1\171\1\uffff\1\154\1\172\1\uffff"+
+        "\1\144\1\uffff\1\164\1\uffff\1\157\1\uffff\1\164\1\162\1\72\1\171"+
+        "\1\uffff\1\172\1\145\1\156\1\172\1\171\1\uffff\1\172\1\uffff\1\172"+
+        "\1\40\1\uffff\1\172\4\uffff";
     static final String DFA12_acceptS =
-        "\1\uffff\1\1\2\uffff\1\4\1\5\1\uffff\1\7\3\uffff\1\13\4\uffff\1"+
-        "\21\1\22\4\uffff\1\30\1\uffff\1\42\13\uffff\1\75\1\76\2\uffff\1"+
-        "\102\1\103\1\1\1\46\1\2\1\100\1\101\1\3\1\4\1\5\1\6\1\7\3\uffff"+
-        "\1\75\5\uffff\1\13\10\uffff\1\21\1\22\13\uffff\1\30\1\uffff\1\42"+
-        "\1\51\1\47\1\52\1\50\11\uffff\1\76\1\77\1\102\13\uffff\1\15\21\uffff"+
-        "\1\26\4\uffff\1\65\1\66\1\67\1\70\1\72\24\uffff\1\31\1\33\1\71\1"+
-        "\63\1\uffff\1\64\1\24\4\uffff\1\27\1\32\7\uffff\1\35\1\11\1\41\3"+
-        "\uffff\1\14\2\uffff\1\17\2\uffff\1\53\1\uffff\1\55\2\uffff\1\36"+
-        "\13\uffff\1\12\1\56\7\uffff\1\25\1\uffff\1\40\1\uffff\1\54\1\60"+
-        "\2\uffff\1\10\1\uffff\1\43\2\uffff\1\57\1\uffff\1\20\1\uffff\1\44"+
-        "\1\uffff\1\34\4\uffff\1\62\5\uffff\1\16\1\uffff\1\61\2\uffff\1\73"+
-        "\1\uffff\1\45\1\23\1\37\1\74";
+        "\1\uffff\1\1\2\uffff\1\4\1\5\1\uffff\1\7\7\uffff\1\20\1\21\5\uffff"+
+        "\1\31\1\32\1\uffff\1\44\12\uffff\1\75\1\76\2\uffff\1\102\1\103\1"+
+        "\1\1\50\1\2\1\100\1\101\1\3\1\4\1\5\1\6\1\7\3\uffff\1\75\15\uffff"+
+        "\1\20\1\21\14\uffff\1\31\1\32\1\uffff\1\44\1\53\1\51\1\54\1\52\10"+
+        "\uffff\1\76\1\77\1\102\13\uffff\1\14\14\uffff\1\23\5\uffff\1\27"+
+        "\4\uffff\1\67\1\70\1\71\1\72\23\uffff\1\35\1\22\1\65\1\uffff\1\33"+
+        "\1\uffff\1\66\1\25\4\uffff\1\30\1\34\7\uffff\1\37\1\11\1\43\3\uffff"+
+        "\1\13\2\uffff\1\16\2\uffff\1\55\1\uffff\1\57\2\uffff\1\40\13\uffff"+
+        "\1\12\1\60\7\uffff\1\26\1\uffff\1\42\1\uffff\1\56\1\62\2\uffff\1"+
+        "\10\1\uffff\1\45\2\uffff\1\61\1\uffff\1\17\1\uffff\1\46\1\uffff"+
+        "\1\36\4\uffff\1\64\5\uffff\1\15\1\uffff\1\63\2\uffff\1\73\1\uffff"+
+        "\1\47\1\24\1\41\1\74";
     static final String DFA12_specialS =
         "\1\2\45\uffff\1\0\1\1\u00dc\uffff}>";
     static final String[] DFA12_transitionS = {
-            "\11\51\2\50\2\51\1\50\22\51\1\50\1\51\1\46\4\51\1\47\1\20\1"+
-            "\21\2\51\1\13\1\30\1\51\1\3\12\45\1\4\1\1\1\31\1\2\1\32\1\5"+
-            "\1\51\3\44\1\42\2\44\1\37\3\44\1\35\1\44\1\36\6\44\1\40\6\44"+
-            "\2\51\1\26\1\43\1\44\1\51\1\22\1\27\1\14\1\17\1\24\1\11\1\44"+
-            "\1\33\1\25\3\44\1\16\1\23\1\41\3\44\1\10\1\15\2\44\1\12\1\44"+
-            "\1\34\1\44\1\6\1\51\1\7\uff82\51",
+            "\11\51\2\50\2\51\1\50\22\51\1\50\1\51\1\46\4\51\1\47\1\17\1"+
+            "\20\2\51\1\26\1\31\1\51\1\3\12\45\1\4\1\1\1\32\1\2\1\33\1\5"+
+            "\1\51\3\44\1\42\2\44\1\40\3\44\1\36\1\44\1\37\6\44\1\41\6\44"+
+            "\2\51\1\27\1\43\1\44\1\51\1\21\1\30\1\13\1\16\1\24\1\11\1\44"+
+            "\1\34\1\25\3\44\1\15\1\23\1\22\3\44\1\10\1\14\2\44\1\12\1\44"+
+            "\1\35\1\44\1\6\1\51\1\7\uff82\51",
             "",
             "\1\53",
             "\1\55\4\uffff\1\56",
@@ -2428,24 +2429,24 @@ public class InternalFETLLexer extends Lexer {
             "\1\64\3\uffff\1\66\12\uffff\1\65",
             "\1\71\5\uffff\1\72\2\uffff\1\70",
             "\1\74\2\uffff\1\73",
+            "\1\76\15\uffff\1\75\2\uffff\1\77",
+            "\1\100",
+            "\1\102\5\uffff\1\101",
+            "\1\104\3\uffff\1\103",
             "",
-            "\1\77\15\uffff\1\76\2\uffff\1\100",
-            "\1\101",
-            "\1\103\5\uffff\1\102",
-            "\1\105\3\uffff\1\104",
             "",
-            "",
-            "\1\114\1\uffff\1\112\1\uffff\1\113\1\uffff\1\111\1\uffff\1"+
+            "\1\113\1\uffff\1\107\1\uffff\1\112\1\uffff\1\111\1\uffff\1"+
             "\110",
+            "\1\114",
             "\1\116\15\uffff\1\115",
             "\1\120\12\uffff\1\117",
             "\1\122\4\uffff\1\121",
             "",
-            "\1\124",
             "",
-            "\1\126",
-            "\1\130",
-            "\1\132",
+            "\1\125",
+            "",
+            "\1\127",
+            "\1\131",
             "\1\133",
             "\1\134",
             "\1\135",
@@ -2479,7 +2480,6 @@ public class InternalFETLLexer extends Lexer {
             "\1\153",
             "\1\154",
             "\1\155",
-            "",
             "\1\156",
             "\1\157",
             "\1\160",
@@ -2490,27 +2490,28 @@ public class InternalFETLLexer extends Lexer {
             "\1\167",
             "",
             "",
-            "\1\170",
-            "\1\171",
-            "\1\172\24\uffff\1\173",
+            "\1\170\24\uffff\1\171",
+            "\1\172",
+            "\1\173",
             "\1\174",
             "\1\175",
-            "\1\176",
-            "\1\177",
-            "\1\u0080\12\uffff\1\u0081",
-            "\1\u0082",
             "\12\67\7\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\1\u0084",
-            "",
+            "\1\177",
+            "\1\u0080",
+            "\1\u0081\12\uffff\1\u0082",
+            "\1\u0083",
+            "\12\67\7\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
             "\1\u0085",
             "",
             "",
-            "",
-            "",
-            "",
             "\1\u0086",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\u0087",
-            "\12\67\7\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
+            "\1\u0088",
             "\12\67\7\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
             "\12\67\7\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
             "\12\67\7\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
@@ -2538,13 +2539,14 @@ public class InternalFETLLexer extends Lexer {
             "\1\u009d",
             "\1\u009e",
             "\1\u009f",
-            "\1\u00a0",
-            "\12\67\7\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\1\u00a2\17\uffff\12\67\7\uffff\32\67\4\uffff\1\67\1\uffff"+
+            "\1\u00a0\17\uffff\12\67\7\uffff\32\67\4\uffff\1\67\1\uffff"+
             "\32\67",
-            "\1\u00a4",
+            "\1\u00a2",
+            "\1\u00a3",
+            "\12\67\7\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
             "\1\u00a5",
             "\1\u00a6",
+            "",
             "\12\67\7\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
             "\1\u00a8",
             "\1\u00a9",
@@ -2555,7 +2557,6 @@ public class InternalFETLLexer extends Lexer {
             "\1\u00ae",
             "\1\u00af",
             "\1\u00b0",
-            "",
             "",
             "",
             "",
@@ -2579,10 +2580,10 @@ public class InternalFETLLexer extends Lexer {
             "\12\67\7\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
             "\1\u00c2",
             "\12\67\7\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
+            "",
+            "",
+            "",
             "\1\u00c4",
-            "",
-            "",
-            "",
             "",
             "\1\u00c5",
             "",
@@ -2761,21 +2762,21 @@ public class InternalFETLLexer extends Lexer {
 
                         else if ( (LA12_0=='w') ) {s = 10;}
 
-                        else if ( (LA12_0==',') ) {s = 11;}
+                        else if ( (LA12_0=='c') ) {s = 11;}
 
-                        else if ( (LA12_0=='c') ) {s = 12;}
+                        else if ( (LA12_0=='t') ) {s = 12;}
 
-                        else if ( (LA12_0=='t') ) {s = 13;}
+                        else if ( (LA12_0=='m') ) {s = 13;}
 
-                        else if ( (LA12_0=='m') ) {s = 14;}
+                        else if ( (LA12_0=='d') ) {s = 14;}
 
-                        else if ( (LA12_0=='d') ) {s = 15;}
+                        else if ( (LA12_0=='(') ) {s = 15;}
 
-                        else if ( (LA12_0=='(') ) {s = 16;}
+                        else if ( (LA12_0==')') ) {s = 16;}
 
-                        else if ( (LA12_0==')') ) {s = 17;}
+                        else if ( (LA12_0=='a') ) {s = 17;}
 
-                        else if ( (LA12_0=='a') ) {s = 18;}
+                        else if ( (LA12_0=='o') ) {s = 18;}
 
                         else if ( (LA12_0=='n') ) {s = 19;}
 
@@ -2783,29 +2784,29 @@ public class InternalFETLLexer extends Lexer {
 
                         else if ( (LA12_0=='i') ) {s = 21;}
 
-                        else if ( (LA12_0==']') ) {s = 22;}
+                        else if ( (LA12_0==',') ) {s = 22;}
 
-                        else if ( (LA12_0=='b') ) {s = 23;}
+                        else if ( (LA12_0==']') ) {s = 23;}
 
-                        else if ( (LA12_0=='-') ) {s = 24;}
+                        else if ( (LA12_0=='b') ) {s = 24;}
 
-                        else if ( (LA12_0=='<') ) {s = 25;}
+                        else if ( (LA12_0=='-') ) {s = 25;}
 
-                        else if ( (LA12_0=='>') ) {s = 26;}
+                        else if ( (LA12_0=='<') ) {s = 26;}
 
-                        else if ( (LA12_0=='h') ) {s = 27;}
+                        else if ( (LA12_0=='>') ) {s = 27;}
 
-                        else if ( (LA12_0=='y') ) {s = 28;}
+                        else if ( (LA12_0=='h') ) {s = 28;}
 
-                        else if ( (LA12_0=='K') ) {s = 29;}
+                        else if ( (LA12_0=='y') ) {s = 29;}
 
-                        else if ( (LA12_0=='M') ) {s = 30;}
+                        else if ( (LA12_0=='K') ) {s = 30;}
 
-                        else if ( (LA12_0=='G') ) {s = 31;}
+                        else if ( (LA12_0=='M') ) {s = 31;}
 
-                        else if ( (LA12_0=='T') ) {s = 32;}
+                        else if ( (LA12_0=='G') ) {s = 32;}
 
-                        else if ( (LA12_0=='o') ) {s = 33;}
+                        else if ( (LA12_0=='T') ) {s = 33;}
 
                         else if ( (LA12_0=='D') ) {s = 34;}
 

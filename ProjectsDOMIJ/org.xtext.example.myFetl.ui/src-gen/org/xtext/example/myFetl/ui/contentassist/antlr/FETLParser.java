@@ -39,6 +39,7 @@ public class FETLParser extends AbstractContentAssistParser {
 				{
 					put(grammarAccess.getExecutionAccess().getAlternatives(), "rule__Execution__Alternatives");
 					put(grammarAccess.getGenericStepAccess().getAlternatives(), "rule__GenericStep__Alternatives");
+					put(grammarAccess.getLinkAccess().getAlternatives_0(), "rule__Link__Alternatives_0");
 					put(grammarAccess.getFilterComponentAccess().getAlternatives(), "rule__FilterComponent__Alternatives");
 					put(grammarAccess.getOnAttributesAccess().getAlternatives_2(), "rule__OnAttributes__Alternatives_2");
 					put(grammarAccess.getOnTagsAccess().getAlternatives_3(), "rule__OnTags__Alternatives_3");
@@ -50,7 +51,6 @@ public class FETLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getTimeTypeAccess().getAlternatives(), "rule__TimeType__Alternatives");
 					put(grammarAccess.getQuantificatorsAccess().getAlternatives(), "rule__Quantificators__Alternatives");
 					put(grammarAccess.getMemoryUnitAccess().getAlternatives(), "rule__MemoryUnit__Alternatives");
-					put(grammarAccess.getCompositionTypeAccess().getAlternatives(), "rule__CompositionType__Alternatives");
 					put(grammarAccess.getFileTypeAccess().getAlternatives(), "rule__FileType__Alternatives");
 					put(grammarAccess.getModelAccess().getGroup(), "rule__Model__Group__0");
 					put(grammarAccess.getModelAccess().getGroup_2(), "rule__Model__Group_2__0");
@@ -62,7 +62,6 @@ public class FETLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getParametrizedStepAccess().getGroup(), "rule__ParametrizedStep__Group__0");
 					put(grammarAccess.getSelectionAccess().getGroup(), "rule__Selection__Group__0");
 					put(grammarAccess.getSelectionAccess().getGroup_4(), "rule__Selection__Group_4__0");
-					put(grammarAccess.getSelectionAccess().getGroup_4_2(), "rule__Selection__Group_4_2__0");
 					put(grammarAccess.getCopyAccess().getGroup(), "rule__Copy__Group__0");
 					put(grammarAccess.getCopyAccess().getGroup_5(), "rule__Copy__Group_5__0");
 					put(grammarAccess.getMoveAccess().getGroup(), "rule__Move__Group__0");
@@ -93,12 +92,12 @@ public class FETLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getPathAccess().getStepsAssignment_0(), "rule__Path__StepsAssignment_0");
 					put(grammarAccess.getPathAccess().getStepsAssignment_1_1(), "rule__Path__StepsAssignment_1_1");
 					put(grammarAccess.getConcreteStepAccess().getValueAssignment_0(), "rule__ConcreteStep__ValueAssignment_0");
+					put(grammarAccess.getConcreteStepAccess().getAbsoluteAssignment_1(), "rule__ConcreteStep__AbsoluteAssignment_1");
 					put(grammarAccess.getVariableStepAccess().getValueAssignment_1(), "rule__VariableStep__ValueAssignment_1");
 					put(grammarAccess.getParametrizedStepAccess().getNameAssignment_2(), "rule__ParametrizedStep__NameAssignment_2");
 					put(grammarAccess.getSelectionAccess().getNameAssignment_1(), "rule__Selection__NameAssignment_1");
 					put(grammarAccess.getSelectionAccess().getFromAssignment_3(), "rule__Selection__FromAssignment_3");
 					put(grammarAccess.getSelectionAccess().getWhereAssignment_4_1(), "rule__Selection__WhereAssignment_4_1");
-					put(grammarAccess.getSelectionAccess().getWhereAssignment_4_2_1(), "rule__Selection__WhereAssignment_4_2_1");
 					put(grammarAccess.getCopyAccess().getSourceAssignment_2(), "rule__Copy__SourceAssignment_2");
 					put(grammarAccess.getCopyAccess().getDestinationAssignment_4(), "rule__Copy__DestinationAssignment_4");
 					put(grammarAccess.getCopyAccess().getStrategyAssignment_5_1(), "rule__Copy__StrategyAssignment_5_1");
@@ -108,7 +107,8 @@ public class FETLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getDeleteAccess().getSourceAssignment_2(), "rule__Delete__SourceAssignment_2");
 					put(grammarAccess.getFilterContainerAccess().getLinksAssignment_1(), "rule__FilterContainer__LinksAssignment_1");
 					put(grammarAccess.getFilterContainerAccess().getLinksAssignment_2(), "rule__FilterContainer__LinksAssignment_2");
-					put(grammarAccess.getLinkAccess().getCompositonTypeAssignment_0(), "rule__Link__CompositonTypeAssignment_0");
+					put(grammarAccess.getLinkAccess().getAndAssignment_0_0(), "rule__Link__AndAssignment_0_0");
+					put(grammarAccess.getLinkAccess().getOrAssignment_0_1(), "rule__Link__OrAssignment_0_1");
 					put(grammarAccess.getLinkAccess().getElementAssignment_1(), "rule__Link__ElementAssignment_1");
 					put(grammarAccess.getOnAttributesAccess().getNameAssignment_1(), "rule__OnAttributes__NameAssignment_1");
 					put(grammarAccess.getOnAttributesAccess().getInverseAssignment_2_0_0(), "rule__OnAttributes__InverseAssignment_2_0_0");

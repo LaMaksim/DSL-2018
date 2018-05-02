@@ -405,10 +405,21 @@ ruleConcreteStep returns [EObject current=null]
 	    }
 
 )
-)(	otherlv_1=':' 
+)(
+(
+		lv_absolute_1_0=	':' 
     {
-    	newLeafNode(otherlv_1, grammarAccess.getConcreteStepAccess().getColonKeyword_1());
+        newLeafNode(lv_absolute_1_0, grammarAccess.getConcreteStepAccess().getAbsoluteColonKeyword_1_0());
     }
+ 
+	    {
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getConcreteStepRule());
+	        }
+       		setWithLastConsumed($current, "absolute", true, ":");
+	    }
+
+)
 )?)
 ;
 
@@ -580,7 +591,7 @@ ruleSelection returns [EObject current=null]
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getSelectionRule());
 	        }
-       		add(
+       		set(
        			$current, 
        			"where",
         		lv_where_5_0, 
@@ -589,29 +600,7 @@ ruleSelection returns [EObject current=null]
 	    }
 
 )
-)(	otherlv_6=',' 
-    {
-    	newLeafNode(otherlv_6, grammarAccess.getSelectionAccess().getCommaKeyword_4_2_0());
-    }
-(
-(
-		{ 
-	        newCompositeNode(grammarAccess.getSelectionAccess().getWhereFilterComponentParserRuleCall_4_2_1_0()); 
-	    }
-		lv_where_7_0=ruleFilterComponent		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getSelectionRule());
-	        }
-       		add(
-       			$current, 
-       			"where",
-        		lv_where_7_0, 
-        		"FilterComponent");
-	        afterParserOrEnumRuleCall();
-	    }
-
-)
-))*)?)
+))?)
 ;
 
 
@@ -917,37 +906,50 @@ ruleLink returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-((
+(((
 (
-		{ 
-	        newCompositeNode(grammarAccess.getLinkAccess().getCompositonTypeCompositionTypeEnumRuleCall_0_0()); 
-	    }
-		lv_compositonType_0_0=ruleCompositionType		{
+		lv_and_0_0=	'and' 
+    {
+        newLeafNode(lv_and_0_0, grammarAccess.getLinkAccess().getAndAndKeyword_0_0_0());
+    }
+ 
+	    {
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getLinkRule());
+	            $current = createModelElement(grammarAccess.getLinkRule());
 	        }
-       		set(
-       			$current, 
-       			"compositonType",
-        		lv_compositonType_0_0, 
-        		"CompositionType");
-	        afterParserOrEnumRuleCall();
+       		setWithLastConsumed($current, "and", true, "and");
 	    }
 
 )
-)?(
+)
+    |(
+(
+		lv_or_1_0=	'or' 
+    {
+        newLeafNode(lv_or_1_0, grammarAccess.getLinkAccess().getOrOrKeyword_0_1_0());
+    }
+ 
+	    {
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getLinkRule());
+	        }
+       		setWithLastConsumed($current, "or", true, "or");
+	    }
+
+)
+))?(
 (
 		{ 
 	        newCompositeNode(grammarAccess.getLinkAccess().getElementFilterComponentParserRuleCall_1_0()); 
 	    }
-		lv_element_1_0=ruleFilterComponent		{
+		lv_element_2_0=ruleFilterComponent		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getLinkRule());
 	        }
        		set(
        			$current, 
        			"element",
-        		lv_element_1_0, 
+        		lv_element_2_0, 
         		"FilterComponent");
 	        afterParserOrEnumRuleCall();
 	    }
@@ -2016,25 +2018,6 @@ ruleMemoryUnit returns [Enumerator current=null]
 	{
         $current = grammarAccess.getMemoryUnitAccess().getTBEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
         newLeafNode(enumLiteral_3, grammarAccess.getMemoryUnitAccess().getTBEnumLiteralDeclaration_3()); 
-    }
-));
-
-
-
-// Rule CompositionType
-ruleCompositionType returns [Enumerator current=null] 
-    @init { enterRule(); }
-    @after { leaveRule(); }:
-((	enumLiteral_0='and' 
-	{
-        $current = grammarAccess.getCompositionTypeAccess().getAndEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
-        newLeafNode(enumLiteral_0, grammarAccess.getCompositionTypeAccess().getAndEnumLiteralDeclaration_0()); 
-    }
-)
-    |(	enumLiteral_1='or' 
-	{
-        $current = grammarAccess.getCompositionTypeAccess().getOrEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
-        newLeafNode(enumLiteral_1, grammarAccess.getCompositionTypeAccess().getOrEnumLiteralDeclaration_1()); 
     }
 ));
 
