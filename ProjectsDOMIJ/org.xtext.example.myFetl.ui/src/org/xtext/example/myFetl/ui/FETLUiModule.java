@@ -4,6 +4,10 @@
 package org.xtext.example.myFetl.ui;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
+import org.eclipse.xtext.ui.editor.syntaxcoloring.AbstractAntlrTokenToAttributeIdMapper;
+import org.eclipse.xtext.ui.editor.syntaxcoloring.DefaultHighlightingConfiguration;
+import org.eclipse.xtext.ui.editor.syntaxcoloring.ISemanticHighlightingCalculator;
+
 
 /**
  * Use this class to register components to be used within the IDE.
@@ -11,5 +15,17 @@ import org.eclipse.ui.plugin.AbstractUIPlugin;
 public class FETLUiModule extends org.xtext.example.myFetl.ui.AbstractFETLUiModule {
 	public FETLUiModule(AbstractUIPlugin plugin) {
 		super(plugin);
+	}
+	
+	public Class<? extends DefaultHighlightingConfiguration> bindDefaultHighlightingConfiguration(){
+		return FETLHighlightingConfiguration.class;
+	}
+	
+	public Class<? extends AbstractAntlrTokenToAttributeIdMapper> bindAbstractAntlrTokenToAttributeIdMapper() {
+		return FETLAntlrTokenToAttributeIdMapper.class ;
+	}
+	
+	public Class<? extends ISemanticHighlightingCalculator> bindISemanticHighlightingCalculator(){
+		return FETLHighlightingCalculator.class;
 	}
 }
