@@ -13,6 +13,7 @@ public class FETLHighlightingConfiguration extends DefaultHighlightingConfigurat
 	public void configure(IHighlightingConfigurationAcceptor acceptor) {
 		// TODO Auto-generated method stub
 		super.configure(acceptor);
+		addType(acceptor,"variable",138,43,226,SWT.ITALIC);
 		addType(acceptor,"parametrizacija",220,42,42,SWT.BOLD);
 		addType(acceptor,"akcije",0,100,0,SWT.BOLD);
 
