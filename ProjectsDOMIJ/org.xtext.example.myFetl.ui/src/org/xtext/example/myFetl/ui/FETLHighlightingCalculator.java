@@ -39,7 +39,7 @@ public class FETLHighlightingCalculator implements ISemanticHighlightingCalculat
 		
 		for (int i = 0; i<elements.size(); i++){
 			INode leaf = elements.get(i);
-			if(isVariableDefinition(i))
+			if(isVariableDefinition(i) || isVariableCall(i) || isParamDefinition(i) || isSelectionDefinition(i) || isSelectionCall(i))
 				acceptor.addPosition(leaf.getOffset(), leaf.getLength(), "variable");
 			
 		}
@@ -56,6 +56,38 @@ public class FETLHighlightingCalculator implements ISemanticHighlightingCalculat
 		return b1 & b2;
 	}
 	
+	protected boolean isVariableCall(int poz){
+		List<String> before = Arrays.asList("?");
+		List<String> after = Arrays.asList("/",";");
+		boolean b1 = areSibilings(poz, before, false, false); 
+		boolean b2 = areSibilings(poz, after, true, true);
+		return b1 & b2;
+	}
+	
+	protected boolean isParamDefinition(int poz){
+		List<String> before = Arrays.asList("{$");
+		List<String> after = Arrays.asList("}");
+		boolean b1 = areSibilings(poz, before, false, false); 
+		boolean b2 = areSibilings(poz, after, true, false);
+		return b1 & b2;
+	}
+	protected boolean isSelectionDefinition(int poz){
+		List<String> before = Arrays.asList("select");
+		List<String> after = Arrays.asList("from");
+		boolean b1 = areSibilings(poz, before, false, false); 
+		boolean b2 = areSibilings(poz, after, true, false);
+		return b1 & b2;
+	}
+	protected boolean isSelectionCall(int poz){
+		List<String> before = Arrays.asList("from");
+		List<String> after = Arrays.asList("to");
+		boolean b1 = areSibilings(poz, before, false, false); 
+		boolean b2 = areSibilings(poz, after, true, false);
+		return b1 & b2;
+	}
+	
+	
+	
 	protected boolean areSibilings(int poz, List<String> lista, boolean forward, boolean nullable){
 		
 		while(true){
@@ -65,8 +97,8 @@ public class FETLHighlightingCalculator implements ISemanticHighlightingCalculat
 			INode elem = elements.get(poz);
 			if (elem == null)
 				return nullable;
-			else
-				System.out.println("Sadrzaj elementa: " + elem.getText());
+//			else
+//				System.out.println("Sadrzaj elementa: " + elem.getText());
 			
 			
 			if (!elem.getText().trim().equals(" ".trim()))

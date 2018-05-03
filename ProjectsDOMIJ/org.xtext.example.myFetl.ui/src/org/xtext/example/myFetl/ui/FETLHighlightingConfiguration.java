@@ -26,8 +26,8 @@ public class FETLHighlightingConfiguration extends DefaultHighlightingConfigurat
 		addType(acceptor, "strategije", 255,127,0, SWT.NO);
 		addType(acceptor, "kvantifikatori", 35,35,142, SWT.NO);
 		
-		addType(acceptor, "RULE_WS", 100,100,0, SWT.NO);
 		addType(acceptor, "RULE_ID", 0,0,255, SWT.NO);
+		addType(acceptor, "komentar", 95,158,160, SWT.ITALIC);
 		
 		
 		

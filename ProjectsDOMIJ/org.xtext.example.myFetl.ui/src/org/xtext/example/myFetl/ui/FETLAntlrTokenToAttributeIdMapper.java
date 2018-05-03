@@ -28,6 +28,7 @@ public class FETLAntlrTokenToAttributeIdMapper extends DefaultAntlrTokenToAttrib
 			"'years'","'KB'","'MB'","'GB'","'TB'","RULE_INT","'size of file'","'created'","'modified'","'before'");
 	
 	protected static List<String> kvantifikatori = Arrays.asList("'any are'","'all are'");
+	protected static List<String> komentar = Arrays.asList("RULE_SL_COMMENT","RULE_ML_COMMENT");
 	
 	
 	@Override
@@ -54,8 +55,9 @@ public class FETLAntlrTokenToAttributeIdMapper extends DefaultAntlrTokenToAttrib
 		
 		if (RULE_ID.contains(tokenName))
 			return "RULE_ID";
-		if (RULE_WS.contains(tokenName))
-			return "RULE_WS";
+		if (komentar.contains(tokenName))
+			return "komentar";
+		
 		
 		//System.out.println(tokenName + "-->" + tokenType);
 		
