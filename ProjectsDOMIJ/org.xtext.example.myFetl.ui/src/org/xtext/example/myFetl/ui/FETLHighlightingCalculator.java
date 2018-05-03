@@ -41,7 +41,6 @@ public class FETLHighlightingCalculator implements ISemanticHighlightingCalculat
 			INode leaf = elements.get(i);
 			if(isVariableDefinition(i) || isVariableCall(i) || isParamDefinition(i) || isSelectionDefinition(i) || isSelectionCall(i))
 				acceptor.addPosition(leaf.getOffset(), leaf.getLength(), "variable");
-			
 		}
 			
 			

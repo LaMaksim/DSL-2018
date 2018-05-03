@@ -57,6 +57,27 @@ class FETLValidator extends AbstractFETLValidator {
 		return isStepAbsolute(step); 
 	}// def
 	
+	
+	def boolean isStepParametrized(GenericStep step){
+		if (step instanceof ConcreteStep){
+			return false;
+		}else if (step instanceof VariableStep){
+			val vstep = step as VariableStep;
+			return isPathParametrized(vstep.value.value);
+		}else{
+			return true; // ParametrizedStep - uvek parametrizovan
+		}
+	}
+	
+	def boolean isPathParametrized(Path path){
+		for(step : path.steps){
+			if( isStepParametrized(step )){
+				return false;
+			}	
+		}
+		return true;
+	}// def
+		
 	def boolean isStepValid(GenericStep step){
 		if (step instanceof ConcreteStep || step instanceof ParametrizedStep){
 			return true;
@@ -110,11 +131,15 @@ class FETLValidator extends AbstractFETLValidator {
 			val mv = execution as Move;
 			if(!isPathAbsolute(mv.destination)) 
 				error('Invalid path. Destination has to be absolute.',execution,FileTransferPackagePackage.Literals.CREATING__DESTINATION);
+			if(isPathParametrized(mv.destination)) 
+				error('Invalid path. Destination can\'t be parametrized.',execution,FileTransferPackagePackage.Literals.CREATING__DESTINATION);
 		}
 		if (execution instanceof Copy){
 			val cp = execution as Copy;
 			if(!isPathAbsolute(cp.destination)) 
 				error('Invalid path. Destination has to be absolute.',execution,FileTransferPackagePackage.Literals.CREATING__DESTINATION);
+			if(isPathParametrized(cp.destination)) 
+				error('Invalid path. Destination can\'t be parametrized.',execution,FileTransferPackagePackage.Literals.CREATING__DESTINATION);
 		}
 	}
 	
@@ -135,5 +160,7 @@ class FETLValidator extends AbstractFETLValidator {
 			
 		}
 	}
+	
+
 
 }

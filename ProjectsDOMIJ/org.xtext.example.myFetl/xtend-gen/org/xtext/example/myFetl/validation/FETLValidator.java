@@ -50,6 +50,32 @@ public class FETLValidator extends AbstractFETLValidator {
     return this.isStepAbsolute(step);
   }
   
+  public boolean isStepParametrized(final GenericStep step) {
+    if ((step instanceof ConcreteStep)) {
+      return false;
+    } else {
+      if ((step instanceof VariableStep)) {
+        final VariableStep vstep = ((VariableStep) step);
+        PathVariable _value = vstep.getValue();
+        Path _value_1 = _value.getValue();
+        return this.isPathParametrized(_value_1);
+      } else {
+        return true;
+      }
+    }
+  }
+  
+  public boolean isPathParametrized(final Path path) {
+    EList<GenericStep> _steps = path.getSteps();
+    for (final GenericStep step : _steps) {
+      boolean _isStepParametrized = this.isStepParametrized(step);
+      if (_isStepParametrized) {
+        return false;
+      }
+    }
+    return true;
+  }
+  
   public boolean isStepValid(final GenericStep step) {
     boolean _or = false;
     if ((step instanceof ConcreteStep)) {
@@ -125,14 +151,24 @@ public class FETLValidator extends AbstractFETLValidator {
       if (_not) {
         this.error("Invalid path. Destination has to be absolute.", execution, FileTransferPackagePackage.Literals.CREATING__DESTINATION);
       }
+      Path _destination_1 = mv.getDestination();
+      boolean _isPathParametrized = this.isPathParametrized(_destination_1);
+      if (_isPathParametrized) {
+        this.error("Invalid path. Destination can\'t be parametrized.", execution, FileTransferPackagePackage.Literals.CREATING__DESTINATION);
+      }
     }
     if ((execution instanceof Copy)) {
       final Copy cp = ((Copy) execution);
-      Path _destination_1 = cp.getDestination();
-      boolean _isPathAbsolute_1 = this.isPathAbsolute(_destination_1);
+      Path _destination_2 = cp.getDestination();
+      boolean _isPathAbsolute_1 = this.isPathAbsolute(_destination_2);
       boolean _not_1 = (!_isPathAbsolute_1);
       if (_not_1) {
         this.error("Invalid path. Destination has to be absolute.", execution, FileTransferPackagePackage.Literals.CREATING__DESTINATION);
+      }
+      Path _destination_3 = cp.getDestination();
+      boolean _isPathParametrized_1 = this.isPathParametrized(_destination_3);
+      if (_isPathParametrized_1) {
+        this.error("Invalid path. Destination can\'t be parametrized.", execution, FileTransferPackagePackage.Literals.CREATING__DESTINATION);
       }
     }
   }
