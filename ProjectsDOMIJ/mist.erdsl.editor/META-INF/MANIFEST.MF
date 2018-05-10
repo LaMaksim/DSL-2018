@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MIST ERDSL editor
+Bundle-SymbolicName: mist.erdsl.editor;singleton:=true
+Bundle-Version: 0.1.0
+Bundle-ClassPath: .
+Bundle-Activator: er.presentation.ErEditorPlugin$Implementation
+Bundle-Vendor: ACS
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: er.presentation
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.core.resources;visibility:=reexport,
+ mist.erdsl.edit;visibility:=reexport,
+ org.eclipse.emf.ecore.xmi;visibility:=reexport,
+ org.eclipse.emf.edit.ui;visibility:=reexport,
+ org.eclipse.ui.ide;visibility:=reexport,
+ rs.ac.uns.ftn.acs.mist;bundle-version="0.1.1"
+Bundle-ActivationPolicy: lazy

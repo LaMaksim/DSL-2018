@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<!--
+
+-->
+<plugin>
+
+   <extension point="org.eclipse.team.core.fileTypes" id="repo-ftype">
+      <?gmfgen generated="true"?>
+      <fileTypes type="text" extension="erdsldiag"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser" id="resource-factory">
+      <?gmfgen generated="true"?>
+      <parser
+         type="erdsldiag"
+         class="org.eclipse.gmf.runtime.emf.core.resources.GMFResourceFactory">
+      </parser>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors" id="gmf-editor">
+      <?gmfgen generated="true"?>
+      <editor
+         id="er.diagram.part.ErDiagramEditorID"
+         name="%editorName"
+         icon="icons/obj16/ErDiagramFile.gif"
+         extensions="erdsldiag"
+         default="true"
+         class="er.diagram.part.ErDiagramEditor"
+         matchingStrategy="er.diagram.part.ErMatchingStrategy"
+         contributorClass="er.diagram.part.ErDiagramActionBarContributor">
+      </editor>
+   </extension>
+   
+   <extension point="org.eclipse.ui.contexts" id="ui-context">
+      <?gmfgen generated="true"?>
+      <context
+         description="%context.description"
+         id="er.diagram.ui.diagramContext"
+         name="%context.name"
+         parentId="org.eclipse.gmf.runtime.diagram.ui.diagramContext">
+      </context>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards" id="creation-wizard">
+      <?gmfgen generated="true"?>
+  	  <wizard
+  	     name="%newWizardName"
+  	     icon="icons/obj16/ErDiagramFile.gif"
+  	     category="org.eclipse.ui.Examples"
+  	     class="er.diagram.part.ErCreationWizard"
+  	     id="er.diagram.part.ErCreationWizardID">
+  	  	 <description>%newWizardDesc</description>  
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.popupMenus" id="init-diagram-action">
+      <?gmfgen generated="true"?>
+      <objectContribution
+            id="mist.erdsl.diagram.InitDiagram"
+            nameFilter="*.erdsl"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               label="%initDiagramActionLabel"
+               class="er.diagram.part.ErInitDiagramFileAction"
+               menubarPath="additions"
+               enablesFor="1"
+               id="mist.erdsl.diagram.InitDiagramAction">
+         </action>
+      </objectContribution>
+   </extension>
+	
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.action.globalActionHandlerProviders" id="global-actions">
+      <?gmfgen generated="true"?>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramGlobalActionHandlerProvider"
+         id="ErPresentation">
+         <Priority name="Lowest"/>
+         <ViewId id="er.diagram.part.ErDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="delete"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart">
+               <GlobalActionId actionId="save"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="save">
+               </GlobalActionId>
+            </ElementType>        
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.printing.render.providers.DiagramWithPrintGlobalActionHandlerProvider"
+         id="ErPresentationPrint">
+         <Priority name="Lowest"/>
+         <ViewId id="er.diagram.part.ErDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="print"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.ide.providers.DiagramIDEGlobalActionHandlerProvider"
+         id="ErPresentationIDE">
+         <Priority name="Lowest"/>
+         <ViewId id="er.diagram.part.ErDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="bookmark"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+            class="org.eclipse.gmf.runtime.diagram.ui.render.providers.DiagramUIRenderGlobalActionHandlerProvider"
+            id="ErRender">
+         <Priority name="Lowest"/>
+         <ViewId id="er.diagram.part.ErDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="cut"/>
+               <GlobalActionId actionId="copy"/>
+               <GlobalActionId actionId="paste"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+   </extension>
+
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.markerNavigationProviders" id="markers-navigation">
+      <?gmfgen generated="true"?>
+      <MarkerNavigationProvider class="er.diagram.providers.ErMarkerNavigationProvider">
+         <MarkerType name="mist.erdsl.diagram.diagnostic"/>
+         <Priority name="Lowest"/>
+      </MarkerNavigationProvider>
+   </extension>
+
+   <extension id="diagnostic" name="Er Plugin problems" point="org.eclipse.core.resources.markers">
+      <?gmfgen generated="true"?>
+      <super type="org.eclipse.core.resources.problemmarker"/>
+      <super type="org.eclipse.gmf.runtime.common.ui.services.marker"/>
+      <persistent value="true"/>
+   </extension>   
+
+   <extension id="validationDecoratorProvider" name="ValidationDecorations" point="org.eclipse.gmf.runtime.diagram.ui.decoratorProviders">
+      <?gmfgen generated="true"?>
+      <decoratorProvider class="er.diagram.providers.ErValidationDecoratorProvider">
+         <Priority name="Lowest"/>
+         <object class="org.eclipse.gmf.runtime.diagram.ui.editparts.IPrimaryEditPart(org.eclipse.gmf.runtime.diagram.ui)" id="PRIMARY_VIEW"/>
+         <context decoratorTargets="PRIMARY_VIEW"/>
+      </decoratorProvider>
+   </extension>
+
+   <extension point="org.eclipse.core.runtime.preferences" id="prefs">
+      <?gmfgen generated="true"?>
+      <initializer class="er.diagram.preferences.DiagramPreferenceInitializer"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.preferencePages" id="prefpages">
+      <?gmfgen generated="true"?>
+      <page
+            id="mist.erdsl.diagram.general"
+            name="%prefpage.mist.erdsl.diagram.general"
+            class="er.diagram.preferences.DiagramGeneralPreferencePage">
+      </page>
+      <page
+            id="mist.erdsl.diagram.appearance"
+            name="%prefpage.mist.erdsl.diagram.appearance"
+            category="mist.erdsl.diagram.general"
+            class="er.diagram.preferences.DiagramAppearancePreferencePage">
+      </page>
+      <page
+            id="mist.erdsl.diagram.connections"
+            name="%prefpage.mist.erdsl.diagram.connections"
+            category="mist.erdsl.diagram.general"
+            class="er.diagram.preferences.DiagramConnectionsPreferencePage">
+      </page>
+      <page
+            id="mist.erdsl.diagram.printing"
+            name="%prefpage.mist.erdsl.diagram.printing"
+            category="mist.erdsl.diagram.general"
+            class="er.diagram.preferences.DiagramPrintingPreferencePage">
+      </page>
+      <page
+            id="mist.erdsl.diagram.rulersAndGrid"
+            name="%prefpage.mist.erdsl.diagram.rulersAndGrid"
+            category="mist.erdsl.diagram.general"
+            class="er.diagram.preferences.DiagramRulersAndGridPreferencePage">
+      </page>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyContributor" id="prop-contrib">
+      <?gmfgen generated="true"?>
+      <propertyContributor
+            contributorId="mist.erdsl.diagram"
+            labelProvider="er.diagram.sheet.ErSheetLabelProvider">
+         <propertyCategory category="domain"/>
+         <propertyCategory category="visual"/>
+         <propertyCategory category="extra"/>
+      </propertyContributor>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyTabs" id="proptabs">
+      <?gmfgen generated="true"?>   
+      <propertyTabs contributorId="mist.erdsl.diagram">
+         <propertyTab
+             category="visual"
+             id="property.tab.AppearancePropertySection"
+             label="%tab.appearance"/>
+          <propertyTab
+             category="visual"
+             id="property.tab.DiagramPropertySection"
+             label="%tab.diagram"/>
+          <propertyTab
+             category="domain"
+             id="property.tab.domain"
+             label="%tab.domain"/>
+      </propertyTabs>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertySections" id="propsections">
+      <?gmfgen generated="true"?>   
+      <propertySections contributorId="mist.erdsl.diagram">
+         <propertySection id="property.section.ConnectorAppearancePropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ConnectionEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ConnectionAppearancePropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>
+         <propertySection id="property.section.ShapeColorAndFontPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ShapeEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ShapeColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection> 
+         <propertySection id="property.section.DiagramColorsAndFontsPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.DiagramColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>     
+         <propertySection id="property.section.RulerGridPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.grid.RulerGridPropertySection" 
+            tab="property.tab.DiagramPropertySection">
+         </propertySection>     
+         <propertySection
+            id="property.section.domain" 
+            tab="property.tab.domain"
+            class="er.diagram.sheet.ErPropertySection">
+            <input type="org.eclipse.gmf.runtime.notation.View"/>
+            <input type="org.eclipse.gef.EditPart"/>
+            <input type="er.diagram.navigator.ErAbstractNavigatorItem"/>
+         </propertySection>
+      </propertySections>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders" id="view-provider">
+      <?gmfgen generated="true"?>
+      <viewProvider class="er.diagram.providers.ErViewProvider">
+         <Priority name="Lowest"/>
+         <object id="referencing-diagrams" class="org.eclipse.gmf.runtime.notation.Diagram">
+            <method name="getType()" value="erdsl"/>
+         </object>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" containerViews="referencing-diagrams"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Er"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2004,2005,2006,2007,2008,2009,2002,2003,3004,3005,3007,3008,3010,3011"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4012,4001,4013,4003,4004,4005,4006,4007,4008,4009,4011"/>
+      </viewProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders" id="ep-provider">
+      <?gmfgen generated="true"?>
+      <editpartProvider class="er.diagram.providers.ErEditPartProvider">
+         <Priority name="Lowest"/>
+         <object class="org.eclipse.gmf.runtime.notation.Diagram" id="generated-diagram">
+            <method name="getType()" value="Er"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
+            <method name="getType()" value="2004,2005,2006,2007,2008,2009,2002,2003,3004,3005,3007,3008,3010,3011"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
+            <method name="getType()" value="4012,4001,4013,4003,4004,4005,4006,4007,4008,4009,4011"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
+            <method name="getType()" value="5032,5033,5039,5040,5036,5016,5031,5018,5041,5042,5044,5043,5045"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
+            <method name="getType()" value="7019,7020"/>
+         </object>
+         <context views="generated-diagram,generated-nodes,generated-links,generated-labels,generated-compartments"/>
+      </editpartProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.ui.modelingAssistantProviders" id="modelassist-provider">
+      <?gmfgen generated="true"?>
+      <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfERModelEditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.ERModelEditPart" id="ERModel_1000"/>
+         <context elements="ERModel_1000"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfEntityEditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.EntityEditPart" id="Entity_2004"/>
+         <context elements="Entity_2004"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfRelationshipEditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.RelationshipEditPart" id="Relationship_2005"/>
+         <context elements="Relationship_2005"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfISAEditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.ISAEditPart" id="ISA_2006"/>
+         <context elements="ISA_2006"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfCategorisationEditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.CategorisationEditPart" id="Categorisation_2007"/>
+         <context elements="Categorisation_2007"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfIdentificationDependencyEditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.IdentificationDependencyEditPart" id="IdentificationDependency_2008"/>
+         <context elements="IdentificationDependency_2008"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfGerundEditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.GerundEditPart" id="Gerund_2009"/>
+         <context elements="Gerund_2009"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfDomainEditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.DomainEditPart" id="Domain_2002"/>
+         <context elements="Domain_2002"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfAttributeEditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.AttributeEditPart" id="Attribute_2003"/>
+         <context elements="Attribute_2003"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfKeyEditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.KeyEditPart" id="Key_3004"/>
+         <context elements="Key_3004"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfRegularEntityEditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.RegularEntityEditPart" id="RegularEntity_3005"/>
+         <context elements="RegularEntity_3005"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfRegularEntity2EditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.RegularEntity2EditPart" id="RegularEntity_3007"/>
+         <context elements="RegularEntity_3007"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfCategoriesEditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.CategoriesEditPart" id="Categories_3008"/>
+         <context elements="Categories_3008"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfRegularEntity3EditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.RegularEntity3EditPart" id="RegularEntity_3010"/>
+         <context elements="RegularEntity_3010"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="er.diagram.providers.assistants.ErModelingAssistantProviderOfRelationship2EditPart">
+         <Priority name="Lowest"/>
+         <object class="er.diagram.edit.parts.Relationship2EditPart" id="Relationship_3011"/>
+         <context elements="Relationship_3011"/>
+      </modelingAssistantProvider>
+      
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.iconProviders" id="icon-provider">
+      <?gmfgen generated="true"?>
+      <IconProvider class="er.diagram.providers.ErIconProvider">
+         <Priority name="Low"/>
+      </IconProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders" id="parser-provider">
+      <?gmfgen generated="true"?>
+      <ParserProvider class="er.diagram.providers.ErParserProvider">
+         <Priority name="Lowest"/>
+      </ParserProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.ui.decoratorProviders" id="decorator-provider">
+      <?gmfgen generated="true"?>
+      <decoratorProvider class="er.diagram.providers.ErShortcutsDecoratorProvider">
+         <Priority name="Lowest"/>
+         <object class="org.eclipse.gmf.runtime.notation.Node(org.eclipse.gmf.runtime.notation)" id="generated-top-nodes">
+            <method name="getType()" value="2004,2005,2006,2007,2008,2009,2002,2003"/>
+         </object>
+         <context decoratorTargets="generated-top-nodes"/>
+      </decoratorProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes" id="element-types">
+      <?gmfgen generated="true"?>
+      <metamodel nsURI="http://www.example.org/er">
+         <metamodelType
+               id="mist.erdsl.diagram.ERModel_1000"
+               name="%metatype.name.ERModel_1000"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="ERModel"
+               edithelper="er.diagram.edit.helpers.ERModelEditHelper">
+            <param name="semanticHint" value="1000"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <metamodelType
+               id="mist.erdsl.diagram.Entity_2004"
+               name="%metatype.name.Entity_2004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Entity"
+               edithelper="er.diagram.edit.helpers.EntityEditHelper">
+            <param name="semanticHint" value="2004"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <metamodelType
+               id="mist.erdsl.diagram.Relationship_2005"
+               name="%metatype.name.Relationship_2005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Relationship"
+               edithelper="er.diagram.edit.helpers.RelationshipEditHelper">
+            <param name="semanticHint" value="2005"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <metamodelType
+               id="mist.erdsl.diagram.ISA_2006"
+               name="%metatype.name.ISA_2006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="ISA"
+               edithelper="er.diagram.edit.helpers.ISAEditHelper">
+            <param name="semanticHint" value="2006"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <metamodelType
+               id="mist.erdsl.diagram.Categorisation_2007"
+               name="%metatype.name.Categorisation_2007"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Categorisation"
+               edithelper="er.diagram.edit.helpers.CategorisationEditHelper">
+            <param name="semanticHint" value="2007"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <metamodelType
+               id="mist.erdsl.diagram.IdentificationDependency_2008"
+               name="%metatype.name.IdentificationDependency_2008"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="IdentificationDependency"
+               edithelper="er.diagram.edit.helpers.IdentificationDependencyEditHelper">
+            <param name="semanticHint" value="2008"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <metamodelType
+               id="mist.erdsl.diagram.Gerund_2009"
+               name="%metatype.name.Gerund_2009"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Gerund"
+               edithelper="er.diagram.edit.helpers.GerundEditHelper">
+            <param name="semanticHint" value="2009"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <metamodelType
+               id="mist.erdsl.diagram.Domain_2002"
+               name="%metatype.name.Domain_2002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Domain"
+               edithelper="er.diagram.edit.helpers.DomainEditHelper">
+            <param name="semanticHint" value="2002"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <metamodelType
+               id="mist.erdsl.diagram.Attribute_2003"
+               name="%metatype.name.Attribute_2003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Attribute"
+               edithelper="er.diagram.edit.helpers.AttributeEditHelper">
+            <param name="semanticHint" value="2003"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <metamodelType
+               id="mist.erdsl.diagram.Key_3004"
+               name="%metatype.name.Key_3004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Key"
+               edithelper="er.diagram.edit.helpers.KeyEditHelper">
+            <param name="semanticHint" value="3004"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <metamodelType
+               id="mist.erdsl.diagram.RegularEntity_3005"
+               name="%metatype.name.RegularEntity_3005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="RegularEntity"
+               edithelper="er.diagram.edit.helpers.RegularEntityEditHelper">
+            <param name="semanticHint" value="3005"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <specializationType
+               id="mist.erdsl.diagram.RegularEntity_3007"
+               name="%metatype.name.RegularEntity_3007"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="mist.erdsl.diagram.RegularEntity_3005"/>
+            <param name="semanticHint" value="3007"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <metamodelType
+               id="mist.erdsl.diagram.Categories_3008"
+               name="%metatype.name.Categories_3008"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Categories"
+               edithelper="er.diagram.edit.helpers.CategoriesEditHelper">
+            <param name="semanticHint" value="3008"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <specializationType
+               id="mist.erdsl.diagram.RegularEntity_3010"
+               name="%metatype.name.RegularEntity_3010"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="mist.erdsl.diagram.RegularEntity_3005"/>
+            <param name="semanticHint" value="3010"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <specializationType
+               id="mist.erdsl.diagram.Relationship_3011"
+               name="%metatype.name.Relationship_3011"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="mist.erdsl.diagram.Relationship_2005"/>
+            <param name="semanticHint" value="3011"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <specializationType
+               id="mist.erdsl.diagram.EntityEntityAttributes_4012"
+               name="%metatype.name.EntityEntityAttributes_4012"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4012"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <specializationType
+               id="mist.erdsl.diagram.EntityPrimaryKey_4001"
+               name="%metatype.name.EntityPrimaryKey_4001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4001"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <specializationType
+               id="mist.erdsl.diagram.RelationshipRelationshipAttributes_4013"
+               name="%metatype.name.RelationshipRelationshipAttributes_4013"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4013"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <specializationType
+               id="mist.erdsl.diagram.ISASubtypes_4003"
+               name="%metatype.name.ISASubtypes_4003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4003"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <specializationType
+               id="mist.erdsl.diagram.ISAClassificationAttribute_4004"
+               name="%metatype.name.ISAClassificationAttribute_4004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4004"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <specializationType
+               id="mist.erdsl.diagram.CategorisationCategorisedEntity_4005"
+               name="%metatype.name.CategorisationCategorisedEntity_4005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4005"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <specializationType
+               id="mist.erdsl.diagram.IdentificationDependencyWeakEntity_4006"
+               name="%metatype.name.IdentificationDependencyWeakEntity_4006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4006"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <specializationType
+               id="mist.erdsl.diagram.RegularEntityEntity_4007"
+               name="%metatype.name.RegularEntityEntity_4007"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4007"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <specializationType
+               id="mist.erdsl.diagram.CategoriesEntities_4008"
+               name="%metatype.name.CategoriesEntities_4008"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4008"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <specializationType
+               id="mist.erdsl.diagram.KeyKeyAttributes_4009"
+               name="%metatype.name.KeyKeyAttributes_4009"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4009"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://www.example.org/er">
+         <specializationType
+               id="mist.erdsl.diagram.AttributeDomainDomain_4011"
+               name="%metatype.name.AttributeDomainDomain_4011"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4011"/>
+         </specializationType>
+      </metamodel>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings" id="element-types-bindings">
+      <?gmfgen generated="true"?>
+      <clientContext id="mist.erdsl.diagram.TypeContext">
+         <enablement>
+            <test
+               property="org.eclipse.gmf.runtime.emf.core.editingDomain"
+               value="mist.erdsl.diagram.EditingDomain"/>
+         </enablement>
+      </clientContext> 
+      <binding context="mist.erdsl.diagram.TypeContext">
+         <elementType ref="mist.erdsl.diagram.ERModel_1000"/>
+         <elementType ref="mist.erdsl.diagram.Entity_2004"/>
+         <elementType ref="mist.erdsl.diagram.Relationship_2005"/>
+         <elementType ref="mist.erdsl.diagram.ISA_2006"/>
+         <elementType ref="mist.erdsl.diagram.Categorisation_2007"/>
+         <elementType ref="mist.erdsl.diagram.IdentificationDependency_2008"/>
+         <elementType ref="mist.erdsl.diagram.Gerund_2009"/>
+         <elementType ref="mist.erdsl.diagram.Domain_2002"/>
+         <elementType ref="mist.erdsl.diagram.Attribute_2003"/>
+         <elementType ref="mist.erdsl.diagram.Key_3004"/>
+         <elementType ref="mist.erdsl.diagram.RegularEntity_3005"/>
+         <elementType ref="mist.erdsl.diagram.RegularEntity_3007"/>
+         <elementType ref="mist.erdsl.diagram.Categories_3008"/>
+         <elementType ref="mist.erdsl.diagram.RegularEntity_3010"/>
+         <elementType ref="mist.erdsl.diagram.Relationship_3011"/>
+         <elementType ref="mist.erdsl.diagram.EntityEntityAttributes_4012"/>
+         <elementType ref="mist.erdsl.diagram.EntityPrimaryKey_4001"/>
+         <elementType ref="mist.erdsl.diagram.RelationshipRelationshipAttributes_4013"/>
+         <elementType ref="mist.erdsl.diagram.ISASubtypes_4003"/>
+         <elementType ref="mist.erdsl.diagram.ISAClassificationAttribute_4004"/>
+         <elementType ref="mist.erdsl.diagram.CategorisationCategorisedEntity_4005"/>
+         <elementType ref="mist.erdsl.diagram.IdentificationDependencyWeakEntity_4006"/>
+         <elementType ref="mist.erdsl.diagram.RegularEntityEntity_4007"/>
+         <elementType ref="mist.erdsl.diagram.CategoriesEntities_4008"/>
+         <elementType ref="mist.erdsl.diagram.KeyKeyAttributes_4009"/>
+         <elementType ref="mist.erdsl.diagram.AttributeDomainDomain_4011"/>
+         <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
+      </binding>
+   </extension>
+	   <extension point="org.eclipse.core.expressions.propertyTesters" id="navigator-proptest.isURIEditorInput">
+      <?gmfgen generated="true"?>
+       <propertyTester
+           id="mist.erdsl.diagram.URIEditorInputPropertyTester"
+           type="org.eclipse.emf.common.ui.URIEditorInput"
+           namespace="mist.erdsl.diagram"
+           properties="isURIEditorInput"
+           class="er.diagram.part.ErUriEditorInputTester">
+       </propertyTester>
+   </extension>
+
+	   <extension point="org.eclipse.core.expressions.propertyTesters" id="navigator-proptest.isShortcut">
+      <?gmfgen generated="true"?>
+       <propertyTester
+           id="mist.erdsl.diagram.ShortcutPropertyTester"
+           type="org.eclipse.gmf.runtime.notation.View"
+           namespace="mist.erdsl.diagram"
+           properties="isShortcut"
+           class="er.diagram.part.ErShortcutPropertyTester">
+       </propertyTester>
+   </extension>
+
+	   <extension point="org.eclipse.ui.navigator.viewer" id="navigator-viewbinding">
+      <?gmfgen generated="true"?>
+      <viewerContentBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <contentExtension pattern="mist.erdsl.diagram.resourceContent"/>
+			<contentExtension pattern="mist.erdsl.diagram.domainResourceContent"/>
+            <contentExtension pattern="mist.erdsl.diagram.navigatorLinkHelper"/>
+         </includes>
+      </viewerContentBinding>
+      <viewerActionBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <actionExtension pattern="mist.erdsl.diagram.navigatorActionProvider"/>
+         </includes>
+      </viewerActionBinding>
+   </extension>
+
+   <extension point="org.eclipse.ui.navigator.navigatorContent" id="navigator-content">
+      <?gmfgen generated="true"?>
+      <navigatorContent
+            id="mist.erdsl.diagram.resourceContent" 
+            name="%navigatorContentName" 
+            priority="normal" 
+            contentProvider="er.diagram.navigator.ErNavigatorContentProvider" 
+            labelProvider="er.diagram.navigator.ErNavigatorLabelProvider"
+            icon="icons/obj16/ErDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="erdsldiag"/>
+               </and>
+               <instanceof value="er.diagram.navigator.ErAbstractNavigatorItem"/>
+           	   <adapt type="org.eclipse.gmf.runtime.notation.View">
+           	      <test property="mist.erdsl.diagram.isShortcut"/>
+           	   </adapt>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <or>
+         	   <instanceof value="er.diagram.navigator.ErAbstractNavigatorItem"/>
+           	   <adapt type="org.eclipse.gmf.runtime.notation.View">
+           	      <test property="mist.erdsl.diagram.isShortcut"/>
+           	   </adapt>
+            </or>
+         </possibleChildren>
+         <commonSorter 
+               id="mist.erdsl.diagram.navigatorSorter" 
+               class="er.diagram.navigator.ErNavigatorSorter">
+            <parentExpression>
+               <or>
+	              <and>
+    	             <instanceof value="org.eclipse.core.resources.IFile"/>
+        	         <test property="org.eclipse.core.resources.extension" value="erdsldiag"/>
+                  </and>
+                  <instanceof value="er.diagram.navigator.ErAbstractNavigatorItem"/>
+               </or>
+            </parentExpression>
+         </commonSorter>
+      </navigatorContent>
+      <navigatorContent
+            id="mist.erdsl.diagram.domainResourceContent" 
+            name="%domainNavigatorContentName" 
+            priority="normal" 
+            contentProvider="er.diagram.navigator.ErDomainNavigatorContentProvider" 
+            labelProvider="er.diagram.navigator.ErDomainNavigatorLabelProvider"
+            icon="icons/obj16/ErDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="erdsl"/>
+               </and>
+               <instanceof value="er.diagram.navigator.ErDomainNavigatorItem"/>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <instanceof value="er.diagram.navigator.ErDomainNavigatorItem"/>
+         </possibleChildren>
+      </navigatorContent>
+      <actionProvider
+            id="mist.erdsl.diagram.navigatorActionProvider"
+            class="er.diagram.navigator.ErNavigatorActionProvider">
+         <enablement>
+            <or>
+               <instanceof value="er.diagram.navigator.ErAbstractNavigatorItem"/>
+           	   <adapt type="org.eclipse.gmf.runtime.notation.View">
+           	      <test property="mist.erdsl.diagram.isShortcut"/>
+           	   </adapt>
+            </or>
+         </enablement>
+      </actionProvider>
+   </extension>
+   
+	   <extension point="org.eclipse.ui.navigator.linkHelper" id="navigator-linkhelper">
+      <?gmfgen generated="true"?>
+      <linkHelper
+            id="mist.erdsl.diagram.navigatorLinkHelper"
+            class="er.diagram.navigator.ErNavigatorLinkHelper">
+         <editorInputEnablement>
+            <and>
+               <instanceof value="org.eclipse.emf.common.ui.URIEditorInput"/>
+               <test property="mist.erdsl.diagram.isURIEditorInput"/>
+            </and>
+         </editorInputEnablement>
+         <selectionEnablement>
+            <instanceof value="er.diagram.navigator.ErAbstractNavigatorItem"/>
+         </selectionEnablement>
+      </linkHelper>
+   </extension>
+   <extension point="org.eclipse.ui.commands" id="update-cmd">
+      <?gmfgen generated="true"?>
+      <command
+         categoryId="org.eclipse.ui.category.edit"
+         defaultHandler="er.diagram.part.ErDiagramUpdateCommand"
+         description="%update.diagram.description"
+         id="er.diagram.updateDiagram"
+         name="%update.diagram.name"/>
+   </extension>
+   
+   <extension point="org.eclipse.ui.bindings" id="update-cmd-binding">
+      <?gmfgen generated="true"?>
+      <key 
+         commandId="er.diagram.updateDiagram"
+         contextId="er.diagram.ui.diagramContext"
+         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+         sequence="F5"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.menus" id="context-menus">
+      <?gmfgen generated="true"?>
+      <!-- menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=">
+      </menuContribution>
+      <menuContribution locationURI="toolbar:org.eclipse.ui.main.toolbar?after=">
+      </menuContribution -->
+      <menuContribution locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu">
+         <command commandId="mist.erdsl.diagram.LoadResourceAction">
+            <visibleWhen>
+               <and>
+                  <with variable="activePartId"><equals value="er.diagram.part.ErDiagramEditorID"/></with>
+                  <with variable="selection"><iterate ifEmpty="false"> 
+                     <instanceof value="er.diagram.edit.parts.ERModelEditPart"/>
+                  </iterate></with>
+               </and>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands" id="menu-commands">
+      <?gmfgen generated="true"?>
+      <category id="er.diagram.part.ErDiagramEditorID" name="%cmdcategory.name" description="%cmdcategory.desc"/>
+      <command id="mist.erdsl.diagram.LoadResourceAction"
+         name="Load Resource"
+         categoryId="er.diagram.part.ErDiagramEditorID"
+         defaultHandler="er.diagram.part.LoadResourceAction"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.handlers" id="menu-handlers">
+      <?gmfgen generated="true"?>
+   </extension>
+
+   <!-- optionally, specify keybindings -->
+</plugin>

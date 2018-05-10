@@ -1,0 +1,7 @@
+# Tracing options for the mist.erdsl.diagram plug-in
+
+# Common issues
+mist.erdsl.diagram/debug=false
+
+# Visual IDs
+mist.erdsl.diagram/debug/visualID=false

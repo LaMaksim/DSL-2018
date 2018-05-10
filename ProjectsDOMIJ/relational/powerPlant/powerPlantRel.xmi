@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rm:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:rm="http://rdbms/1.0" name="PowerPlantFacility">
+  <tables name="Facility">
+    <tableFKs name="FK_Facility_PowerGenerator" rhsKey="//@tables.1/@tablePK" lhsAttr="//@tables.0/@columns.2" refersTo="//@tables.1" inverseReferentialIntegrityCon="true"/>
+    <tablePK name="PK_Facility" PKandUQColumns="//@tables.0/@columns.0"/>
+    <columns name="facilityId" columnInPKandUQ="//@tables.0/@tablePK" columnDataType="//@dataTypes.0"/>
+    <columns name="facilityName" length="30" columnDataType="//@dataTypes.1"/>
+    <columns name="generatorId" columnInFK="//@tables.0/@tableFKs.0" columnDataType="//@dataTypes.0"/>
+  </tables>
+  <tables name="PowerGenerator">
+    <tablePK name="PK_PowerGenerator" PKandUQColumns="//@tables.1/@columns.0"/>
+    <columns name="generatorId" columnInPKandUQ="//@tables.1/@tablePK" columnDataType="//@dataTypes.0"/>
+    <columns name="generatorMinPower" columnDataType="//@dataTypes.0"/>
+    <columns name="generatorMaxPower" columnDataType="//@dataTypes.0"/>
+    <columns name="generatorType" length="30" columnDataType="//@dataTypes.1"/>
+  </tables>
+  <tables name="FuelGenerator">
+    <tableFKs name="FK_FuelGenerator_PowerGenerator" rhsKey="//@tables.1/@tablePK" lhsAttr="//@tables.2/@columns.0" refersTo="//@tables.1"/>
+    <tablePK name="PK_FuelGenerator" PKandUQColumns="//@tables.2/@columns.0"/>
+    <columns name="generatorId" columnInPKandUQ="//@tables.2/@tablePK" columnInFK="//@tables.2/@tableFKs.0" columnDataType="//@dataTypes.0"/>
+  </tables>
+  <tables name="RenewableEnergyGenerator">
+    <tableFKs name="FK_RenewableEnergyGenerator_RenewableEnergyType" rhsKey="//@tables.5/@tablePK" lhsAttr="//@tables.3/@columns.0" refersTo="//@tables.5"/>
+    <tableFKs name="FK_RenewableEnergyGenerator_Location" rhsKey="//@tables.6/@tablePK" lhsAttr="//@tables.3/@columns.1" refersTo="//@tables.6"/>
+    <tableFKs name="FK_RenewableEnergyGenerator_PowerGenerator" rhsKey="//@tables.1/@tablePK" lhsAttr="//@tables.3/@columns.2" refersTo="//@tables.1"/>
+    <tablePK name="PK_RenewableEnergyGenerator" PKandUQColumns="//@tables.3/@columns.2"/>
+    <columns name="reType" length="30" columnInFK="//@tables.3/@tableFKs.0" columnDataType="//@dataTypes.1"/>
+    <columns name="locationID" columnInFK="//@tables.3/@tableFKs.1" columnDataType="//@dataTypes.0"/>
+    <columns name="generatorId" columnInPKandUQ="//@tables.3/@tablePK" columnInFK="//@tables.3/@tableFKs.2" columnDataType="//@dataTypes.0"/>
+  </tables>
+  <tables name="FuelType">
+    <tablePK name="PK_FuelType" PKandUQColumns="//@tables.4/@columns.0"/>
+    <columns name="fuelId" columnInPKandUQ="//@tables.4/@tablePK" columnDataType="//@dataTypes.0"/>
+    <columns name="fuelName" length="30" columnDataType="//@dataTypes.1"/>
+  </tables>
+  <tables name="RenewableEnergyType">
+    <tablePK name="PK_RenewableEnergyType" PKandUQColumns="//@tables.5/@columns.0"/>
+    <columns name="reType" columnInPKandUQ="//@tables.5/@tablePK" length="30" columnDataType="//@dataTypes.1"/>
+    <columns name="reTypeReliability" columnDataType="//@dataTypes.0"/>
+  </tables>
+  <tables name="Location">
+    <tablePK name="PK_Location" PKandUQColumns="//@tables.6/@columns.0"/>
+    <columns name="locationID" columnInPKandUQ="//@tables.6/@tablePK" columnDataType="//@dataTypes.0"/>
+    <columns name="locationName" length="30" columnDataType="//@dataTypes.1"/>
+  </tables>
+  <tables name="WeatherCondition">
+    <tableFKs name="FK_WeatherCondition_Season" rhsKey="//@tables.8/@tablePK" lhsAttr="//@tables.7/@columns.5" refersTo="//@tables.8"/>
+    <tableFKs name="FK_WeatherCondition_Location" rhsKey="//@tables.6/@tablePK" lhsAttr="//@tables.7/@columns.6" refersTo="//@tables.6"/>
+    <tablePK name="PK_WeatherCondition" PKandUQColumns="//@tables.7/@columns.6 //@tables.7/@columns.0"/>
+    <columns name="wconDateTime" columnInPKandUQ="//@tables.7/@tablePK" columnDataType="//@dataTypes.2"/>
+    <columns name="wconTemperature" columnDataType="//@dataTypes.0"/>
+    <columns name="wconAirPressure" columnDataType="//@dataTypes.0"/>
+    <columns name="wconHumidity" columnDataType="//@dataTypes.0"/>
+    <columns name="wconWindSpeed" columnDataType="//@dataTypes.0"/>
+    <columns name="seasonName" length="30" columnInFK="//@tables.7/@tableFKs.0" columnDataType="//@dataTypes.1"/>
+    <columns name="locationID" columnInPKandUQ="//@tables.7/@tablePK" columnInFK="//@tables.7/@tableFKs.1" columnDataType="//@dataTypes.0"/>
+  </tables>
+  <tables name="Season">
+    <tablePK name="PK_Season" PKandUQColumns="//@tables.8/@columns.1"/>
+    <columns name="seasonID" columnDataType="//@dataTypes.0"/>
+    <columns name="seasonName" columnInPKandUQ="//@tables.8/@tablePK" length="30" columnDataType="//@dataTypes.1"/>
+  </tables>
+  <tables name="ProducedPower">
+    <tableFKs name="FK_ProducedPower_WeatherCondition" rhsKey="//@tables.7/@tablePK" lhsAttr="//@tables.9/@columns.2 //@tables.9/@columns.3" refersTo="//@tables.7"/>
+    <tableFKs name="FK_ProducedPower_RenewableEnergyGenerator" rhsKey="//@tables.3/@tablePK" lhsAttr="//@tables.9/@columns.4" refersTo="//@tables.3"/>
+    <tablePK name="PK_ProducedPower" PKandUQColumns="//@tables.9/@columns.4 //@tables.9/@columns.0"/>
+    <columns name="ppDateTime" columnInPKandUQ="//@tables.9/@tablePK" columnDataType="//@dataTypes.2"/>
+    <columns name="ppQuantity" columnDataType="//@dataTypes.0"/>
+    <columns name="wconDateTime" columnInFK="//@tables.9/@tableFKs.0" columnDataType="//@dataTypes.2"/>
+    <columns name="locationID" columnInFK="//@tables.9/@tableFKs.0" columnDataType="//@dataTypes.0"/>
+    <columns name="generatorId" columnInPKandUQ="//@tables.9/@tablePK" columnInFK="//@tables.9/@tableFKs.1" columnDataType="//@dataTypes.0"/>
+  </tables>
+  <tables name="FGFuelType">
+    <tableFKs name="FK_FGFuelType_PowerGenerator" rhsKey="//@tables.1/@tablePK" lhsAttr="//@tables.10/@columns.0" refersTo="//@tables.1"/>
+    <tableFKs name="FK_FGFuelType_FuelType" rhsKey="//@tables.4/@tablePK" lhsAttr="//@tables.10/@columns.1" refersTo="//@tables.4"/>
+    <tablePK name="PK_FGFuelType" PKandUQColumns="//@tables.10/@columns.0 //@tables.10/@columns.1"/>
+    <columns name="generatorId" columnInPKandUQ="//@tables.10/@tablePK" columnInFK="//@tables.10/@tableFKs.0" columnDataType="//@dataTypes.0"/>
+    <columns name="fuelId" columnInPKandUQ="//@tables.10/@tablePK" columnInFK="//@tables.10/@tableFKs.1" columnDataType="//@dataTypes.0"/>
+  </tables>
+  <dataTypes name="int"/>
+  <dataTypes name="varchar"/>
+  <dataTypes name="date"/>
+</rm:Database>

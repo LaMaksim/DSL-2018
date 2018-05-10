@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated er -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="er.presentation.ErModelWizardID"
+            name="%_UI_ErModelWizard_label"
+            class="er.presentation.ErModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ErModelFile.gif">
+         <description>%_UI_ErModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated er -->
+      <editor
+            id="er.presentation.ErEditorID"
+            name="%_UI_ErEditor_label"
+            icon="icons/full/obj16/ErModelFile.gif"
+            extensions="er"
+            class="er.presentation.ErEditor"
+            contributorClass="er.presentation.ErActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
