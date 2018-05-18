@@ -1,0 +1,45 @@
+usb = F:;
+
+downloads = C:/users/maskim/Downloads;
+personal = D:/Maksim;
+ 
+usb2 = ?usb;
+
+select coockBooks 
+from ?usb/Books
+where (
+	is empty and
+	( 
+	is not empty and
+	file is Directory and
+	file is not Document and
+	extension is in [mkv,mp4,avi] and
+	extension is not in [cpp,h,java] and
+	name is pera and
+	name is not mika
+	) 
+	and
+	(
+	size of file >= 25 MB and
+	created before > 5 days and
+	modified before < 2 weeks
+	) 
+	or
+	(
+	attribute neki exist and
+	attribute nekiDrugi not exist and
+	attribute treci is sdf and
+	attribute cetvrti is not sdf 
+	)
+	and
+	
+	(
+	in [mkv,mp3 ] 2 are in tags and no more tags and
+	in [mkv,mp3 ] 2 are not in tags or
+	in [mkv,mp3 ] -1 are in tags and
+	in [mkv,mp3 ] all are in tags and
+	in [mkv,mp3 ] any are not in tags 
+	)
+);
+
+copy from coockBooks to ?personal/books strategy:carefully

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="ASCII"?>
+<maksim:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:maksim="https://lamaksim.com">
+  <executions xsi:type="maksim:PathVariable" name="usb">
+    <value>
+      <steps xsi:type="maksim:ConcreteStep" value="F" absolute="true"/>
+    </value>
+  </executions>
+  <executions xsi:type="maksim:PathVariable" name="downloads">
+    <value>
+      <steps xsi:type="maksim:ConcreteStep" value="C" absolute="true"/>
+      <steps xsi:type="maksim:ConcreteStep" value="users"/>
+      <steps xsi:type="maksim:ConcreteStep" value="maskim"/>
+      <steps xsi:type="maksim:ConcreteStep" value="Downloads"/>
+    </value>
+  </executions>
+  <executions xsi:type="maksim:PathVariable" name="personal">
+    <value>
+      <steps xsi:type="maksim:ConcreteStep" value="D" absolute="true"/>
+      <steps xsi:type="maksim:ConcreteStep" value="Maksim"/>
+    </value>
+  </executions>
+  <executions xsi:type="maksim:PathVariable" name="usb2">
+    <value>
+      <steps xsi:type="maksim:VariableStep" value="//@executions.0"/>
+    </value>
+  </executions>
+  <executions xsi:type="maksim:Selection" name="coockBooks">
+    <where xsi:type="maksim:FilterContainer">
+      <links>
+        <element xsi:type="maksim:IsEmpty"/>
+      </links>
+      <links and="true">
+        <element xsi:type="maksim:FilterContainer">
+          <links>
+            <element xsi:type="maksim:IsEmpty" inverse="true"/>
+          </links>
+          <links and="true">
+            <element xsi:type="maksim:OnType" type="Directory"/>
+          </links>
+          <links and="true">
+            <element xsi:type="maksim:OnType" inverse="true"/>
+          </links>
+          <links and="true">
+            <element xsi:type="maksim:OnExtension">
+              <extensions>mkv</extensions>
+              <extensions>mp4</extensions>
+              <extensions>avi</extensions>
+            </element>
+          </links>
+          <links and="true">
+            <element xsi:type="maksim:OnExtension" inverse="true">
+              <extensions>cpp</extensions>
+              <extensions>h</extensions>
+              <extensions>java</extensions>
+            </element>
+          </links>
+          <links and="true">
+            <element xsi:type="maksim:OnName" name="pera"/>
+          </links>
+          <links and="true">
+            <element xsi:type="maksim:OnName" inverse="true" name="mika"/>
+          </links>
+        </element>
+      </links>
+      <links and="true">
+        <element xsi:type="maksim:FilterContainer">
+          <links>
+            <element xsi:type="maksim:OnSize" operator="more_equal" treshold="25" unit="MB"/>
+          </links>
+          <links and="true">
+            <element xsi:type="maksim:OnTime" operator="more" treshold="5" unit="days" timeOf="created"/>
+          </links>
+          <links and="true">
+            <element xsi:type="maksim:OnTime" operator="less" treshold="2" unit="weeks"/>
+          </links>
+        </element>
+      </links>
+      <links or="true">
+        <element xsi:type="maksim:FilterContainer">
+          <links>
+            <element xsi:type="maksim:OnAttributes" name="neki"/>
+          </links>
+          <links and="true">
+            <element xsi:type="maksim:OnAttributes" inverse="true" name="nekiDrugi"/>
+          </links>
+          <links and="true">
+            <element xsi:type="maksim:OnAttributes" name="treci" value="sdf"/>
+          </links>
+          <links and="true">
+            <element xsi:type="maksim:OnAttributes" inverse="true" name="cetvrti" value="sdf"/>
+          </links>
+        </element>
+      </links>
+      <links and="true">
+        <element xsi:type="maksim:FilterContainer">
+          <links>
+            <element xsi:type="maksim:OnTags" only="true" treshold="2">
+              <tags>mkv</tags>
+              <tags>mp3</tags>
+            </element>
+          </links>
+          <links and="true">
+            <element xsi:type="maksim:OnTags" inverse="true" treshold="2">
+              <tags>mkv</tags>
+              <tags>mp3</tags>
+            </element>
+          </links>
+          <links or="true">
+            <element xsi:type="maksim:OnTags">
+              <tags>mkv</tags>
+              <tags>mp3</tags>
+            </element>
+          </links>
+          <links and="true">
+            <element xsi:type="maksim:OnTags">
+              <tags>mkv</tags>
+              <tags>mp3</tags>
+            </element>
+          </links>
+          <links and="true">
+            <element xsi:type="maksim:OnTags" inverse="true" quantificator="any">
+              <tags>mkv</tags>
+              <tags>mp3</tags>
+            </element>
+          </links>
+        </element>
+      </links>
+    </where>
+    <from>
+      <steps xsi:type="maksim:VariableStep" value="//@executions.0"/>
+      <steps xsi:type="maksim:ConcreteStep" value="Books"/>
+    </from>
+  </executions>
+  <executions xsi:type="maksim:Copy" source="//@executions.4" strategy="carefully">
+    <destination>
+      <steps xsi:type="maksim:VariableStep" value="//@executions.2"/>
+      <steps xsi:type="maksim:ConcreteStep" value="books"/>
+    </destination>
+  </executions>
+</maksim:Model>

@@ -13,8 +13,10 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.emf.mwe2.launch;bundle-version="2.4.0",
  org.eclipse.ui.ide;bundle-version="3.9.0",
  org.eclipse.core.commands,
- rs.ac.uns.ftn.acs.mist;bundle-version="0.1.1"
+ org.xtext.example.myFetl;bundle-version="1.0.0",
+ file_transfer
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Bundle-Vendor: ACS
 Export-Package: mist.classgen.generate.generator
+Import-Package: org.xtext.example.myFetl

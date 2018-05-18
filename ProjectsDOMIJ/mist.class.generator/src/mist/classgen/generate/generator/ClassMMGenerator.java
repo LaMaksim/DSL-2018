@@ -7,8 +7,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Map;
 
-import mist.classgen.generate.generator.JavaGenerator;
-
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
@@ -16,40 +14,24 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
-import classDiagram.ClassDiagramPackage;
-import classDiagram.ClassModel;
-import classDiagram.ModelingConcept;
+import FileTransferPackage.FileTransferPackagePackage;
+import FileTransferPackage.Model;
 
 public class ClassMMGenerator {
 
 	public static void generateAll(String inputPath, String outputDirectory) {
-
 		//open directory chooser
-		//Shell shell = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell();
-		//		DirectoryDialog dirDialog = new DirectoryDialog(shell);
-		//		dirDialog.setText("Select generation directory");
-		//		dirDialog.setMessage("Please select directory where you want to put generated files.");
-		//		String selectedDir = dirDialog.open();
 		if (outputDirectory != null) {
-			ClassModel cm = loadClassModel(inputPath);
-			JavaGenerator java = new JavaGenerator();
-
-			for (classDiagram.Package pkg : cm.getPackages()) {
-				for (ModelingConcept mc : pkg.getElements()) {
-					if (mc instanceof classDiagram.Class) {
-						CharSequence cs = java.generate((classDiagram.Class)mc, pkg.getName().toLowerCase());
-						saveFile(outputDirectory + "/" + pkg.getName().toLowerCase() + "/" + mc.getName()+ ".java", cs);
-					}				
-				}
-			}
-
+			Model cm = loadFETLModel(inputPath);
+			System.out.println(cm.getExecutions().get(0));
+			
 		}
 
 	}
 
-	private static ClassModel loadClassModel(String modulePath) {
+	private static Model loadFETLModel(String modulePath) {
 		// Initialize the model
-		ClassDiagramPackage.eINSTANCE.eClass();
+		FileTransferPackagePackage.eINSTANCE.eClass();
 
 		Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
 		Map<String, Object> m = reg.getExtensionToFactoryMap();
@@ -65,7 +47,7 @@ public class ClassMMGenerator {
 
 		// Get the first model element and cast it to the right type, in my
 		// example everything is included in this first node
-		ClassModel pkg = (ClassModel) resource.getContents().get(0);
+		Model pkg = (Model) resource.getContents().get(0);
 
 		return pkg;
 	}
@@ -93,5 +75,10 @@ public class ClassMMGenerator {
 				pw.close();
 			}
 		}
+	}
+	
+	public static void main(String[] args) {
+//		FETLToXMIConverter.convertFETLtoXMI("input/proba11.fetl", "output/proba11.xmi");
+		ClassMMGenerator.generateAll("output/proba11.xmi", "/output");
 	}
 }
