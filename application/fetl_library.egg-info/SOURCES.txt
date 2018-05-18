@@ -5,4 +5,13 @@ fetl_library.egg-info/entry_points.txt
 fetl_library.egg-info/requires.txt
 fetl_library.egg-info/top_level.txt
 src/__init__.py
+src/copy.py
+src/delete.py
+src/filter.py
+src/move.py
+src/pathResolver.py
+src/profiler.py
+src/select.py
+src/singleton.py
+src/step.py
 src/tester.py
