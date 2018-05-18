@@ -1,3 +1,9 @@
+import os
+import shutil
+
+from pathResolver import PathResolver
+from select import Select
+
 class Delete:
     def __init__(self,selection_name):
         profilers = Select.getFromRegister(selection_name).resultSet()

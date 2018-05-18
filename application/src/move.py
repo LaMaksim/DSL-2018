@@ -1,3 +1,12 @@
+import os
+import shutil
+import ntpath
+                    
+from logger import getMyLogger
+
+from pathResolver import PathResolver
+from select import Select
+
 class Move:
     
     def __init__(self,destination,selection_name,tactic):
@@ -23,7 +32,7 @@ class Move:
         if not os.path.exists(parent):
             os.makedirs(parent)
         shutil.move(src,dst)
-        return True
+        return True                 
     
     def _move_forced(self,src,dst):
         if os.path.exists(dst):
@@ -47,7 +56,7 @@ class Move:
         replication = 0
         
         if not os.path.exists(parent):
-            logger.debug('{} directly moved to {}'.format(src,dst))
+            getMyLogger().debug('{} directly moved to {}'.format(src,dst))
             os.makedirs(parent)    
             shutil.move(src,dst)
             return True
@@ -58,7 +67,7 @@ class Move:
                 trypath = os.path.join(parent,tryname)
                 if not os.path.exists(trypath):
                     shutil.move(src,trypath)
-                    logger.debug('{} eventually moved to {}'.format(src,trypath))
+                    getMyLogger().debug('{} eventually moved to {}'.format(src,trypath))
                     return True
                 replication = replication+1
                 

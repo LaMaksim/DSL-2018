@@ -1,3 +1,11 @@
+# import logging
+from logger import getMyLogger
+import os
+from profiler import ProFiler
+
+
+
+
 class PathResolver:
     def __init__(self):
         pass
@@ -10,7 +18,7 @@ class PathResolver:
     def _search(self, steps,index=0,temp='',attrs={}):
         
         # ako smo resolve-ovali do kraja
-        logger.debug( 'resolving at path: {}  {}  {} '.format( index, len(steps), temp)  )
+        getMyLogger().debug( 'resolving at path: {}  {}  {} '.format( index, len(steps), temp)  )
         if index>=len(steps):
             if os.path.isdir(temp):
 
@@ -21,7 +29,7 @@ class PathResolver:
                         profiler =  ProFiler(os.path.join(temp,fullname),curr_attrs)  
                         self.profilers.append( profiler)
                 except (IOError, OSError), e:
-                    logger.error( 'Access Denied to: {}'.format( temp))
+                    getMyLogger().error( 'Access Denied to: {}'.format( temp))
                     
             return
                 
@@ -44,10 +52,10 @@ class PathResolver:
                     curr_attrs = attrs.copy()
                     curr_attrs[val]=name
 
-                    logger.debug( 'go to subpath: {}'.format(curr_temp) )
+                    getMyLogger().debug( 'go to subpath: {}'.format(curr_temp) )
                     self._search(steps,index,curr_temp,curr_attrs)
             except (IOError, OSError), e:
-                logger.debug( 'Access denied to: {}'.format(temp) )
+                getMyLogger().debug( 'Access denied to: {}'.format(temp) )
                 
     
     def getDestination(self,profiler,steps):

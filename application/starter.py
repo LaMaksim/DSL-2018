@@ -1,11 +1,13 @@
 import click
 
+import logging
 import os
 from time import time
 import ntpath
 import re
 
-from src.logger import Log
+from src.tester import Tester
+from src.logger import getMyLogger
 
 from src.profiler import ProFiler
 from src.filter import Filter
@@ -17,7 +19,7 @@ from src.delete import Delete
 from src.move import Move
 from src.copy import Copy
 
-logger = getLogger()
+getMyLogger().debug('proba')
 # @click.command()
 # def hello():
 #     click.echo('Hello World!')
@@ -43,6 +45,7 @@ logger = getLogger()
 @click.option('--path', help='path to execute')
 @click.argument('name')
 def run(count, path, name):
+
     for x in range(count):
         click.echo('Hello %s!' % name)
 

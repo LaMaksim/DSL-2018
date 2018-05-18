@@ -8,6 +8,7 @@ src/__init__.py
 src/copy.py
 src/delete.py
 src/filter.py
+src/logger.py
 src/move.py
 src/pathResolver.py
 src/profiler.py

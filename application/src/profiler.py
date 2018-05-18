@@ -1,10 +1,17 @@
+# import logging
+from logger import getMyLogger
+import os
+from time import time
+import ntpath
+import re
+
 class ProFiler:
     def __init__(self,path, pathAttrs = {}):
         if os.path.exists(path):
             self.path = path
             self.pathAttrs = pathAttrs
             self.attrs = None
-            logger.debug( 'Create ProFiler at {}'.format(path))
+            getMyLogger().debug( 'Create ProFiler at {}'.format(path))
         else:
             raise Exception('Not valid path to profiler!')
     
@@ -89,15 +96,15 @@ class ProFiler:
         rtags = self.getTags()
     
 #         phase = 0
-#         logger.debug('phase: {} -> {}'.format(phase,basename))
+#         getMyLogger().debug('phase: {} -> {}'.format(phase,basename))
         for r in  rattrs:
             basename = re.sub(r,'',basename)
 #             phase = phase +1
-#             logger.debug('phase: {} -> {}'.format(phase,basename))
+#             getMyLogger().debug('phase: {} -> {}'.format(phase,basename))
         for tg in rtags:
-#             logger.debug( "  basename = re.sub('#{}','',{})  ".format(tg,basename) )
+#             getMyLogger().debug( "  basename = re.sub('#{}','',{})  ".format(tg,basename) )
             basename = re.sub('#'+tg,'',basename)
 #             phase = phase +1
-#             logger.debug('phase: {} -> {}'.format(phase,basename))
+#             getMyLogger().debug('phase: {} -> {}'.format(phase,basename))
         
         return basename.strip()        

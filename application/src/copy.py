@@ -1,3 +1,12 @@
+import os
+import shutil
+import ntpath
+
+from logger import getMyLogger
+
+from pathResolver import PathResolver
+from select import Select
+
 class Copy:
     
     def __init__(self,destination,selection_name,tactic):
@@ -60,7 +69,7 @@ class Copy:
                 shutil.copytree(src,dst)
             elif os.path.isfile(src):
                 shutil.copy(src,dst)
-            logger.debug('{} directly copied to {}'.format(src,dst))
+            getMyLogger().debug('{} directly copied to {}'.format(src,dst))
             return True
         
         elif os.path.exists(parent):
@@ -72,7 +81,7 @@ class Copy:
                         shutil.copytree(src,os.path.join(parent,trypath))
                     elif os.path.isfile(src):
                         shutil.copy(src,os.path.join(parent,trypath))
-                    logger.debug('{} eventually copied to {}'.format(src,trypath))
+                    getMyLogger().debug('{} eventually copied to {}'.format(src,trypath))
                     return True
                 replication = replication+1
                 
