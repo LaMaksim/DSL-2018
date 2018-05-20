@@ -103,9 +103,6 @@ class FETLValidator extends AbstractFETLValidator {
 			}	
 		}	
 		
-		
-		
-		
 		return true;
 		
 	}// def
@@ -131,15 +128,15 @@ class FETLValidator extends AbstractFETLValidator {
 			val mv = execution as Move;
 			if(!isPathAbsolute(mv.destination)) 
 				error('Invalid path. Destination has to be absolute.',execution,FileTransferPackagePackage.Literals.CREATING__DESTINATION);
-			if(isPathParametrized(mv.destination)) 
-				error('Invalid path. Destination can\'t be parametrized.',execution,FileTransferPackagePackage.Literals.CREATING__DESTINATION);
+//			if(isPathParametrized(mv.destination)) 
+//				error('Invalid path. Destination can\'t be parametrized.',execution,FileTransferPackagePackage.Literals.CREATING__DESTINATION);
 		}
 		if (execution instanceof Copy){
 			val cp = execution as Copy;
 			if(!isPathAbsolute(cp.destination)) 
 				error('Invalid path. Destination has to be absolute.',execution,FileTransferPackagePackage.Literals.CREATING__DESTINATION);
-			if(isPathParametrized(cp.destination)) 
-				error('Invalid path. Destination can\'t be parametrized.',execution,FileTransferPackagePackage.Literals.CREATING__DESTINATION);
+//			if(isPathParametrized(cp.destination)) 
+//				error('Invalid path. Destination can\'t be parametrized.',execution,FileTransferPackagePackage.Literals.CREATING__DESTINATION);
 		}
 	}
 	

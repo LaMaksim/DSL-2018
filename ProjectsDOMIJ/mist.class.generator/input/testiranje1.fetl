@@ -1,0 +1,22 @@
+root = C:/Users/maksim/Documents/JuPyteR/data/test;
+downloads = ?root/Downloads;
+usb = ?root/USB;
+personal = ?root/Personal;
+
+select books
+from ?usb/Books
+where (
+	attribute lang exist and
+	in [it] any are in tags
+);
+
+select videos
+from ?downloads
+where(
+	attribute lang exist and
+	in [it] all are in tags and
+	extension is in [mp4,mkv,tlv,gov]
+);
+
+copy from books to ?personal/IT/{$lang}/Books/{$purename} strategy:append;
+copy from videos to ?personal/IT/{$lang}/Videos/{$purename} strategy:append

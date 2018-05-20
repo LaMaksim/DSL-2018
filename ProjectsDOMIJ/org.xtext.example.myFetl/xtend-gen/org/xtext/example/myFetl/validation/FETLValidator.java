@@ -151,24 +151,14 @@ public class FETLValidator extends AbstractFETLValidator {
       if (_not) {
         this.error("Invalid path. Destination has to be absolute.", execution, FileTransferPackagePackage.Literals.CREATING__DESTINATION);
       }
-      Path _destination_1 = mv.getDestination();
-      boolean _isPathParametrized = this.isPathParametrized(_destination_1);
-      if (_isPathParametrized) {
-        this.error("Invalid path. Destination can\'t be parametrized.", execution, FileTransferPackagePackage.Literals.CREATING__DESTINATION);
-      }
     }
     if ((execution instanceof Copy)) {
       final Copy cp = ((Copy) execution);
-      Path _destination_2 = cp.getDestination();
-      boolean _isPathAbsolute_1 = this.isPathAbsolute(_destination_2);
+      Path _destination_1 = cp.getDestination();
+      boolean _isPathAbsolute_1 = this.isPathAbsolute(_destination_1);
       boolean _not_1 = (!_isPathAbsolute_1);
       if (_not_1) {
         this.error("Invalid path. Destination has to be absolute.", execution, FileTransferPackagePackage.Literals.CREATING__DESTINATION);
-      }
-      Path _destination_3 = cp.getDestination();
-      boolean _isPathParametrized_1 = this.isPathParametrized(_destination_3);
-      if (_isPathParametrized_1) {
-        this.error("Invalid path. Destination can\'t be parametrized.", execution, FileTransferPackagePackage.Literals.CREATING__DESTINATION);
       }
     }
   }
