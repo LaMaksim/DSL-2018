@@ -16,21 +16,31 @@ import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
 import FileTransferPackage.FileTransferPackagePackage;
 import FileTransferPackage.Model;
+import FileTransferPackage.Selection;
 
 public class ClassMMGenerator {
 
 	public static void generateAll(String inputPath, String outputDirectory) {
 		//open directory chooser
 		if (outputDirectory != null) {
-			Model cm = loadFETLModel(inputPath);
-			System.out.println(cm.getExecutions().get(0));
+			Model cm = loadFETLModel(inputPath);			
+			JavaGenerator generator = new JavaGenerator();
+			CharSequence cs = generator.generate(cm);
+			System.out.println(cs.toString());
+			
+//			System.out.println(((Selection)cm.getExecutions().get(4)).getWhere());
+			String name = new File(inputPath).getName();
+			name = name.replace("xmi","py");
+//			System.out.println("Output path: "+ outputDirectory+"/"+name);
+			saveFile(outputDirectory+"/"+name, cs);
+			
 			
 		}
 
 	}
 
 	private static Model loadFETLModel(String modulePath) {
-		// Initialize the model
+		// Initialize the model 
 		FileTransferPackagePackage.eINSTANCE.eClass();
 
 		Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
