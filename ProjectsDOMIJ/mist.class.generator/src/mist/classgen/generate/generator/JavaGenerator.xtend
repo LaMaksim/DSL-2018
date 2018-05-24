@@ -42,6 +42,8 @@ class JavaGenerator{
 		
 		
 		'''
+		# -*- coding: utf-8 -*-
+		
 		«FOR execution: model.executions»
 		«execution.generate»
 		«ENDFOR»
@@ -118,7 +120,7 @@ class JavaGenerator{
 		_from = «from.generate»
 		def _filter(profiler):
 			return «IF filter == null»True«ELSE»«filter.generate»«ENDIF»
-		Selection(name="«name»",path=_from,where=_filter)
+		Select(name="«name»",path=_from,where=_filter)
 		'''	
 	}
 	 
@@ -208,7 +210,7 @@ class JavaGenerator{
 		var inverse = tags.inverse
 		var only = tags.only
 		
-		'''checkProfilerTags(profiler, extensionList=[«generateStringlist(tag)»], negation=«boolean2text(inverse)», quantity=«count», noMore=«boolean2text(only)»)'''		
+		'''Filter.checkProfilerTags(profiler, extensionList=[«generateStringlist(tag)»], negation=«boolean2text(inverse)», quantity=«count», noMore=«boolean2text(only)»)'''		
 	}	
 	
 	def generate(OnAttributes attributes){
@@ -217,7 +219,7 @@ class JavaGenerator{
 		var value = attributes.value
 		var setted = value == null || value.equals("")
 		
-		'''checkProfilerAttribute(profiler,«name»,neg=«boolean2text(inverse)»«IF !setted»,val="«value»"«ENDIF»)'''
+		'''Filter.checkProfilerAttribute(profiler=profiler,attr='«name»',neg=«boolean2text(inverse)»«IF !setted»,val="«value»"«ENDIF»)'''
 			
 	}
 
