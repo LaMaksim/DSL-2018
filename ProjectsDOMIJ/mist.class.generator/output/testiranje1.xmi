@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ASCII"?>
+<maksim:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:maksim="https://lamaksim.com">
+  <executions xsi:type="maksim:PathVariable" name="root">
+    <value>
+      <steps xsi:type="maksim:ConcreteStep" value="C" absolute="true"/>
+      <steps xsi:type="maksim:ConcreteStep" value="Users"/>
+      <steps xsi:type="maksim:ConcreteStep" value="maksim"/>
+      <steps xsi:type="maksim:ConcreteStep" value="Documents"/>
+      <steps xsi:type="maksim:ConcreteStep" value="JuPyteR"/>
+      <steps xsi:type="maksim:ConcreteStep" value="data"/>
+      <steps xsi:type="maksim:ConcreteStep" value="test"/>
+    </value>
+  </executions>
+  <executions xsi:type="maksim:PathVariable" name="downloads">
+    <value>
+      <steps xsi:type="maksim:VariableStep" value="//@executions.0"/>
+      <steps xsi:type="maksim:ConcreteStep" value="Downloads"/>
+    </value>
+  </executions>
+  <executions xsi:type="maksim:PathVariable" name="usb">
+    <value>
+      <steps xsi:type="maksim:VariableStep" value="//@executions.0"/>
+      <steps xsi:type="maksim:ConcreteStep" value="USB"/>
+    </value>
+  </executions>
+  <executions xsi:type="maksim:PathVariable" name="personal">
+    <value>
+      <steps xsi:type="maksim:VariableStep" value="//@executions.0"/>
+      <steps xsi:type="maksim:ConcreteStep" value="Personal"/>
+    </value>
+  </executions>
+  <executions xsi:type="maksim:Selection" name="books">
+    <where xsi:type="maksim:FilterContainer">
+      <links>
+        <element xsi:type="maksim:OnAttributes" name="lang"/>
+      </links>
+      <links and="true">
+        <element xsi:type="maksim:OnTags" quantificator="any">
+          <tags>it</tags>
+        </element>
+      </links>
+    </where>
+    <from>
+      <steps xsi:type="maksim:VariableStep" value="//@executions.2"/>
+      <steps xsi:type="maksim:ConcreteStep" value="Books"/>
+    </from>
+  </executions>
+  <executions xsi:type="maksim:Selection" name="videos">
+    <where xsi:type="maksim:FilterContainer">
+      <links>
+        <element xsi:type="maksim:OnAttributes" name="lang"/>
+      </links>
+      <links and="true">
+        <element xsi:type="maksim:OnTags">
+          <tags>it</tags>
+        </element>
+      </links>
+      <links and="true">
+        <element xsi:type="maksim:OnExtension">
+          <extensions>mp4</extensions>
+          <extensions>mkv</extensions>
+          <extensions>tlv</extensions>
+          <extensions>gov</extensions>
+        </element>
+      </links>
+    </where>
+    <from>
+      <steps xsi:type="maksim:VariableStep" value="//@executions.1"/>
+    </from>
+  </executions>
+  <executions xsi:type="maksim:Copy" source="//@executions.4" strategy="append">
+    <destination>
+      <steps xsi:type="maksim:VariableStep" value="//@executions.3"/>
+      <steps xsi:type="maksim:ConcreteStep" value="IT"/>
+      <steps xsi:type="maksim:ParametrizedStep" name="lang"/>
+      <steps xsi:type="maksim:ConcreteStep" value="Books"/>
+      <steps xsi:type="maksim:ParametrizedStep" name="purename"/>
+    </destination>
+  </executions>
+  <executions xsi:type="maksim:Copy" source="//@executions.5" strategy="append">
+    <destination>
+      <steps xsi:type="maksim:VariableStep" value="//@executions.3"/>
+      <steps xsi:type="maksim:ConcreteStep" value="IT"/>
+      <steps xsi:type="maksim:ParametrizedStep" name="lang"/>
+      <steps xsi:type="maksim:ConcreteStep" value="Videos"/>
+      <steps xsi:type="maksim:ParametrizedStep" name="purename"/>
+    </destination>
+  </executions>
+</maksim:Model>

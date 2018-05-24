@@ -101,20 +101,13 @@ class JavaGenerator{
 	}
 	
 	def generate(GenericStep step){
-		'''
-		«IF step instanceof ConcreteStep»«generate(step as ConcreteStep)»«ENDIF»
-		«IF step instanceof ParametrizedStep»«generate(step as ParametrizedStep)»«ENDIF»
-		'''
+		'''«IF step instanceof ConcreteStep»«generate(step as ConcreteStep)»«ENDIF»«IF step instanceof ParametrizedStep»«generate(step as ParametrizedStep)»«ENDIF»'''
 	}
 	def generate(ConcreteStep step){
-		'''
-		Step("«step.value»«IF step.absolute»:«ENDIF»")
-		'''
+		'''Step("«step.value»«IF step.absolute»:«ENDIF»")'''
 	}
 	def generate(ParametrizedStep step){
-		'''
-		Step("«step.name»",parametrized=True)
-		'''
+		'''Step("«step.name»",parametrized=True)'''
 	}	
 	
 	def generate(Selection selection){
@@ -151,43 +144,33 @@ class JavaGenerator{
 	}
 	
 	def generate(FilterContainer filter){
-		'''
-		(«FOR link : filter.links»«link.generate»«ENDFOR»)
-		'''
+		'''(«FOR link : filter.links»«link.generate»«ENDFOR»)'''
 	}
 	def generate(Link link){
 		var and = link.and
 		var or = link.or
 		var elem = link.element
-		'''
-		«IF and»and«ENDIF»
-		«IF or»or«ENDIF»
-		«elem.generate»
-		'''
+		
+		'''«IF and» and «ENDIF»«IF or» or «ENDIF»«elem.generate»'''
 	}
 	
 	def generate(OnName name){
 		var inverse = name.inverse
 		var value = name.name
-		'''
-		profiler.getPureFileName() is «IF inverse»not«ENDIF» «value»
-		'''
+		'''profiler.getPureFileName() is «IF inverse»not«ENDIF» «value»'''
 	}
 	
 	def generate(OnExtension extension2){
 		var extensions = extension2.extensions
 		var inverse = extension2.inverse
 		
-		'''
-		profiler.getExtension() «IF inverse»not«ENDIF» in [«extensions.generateStringlist»]
-		'''
+		'''profiler.getExtension() «IF inverse»not«ENDIF» in [«extensions.generateStringlist»]'''
 	}
 	
 	def generate(IsEmpty empty){
 		var inverse = empty.inverse
-		'''
-		«IF inverse»not«ENDIF» profiler.isEmpty() 
-		'''
+		
+		'''«IF inverse»not«ENDIF» profiler.isEmpty()'''
 	}
 	
 	def generate(OnType onType){
@@ -195,9 +178,8 @@ class JavaGenerator{
 		var inverse = onType.inverse
 		var document = type.equals("Document")
 //		var directory = type.equals("Directory")
-		'''
-		«IF inverse»not«ENDIF» profiler.is«IF document»Doc«ELSE»Dir«ENDIF»
-		'''
+		
+		'''«IF inverse»not«ENDIF» profiler.is«IF document»Doc«ELSE»Dir«ENDIF»'''
 	}
 	
 	def generate(OnSize onSize){
@@ -206,9 +188,7 @@ class JavaGenerator{
 		var treshold = onSize.treshold
 		var unit = getMemoryUnitSize(onSize.unit)
 		
-		'''
-		«IF inverse»not«ENDIF» profiler.getSize() «operator» «treshold»*«unit»
-		'''
+		'''«IF inverse»not«ENDIF» profiler.getSize() «operator» «treshold»*«unit»'''
 	}
 	
 	def generate(OnTime time){
@@ -217,9 +197,8 @@ class JavaGenerator{
 		var unit = getTimeUnitSize(time.unit)
 		var action = getActionNotation(time.timeOf)
 		var operator = getOperatorNotation(time.operator)
-		'''
-		«IF inverse»not«ENDIF» profiler.getSecondsFrom("«action»") «operator» «treshold»*«unit»
-		'''
+		
+		'''«IF inverse»not«ENDIF» profiler.getSecondsFrom("«action»") «operator» «treshold»*«unit»'''
 	}
 	
 
@@ -229,9 +208,7 @@ class JavaGenerator{
 		var inverse = tags.inverse
 		var only = tags.only
 		
-		'''
-		checkProfilerTags(profiler, extensionList=[«generateStringlist(tag)»], negation=«boolean2text(inverse)», quantity=«count», noMore=«boolean2text(only)»)
-		'''		
+		'''checkProfilerTags(profiler, extensionList=[«generateStringlist(tag)»], negation=«boolean2text(inverse)», quantity=«count», noMore=«boolean2text(only)»)'''		
 	}	
 	
 	def generate(OnAttributes attributes){
@@ -240,9 +217,7 @@ class JavaGenerator{
 		var value = attributes.value
 		var setted = value == null || value.equals("")
 		
-		'''
-		checkProfilerAttribute(profiler,«name»,neg=«boolean2text(inverse)»«IF !setted»,val="«value»"«ENDIF»)
-		'''
+		'''checkProfilerAttribute(profiler,«name»,neg=«boolean2text(inverse)»«IF !setted»,val="«value»"«ENDIF»)'''
 			
 	}
 
@@ -293,9 +268,7 @@ class JavaGenerator{
 	}
 		
 	def generateStringlist(List<String> lista){
-		'''
-		«FOR elem : lista SEPARATOR ','»"«elem»"«ENDFOR»
-		'''
+		'''«FOR elem : lista SEPARATOR ','»"«elem»"«ENDFOR»'''
 	}
 		
 		
@@ -306,8 +279,8 @@ class JavaGenerator{
 		var select = move.source.name
 		
 		'''
-		_from = «path.generate»
-		Move(selection_name="«select»",destination=_from,tactic="«strategy»")
+		_destination = «path.generate»
+		Move(selection_name="«select»",destination=_destination,tactic="«strategy»")
 		'''
 		
 	}
@@ -317,8 +290,8 @@ class JavaGenerator{
 		var select = copy.source.name
 		
 		'''
-		_from = «path.generate»
-		Copy(selection_name="«select»",destination=_from,tactic="«strategy»")
+		_destination = «path.generate»
+		Copy(selection_name="«select»",destination=_destination,tactic="«strategy»")
 		'''
 	}
 	

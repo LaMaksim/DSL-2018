@@ -90,9 +90,9 @@ public class ClassMMGenerator {
 	
 	public static void main(String[] args) {
 //		FETLToXMIConverter.convertFETLtoXMI("input/proba11.fetl", "output/proba11.xmi");
-//		ClassMMGenerator.generateAll("output/proba11.xmi", "/output");
+//		ClassMMGenerator.generateAll("output/proba11.xmi", "output");
 		FETLToXMIConverter.convertFETLtoXMI("input/testiranje1.fetl", "output/testiranje1.xmi");
-//		ClassMMGenerator.generateAll("output/testiranje1.xmi", "/output");
+		ClassMMGenerator.generateAll("output/testiranje1.xmi", "output");
 
 	}
 }

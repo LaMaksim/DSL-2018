@@ -3,9 +3,10 @@
 */
 package org.xtext.example.myFetl;
 
-import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.xtext.ISetup;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.xtext.ISetup;
+
+import FileTransferPackage.impl.FileTransferPackagePackageImpl;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -17,6 +18,7 @@ import com.google.inject.Injector;
 public class FETLStandaloneSetupGenerated implements ISetup {
 
 	public Injector createInjectorAndDoEMFRegistration() {
+		FileTransferPackagePackageImpl.init();
 		org.eclipse.xtext.common.TerminalsStandaloneSetup.doSetup();
 
 		Injector injector = createInjector();
